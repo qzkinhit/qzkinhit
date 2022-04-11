@@ -10,23 +10,16 @@ Welcome to my Github page! I am Type-C and I am currently finishing my third yea
 
 
 #### 😃 Things I am interested in:
-- NLP
-- Web Service Development
+
 
 
 #### 🌱 Things I am currently working on: 
 
-- Finish my Degree  
-- Taking CS224N and dive into deep learning
-- Prepare for the Master Degree 🚀 
+
 
 
 #### :muscle: Things I am challenging myself with:
-- Waking up earlier to make good use of the day
-- Coding at least 2 hours a day
-- Exercising 3 days a week
-- polishing my CV with some research and academic competition
-- Write blogs and share knowledge
+
 
 #### :computer: Programming languages and tools: 
 <p>
