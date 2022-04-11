@@ -3,8 +3,8 @@
 ### <sub>Reach Me By<sub/>
 
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/qzkinhit)
-[![cnblog](https://img.shields.io/badge/-cnblog-c04438?style=flat&logo=C&logoColor=white)](https://www.cnblogs.com/zekaiblogs)
-[![bilibili](https://img.shields.io/badge/-bilibili-c14438?style=flat&logo=bilibili&logoColor=white)](https://space.bilibili.com/290960774/article)
+[![cnblog](https://img.shields.io/badge/-cnblog-c0134?style=flat&logo=C&logoColor=white)](https://www.cnblogs.com/zekaiblogs)
+[![bilibili](https://img.shields.io/badge/-bilibili-c14438?style=flat&logo=bilibili&logoColor=blue)](https://space.bilibili.com/290960774/article)
   
 Welcome to my Github page! I am Type-C and I am currently finishing my third year of Soft Engineering Bachelor degree at HIT!  
 
