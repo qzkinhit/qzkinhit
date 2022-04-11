@@ -4,7 +4,7 @@
 
 [![Github](https://img.shields.io/badge/-Github-000?style=flat&logo=Github&logoColor=white)](https://github.com/qzkinhit)
 [![cnblog](https://img.shields.io/badge/-cnblog-c14438?style=flat&logo=C&logoColor=white)](https://www.cnblogs.com/zekaiblogs)
-[![bilibili](https://img.shields.io/badge/-bilibili-c14438?style=flat&logo=C&logoColor=white)](https://space.bilibili.com/290960774/article)
+[![bilibili](https://img.shields.io/badge/-bilibili-c12345?style=flat&logo=B&logoColor=white)](https://space.bilibili.com/290960774/article)
   
 Welcome to my Github page! I am Type-C and I am currently finishing my third year of Soft Engineering Bachelor degree at HIT!  
 
