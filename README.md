@@ -8,22 +8,26 @@
   
 Hello and welcome to my GitHub page! I'm qzkinhit, currently on a fascinating journey pursuing a Master's degree in Computer Science and Technology at Harbin Institute of Technology.
 
-#### 😃 What Drives Me:
+<div>
+  <img align="right" alt="GitHub Stats" src="https://github-readme-stats.vercel.app/api?username=qzkinhit&show_icons=true" width="50%" height="auto"/>
+  
+  #### 😃 What Drives Me:
 
-- Crafting Innovative Software Solutions
-- Delving into the Depths of Data Science
-- Finding Balance Through Fitness and Badminton
-- Exploring Worlds Through the Lens of Movies
+  - Crafting Innovative Software Solutions
+  - Delving into the Depths of Data Science
+  - Finding Balance Through Fitness and Badminton
+  - Exploring Worlds Through the Lens of Movies
 
-#### 🌱 Current Endeavors:
+  #### 🌱 Current Endeavors:
 
-- Navigating the Complexities of a Master's degree in Computer Science
-- Exciting Adventures in the Realm of Data Cleansing Techniques
+  - Navigating the Complexities of a Master's degree in Computer Science
+  - Exciting Adventures in the Realm of Data Cleansing Techniques
 
-#### :muscle: Rising to Challenges:
+  #### :muscle: Rising to Challenges:
 
-- Architecting Systems That Make a Difference
-- Perpetual Growth and Learning
+  - Architecting Systems That Make a Difference
+  - Perpetual Growth and Learning
+</div>
 
 #### :computer: Languages and Tools I Embrace:
 
@@ -35,5 +39,3 @@ Hello and welcome to my GitHub page! I'm qzkinhit, currently on a fascinating jo
   <img width="10%" src="https://www.vectorlogo.zone/logos/mysql/mysql-ar21.svg">
   <img width="10%" src="https://www.vectorlogo.zone/logos/vuejs/vuejs-ar21.svg">
 </p>
-
-<sub>Badges crafted with love from [shields](https://shields.io/) and SVGs artistry by [vectorlogo](https://www.vectorlogo.zone/)</sub>
