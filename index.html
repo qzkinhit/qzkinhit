@@ -1,0 +1,274 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Zekai Qian, Ph.D. student at Harbin Institute of Technology. Data-centric AI, data cleaning, data quality governance, and agentic data preparation.">
+  <title>Zekai Qian | Data-Centric AI</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="lang-zh">
+  <header class="topbar" aria-label="Site navigation">
+    <a class="brand" href="#top" aria-label="Zekai Qian homepage">
+      <span class="brand-mark">ZQ</span>
+      <span>
+        <strong>Zekai Qian</strong>
+        <small>Data-Centric AI</small>
+      </span>
+    </a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#research"><span class="zh">研究</span><span class="en">Research</span></a>
+      <a href="#papers"><span class="zh">论文</span><span class="en">Papers</span></a>
+      <a href="#software"><span class="zh">软件</span><span class="en">Software</span></a>
+      <a href="#contact"><span class="zh">联系</span><span class="en">Contact</span></a>
+    </nav>
+    <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">
+      <span class="zh">EN</span><span class="en">中文</span>
+    </button>
+  </header>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <canvas id="signalCanvas" aria-hidden="true"></canvas>
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">
+            <span class="zh">博士生 | 数据清洗 | Data-Centric AI</span>
+            <span class="en">Ph.D. Student | Data Cleaning | Data-Centric AI</span>
+          </p>
+          <h1 id="hero-title">Zekai Qian</h1>
+          <p class="lead zh">
+            我现在是哈尔滨工业大学计算机方向博士生，研究兴趣集中在 data-centric AI、数据质量治理、面向下游任务的数据清洗，以及智能体式数据准备系统。
+          </p>
+          <p class="lead en">
+            I am a Ph.D. student in Computer Science at Harbin Institute of Technology, working on data-centric AI, data quality governance, task-aware data cleaning, and agentic data preparation systems.
+          </p>
+          <div class="hero-actions" aria-label="Profile links">
+            <a href="https://scholar.google.com/citations?user=T2CXrMwAAAAJ" target="_blank" rel="noopener">Scholar</a>
+            <a href="https://dblp.org/pid/414/5427.html" target="_blank" rel="noopener">DBLP</a>
+            <a href="https://github.com/qzkinhit" target="_blank" rel="noopener">GitHub</a>
+            <a href="https://www.cnblogs.com/zekaiblogs" target="_blank" rel="noopener">Blog</a>
+          </div>
+        </div>
+        <aside class="portrait-panel" aria-label="Profile summary">
+          <img src="https://avatars.githubusercontent.com/u/58599846?v=4" alt="Zekai Qian GitHub avatar">
+          <div class="portrait-text">
+            <strong>Zekai Qian</strong>
+            <span class="zh">哈尔滨工业大学博士生</span>
+            <span class="en">Ph.D. student at HIT</span>
+          </div>
+          <div class="mini-metrics" aria-label="Highlights">
+            <span><b>ICML 2026</b><small>DMCO</small></span>
+            <span><b>PVLDB 2025</b><small>DemandClean / UniClean</small></span>
+            <span><b>25</b><small>GitHub repos</small></span>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="stat-band" aria-label="Research highlights">
+      <a href="https://icml.cc/virtual/2026/poster/64882" target="_blank" rel="noopener">
+        <b>ICML 2026</b>
+        <span class="zh">数据清洗与 AutoML 的预算感知协同优化</span>
+        <span class="en">Budget-aware co-optimization of data cleaning and AutoML</span>
+      </a>
+      <a href="https://doi.org/10.14778/3750601.3750666" target="_blank" rel="noopener">
+        <b>PVLDB 2025</b>
+        <span class="zh">DemandClean: 模型容忍度驱动的数据清洗</span>
+        <span class="en">DemandClean: model-tolerance-aware cleaning</span>
+      </a>
+      <a href="https://github.com/qzkinhit/DDPAgent-artifact" target="_blank" rel="noopener">
+        <b>DDPAgent</b>
+        <span class="zh">面向需求的数据准备智能体 artifact</span>
+        <span class="en">Demand-driven data preparation artifact</span>
+      </a>
+    </section>
+
+    <section class="section research-band" id="research">
+      <div class="section-head">
+        <p class="eyebrow"><span class="zh">研究主线</span><span class="en">Research Lines</span></p>
+        <h2><span class="zh">把数据清洗从“修数据”推进到“按任务决策”。</span><span class="en">From fixing data to making task-conditioned data decisions.</span></h2>
+      </div>
+      <div class="research-grid">
+        <article class="research-card">
+          <span class="card-index">01</span>
+          <h3><span class="zh">需求驱动的数据清洗</span><span class="en">Demand-driven cleaning</span></h3>
+          <p class="zh">用下游模型收益、数据真实性、数据多样性和清洗成本共同约束清洗动作，避免把“越干净越好”当作唯一目标。</p>
+          <p class="en">Cleaning actions are selected under downstream utility, authenticity, diversity, and cost instead of optimizing only intrinsic data neatness.</p>
+        </article>
+        <article class="research-card">
+          <span class="card-index">02</span>
+          <h3><span class="zh">可追踪的算子执行</span><span class="en">Operator-grounded execution</span></h3>
+          <p class="zh">把智能体的策略选择落到可复现的 cleaner、规则、执行日志和回滚机制上，让系统行为能被检查、比较和复跑。</p>
+          <p class="en">Agentic decisions are grounded in reproducible cleaners, rules, execution traces, and rollback paths so that results can be inspected and rerun.</p>
+        </article>
+        <article class="research-card">
+          <span class="card-index">03</span>
+          <h3><span class="zh">脏数据上的 ML / AutoML</span><span class="en">ML and AutoML over dirty data</span></h3>
+          <p class="zh">研究有限预算下清洗、建模和 AutoML 搜索之间的相互影响，让学习系统在真实不完美数据上更稳健。</p>
+          <p class="en">I study the interaction among cleaning, modeling, and AutoML search under limited budgets for more reliable learning over imperfect data.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section split-section">
+      <div class="news-panel">
+        <div class="section-head compact">
+          <p class="eyebrow"><span class="zh">近期动态</span><span class="en">Recent News</span></p>
+          <h2><span class="zh">从论文到 artifact，同步推进。</span><span class="en">Papers and artifacts move together.</span></h2>
+        </div>
+        <ol class="timeline">
+          <li>
+            <time>2026</time>
+            <p class="zh"><strong>DMCO</strong> 被 ICML 2026 接收为 poster，研究数据清洗与 AutoML 的预算感知协同优化。</p>
+            <p class="en"><strong>DMCO</strong> appears as an ICML 2026 poster on budget-aware co-optimization of data cleaning and AutoML.</p>
+          </li>
+          <li>
+            <time>2026</time>
+            <p class="zh">发布 <strong>DDPAgent-artifact</strong>，包含代码、数据、缓存结果、实验摘要和交互式 demo。</p>
+            <p class="en">Released <strong>DDPAgent-artifact</strong> with code, datasets, cached outputs, experiment summaries, and an interactive demo.</p>
+          </li>
+          <li>
+            <time>2025</time>
+            <p class="zh"><strong>DemandClean</strong> 和 <strong>UniClean</strong> 登上 PVLDB 2025，围绕任务驱动清洗与混合错误统一清洗展开。</p>
+            <p class="en"><strong>DemandClean</strong> and <strong>UniClean</strong> appeared in PVLDB 2025, covering task-aware cleaning and mixed-error cleaning workflows.</p>
+          </li>
+        </ol>
+      </div>
+      <div class="system-map" aria-label="System map">
+        <div class="map-node active">
+          <b>Sense</b>
+          <span class="zh">识别错误与任务需求</span>
+          <span class="en">Detect errors and task demand</span>
+        </div>
+        <div class="map-node">
+          <b>Allocate</b>
+          <span class="zh">选择 no-op / repair / delete / replace</span>
+          <span class="en">Choose no-op, repair, delete, or replace</span>
+        </div>
+        <div class="map-node">
+          <b>Execute</b>
+          <span class="zh">调用可复现的数据清洗算子</span>
+          <span class="en">Dispatch reproducible cleaning operators</span>
+        </div>
+        <div class="map-node">
+          <b>Verify</b>
+          <span class="zh">用下游指标决定提交或回滚</span>
+          <span class="en">Commit or roll back with downstream metrics</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="papers">
+      <div class="section-head">
+        <p class="eyebrow"><span class="zh">论文</span><span class="en">Publications</span></p>
+        <h2><span class="zh">围绕数据质量、数据治理和 ML 可靠性的若干工作。</span><span class="en">Selected work around data quality, governance, and reliable ML.</span></h2>
+      </div>
+      <div class="filter-row" aria-label="Publication filters">
+        <button class="filter active" type="button" data-filter="all">All</button>
+        <button class="filter" type="button" data-filter="ml">ML</button>
+        <button class="filter" type="button" data-filter="system">Systems</button>
+        <button class="filter" type="button" data-filter="governance">Governance</button>
+      </div>
+      <div class="paper-list" data-paper-list>
+        <article class="paper-item" data-topic="ml system">
+          <div class="paper-meta"><span>2026</span><b>ICML</b></div>
+          <div>
+            <h3><a href="https://icml.cc/virtual/2026/poster/64882" target="_blank" rel="noopener">DMCO: Budget-Aware Co-Optimization of Data Cleaning and AutoML</a></h3>
+            <p>Xiaoou Ding, Siying Chen, <strong>Zekai Qian</strong>, Hongbin Hu, Chen Wang, Hongzhi Wang, Jianmin Wang.</p>
+          </div>
+        </article>
+        <article class="paper-item" data-topic="ml governance">
+          <div class="paper-meta"><span>2025</span><b>PVLDB</b></div>
+          <div>
+            <h3><a href="https://doi.org/10.14778/3750601.3750666" target="_blank" rel="noopener">DemandClean: A Multi-Objective Learning Framework for Balancing Model Tolerance to Data Authenticity and Diversity</a></h3>
+            <p><strong>Zekai Qian</strong>, Xiaoou Ding, Chen Wang, Hongzhi Wang.</p>
+          </div>
+        </article>
+        <article class="paper-item" data-topic="system governance">
+          <div class="paper-meta"><span>2025</span><b>PVLDB</b></div>
+          <div>
+            <h3><a href="https://doi.org/10.14778/3749646.3749681" target="_blank" rel="noopener">UniClean: A Scalable Data Cleaning Solution for Mixed Errors based on Unified Cleaners and Optimized Cleaning Workflow</a></h3>
+            <p>Xiaoou Ding, <strong>Zekai Qian</strong>, Hongzhi Wang, Siying Chen, Yafeng Tang, Hongbin Su, Huan Hu, Chen Wang.</p>
+          </div>
+        </article>
+        <article class="paper-item" data-topic="system">
+          <div class="paper-meta"><span>2025</span><b>ICDE</b></div>
+          <div>
+            <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00362" target="_blank" rel="noopener">UniClean: A Multi-Signal Fusion Pipeline for Optimizing Data Cleaning Workflow</a></h3>
+            <p>Xiaoou Ding, <strong>Zekai Qian</strong>, Hongzhi Wang, Zhe Sun, Siying Chen, Hongbin Su, Huan Hu.</p>
+          </div>
+        </article>
+        <article class="paper-item" data-topic="governance">
+          <div class="paper-meta"><span>2025</span><b>ICDE</b></div>
+          <div>
+            <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00371" target="_blank" rel="noopener">CBAClean: A Comprehensive System for Recommending Data Cleaning Solutions Through Cost-Benefit Analysis in Data Quality Management</a></h3>
+            <p>Xiaoou Ding, Hongbin Su, <strong>Zekai Qian</strong>, Wenxuan Cui, Siying Chen, Zheng Liang, Chen Wang, Hongzhi Wang.</p>
+          </div>
+        </article>
+        <article class="paper-item" data-topic="governance">
+          <div class="paper-meta"><span>2025</span><b>BDMA</b></div>
+          <div>
+            <h3><a href="https://doi.org/10.26599/bdma.2025.9020034" target="_blank" rel="noopener">A Survey on Data Asset Value Change Estimation and Appreciation with Data Governance</a></h3>
+            <p>Xiaoou Ding, Genglong Li, Yafeng Tang, Chen Liang, Tianren Yu, Muyun Zhou, Yida Liu, <strong>Zekai Qian</strong>, Zixuan Song, Hongzhi Wang.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section software-band" id="software">
+      <div class="section-head">
+        <p class="eyebrow"><span class="zh">开源软件</span><span class="en">Open Source</span></p>
+        <h2><span class="zh">仓库不是摆设：代码、数据、结果和复现实验一起放出来。</span><span class="en">The repositories carry code, data, results, and reproducible experiment paths.</span></h2>
+      </div>
+      <div class="software-grid">
+        <a class="software-card featured" href="https://github.com/qzkinhit/DDPAgent-artifact" target="_blank" rel="noopener">
+          <span>Artifact</span>
+          <h3>DDPAgent</h3>
+          <p class="zh">面向需求的数据准备智能体，包含 action allocation、operator-grounded execution、真实 trace 和交互式 demo。</p>
+          <p class="en">A demand-driven data preparation artifact with action allocation, operator-grounded execution, real traces, and an interactive demo.</p>
+        </a>
+        <a class="software-card" href="https://github.com/qzkinhit/DemandClean" target="_blank" rel="noopener">
+          <span>RL Cleaning</span>
+          <h3>DemandClean</h3>
+          <p class="zh">DQN agent 在 per-cell 粒度选择 no-op、repair 或 delete，平衡真实性、多样性和模型收益。</p>
+          <p class="en">A DQN-based cleaner that selects no-op, repair, or delete per cell while balancing authenticity, diversity, and model utility.</p>
+        </a>
+        <a class="software-card" href="https://github.com/qzkinhit/UniClean-bench-Result" target="_blank" rel="noopener">
+          <span>Benchmark</span>
+          <h3>UniClean Result</h3>
+          <p class="zh">包含真实脏数据、清洗输出、日志、baseline 对比和评估脚本的 benchmark 风格仓库。</p>
+          <p class="en">A benchmark-style repository with native dirty data, cleaned outputs, logs, baseline comparisons, and evaluation scripts.</p>
+        </a>
+        <a class="software-card" href="https://github.com/qzkinhit/MADClean" target="_blank" rel="noopener">
+          <span>Model-aware</span>
+          <h3>MADClean</h3>
+          <p class="zh">围绕 SVM 性能和数据质量的模型感知清洗框架，覆盖 DP、greedy 和 RL 版本。</p>
+          <p class="en">A model-aware cleaning framework for SVM utility and data quality, covering DP, greedy, and RL variants.</p>
+        </a>
+        <a class="software-card" href="https://github.com/qzkinhit/MDCBaseline" target="_blank" rel="noopener">
+          <span>Baselines</span>
+          <h3>MDCBaseline</h3>
+          <p class="zh">统一跑 Baran、BigDansing、Holistic、HoloClean、Horizon 等经典数据清洗 baseline。</p>
+          <p class="en">A unified runner for classic cleaning baselines such as Baran, BigDansing, Holistic, HoloClean, and Horizon.</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="contact">
+    <div>
+      <strong>Zekai Qian</strong>
+      <p class="zh">欢迎围绕 data-centric AI、数据清洗、数据质量治理和可复现实验交流。</p>
+      <p class="en">Open to conversations around data-centric AI, data cleaning, data quality governance, and reproducible systems research.</p>
+    </div>
+    <div class="footer-links">
+      <a href="https://github.com/qzkinhit" target="_blank" rel="noopener">GitHub</a>
+      <a href="https://scholar.google.com/citations?user=T2CXrMwAAAAJ" target="_blank" rel="noopener">Scholar</a>
+      <a href="https://dblp.org/pid/414/5427.html" target="_blank" rel="noopener">DBLP</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
