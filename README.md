@@ -19,8 +19,8 @@
 - :badminton: Outside research, I still keep the old README spirit: fitness, badminton, movies, and occasionally pretending my experiments will finish before midnight.
 
 <p>
-  <img height="165" alt="Zekai's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=qzkinhit&amp;show_icons=true&amp;rank_icon=github&amp;include_all_commits=true&amp;hide_border=true&amp;theme=default">
-  <img height="165" alt="Top languages used in public repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=qzkinhit&amp;layout=compact&amp;hide_border=true&amp;langs_count=8&amp;theme=default">
+  <img height="170" alt="Zekai's GitHub snapshot" src="assets/github-snapshot.svg">
+  <img height="170" alt="Top languages used in public repositories" src="assets/top-languages.svg">
 </p>
 
 ## :compass: What I'm Working On
