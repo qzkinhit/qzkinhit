@@ -13,7 +13,7 @@ Ph.D. student in Computer Science at Harbin Institute of Technology. I work on *
 ## Now
 
 - Building agentic and task-aware data preparation systems that decide **what to clean, how much to intervene, and which operators to trust** before committing data-side changes.
-- Recent work includes **DMCO** at ICML 2026, **DemandClean** and **UniClean** in PVLDB 2025, and open artifacts around **DDPAgent**, **UniClean**, **DemandClean**, and **MADClean**.
+- Recent work includes **DMCO** at ICML 2026, **DemandClean** and **UniClean** in PVLDB 2025, and open artifacts around **DemandPrep**, **UniClean**, **DemandClean**, and **MADClean**.
 - I enjoy turning research systems into reproducible software: cached artifacts, baseline runners, traceable workflows, and interactive demos.
 
 ## Selected Papers
@@ -31,7 +31,7 @@ Ph.D. student in Computer Science at Harbin Institute of Technology. I work on *
 
 | Project | What it is |
 | --- | --- |
-| [DDPAgent-artifact](https://github.com/qzkinhit/DDPAgent-artifact) | Reproducible artifact for demand-driven data preparation via action allocation and operator-grounded execution. |
+| [DemandPrep-artifact](https://github.com/qzkinhit/DemandPrep-artifact) | Reproducible artifact for demand-driven data preparation via action allocation and operator-grounded execution. |
 | [DemandClean](https://github.com/qzkinhit/DemandClean) | RL-based framework for learning data cleaning actions under authenticity, diversity, and downstream model tolerance. |
 | [UniClean-bench-Result](https://github.com/qzkinhit/UniClean-bench-Result) | Benchmark-style release with native dirty datasets, cleaned outputs, logs, and baseline comparisons for UniClean. |
 | [MADClean](https://github.com/qzkinhit/MADClean) | Model-aware data cleaning framework for improving SVM utility and data quality under constrained cleaning cost. |
