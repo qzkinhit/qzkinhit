@@ -16,7 +16,6 @@
 - :mortar_board: Now doing my Ph.D. at HIT, still mostly living inside **data-centric AI** and **data cleaning**.
 - :test_tube: Research playground: dirty tables, data quality, cleaning decisions, AutoML under budget, and agentic data preparation.
 - :hammer_and_wrench: I like building artifacts that actually run: scripts, cached results, demos, traces, and baseline runners.
-- :trophy: Recent highlight: **DMCO** is accepted as an **ICML 2026 poster**.
 - :badminton: Outside research, I still keep the old README spirit: fitness, badminton, movies, and occasionally pretending my experiments will finish before midnight.
 
 <p>
