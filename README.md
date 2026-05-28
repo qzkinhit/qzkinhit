@@ -27,7 +27,7 @@
 
 | Name | Short Version |
 | --- | --- |
-| [DDPAgent](https://github.com/qzkinhit/DDPAgent-artifact) | A demand-driven data preparation agent that decides when to preserve, repair, replace, delete, or roll back. |
+| [DemandPrep](https://github.com/qzkinhit/DemandPrep-artifact) | A demand-driven data preparation agent that decides when to preserve, repair, replace, delete, or roll back. |
 | [DemandClean](https://github.com/qzkinhit/DemandClean) | RL-style data cleaning: not every suspicious cell deserves the same intervention. |
 | [UniClean Result](https://github.com/qzkinhit/UniClean-bench-Result) | Benchmark release with dirty data, cleaned outputs, logs, and baseline comparisons. |
 | [MADClean](https://github.com/qzkinhit/MADClean) | Model-aware cleaning for improving SVM utility and data quality under cleaning cost constraints. |
