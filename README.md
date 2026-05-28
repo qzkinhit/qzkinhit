@@ -1,6 +1,6 @@
-# Zekai Qian
+# Hi, I'm Zekai Qian :wave:
 
-Ph.D. student in Computer Science at Harbin Institute of Technology. I work on **data-centric AI**, with a focus on data cleaning, data quality governance, demand-driven data preparation, and reliable ML/AutoML pipelines over imperfect tabular data.
+> Ph.D. student at Harbin Institute of Technology. I spend a suspicious amount of time convincing messy tables to behave.
 
 <p>
   <a href="https://qzkinhit.github.io/qzkinhit/"><img alt="Homepage" src="https://img.shields.io/badge/Homepage-qzkinhit.github.io-0f766e?style=flat-square"></a>
@@ -8,15 +8,33 @@ Ph.D. student in Computer Science at Harbin Institute of Technology. I work on *
   <a href="https://dblp.org/pid/414/5427.html"><img alt="DBLP" src="https://img.shields.io/badge/DBLP-414%2F5427-b7791f?style=flat-square"></a>
   <a href="https://github.com/qzkinhit"><img alt="GitHub" src="https://img.shields.io/badge/GitHub-qzkinhit-111827?style=flat-square"></a>
   <a href="https://www.cnblogs.com/zekaiblogs"><img alt="CNBlogs" src="https://img.shields.io/badge/CNBlogs-zekaiblogs-e85d4f?style=flat-square"></a>
+  <a href="https://space.bilibili.com/290960774/article"><img alt="Bilibili" src="https://img.shields.io/badge/Bilibili-qzkinhit-00a1d6?style=flat-square"></a>
 </p>
 
-## Now
+## :sparkles: About Me, Less Officially
 
-- Building agentic and task-aware data preparation systems that decide **what to clean, how much to intervene, and which operators to trust** before committing data-side changes.
-- Recent work includes **DMCO** at ICML 2026, **DemandClean** and **UniClean** in PVLDB 2025, and open artifacts around **DDPAgent**, **UniClean**, **DemandClean**, and **MADClean**.
-- I enjoy turning research systems into reproducible software: cached artifacts, baseline runners, traceable workflows, and interactive demos.
+- :mortar_board: Now doing my Ph.D. at HIT, still mostly living inside **data-centric AI** and **data cleaning**.
+- :test_tube: Research playground: dirty tables, data quality, cleaning decisions, AutoML under budget, and agentic data preparation.
+- :hammer_and_wrench: I like building artifacts that actually run: scripts, cached results, demos, traces, and baseline runners.
+- :trophy: Recent highlight: **DMCO** is accepted as an **ICML 2026 poster**.
+- :badminton: Outside research, I still keep the old README spirit: fitness, badminton, movies, and occasionally pretending my experiments will finish before midnight.
 
-## Selected Papers
+<p>
+  <img height="165" alt="Zekai's GitHub stats" src="https://github-readme-stats.vercel.app/api?username=qzkinhit&amp;show_icons=true&amp;rank_icon=github&amp;include_all_commits=true&amp;hide_border=true&amp;theme=default">
+  <img height="165" alt="Top languages used in public repositories" src="https://github-readme-stats.vercel.app/api/top-langs/?username=qzkinhit&amp;layout=compact&amp;hide_border=true&amp;langs_count=8&amp;theme=default">
+</p>
+
+## :compass: What I'm Working On
+
+| Name | Short Version |
+| --- | --- |
+| [DDPAgent](https://github.com/qzkinhit/DDPAgent-artifact) | A demand-driven data preparation agent that decides when to preserve, repair, replace, delete, or roll back. |
+| [DemandClean](https://github.com/qzkinhit/DemandClean) | RL-style data cleaning: not every suspicious cell deserves the same intervention. |
+| [UniClean Result](https://github.com/qzkinhit/UniClean-bench-Result) | Benchmark release with dirty data, cleaned outputs, logs, and baseline comparisons. |
+| [MADClean](https://github.com/qzkinhit/MADClean) | Model-aware cleaning for improving SVM utility and data quality under cleaning cost constraints. |
+| [MDCBaseline](https://github.com/qzkinhit/MDCBaseline) | A unified runner for classic data cleaning baselines. |
+
+## :books: Papers I Keep Talking About
 
 | Year | Venue | Work |
 | --- | --- | --- |
@@ -27,25 +45,21 @@ Ph.D. student in Computer Science at Harbin Institute of Technology. I work on *
 | 2025 | ICDE | [$t$DCDiscover: Mining Threshold Denial Constraints from Time Series Data](https://doi.org/10.1109/ICDE65448.2025.00193) |
 | 2025 | ICDE | [CBAClean: A Comprehensive System for Recommending Data Cleaning Solutions Through Cost-Benefit Analysis in Data Quality Management](https://doi.org/10.1109/ICDE65448.2025.00371) |
 
-## Open Source
-
-| Project | What it is |
-| --- | --- |
-| [DDPAgent-artifact](https://github.com/qzkinhit/DDPAgent-artifact) | Reproducible artifact for demand-driven data preparation via action allocation and operator-grounded execution. |
-| [DemandClean](https://github.com/qzkinhit/DemandClean) | RL-based framework for learning data cleaning actions under authenticity, diversity, and downstream model tolerance. |
-| [UniClean-bench-Result](https://github.com/qzkinhit/UniClean-bench-Result) | Benchmark-style release with native dirty datasets, cleaned outputs, logs, and baseline comparisons for UniClean. |
-| [MADClean](https://github.com/qzkinhit/MADClean) | Model-aware data cleaning framework for improving SVM utility and data quality under constrained cleaning cost. |
-| [MDCBaseline](https://github.com/qzkinhit/MDCBaseline) | Unified runner and evaluation support for classic data cleaning baselines. |
-
-## Research Taste
-
-I like systems that expose the control boundary between data, operators, and downstream models:
-
-- **Task demand first**: a cleaning action should be justified by downstream utility, not only by data-level neatness.
-- **Operator grounding**: agents should produce inspectable repair plans, traces, and provenance instead of opaque edits.
-- **Reproducible evidence**: papers should ship artifacts that let others rerun cached summaries, full experiments, and baseline comparisons.
+## :toolbox: Daily Toolbox
 
 <p>
-  <img height="165" alt="GitHub stats" src="https://github-readme-stats.vercel.app/api?username=qzkinhit&show_icons=true&hide_title=true&rank_icon=github&theme=default">
-  <img height="165" alt="Top languages" src="https://github-readme-stats.vercel.app/api/top-langs/?username=qzkinhit&layout=compact&hide_title=true&theme=default">
+  <img alt="Python" src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+  <img alt="PyTorch" src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
+  <img alt="Pandas" src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white">
+  <img alt="scikit-learn" src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white">
+  <img alt="Streamlit" src="https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white">
+  <img alt="LaTeX" src="https://img.shields.io/badge/LaTeX-008080?style=flat-square&logo=latex&logoColor=white">
+  <img alt="Java" src="https://img.shields.io/badge/Java-007396?style=flat-square&logo=openjdk&logoColor=white">
+  <img alt="Vue" src="https://img.shields.io/badge/Vue-4FC08D?style=flat-square&logo=vuedotjs&logoColor=white">
 </p>
+
+## :thought_balloon: Small Research Beliefs
+
+- A data cleaning system should know **what the downstream task actually needs**.
+- A smart agent should still leave boring but useful things behind: logs, traces, configs, and reproducible scripts.
+- "Clean everything" is a tempting sentence, not always a good decision.
