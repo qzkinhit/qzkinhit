@@ -1,8 +1,6 @@
 (function () {
   var body = document.body;
   var toggle = document.querySelector("[data-lang-toggle]");
-  var filters = Array.prototype.slice.call(document.querySelectorAll(".filter"));
-  var papers = Array.prototype.slice.call(document.querySelectorAll(".paper-item"));
   var canvas = document.getElementById("signalCanvas");
   var context = canvas ? canvas.getContext("2d") : null;
   var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -30,19 +28,6 @@
       setLanguage(body.classList.contains("lang-zh") ? "en" : "zh");
     });
   }
-
-  filters.forEach(function (button) {
-    button.addEventListener("click", function () {
-      var topic = button.getAttribute("data-filter");
-      filters.forEach(function (item) {
-        item.classList.toggle("active", item === button);
-      });
-      papers.forEach(function (paper) {
-        var topics = paper.getAttribute("data-topic") || "";
-        paper.classList.toggle("is-hidden", topic !== "all" && topics.indexOf(topic) === -1);
-      });
-    });
-  });
 
   if (!canvas || !context) {
     return;

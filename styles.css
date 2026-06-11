@@ -99,8 +99,7 @@ button {
 
 .nav-links a,
 .lang-toggle,
-.hero-actions a,
-.filter {
+.hero-actions a {
   border: 1px solid var(--line);
   background: #fff;
   display: inline-flex;
@@ -114,9 +113,7 @@ button {
 
 .nav-links a:hover,
 .lang-toggle:hover,
-.hero-actions a:hover,
-.filter:hover,
-.filter.active {
+.hero-actions a:hover {
   background: var(--ink);
   border-color: var(--ink);
   color: #fff;
@@ -464,13 +461,16 @@ h1 {
   width: 2px;
 }
 
-.map-node:first-child::before {
+.map-node:first-of-type::before {
   content: none;
 }
 
-.map-node.active {
-  background: var(--teal-soft);
-  border-color: rgba(15, 118, 110, 0.28);
+.map-caption {
+  color: var(--muted);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  margin: 0;
 }
 
 .map-node b,
@@ -486,13 +486,6 @@ h1 {
 
 .map-node span {
   color: var(--muted);
-}
-
-.filter-row {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 8px;
-  margin-bottom: 16px;
 }
 
 .paper-list {
@@ -512,10 +505,6 @@ h1 {
   border-color: var(--blue);
   box-shadow: 0 16px 36px rgba(37, 99, 235, 0.12);
   transform: translateY(-2px);
-}
-
-.paper-item.is-hidden {
-  display: none;
 }
 
 .paper-meta {
@@ -702,8 +691,7 @@ h1 {
 
   .nav-links a,
   .lang-toggle,
-  .hero-actions a,
-  .filter {
+  .hero-actions a {
     min-height: 38px;
     padding: 7px 10px;
   }

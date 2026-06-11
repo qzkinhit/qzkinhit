@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Zekai Qian, Ph.D. student at Harbin Institute of Technology. Data-centric AI, data cleaning, data quality governance, and agentic data preparation.">
+  <meta name="description" content="Zekai Qian, Ph.D. student at Harbin Institute of Technology. Data cleaning, data quality, data governance, and agent-based data preparation.">
   <title>Zekai Qian | Data-Centric AI</title>
   <link rel="stylesheet" href="styles.css">
 </head>
@@ -19,7 +19,7 @@
     <nav class="nav-links" aria-label="Primary">
       <a href="#research"><span class="zh">研究</span><span class="en">Research</span></a>
       <a href="#papers"><span class="zh">论文</span><span class="en">Papers</span></a>
-      <a href="#software"><span class="zh">软件</span><span class="en">Software</span></a>
+      <a href="#software"><span class="zh">项目</span><span class="en">Software</span></a>
       <a href="#contact"><span class="zh">联系</span><span class="en">Contact</span></a>
     </nav>
     <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">
@@ -38,12 +38,13 @@
           </p>
           <h1 id="hero-title">Zekai Qian</h1>
           <p class="lead zh">
-            我现在是哈尔滨工业大学计算机方向博士生，研究兴趣集中在 data-centric AI、数据质量治理、面向下游任务的数据清洗，以及智能体式数据准备系统。
+            我是哈尔滨工业大学海量数据计算研究中心的博士生，导师是王宏志教授，副导师是丁小欧副教授。主要做数据清洗和 data-centric AI，关注清洗决策对下游模型的影响，也在做基于智能体的数据准备系统。论文发表在 PVLDB 和 ICDE 上，另有一篇被 ICML 2026 录用。
           </p>
           <p class="lead en">
-            I am a Ph.D. student in Computer Science at Harbin Institute of Technology, working on data-centric AI, data quality governance, task-aware data cleaning, and agentic data preparation systems.
+            I am a Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of Technology, advised by Prof. Hongzhi Wang and co-advised by Prof. Xiaoou Ding. I work on data cleaning and data-centric AI, mostly on how cleaning decisions affect downstream models, and I also build agent-based data preparation systems. My papers appear in PVLDB and ICDE, and one more was recently accepted to ICML 2026.
           </p>
           <div class="hero-actions" aria-label="Profile links">
+            <a href="mailto:qzk010728@gmail.com">Email</a>
             <a href="https://scholar.google.com/citations?user=T2CXrMwAAAAJ" target="_blank" rel="noopener">Scholar</a>
             <a href="https://dblp.org/pid/414/5427.html" target="_blank" rel="noopener">DBLP</a>
             <a href="https://github.com/qzkinhit" target="_blank" rel="noopener">GitHub</a>
@@ -51,62 +52,62 @@
           </div>
         </div>
         <aside class="portrait-panel" aria-label="Profile summary">
-          <img src="https://avatars.githubusercontent.com/u/58599846?v=4" alt="Zekai Qian GitHub avatar">
+          <img src="https://avatars.githubusercontent.com/u/58599846?v=4" alt="Zekai Qian">
           <div class="portrait-text">
-            <strong>Zekai Qian</strong>
-            <span class="zh">哈尔滨工业大学博士生</span>
-            <span class="en">Ph.D. student at HIT</span>
+            <strong>Zekai Qian（钱泽凯）</strong>
+            <span class="zh">哈尔滨工业大学博士生，预计 2028 年毕业</span>
+            <span class="en">Ph.D. student at HIT, expected graduation 2028</span>
           </div>
           <div class="mini-metrics" aria-label="Highlights">
-            <span><b>ICML 2026</b><small>DMCO</small></span>
             <span><b>PVLDB 2025</b><small>DemandClean / UniClean</small></span>
-            <span><b>25</b><small>GitHub repos</small></span>
+            <span><b>ICML 2026</b><small>DMCO</small></span>
+            <span><b>CCF BigData 2023</b><small>Best Student Paper</small></span>
           </div>
         </aside>
       </div>
     </section>
 
     <section class="stat-band" aria-label="Research highlights">
+      <a href="https://doi.org/10.14778/3750601.3750666" target="_blank" rel="noopener">
+        <b>PVLDB 2025</b>
+        <span class="zh">DemandClean：按模型容忍度决定清洗动作</span>
+        <span class="en">DemandClean: cleaning decisions based on model tolerance</span>
+      </a>
       <a href="https://icml.cc/virtual/2026/poster/64882" target="_blank" rel="noopener">
         <b>ICML 2026</b>
         <span class="zh">数据清洗与 AutoML 的预算感知协同优化</span>
         <span class="en">Budget-aware co-optimization of data cleaning and AutoML</span>
       </a>
-      <a href="https://doi.org/10.14778/3750601.3750666" target="_blank" rel="noopener">
-        <b>PVLDB 2025</b>
-        <span class="zh">DemandClean: 模型容忍度驱动的数据清洗</span>
-        <span class="en">DemandClean: model-tolerance-aware cleaning</span>
-      </a>
       <a href="https://github.com/qzkinhit/DemandPrep-artifact" target="_blank" rel="noopener">
         <b>DemandPrep</b>
-        <span class="zh">面向需求的数据准备智能体 artifact</span>
-        <span class="en">Demand-driven data preparation artifact</span>
+        <span class="zh">数据准备智能体的开源代码，论文在投（VLDB 2026 Workshop）</span>
+        <span class="en">Open-source code of the data preparation agent; paper under submission (VLDB 2026 workshop)</span>
       </a>
     </section>
 
     <section class="section research-band" id="research">
       <div class="section-head">
-        <p class="eyebrow"><span class="zh">研究主线</span><span class="en">Research Lines</span></p>
-        <h2><span class="zh">把数据清洗从“修数据”推进到“按任务决策”。</span><span class="en">From fixing data to making task-conditioned data decisions.</span></h2>
+        <p class="eyebrow"><span class="zh">研究方向</span><span class="en">Research</span></p>
+        <h2><span class="zh">主要研究面向下游任务的数据清洗，目前的工作大致分为三个方向。</span><span class="en">I mainly work on task-aware data cleaning; the work currently falls into three directions.</span></h2>
       </div>
       <div class="research-grid">
         <article class="research-card">
           <span class="card-index">01</span>
-          <h3><span class="zh">需求驱动的数据清洗</span><span class="en">Demand-driven cleaning</span></h3>
-          <p class="zh">用下游模型收益、数据真实性、数据多样性和清洗成本共同约束清洗动作，避免把“越干净越好”当作唯一目标。</p>
-          <p class="en">Cleaning actions are selected under downstream utility, authenticity, diversity, and cost instead of optimizing only intrinsic data neatness.</p>
+          <h3><span class="zh">需求驱动的数据清洗</span><span class="en">Demand-driven data cleaning</span></h3>
+          <p class="zh">研究清洗动作怎么跟着下游任务走：哪些错误值得修，哪些可以留着不动。代表工作是 DemandClean（PVLDB 2025）。</p>
+          <p class="en">How cleaning actions should follow the downstream task: which errors are worth fixing and which can be left alone. Representative work: DemandClean (PVLDB 2025).</p>
         </article>
         <article class="research-card">
           <span class="card-index">02</span>
           <h3><span class="zh">可追踪的算子执行</span><span class="en">Operator-grounded execution</span></h3>
-          <p class="zh">把智能体的策略选择落到可复现的 cleaner、规则、执行日志和回滚机制上，让系统行为能被检查、比较和复跑。</p>
-          <p class="en">Agentic decisions are grounded in reproducible cleaners, rules, execution traces, and rollback paths so that results can be inspected and rerun.</p>
+          <p class="zh">智能体的清洗决策落到具体的 cleaner、规则和执行日志上，结果可以复跑，出问题可以回滚。对应开源的 DemandPrep artifact。</p>
+          <p class="en">Agent decisions are grounded in concrete cleaners, rules, and execution logs; results can be rerun and bad changes rolled back. Released as the DemandPrep artifact.</p>
         </article>
         <article class="research-card">
           <span class="card-index">03</span>
           <h3><span class="zh">脏数据上的 ML / AutoML</span><span class="en">ML and AutoML over dirty data</span></h3>
-          <p class="zh">研究有限预算下清洗、建模和 AutoML 搜索之间的相互影响，让学习系统在真实不完美数据上更稳健。</p>
-          <p class="en">I study the interaction among cleaning, modeling, and AutoML search under limited budgets for more reliable learning over imperfect data.</p>
+          <p class="zh">预算有限时，花在清洗上的开销会影响模型训练和 AutoML 搜索，反过来也一样。DMCO（ICML 2026）研究两边的预算怎么分配。</p>
+          <p class="en">Under a limited budget, what goes into cleaning affects model training and AutoML search, and vice versa. DMCO (ICML 2026) studies how to split the budget between the two.</p>
         </article>
       </div>
     </section>
@@ -114,31 +115,32 @@
     <section class="section split-section">
       <div class="news-panel">
         <div class="section-head compact">
-          <p class="eyebrow"><span class="zh">近期动态</span><span class="en">Recent News</span></p>
-          <h2><span class="zh">从论文到 artifact，同步推进。</span><span class="en">Papers and artifacts move together.</span></h2>
+          <p class="eyebrow"><span class="zh">近期动态</span><span class="en">News</span></p>
+          <h2><span class="zh">论文录用与代码发布</span><span class="en">Paper acceptances and code releases</span></h2>
         </div>
         <ol class="timeline">
           <li>
             <time>2026</time>
-            <p class="zh"><strong>DMCO</strong> 被 ICML 2026 接收为 poster，研究数据清洗与 AutoML 的预算感知协同优化。</p>
-            <p class="en"><strong>DMCO</strong> appears as an ICML 2026 poster on budget-aware co-optimization of data cleaning and AutoML.</p>
+            <p class="zh"><strong>DMCO</strong> 被 ICML 2026 接收为 poster，做的是数据清洗与 AutoML 的预算感知协同优化。</p>
+            <p class="en"><strong>DMCO</strong> was accepted to ICML 2026 as a poster, on budget-aware co-optimization of data cleaning and AutoML.</p>
           </li>
           <li>
             <time>2026</time>
-            <p class="zh">发布 <strong>DemandPrep-artifact</strong>，包含代码、数据、缓存结果、实验摘要和交互式 demo。</p>
-            <p class="en">Released <strong>DemandPrep-artifact</strong> with code, datasets, cached outputs, experiment summaries, and an interactive demo.</p>
+            <p class="zh">开源了 <strong>DemandPrep-artifact</strong>，代码、数据集、缓存的实验结果和交互式 demo 都在仓库里。</p>
+            <p class="en">Open-sourced <strong>DemandPrep-artifact</strong>; code, datasets, cached results, and the interactive demo are all in the repo.</p>
           </li>
           <li>
             <time>2025</time>
-            <p class="zh"><strong>DemandClean</strong> 和 <strong>UniClean</strong> 登上 PVLDB 2025，围绕任务驱动清洗与混合错误统一清洗展开。</p>
-            <p class="en"><strong>DemandClean</strong> and <strong>UniClean</strong> appeared in PVLDB 2025, covering task-aware cleaning and mixed-error cleaning workflows.</p>
+            <p class="zh"><strong>DemandClean</strong> 做面向任务的清洗决策，<strong>UniClean</strong> 做混合错误的统一清洗，都发表在 PVLDB 2025 上。</p>
+            <p class="en"><strong>DemandClean</strong> makes task-aware cleaning decisions and <strong>UniClean</strong> handles mixed errors with unified cleaners; both were published in PVLDB 2025.</p>
           </li>
         </ol>
       </div>
       <div class="system-map" aria-label="System map">
-        <div class="map-node active">
+        <p class="map-caption"><span class="zh">DemandPrep 的执行流程</span><span class="en">The DemandPrep execution loop</span></p>
+        <div class="map-node">
           <b>Sense</b>
-          <span class="zh">识别错误与任务需求</span>
+          <span class="zh">识别数据错误和任务需求</span>
           <span class="en">Detect errors and task demand</span>
         </div>
         <div class="map-node">
@@ -148,13 +150,13 @@
         </div>
         <div class="map-node">
           <b>Execute</b>
-          <span class="zh">调用可复现的数据清洗算子</span>
-          <span class="en">Dispatch reproducible cleaning operators</span>
+          <span class="zh">调用可复现的清洗算子</span>
+          <span class="en">Run reproducible cleaning operators</span>
         </div>
         <div class="map-node">
           <b>Verify</b>
-          <span class="zh">用下游指标决定提交或回滚</span>
-          <span class="en">Commit or roll back with downstream metrics</span>
+          <span class="zh">按下游指标决定提交或回滚</span>
+          <span class="en">Commit or roll back based on downstream metrics</span>
         </div>
       </div>
     </section>
@@ -162,55 +164,90 @@
     <section class="section" id="papers">
       <div class="section-head">
         <p class="eyebrow"><span class="zh">论文</span><span class="en">Publications</span></p>
-        <h2><span class="zh">围绕数据质量、数据治理和 ML 可靠性的若干工作。</span><span class="en">Selected work around data quality, governance, and reliable ML.</span></h2>
-      </div>
-      <div class="filter-row" aria-label="Publication filters">
-        <button class="filter active" type="button" data-filter="all">All</button>
-        <button class="filter" type="button" data-filter="ml">ML</button>
-        <button class="filter" type="button" data-filter="system">Systems</button>
-        <button class="filter" type="button" data-filter="governance">Governance</button>
+        <h2><span class="zh">数据清洗、数据质量与数据治理方向的论文</span><span class="en">Papers on data cleaning, data quality, and data governance</span></h2>
       </div>
       <div class="paper-list" data-paper-list>
-        <article class="paper-item" data-topic="ml system">
+        <article class="paper-item">
           <div class="paper-meta"><span>2026</span><b>ICML</b></div>
           <div>
             <h3><a href="https://icml.cc/virtual/2026/poster/64882" target="_blank" rel="noopener">DMCO: Budget-Aware Co-Optimization of Data Cleaning and AutoML</a></h3>
             <p>Xiaoou Ding, Siying Chen, <strong>Zekai Qian</strong>, Hongbin Hu, Chen Wang, Hongzhi Wang, Jianmin Wang.</p>
           </div>
         </article>
-        <article class="paper-item" data-topic="ml governance">
+        <article class="paper-item">
           <div class="paper-meta"><span>2025</span><b>PVLDB</b></div>
           <div>
             <h3><a href="https://doi.org/10.14778/3750601.3750666" target="_blank" rel="noopener">DemandClean: A Multi-Objective Learning Framework for Balancing Model Tolerance to Data Authenticity and Diversity</a></h3>
             <p><strong>Zekai Qian</strong>, Xiaoou Ding, Chen Wang, Hongzhi Wang.</p>
           </div>
         </article>
-        <article class="paper-item" data-topic="system governance">
+        <article class="paper-item">
           <div class="paper-meta"><span>2025</span><b>PVLDB</b></div>
           <div>
             <h3><a href="https://doi.org/10.14778/3749646.3749681" target="_blank" rel="noopener">UniClean: A Scalable Data Cleaning Solution for Mixed Errors based on Unified Cleaners and Optimized Cleaning Workflow</a></h3>
             <p>Xiaoou Ding, <strong>Zekai Qian</strong>, Hongzhi Wang, Siying Chen, Yafeng Tang, Hongbin Su, Huan Hu, Chen Wang.</p>
           </div>
         </article>
-        <article class="paper-item" data-topic="system">
+        <article class="paper-item">
           <div class="paper-meta"><span>2025</span><b>ICDE</b></div>
           <div>
             <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00362" target="_blank" rel="noopener">UniClean: A Multi-Signal Fusion Pipeline for Optimizing Data Cleaning Workflow</a></h3>
             <p>Xiaoou Ding, <strong>Zekai Qian</strong>, Hongzhi Wang, Zhe Sun, Siying Chen, Hongbin Su, Huan Hu.</p>
           </div>
         </article>
-        <article class="paper-item" data-topic="governance">
+        <article class="paper-item">
+          <div class="paper-meta"><span>2025</span><b>ICDE</b></div>
+          <div>
+            <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00193" target="_blank" rel="noopener">tDCDiscover: Mining Threshold Denial Constraints from Time Series Data</a></h3>
+            <p>Xiaoou Ding, Muyun Zhou, Yida Liu, <strong>Zekai Qian</strong>, Chen Wang, Hongzhi Wang, Jianmin Wang.</p>
+          </div>
+        </article>
+        <article class="paper-item">
           <div class="paper-meta"><span>2025</span><b>ICDE</b></div>
           <div>
             <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00371" target="_blank" rel="noopener">CBAClean: A Comprehensive System for Recommending Data Cleaning Solutions Through Cost-Benefit Analysis in Data Quality Management</a></h3>
             <p>Xiaoou Ding, Hongbin Su, <strong>Zekai Qian</strong>, Wenxuan Cui, Siying Chen, Zheng Liang, Chen Wang, Hongzhi Wang.</p>
           </div>
         </article>
-        <article class="paper-item" data-topic="governance">
+        <article class="paper-item">
           <div class="paper-meta"><span>2025</span><b>BDMA</b></div>
           <div>
             <h3><a href="https://doi.org/10.26599/bdma.2025.9020034" target="_blank" rel="noopener">A Survey on Data Asset Value Change Estimation and Appreciation with Data Governance</a></h3>
             <p>Xiaoou Ding, Genglong Li, Yafeng Tang, Chen Liang, Tianren Yu, Muyun Zhou, Yida Liu, <strong>Zekai Qian</strong>, Zixuan Song, Hongzhi Wang.</p>
+          </div>
+        </article>
+        <article class="paper-item">
+          <div class="paper-meta"><span>2024</span><b>计算机科学</b></div>
+          <div>
+            <h3><a href="https://www.jsjkx.com/CN/10.11896/jsjkx.230900003" target="_blank" rel="noopener">面向多样化数据清洗任务的证据集智能选择方法（Evidence Set Selection for Diverse Data Cleaning Tasks）</a></h3>
+            <p><strong>Zekai Qian</strong>, Xiaoou Ding, Zhe Sun, Hongzhi Wang, Yan Zhang. <span class="zh">51(8) 封面文章。</span><span class="en">Cover article, 51(8).</span></p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="awards">
+      <div class="section-head">
+        <p class="eyebrow"><span class="zh">获奖</span><span class="en">Awards</span></p>
+        <h2><span class="zh">部分奖项</span><span class="en">Selected awards</span></h2>
+      </div>
+      <div class="paper-list">
+        <article class="paper-item">
+          <div class="paper-meta"><span>2023</span><b>Best Paper</b></div>
+          <div>
+            <h3><span class="zh">CCF BigData 2023 最佳学生论文（第一作者）</span><span class="en">Best Student Paper at CCF BigData 2023 (first author)</span></h3>
+          </div>
+        </article>
+        <article class="paper-item">
+          <div class="paper-meta"><span>2023–24</span><b>HIT</b></div>
+          <div>
+            <h3><span class="zh">哈工大研究生特等奖学金（连续两年）</span><span class="en">Special-Grade Graduate Scholarship of HIT, two consecutive years</span></h3>
+          </div>
+        </article>
+        <article class="paper-item">
+          <div class="paper-meta"><span>2022</span><b>一等奖</b></div>
+          <div>
+            <h3><span class="zh">全国大学生信息安全竞赛（作品赛）全国一等奖（队长）</span><span class="en">First Prize, National College Student Information Security Contest (team lead)</span></h3>
           </div>
         </article>
       </div>
@@ -218,39 +255,39 @@
 
     <section class="section software-band" id="software">
       <div class="section-head">
-        <p class="eyebrow"><span class="zh">开源软件</span><span class="en">Open Source</span></p>
-        <h2><span class="zh">仓库不是摆设：代码、数据、结果和复现实验一起放出来。</span><span class="en">The repositories carry code, data, results, and reproducible experiment paths.</span></h2>
+        <p class="eyebrow"><span class="zh">开源项目</span><span class="en">Open Source</span></p>
+        <h2><span class="zh">每篇论文对应的代码和实验记录都放在 GitHub 上。</span><span class="en">The code and experiment records for each paper are on GitHub.</span></h2>
       </div>
       <div class="software-grid">
         <a class="software-card featured" href="https://github.com/qzkinhit/DemandPrep-artifact" target="_blank" rel="noopener">
           <span>Artifact</span>
           <h3>DemandPrep</h3>
-          <p class="zh">面向需求的数据准备智能体，包含 action allocation、operator-grounded execution、真实 trace 和交互式 demo。</p>
-          <p class="en">A demand-driven data preparation artifact with action allocation, operator-grounded execution, real traces, and an interactive demo.</p>
+          <p class="zh">数据准备智能体的完整 artifact，含动作分配、算子执行和真实运行 trace，可以直接复跑实验。对应论文在投 VLDB 2026 Workshop。</p>
+          <p class="en">The complete artifact of the data preparation agent, with action allocation, operator-grounded execution, and real run traces; experiments can be rerun directly. The accompanying paper is under submission to a VLDB 2026 workshop.</p>
         </a>
         <a class="software-card" href="https://github.com/qzkinhit/DemandClean" target="_blank" rel="noopener">
           <span>RL Cleaning</span>
           <h3>DemandClean</h3>
-          <p class="zh">DQN agent 在 per-cell 粒度选择 no-op、repair 或 delete，平衡真实性、多样性和模型收益。</p>
-          <p class="en">A DQN-based cleaner that selects no-op, repair, or delete per cell while balancing authenticity, diversity, and model utility.</p>
+          <p class="zh">PVLDB 2025 论文代码：DQN agent 在单元格粒度选择 no-op、repair 或 delete，在模型收益和数据真实性之间权衡。</p>
+          <p class="en">Code for the PVLDB 2025 paper: a DQN agent picks no-op, repair, or delete per cell, trading off model utility against data authenticity.</p>
         </a>
         <a class="software-card" href="https://github.com/qzkinhit/UniClean-bench-Result" target="_blank" rel="noopener">
           <span>Benchmark</span>
           <h3>UniClean Result</h3>
-          <p class="zh">包含真实脏数据、清洗输出、日志、baseline 对比和评估脚本的 benchmark 风格仓库。</p>
-          <p class="en">A benchmark-style repository with native dirty data, cleaned outputs, logs, baseline comparisons, and evaluation scripts.</p>
+          <p class="zh">UniClean 的实验结果仓库：真实脏数据、清洗输出、运行日志、baseline 对比和评估脚本。</p>
+          <p class="en">Experiment results for UniClean: real-world dirty data, cleaned outputs, run logs, baseline comparisons, and evaluation scripts.</p>
         </a>
         <a class="software-card" href="https://github.com/qzkinhit/MADClean" target="_blank" rel="noopener">
           <span>Model-aware</span>
           <h3>MADClean</h3>
-          <p class="zh">围绕 SVM 性能和数据质量的模型感知清洗框架，覆盖 DP、greedy 和 RL 版本。</p>
-          <p class="en">A model-aware cleaning framework for SVM utility and data quality, covering DP, greedy, and RL variants.</p>
+          <p class="zh">以 SVM 性能为优化目标的模型感知清洗框架，提供 DP、greedy 和 RL 三种实现。</p>
+          <p class="en">A model-aware cleaning framework that optimizes for SVM utility, with DP, greedy, and RL implementations.</p>
         </a>
         <a class="software-card" href="https://github.com/qzkinhit/MDCBaseline" target="_blank" rel="noopener">
           <span>Baselines</span>
           <h3>MDCBaseline</h3>
-          <p class="zh">统一跑 Baran、BigDansing、Holistic、HoloClean、Horizon 等经典数据清洗 baseline。</p>
-          <p class="en">A unified runner for classic cleaning baselines such as Baran, BigDansing, Holistic, HoloClean, and Horizon.</p>
+          <p class="zh">Baran、BigDansing、Holistic、HoloClean、Horizon 等经典清洗 baseline 的统一运行脚本。</p>
+          <p class="en">Unified scripts for running classic cleaning baselines: Baran, BigDansing, Holistic, HoloClean, and Horizon.</p>
         </a>
       </div>
     </section>
@@ -259,10 +296,11 @@
   <footer class="footer" id="contact">
     <div>
       <strong>Zekai Qian</strong>
-      <p class="zh">欢迎围绕 data-centric AI、数据清洗、数据质量治理和可复现实验交流。</p>
-      <p class="en">Open to conversations around data-centric AI, data cleaning, data quality governance, and reproducible systems research.</p>
+      <p class="zh">欢迎交流数据清洗和 data-centric AI 相关的话题，邮箱 qzk010728@gmail.com，也可以在 GitHub 上找到我。</p>
+      <p class="en">Questions about data cleaning or data-centric AI are welcome; email me at qzk010728@gmail.com or find me on GitHub.</p>
     </div>
     <div class="footer-links">
+      <a href="mailto:qzk010728@gmail.com">Email</a>
       <a href="https://github.com/qzkinhit" target="_blank" rel="noopener">GitHub</a>
       <a href="https://scholar.google.com/citations?user=T2CXrMwAAAAJ" target="_blank" rel="noopener">Scholar</a>
       <a href="https://dblp.org/pid/414/5427.html" target="_blank" rel="noopener">DBLP</a>
