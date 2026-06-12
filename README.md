@@ -15,7 +15,7 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 ## :mortar_board: About
 
 - I study how data cleaning decisions should depend on the downstream task: which errors actually hurt the model, which can be left alone, and how to split a limited budget between cleaning and model training.
-- Recent work: DemandClean (PVLDB 2025), UniClean (PVLDB / ICDE 2025), DMCO (ICML 2026), and DemandPrep, an agent-based data preparation artifact.
+- Recent work: DemandClean (VLDB 2025), UniClean (VLDB / ICDE 2025), DMCO (ICML 2026), and DemandPrep, an agent-based data preparation artifact.
 - I try to keep the code behind each paper runnable: scripts, cached results, traces, and baseline runners are in the repositories below.
 - Best Student Paper at CCF BigData 2023 (first author).
 - Outside research: fitness, badminton, and movies.
@@ -25,7 +25,7 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 | Name | What it is |
 | --- | --- |
 | [DemandPrep](https://github.com/qzkinhit/DemandPrep-artifact) | Artifact of a demand-driven data preparation agent: action allocation, operator-grounded execution, run traces, and an interactive demo. Paper under submission to a VLDB 2026 workshop. |
-| [DemandClean](https://github.com/qzkinhit/DemandClean) | Code for the PVLDB 2025 paper: a DQN agent decides no-op, repair, or delete per cell, trading off model utility against data authenticity. |
+| [DemandClean](https://github.com/qzkinhit/DemandClean) | Code for the VLDB 2025 paper: a DQN agent decides no-op, repair, or delete per cell, trading off model utility against data authenticity. |
 | [UniClean Result](https://github.com/qzkinhit/UniClean-bench-Result) | Experiment results for UniClean: real-world dirty data, cleaned outputs, run logs, and baseline comparisons. |
 | [MADClean](https://github.com/qzkinhit/MADClean) | Model-aware cleaning framework that optimizes for SVM utility, with DP, greedy, and RL implementations. |
 | [MDCBaseline](https://github.com/qzkinhit/MDCBaseline) | Unified runner for classic cleaning baselines: Baran, BigDansing, Holistic, HoloClean, and Horizon. |
@@ -35,8 +35,8 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 | Year | Venue | Work |
 | --- | --- | --- |
 | 2026 | ICML | [DMCO: Budget-Aware Co-Optimization of Data Cleaning and AutoML](https://icml.cc/virtual/2026/poster/64882) |
-| 2025 | PVLDB | [DemandClean: A Multi-Objective Learning Framework for Balancing Model Tolerance to Data Authenticity and Diversity](https://doi.org/10.14778/3750601.3750666) |
-| 2025 | PVLDB | [UniClean: A Scalable Data Cleaning Solution for Mixed Errors based on Unified Cleaners and Optimized Cleaning Workflow](https://doi.org/10.14778/3749646.3749681) |
+| 2025 | VLDB | [DemandClean: A Multi-Objective Learning Framework for Balancing Model Tolerance to Data Authenticity and Diversity](https://doi.org/10.14778/3750601.3750666) |
+| 2025 | VLDB | [UniClean: A Scalable Data Cleaning Solution for Mixed Errors based on Unified Cleaners and Optimized Cleaning Workflow](https://doi.org/10.14778/3749646.3749681) |
 | 2025 | ICDE | [UniClean: A Multi-Signal Fusion Pipeline for Optimizing Data Cleaning Workflow](https://doi.org/10.1109/ICDE65448.2025.00362) |
 | 2025 | ICDE | [tDCDiscover: Mining Threshold Denial Constraints from Time Series Data](https://doi.org/10.1109/ICDE65448.2025.00193) |
 | 2025 | ICDE | [CBAClean: A Comprehensive System for Recommending Data Cleaning Solutions Through Cost-Benefit Analysis in Data Quality Management](https://doi.org/10.1109/ICDE65448.2025.00371) |
