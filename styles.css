@@ -94,7 +94,7 @@ button {
 .nav-links {
   align-items: center;
   display: flex;
-  gap: 8px;
+  gap: 10px;
 }
 
 .nav-links a,
@@ -111,6 +111,47 @@ button {
   transition: background 160ms ease, border-color 160ms ease, color 160ms ease, transform 160ms ease;
 }
 
+.nav-links a {
+  align-items: flex-start;
+  box-shadow: 0 8px 22px rgba(23, 32, 47, 0.06);
+  flex-direction: column;
+  gap: 2px;
+  min-height: 54px;
+  min-width: 122px;
+  padding: 8px 28px 8px 12px;
+  position: relative;
+}
+
+.nav-links a::after {
+  color: var(--teal);
+  content: "↗";
+  font-size: 0.86rem;
+  font-weight: 900;
+  position: absolute;
+  right: 10px;
+  top: 9px;
+  transition: color 160ms ease, transform 160ms ease;
+}
+
+.nav-title,
+.nav-hint {
+  display: block;
+  line-height: 1.2;
+  white-space: nowrap;
+}
+
+.nav-title {
+  color: var(--ink);
+  font-size: 0.92rem;
+  font-weight: 900;
+}
+
+.nav-hint {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
 .nav-links a:hover,
 .lang-toggle:hover,
 .hero-actions a:hover {
@@ -118,6 +159,16 @@ button {
   border-color: var(--ink);
   color: #fff;
   transform: translateY(-1px);
+}
+
+.nav-links a:hover::after {
+  color: #98f1dc;
+  transform: translate(2px, -2px);
+}
+
+.nav-links a:hover .nav-title,
+.nav-links a:hover .nav-hint {
+  color: #fff;
 }
 
 .lang-toggle {
@@ -635,8 +686,12 @@ h1 {
   .nav-links {
     order: 3;
     overflow-x: auto;
-    padding-bottom: 2px;
+    padding-bottom: 6px;
     width: 100%;
+  }
+
+  .nav-links a {
+    flex: 0 0 auto;
   }
 
   .hero-inner,
@@ -694,6 +749,24 @@ h1 {
   .hero-actions a {
     min-height: 38px;
     padding: 7px 10px;
+  }
+
+  .nav-links {
+    gap: 8px;
+  }
+
+  .nav-links a {
+    min-height: 50px;
+    min-width: 112px;
+    padding: 7px 24px 7px 10px;
+  }
+
+  .nav-title {
+    font-size: 0.86rem;
+  }
+
+  .nav-hint {
+    font-size: 0.66rem;
   }
 
   h1 {
