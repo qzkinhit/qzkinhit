@@ -1,0 +1,299 @@
+:root {
+  --ink: #2f3945;
+  --muted: #687386;
+  --line: #e7ebef;
+  --link: #0a8a6a;
+  --link-hover: #0f766e;
+  --sidebar: #f5f7f8;
+  --sidebar-line: #dde4ea;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: var(--ink);
+  font-family: Palatino, "Palatino Linotype", "Book Antiqua", Georgia, "Songti SC", "SimSun", serif;
+  font-size: 18px;
+  line-height: 1.72;
+  margin: 0;
+}
+
+body.lang-en .zh,
+body.lang-zh .en {
+  display: none !important;
+}
+
+a {
+  color: var(--link);
+  text-decoration: none;
+}
+
+a:hover {
+  color: var(--link-hover);
+  text-decoration: underline;
+}
+
+p,
+ul {
+  margin: 0 0 1em;
+}
+
+ul {
+  padding-left: 1.25em;
+}
+
+li {
+  margin-bottom: 0.45em;
+}
+
+em {
+  font-style: italic;
+}
+
+strong,
+b {
+  font-weight: 700;
+}
+
+.sidebar {
+  background: var(--sidebar);
+  border-right: 1px solid var(--sidebar-line);
+  height: 100vh;
+  left: 0;
+  overflow-y: auto;
+  padding: 42px 38px;
+  position: fixed;
+  top: 0;
+  width: 32%;
+}
+
+.top-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 32px;
+}
+
+.top-actions a,
+.top-actions button {
+  background: #fff;
+  border: 1px solid var(--sidebar-line);
+  color: var(--ink);
+  cursor: pointer;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.78rem;
+  font-weight: 800;
+  padding: 7px 10px;
+}
+
+.top-actions a:hover,
+.top-actions button:hover {
+  border-color: var(--link);
+  color: var(--link);
+  text-decoration: none;
+}
+
+.avatar-link {
+  display: block;
+  width: 210px;
+}
+
+.avatar-link:hover {
+  text-decoration: none;
+}
+
+.avatar-link img {
+  border: 1px solid var(--sidebar-line);
+  display: block;
+  height: 210px;
+  object-fit: cover;
+  object-position: center;
+  width: 210px;
+}
+
+h1,
+h2,
+h3 {
+  color: var(--ink);
+  font-weight: 700;
+  line-height: 1.32;
+  margin: 0;
+}
+
+h1 {
+  font-size: clamp(2rem, 3vw, 2.7rem);
+  margin-top: 28px;
+}
+
+.cn-name {
+  color: var(--link);
+  font-size: 1.15rem;
+  font-weight: 700;
+  margin: 4px 0 10px;
+}
+
+.role {
+  color: var(--muted);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.tagline {
+  border-left: 3px solid var(--link);
+  color: #4f5d6f;
+  font-size: 0.98rem;
+  line-height: 1.55;
+  padding-left: 12px;
+}
+
+.side-links {
+  display: grid;
+  gap: 6px;
+  margin: 28px 0 26px;
+  max-width: 260px;
+}
+
+.side-links a {
+  color: var(--ink);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.86rem;
+  font-weight: 800;
+}
+
+.side-links a:hover {
+  color: var(--link);
+}
+
+.side-note {
+  color: var(--muted);
+  font-size: 0.92rem;
+  max-width: 360px;
+}
+
+.content {
+  margin-left: 32%;
+  max-width: 960px;
+  padding: 56px clamp(28px, 6vw, 86px) 88px;
+}
+
+section {
+  border-bottom: 1px solid var(--line);
+  padding: 22px 0 28px;
+}
+
+section:first-child {
+  padding-top: 0;
+}
+
+section:last-child {
+  border-bottom: 0;
+}
+
+h2 {
+  font-size: 1.55rem;
+  margin-bottom: 14px;
+}
+
+h3 {
+  color: #596579;
+  font-size: 1.08rem;
+  margin: 18px 0 8px;
+}
+
+.section-note {
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+.news-list,
+.pub-list {
+  list-style: none;
+  padding-left: 0;
+}
+
+.news-list li {
+  display: grid;
+  gap: 12px;
+  grid-template-columns: 64px minmax(0, 1fr);
+}
+
+.date {
+  color: var(--muted);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 0.88rem;
+  font-weight: 800;
+}
+
+.pub-list li {
+  padding-left: 1em;
+  position: relative;
+}
+
+.pub-list li::before {
+  color: var(--muted);
+  content: "-";
+  left: 0;
+  position: absolute;
+}
+
+@media (max-width: 980px) {
+  .sidebar {
+    border-bottom: 1px solid var(--sidebar-line);
+    border-right: 0;
+    height: auto;
+    position: static;
+    width: 100%;
+  }
+
+  .content {
+    margin-left: 0;
+    max-width: none;
+    padding: 36px 24px 64px;
+  }
+}
+
+@media (max-width: 560px) {
+  body {
+    font-size: 16px;
+  }
+
+  .sidebar {
+    padding: 28px 20px;
+  }
+
+  .avatar-link,
+  .avatar-link img {
+    height: 150px;
+    width: 150px;
+  }
+
+  .top-actions {
+    align-items: stretch;
+    flex-direction: column;
+  }
+
+  .top-actions a,
+  .top-actions button {
+    text-align: left;
+    width: 100%;
+  }
+
+  .news-list li {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
