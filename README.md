@@ -20,14 +20,21 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 - Best Student Paper at CCF BigData 2023 (first author).
 - Outside research: fitness, badminton, and movies.
 
+## :bar_chart: GitHub pulse
+
+<p>
+  <img height="165" alt="Zekai's GitHub stats" src="https://stats.programcx.cn/api?username=qzkinhit&show_icons=true&hide_border=true&theme=default">
+  <img height="165" alt="Top languages used in public repositories" src="https://stats.programcx.cn/api/top-langs/?username=qzkinhit&layout=compact&hide_border=true&langs_count=8&theme=default">
+</p>
+
 ## :hammer_and_wrench: Projects
 
 | Name | What it is |
 | --- | --- |
 | [DMCO](https://github.com/qzkinhit/DMCO) | ICML 2026 artifact for budget-aware co-optimization of data cleaning and AutoML, with aligned datasets, baseline runners, and reproducibility scripts. |
-| [DemandPrep](https://github.com/qzkinhit/DemandPrep-artifact) | Artifact of a demand-driven data preparation agent: action allocation, operator-grounded execution, run traces, and an interactive demo. Paper under submission to a VLDB 2026 workshop. |
+| [DemandPrep](https://github.com/qzkinhit/DemandPrep-artifact) | VLDB 2026 Workshop artifact of a demand-driven data preparation agent: action allocation, operator-grounded execution, run traces, and an interactive demo. |
 | [DemandClean](https://github.com/qzkinhit/DemandClean) | Code for the VLDB 2025 paper: a DQN agent decides no-op, repair, or delete per cell, trading off model utility against data authenticity. |
-| [UniClean Result](https://github.com/qzkinhit/UniClean-bench-Result) | Experiment results for UniClean: real-world dirty data, cleaned outputs, run logs, and baseline comparisons. |
+| [UniClean](https://github.com/qzkinhit/UniClean-bench-Result) | Experiment results for UniClean: real-world dirty data, cleaned outputs, run logs, and baseline comparisons. |
 | [MADClean](https://github.com/qzkinhit/MADClean) | Model-aware cleaning framework that optimizes for SVM utility, with DP, greedy, and RL implementations. |
 | [MDCBaseline](https://github.com/qzkinhit/MDCBaseline) | Unified runner for classic cleaning baselines: Baran, BigDansing, Holistic, HoloClean, and Horizon. |
 
@@ -36,6 +43,7 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 | Year | Venue | Work |
 | --- | --- | --- |
 | 2026 | ICML | [DMCO: Budget-Aware Co-Optimization of Data Cleaning and AutoML](https://icml.cc/virtual/2026/poster/64882) |
+| 2026 | VLDB Workshop | [DemandPrep: Demand-Driven Data Preparation via Agentic Action Allocation and Operator-Grounded Execution](https://qzkinhit.github.io/qzkinhit/assets/papers/demandprep-vldb-workshop2026.pdf) |
 | 2025 | VLDB | [DemandClean: A Multi-Objective Learning Framework for Balancing Model Tolerance to Data Authenticity and Diversity](https://doi.org/10.14778/3750601.3750666) |
 | 2025 | VLDB | [UniClean: A Scalable Data Cleaning Solution for Mixed Errors based on Unified Cleaners and Optimized Cleaning Workflow](https://doi.org/10.14778/3749646.3749681) |
 | 2025 | ICDE | [UniClean: A Multi-Signal Fusion Pipeline for Optimizing Data Cleaning Workflow](https://doi.org/10.1109/ICDE65448.2025.00362) |

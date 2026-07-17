@@ -10,13 +10,19 @@
 <body class="lang-zh">
   <header class="topbar" aria-label="Site navigation">
     <a class="brand" href="#top" aria-label="Zekai Qian homepage">
-      <span class="brand-mark">ZQ</span>
+      <span class="brand-mark"><img src="assets/profile/zekai-logo.jpg" alt=""></span>
       <span>
         <strong>Zekai Qian</strong>
         <small>Data Quality for AI</small>
       </span>
     </a>
     <nav class="nav-links" aria-label="Primary">
+      <a class="nav-snapshot" href="snapshot.html" aria-label="Open plain homepage">
+        <span class="nav-title zh">简洁主页</span>
+        <span class="nav-title en">Plain Home</span>
+        <span class="nav-hint zh">简略简历</span>
+        <span class="nav-hint en">Plain profile</span>
+      </a>
       <a href="#research" aria-label="Go to research directions">
         <span class="nav-title zh">研究方向</span>
         <span class="nav-title en">Research Focus</span>
@@ -43,37 +49,11 @@
       </a>
     </nav>
     <button class="lang-toggle" type="button" data-lang-toggle aria-label="Switch language">
-      <span class="zh">EN</span><span class="en">中文</span>
+      <span class="zh">语言：English</span><span class="en">Language: 中文</span>
     </button>
   </header>
 
   <main id="top">
-    <section class="snapshot" aria-labelledby="snapshot-title">
-      <div class="snapshot-profile">
-        <img src="https://avatars.githubusercontent.com/u/58599846?v=4" alt="Zekai Qian">
-        <div>
-          <p class="eyebrow"><span class="zh">一页速览</span><span class="en">Snapshot</span></p>
-          <h2 id="snapshot-title">Zekai Qian <span>钱泽凯</span></h2>
-          <p class="snapshot-role zh">哈尔滨工业大学博士生 | 海量数据计算研究中心</p>
-          <p class="snapshot-role en">Ph.D. student at Harbin Institute of Technology | Massive Data Computing Research Center</p>
-        </div>
-      </div>
-      <div class="snapshot-copy">
-        <p class="snapshot-line zh">如果只记住一句话：我做 <strong>Data Quality for AI</strong>，让数据质量管理、数据构建和数据准备真正服务下游 AI 模型。</p>
-        <p class="snapshot-line en">One-line version: I work on <strong>Data Quality for AI</strong>, turning data quality management, data construction, and data preparation into reliable support for downstream AI models.</p>
-        <div class="snapshot-links" aria-label="Quick links">
-          <a href="#papers">VLDB / ICDE / ICML</a>
-          <a href="#software">DemandPrep / UniClean</a>
-          <a href="mailto:qzk010728@gmail.com">qzk010728@gmail.com</a>
-        </div>
-      </div>
-      <div class="snapshot-facts" aria-label="Profile facts">
-        <span><b>Research</b><small>Data Quality for AI</small></span>
-        <span><b>Systems</b><small>DemandPrep, DemandClean, UniClean</small></span>
-        <span><b>Open Source</b><small>Artifacts, benchmarks, reproducible traces</small></span>
-      </div>
-    </section>
-
     <section class="hero" aria-labelledby="hero-title">
       <canvas id="signalCanvas" aria-hidden="true"></canvas>
       <div class="hero-inner">
@@ -84,10 +64,10 @@
           </p>
           <h1 id="hero-title">Zekai Qian</h1>
           <p class="lead zh">
-            我是哈尔滨工业大学海量数据计算研究中心的博士生，导师是王宏志教授，副导师是丁小欧副教授。我的研究主线可以概括为面向人工智能的数据质量管理与面向人工智能的数据构建：围绕数据清洗、质量治理、数据准备和数据构建过程，研究如何让数据干预真正服务下游 AI 模型。论文发表在 VLDB 和 ICDE 上，另有一篇被 ICML 2026 录用。
+            我是哈尔滨工业大学海量数据计算研究中心的博士生，导师是王宏志教授，副导师是丁小欧副教授。我的研究围绕 Data Quality for AI 展开，主要关注面向人工智能的数据质量管理、数据构建和数据准备：在有限预算下判断哪些数据问题需要处理，哪些数据应当保留，以及清洗动作如何影响下游模型。
           </p>
           <p class="lead en">
-            I am a Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of Technology, advised by Prof. Hongzhi Wang and co-advised by Prof. Xiaoou Ding. I work on Data Quality for AI: data cleaning, quality management, data construction, and agent-based data preparation for reliable downstream AI systems. My papers appear in VLDB and ICDE, and one more was recently accepted to ICML 2026.
+            I am a Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of Technology, advised by Prof. Hongzhi Wang and co-advised by Prof. Xiaoou Ding. My research focuses on Data Quality for AI: data quality management, data construction, and data preparation for downstream AI systems under realistic budgets.
           </p>
           <div class="hero-actions" aria-label="Profile links">
             <a href="mailto:qzk010728@gmail.com">Email</a>
@@ -95,10 +75,11 @@
             <a href="https://dblp.org/pid/414/5427.html" target="_blank" rel="noopener">DBLP</a>
             <a href="https://github.com/qzkinhit" target="_blank" rel="noopener">GitHub</a>
             <a href="https://www.cnblogs.com/zekaiblogs" target="_blank" rel="noopener">Blog</a>
+            <a href="assets/cv/zekai-qian-cv.pdf" target="_blank" rel="noopener"><span class="zh">简历</span><span class="en">CV</span></a>
           </div>
         </div>
         <aside class="portrait-panel" aria-label="Profile summary">
-          <img src="https://avatars.githubusercontent.com/u/58599846?v=4" alt="Zekai Qian">
+          <img src="assets/profile/zekai-avatar.jpg" alt="Zekai Qian at VLDB 2025">
           <div class="portrait-text">
             <strong>Zekai Qian（钱泽凯）</strong>
             <span class="zh">哈尔滨工业大学博士生，预计 2028 年毕业</span>
@@ -126,18 +107,18 @@
       </a>
       <a href="https://github.com/qzkinhit/DemandPrep-artifact" target="_blank" rel="noopener">
         <b>DemandPrep</b>
-        <span class="zh">数据准备智能体的开源代码，论文在投（VLDB 2026 Workshop）</span>
-        <span class="en">Open-source code of the data preparation agent; paper under submission (VLDB 2026 workshop)</span>
+        <span class="zh">需求驱动的数据准备智能体，VLDB 2026 Workshop 论文与 artifact</span>
+        <span class="en">Demand-driven data preparation agent, VLDB 2026 Workshop paper and artifact</span>
       </a>
     </section>
 
     <section class="section research-band" id="research">
       <div class="section-head">
         <p class="eyebrow"><span class="zh">研究方向</span><span class="en">Research</span></p>
-        <h2><span class="zh">我关心一个朴素但很要命的问题：AI 模型到底需要什么样的数据，以及这些数据应该怎样被清洗、构建和维护。</span><span class="en">I study a simple but consequential question: what data AI models actually need, and how that data should be cleaned, constructed, and maintained.</span></h2>
+        <h2><span class="zh">我研究数据质量、数据构建与模型需求之间的关系，目标是让数据处理决策能够解释、复现，并服务具体 AI 任务。</span><span class="en">I study how data quality, data construction, and model demand interact, with an emphasis on interpretable and reproducible data decisions for AI tasks.</span></h2>
       </div>
-      <p class="research-brief zh">这条主线可以概括为面向人工智能的数据质量管理与面向人工智能的数据构建。相比“把脏数据洗干净”，我更关心哪些错误真正伤害模型、哪些清洗动作值得预算、哪些数据准备流程可以被复现并持续改进。</p>
-      <p class="research-brief en">This line of work is Data Quality for AI: beyond merely cleaning dirty data, I care about which errors hurt models, which cleaning actions deserve budget, and which preparation workflows can be reproduced and improved over time.</p>
+      <p class="research-brief zh">目前的工作集中在 Data Quality for AI。数据清洗并不总是越多越好；在模型、任务和预算都确定后，更需要回答的是哪些错误值得处理，哪些数据改动会破坏真实性或多样性，以及清洗流程能否被后续任务复用。</p>
+      <p class="research-brief en">My work is centered on Data Quality for AI. More cleaning is not always better; once the task, model, and budget are fixed, the key questions are what to repair, what to preserve, and how preparation workflows can be reused across tasks.</p>
       <div class="research-grid">
         <article class="research-card">
           <span class="card-index">01</span>
@@ -160,11 +141,11 @@
       </div>
     </section>
 
-    <section class="section split-section">
+    <section class="section news-section">
       <div class="news-panel">
         <div class="section-head compact">
           <p class="eyebrow"><span class="zh">近期动态</span><span class="en">News</span></p>
-          <h2><span class="zh">论文录用与代码发布</span><span class="en">Paper acceptances and code releases</span></h2>
+          <h2><span class="zh">近期论文与 artifact</span><span class="en">Recent papers and artifacts</span></h2>
         </div>
         <ol class="timeline">
           <li>
@@ -174,8 +155,8 @@
           </li>
           <li>
             <time>2026</time>
-            <p class="zh">开源了 <strong>DemandPrep-artifact</strong>，代码、数据集、缓存的实验结果和交互式 demo 都在仓库里。</p>
-            <p class="en">Open-sourced <strong>DemandPrep-artifact</strong>; code, datasets, cached results, and the interactive demo are all in the repo.</p>
+            <p class="zh"><strong>DemandPrep</strong> 发表于 VLDB 2026 Workshop，artifact 包含代码、数据、实验缓存和 demo。</p>
+            <p class="en"><strong>DemandPrep</strong> appeared at VLDB 2026 Workshop; its artifact includes code, data, cached results, and a demo.</p>
           </li>
           <li>
             <time>2025</time>
@@ -183,29 +164,6 @@
             <p class="en"><strong>DemandClean</strong> makes task-aware cleaning decisions and <strong>UniClean</strong> handles mixed errors with unified cleaners; both were published in VLDB 2025.</p>
           </li>
         </ol>
-      </div>
-      <div class="system-map" aria-label="System map">
-        <p class="map-caption"><span class="zh">DemandPrep 的执行流程</span><span class="en">The DemandPrep execution loop</span></p>
-        <div class="map-node">
-          <b>Sense</b>
-          <span class="zh">识别数据错误和任务需求</span>
-          <span class="en">Detect errors and task demand</span>
-        </div>
-        <div class="map-node">
-          <b>Allocate</b>
-          <span class="zh">选择 no-op / repair / delete / replace</span>
-          <span class="en">Choose no-op, repair, delete, or replace</span>
-        </div>
-        <div class="map-node">
-          <b>Execute</b>
-          <span class="zh">调用可复现的清洗算子</span>
-          <span class="en">Run reproducible cleaning operators</span>
-        </div>
-        <div class="map-node">
-          <b>Verify</b>
-          <span class="zh">按下游指标决定提交或回滚</span>
-          <span class="en">Commit or roll back based on downstream metrics</span>
-        </div>
       </div>
     </section>
 
@@ -215,29 +173,32 @@
         <h2><span class="zh">面向人工智能的数据质量管理、数据构建与数据治理方向的论文</span><span class="en">Papers on Data Quality for AI, data construction, and data governance</span></h2>
       </div>
       <div class="publication-board" aria-label="Publication overview">
-        <p class="publication-board-title"><span class="zh">一条线索</span><span class="en">Through line</span></p>
-        <p class="zh">这些工作从“发现错误”走向“为模型分配数据质量预算”：哪些单元格该修、哪些可以保留、清洗流程怎样组合、数据资产如何被治理，最后都回到 AI 系统能不能更可靠。</p>
-        <p class="en">These papers move from detecting data errors to allocating data-quality budget for models: what to repair, what to keep, how workflows should be composed, and how governed data assets make AI systems more reliable.</p>
+        <p class="publication-board-title"><span class="zh">研究主题</span><span class="en">Research theme</span></p>
+        <p class="zh">这些论文主要围绕数据清洗、数据准备和数据治理展开。不同工作处理的问题不完全相同，但都关注同一类判断：数据处理动作是否真的改善了下游任务，以及这种改善需要付出多少成本。</p>
+        <p class="en">These papers cover data cleaning, data preparation, and data governance. They ask related questions from different angles: whether a data-side action improves the downstream task, and what cost is paid for that improvement.</p>
         <div class="publication-tags" aria-label="Publication topics">
-          <span>Data Quality for AI <b>4</b></span>
-          <span>Data Cleaning <b>5</b></span>
-          <span>Data Construction <b>2</b></span>
+          <span>Data Quality for AI <b>5</b></span>
+          <span>Data Cleaning <b>6</b></span>
+          <span>Data Construction <b>3</b></span>
           <span>Data Governance <b>2</b></span>
           <span>AutoML <b>1</b></span>
         </div>
       </div>
       <div class="paper-list showcase-papers" data-paper-list>
         <article class="paper-item featured-paper">
-          <div class="paper-visual visual-dmco" role="img" aria-label="Budget allocation curves for data cleaning and AutoML">
+          <figure class="paper-visual image-visual poster-visual">
+            <a class="visual-link" href="assets/papers/dmco-poster.jpg" target="_blank" rel="noopener" aria-label="Open DMCO poster image">
+              <img src="assets/papers/dmco-poster.jpg" alt="DMCO ICML 2026 poster">
+            </a>
             <span>ICML 2026</span>
-          </div>
+          </figure>
           <div class="paper-body">
             <div class="paper-topline"><span>2026</span><b>Poster</b></div>
             <h3><a href="https://icml.cc/virtual/2026/poster/64882" target="_blank" rel="noopener">DMCO: Budget-Aware Co-Optimization of Data Cleaning and AutoML</a></h3>
             <p class="paper-authors">Xiaoou Ding, <strong>Zekai Qian</strong>, Siying Chen, Hongbin Hu, Chen Wang, Hongzhi Wang, Jianmin Wang.</p>
-            <p class="paper-note zh">把数据清洗和 AutoML 放进同一个预算问题里：不是先洗完再建模，而是联合决定钱、时间和搜索该投向哪里。</p>
-            <p class="paper-note en">A joint budget-allocation view of data cleaning and AutoML: decide where time, money, and search effort should go instead of cleaning first and modeling later.</p>
-            <div class="paper-tags"><span>Budget-aware ML</span><span>AutoML</span><span>Data cleaning</span></div>
+            <p class="paper-note zh">将数据清洗与 AutoML 放到统一预算下联合优化，研究清洗、模型搜索和训练成本之间的分配问题。</p>
+            <p class="paper-note en">Jointly optimizes data cleaning and AutoML under a shared budget, studying how cleaning, model search, and training costs should be allocated.</p>
+            <div class="paper-tags"><span>ICML 2026</span><span>CCF-A</span></div>
             <div class="paper-links">
               <a href="https://icml.cc/virtual/2026/poster/64882" target="_blank" rel="noopener">Project</a>
               <a href="https://github.com/qzkinhit/DMCO" target="_blank" rel="noopener">Code</a>
@@ -246,16 +207,40 @@
         </article>
 
         <article class="paper-item">
-          <div class="paper-visual visual-demandclean" role="img" aria-label="Cell-level cleaning decisions for DemandClean">
-            <span>VLDB 2025</span>
+          <figure class="paper-visual image-visual">
+            <a class="visual-link" href="assets/papers/demandprep-system.jpg" target="_blank" rel="noopener" aria-label="Open DemandPrep figure">
+              <img src="assets/papers/demandprep-system.jpg" alt="DemandPrep action allocation figure">
+            </a>
+            <span>VLDB Workshop 2026</span>
+          </figure>
+          <div class="paper-body">
+            <div class="paper-topline"><span>2026</span><b>Workshop</b></div>
+            <h3><a href="assets/papers/demandprep-vldb-workshop2026.pdf" target="_blank" rel="noopener">DemandPrep: Demand-Driven Data Preparation via Agentic Action Allocation and Operator-Grounded Execution</a></h3>
+            <p class="paper-authors"><strong>Zekai Qian</strong>, Xiaoou Ding, Hongzhi Wang, Chen Wang.</p>
+            <p class="paper-note zh">面向任务需求分配数据准备动作，在 no-op、repair、delete、replace 和 full-cleaner 等选择之间保留可审计的执行记录。</p>
+            <p class="paper-note en">Allocates data-preparation actions according to task demand, with auditable traces for no-op, repair, delete, replace, and full-cleaner decisions.</p>
+            <div class="paper-tags"><span>VLDB 2026 Workshop</span><span>ADS / DATAI</span></div>
+            <div class="paper-links">
+              <a href="assets/papers/demandprep-vldb-workshop2026.pdf" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/qzkinhit/DemandPrep-artifact" target="_blank" rel="noopener">Code</a>
+            </div>
           </div>
+        </article>
+
+        <article class="paper-item">
+          <figure class="paper-visual image-visual">
+            <a class="visual-link" href="assets/papers/demandclean-vldb-poster.jpg" target="_blank" rel="noopener" aria-label="Open DemandClean poster image">
+              <img src="assets/papers/demandclean-vldb-poster.jpg" alt="DemandClean VLDB 2025 poster">
+            </a>
+            <span>VLDB 2025</span>
+          </figure>
           <div class="paper-body">
             <div class="paper-topline"><span>2025</span><b>PVLDB</b></div>
             <h3><a href="https://doi.org/10.14778/3750601.3750666" target="_blank" rel="noopener">DemandClean: A Multi-Objective Learning Framework for Balancing Model Tolerance to Data Authenticity and Diversity</a></h3>
             <p class="paper-authors"><strong>Zekai Qian</strong>, Xiaoou Ding, Chen Wang, Hongzhi Wang.</p>
-            <p class="paper-note zh">让清洗动作尊重下游模型：在 no-op、repair 和 delete 之间做任务感知选择，平衡模型收益、真实性和多样性。</p>
+            <p class="paper-note zh">在单元格粒度选择 no-op、repair 或 delete，将模型收益、数据真实性和数据多样性放在同一决策框架中比较。</p>
             <p class="paper-note en">Task-aware cleaning at cell level: choose among no-op, repair, and delete while balancing model utility, authenticity, and diversity.</p>
-            <div class="paper-tags"><span>Reinforcement learning</span><span>Model tolerance</span><span>Cleaning policy</span></div>
+            <div class="paper-tags"><span>VLDB 2025</span><span>CCF-A</span></div>
             <div class="paper-links">
               <a href="https://doi.org/10.14778/3750601.3750666" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/qzkinhit/DemandClean" target="_blank" rel="noopener">Code</a>
@@ -264,16 +249,19 @@
         </article>
 
         <article class="paper-item">
-          <div class="paper-visual visual-uniclean" role="img" aria-label="Unified cleaners and optimized workflow for mixed errors">
+          <figure class="paper-visual image-visual">
+            <a class="visual-link" href="assets/papers/uniclean-vldb-poster.jpg" target="_blank" rel="noopener" aria-label="Open UniClean VLDB poster image">
+              <img src="assets/papers/uniclean-vldb-poster.jpg" alt="UniClean VLDB 2025 poster">
+            </a>
             <span>VLDB 2025</span>
-          </div>
+          </figure>
           <div class="paper-body">
             <div class="paper-topline"><span>2025</span><b>PVLDB</b></div>
             <h3><a href="https://doi.org/10.14778/3749646.3749681" target="_blank" rel="noopener">UniClean: A Scalable Data Cleaning Solution for Mixed Errors based on Unified Cleaners and Optimized Cleaning Workflow</a></h3>
             <p class="paper-authors">Xiaoou Ding, <strong>Zekai Qian</strong>, Hongzhi Wang, Siying Chen, Yafeng Tang, Hongbin Su, Huan Hu, Chen Wang.</p>
-            <p class="paper-note zh">把混合错误放进统一清洗框架，核心不是堆更多算法，而是让 cleaner 和 workflow 能被组合、选择和扩展。</p>
+            <p class="paper-note zh">面向混合错误构建统一 cleaner 和优化 workflow，使不同错误类型、清洗算子和执行顺序可以在同一框架下协调。</p>
             <p class="paper-note en">A unified cleaning framework for mixed errors, emphasizing composable cleaners and optimized workflows rather than isolated algorithms.</p>
-            <div class="paper-tags"><span>Mixed errors</span><span>Workflow optimization</span><span>Scalable cleaning</span></div>
+            <div class="paper-tags"><span>VLDB 2025</span><span>CCF-A</span></div>
             <div class="paper-links">
               <a href="https://doi.org/10.14778/3749646.3749681" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/qzkinhit/UniClean-bench-Result" target="_blank" rel="noopener">Artifact</a>
@@ -282,16 +270,19 @@
         </article>
 
         <article class="paper-item">
-          <div class="paper-visual visual-uniclean-icde" role="img" aria-label="Multi-signal fusion pipeline for optimizing cleaning workflow">
+          <figure class="paper-visual image-visual">
+            <a class="visual-link" href="assets/papers/uniclean-icde-figure.jpg" target="_blank" rel="noopener" aria-label="Open UniClean ICDE figure">
+              <img src="assets/papers/uniclean-icde-figure.jpg" alt="UniClean ICDE system figure">
+            </a>
             <span>ICDE 2025</span>
-          </div>
+          </figure>
           <div class="paper-body">
             <div class="paper-topline"><span>2025</span><b>ICDE</b></div>
             <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00362" target="_blank" rel="noopener">UniClean: A Multi-Signal Fusion Pipeline for Optimizing Data Cleaning Workflow</a></h3>
             <p class="paper-authors">Xiaoou Ding, <strong>Zekai Qian</strong>, Hongzhi Wang, Zhe Sun, Siying Chen, Hongbin Su, Huan Hu.</p>
-            <p class="paper-note zh">面向清洗 workflow 的多信号融合版本，把错误类型、算子能力和执行收益放到同一条管线里优化。</p>
+            <p class="paper-note zh">ICDE demo 版本展示 UniClean 的多信号 workflow 优化流程，预览图来自论文系统图。</p>
             <p class="paper-note en">A multi-signal pipeline for optimizing cleaning workflows by jointly considering error types, operator capability, and execution benefit.</p>
-            <div class="paper-tags"><span>Pipeline</span><span>Signal fusion</span><span>Data quality</span></div>
+            <div class="paper-tags"><span>ICDE 2025</span><span>CCF-A</span></div>
             <div class="paper-links">
               <a href="https://doi.org/10.1109/ICDE65448.2025.00362" target="_blank" rel="noopener">Paper</a>
               <a href="https://github.com/qzkinhit/UniClean-bench-Result" target="_blank" rel="noopener">Artifact</a>
@@ -300,16 +291,19 @@
         </article>
 
         <article class="paper-item">
-          <div class="paper-visual visual-tdc" role="img" aria-label="Threshold denial constraints from time series">
+          <figure class="paper-visual image-visual">
+            <a class="visual-link" href="assets/papers/tdcdiscover-system.jpg" target="_blank" rel="noopener" aria-label="Open tDCDiscover figure">
+              <img src="assets/papers/tdcdiscover-system.jpg" alt="tDCDiscover system figure">
+            </a>
             <span>ICDE 2025</span>
-          </div>
+          </figure>
           <div class="paper-body">
             <div class="paper-topline"><span>2025</span><b>ICDE</b></div>
             <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00193" target="_blank" rel="noopener">tDCDiscover: Mining Threshold Denial Constraints from Time Series Data</a></h3>
             <p class="paper-authors">Xiaoou Ding, Muyun Zhou, Yida Liu, <strong>Zekai Qian</strong>, Chen Wang, Hongzhi Wang, Jianmin Wang.</p>
             <p class="paper-note zh">从时间序列里挖掘阈值拒绝约束，让数据质量规则不只适用于静态表，也能描述连续变化中的异常边界。</p>
             <p class="paper-note en">Mines threshold denial constraints from time-series data, extending quality rules from static tables to evolving temporal patterns.</p>
-            <div class="paper-tags"><span>Constraints</span><span>Time series</span><span>Rule discovery</span></div>
+            <div class="paper-tags"><span>ICDE 2025</span><span>CCF-A</span></div>
             <div class="paper-links">
               <a href="https://doi.org/10.1109/ICDE65448.2025.00193" target="_blank" rel="noopener">Paper</a>
             </div>
@@ -317,50 +311,59 @@
         </article>
 
         <article class="paper-item">
-          <div class="paper-visual visual-cba" role="img" aria-label="Cost-benefit recommendation for data cleaning solutions">
+          <figure class="paper-visual image-visual">
+            <a class="visual-link" href="assets/papers/cbaclean-system.jpg" target="_blank" rel="noopener" aria-label="Open CBAClean system figure">
+              <img src="assets/papers/cbaclean-system.jpg" alt="CBAClean system overview">
+            </a>
             <span>ICDE 2025</span>
-          </div>
+          </figure>
           <div class="paper-body">
             <div class="paper-topline"><span>2025</span><b>ICDE</b></div>
-            <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00371" target="_blank" rel="noopener">CBAClean: A Comprehensive System for Recommending Data Cleaning Solutions Through Cost-Benefit Analysis in Data Quality Management</a></h3>
+            <h3><a href="assets/papers/cbaclean-icde2025.pdf" target="_blank" rel="noopener">CBAClean: A Comprehensive System for Recommending Data Cleaning Solutions Through Cost-Benefit Analysis in Data Quality Management</a></h3>
             <p class="paper-authors">Xiaoou Ding, Hongbin Su, <strong>Zekai Qian</strong>, Wenxuan Cui, Siying Chen, Zheng Liang, Chen Wang, Hongzhi Wang.</p>
-            <p class="paper-note zh">把清洗方案推荐变成成本收益问题：不仅问“能不能修”，还问“值不值得修、该先修什么”。</p>
+            <p class="paper-note zh">将清洗方案推荐转化为成本收益分析，面向数据质量管理场景比较人工成本、自动化成本和模型收益。</p>
             <p class="paper-note en">Frames cleaning recommendation as cost-benefit analysis: not only whether something can be fixed, but whether and when it is worth fixing.</p>
-            <div class="paper-tags"><span>Cost-benefit</span><span>Recommendation</span><span>DQM</span></div>
+            <div class="paper-tags"><span>ICDE 2025</span><span>CCF-A</span></div>
             <div class="paper-links">
-              <a href="https://doi.org/10.1109/ICDE65448.2025.00371" target="_blank" rel="noopener">Paper</a>
+              <a href="assets/papers/cbaclean-icde2025.pdf" target="_blank" rel="noopener">Paper</a>
             </div>
           </div>
         </article>
 
         <article class="paper-item">
-          <div class="paper-visual visual-governance" role="img" aria-label="Data asset value and governance map">
+          <figure class="paper-visual image-visual">
+            <a class="visual-link" href="assets/papers/data-governance-survey-framework.jpg" target="_blank" rel="noopener" aria-label="Open data governance survey framework">
+              <img src="assets/papers/data-governance-survey-framework.jpg" alt="Data governance survey framework">
+            </a>
             <span>BDMA 2025</span>
-          </div>
+          </figure>
           <div class="paper-body">
             <div class="paper-topline"><span>2025</span><b>Survey</b></div>
-            <h3><a href="https://doi.org/10.26599/bdma.2025.9020034" target="_blank" rel="noopener">A Survey on Data Asset Value Change Estimation and Appreciation with Data Governance</a></h3>
+            <h3><a href="assets/papers/data-governance-survey-bdma2025.pdf" target="_blank" rel="noopener">A Survey on Data Asset Value Change Estimation and Appreciation with Data Governance</a></h3>
             <p class="paper-authors">Xiaoou Ding, Genglong Li, Yafeng Tang, Chen Liang, Tianren Yu, Muyun Zhou, Yida Liu, <strong>Zekai Qian</strong>, Zixuan Song, Hongzhi Wang.</p>
-            <p class="paper-note zh">从数据治理视角梳理数据资产价值的变化、估计和增值，把“数据质量”放进更长周期的数据资产管理里。</p>
+            <p class="paper-note zh">从数据治理角度梳理数据资产价值变化、估计与增值，关注数据清洗、采集、集成等治理活动如何影响价值评估。</p>
             <p class="paper-note en">A survey on data-asset value change, estimation, and appreciation under data governance, situating quality in longer-term asset management.</p>
-            <div class="paper-tags"><span>Data asset</span><span>Governance</span><span>Survey</span></div>
+            <div class="paper-tags"><span>BDMA 2025</span><span>Journal</span></div>
             <div class="paper-links">
-              <a href="https://doi.org/10.26599/bdma.2025.9020034" target="_blank" rel="noopener">Paper</a>
+              <a href="assets/papers/data-governance-survey-bdma2025.pdf" target="_blank" rel="noopener">Paper</a>
             </div>
           </div>
         </article>
 
-        <article class="paper-item">
-          <div class="paper-visual visual-evidence" role="img" aria-label="Evidence selection for diverse data cleaning tasks">
+        <article class="paper-item compact-cover-paper">
+          <figure class="paper-visual image-visual cover-visual">
+            <a class="visual-link" href="assets/papers/computer-science-cover.jpg" target="_blank" rel="noopener" aria-label="Open Computer Science cover image">
+              <img src="assets/papers/computer-science-cover.jpg" alt="Computer Science cover article image">
+            </a>
             <span>Cover 2024</span>
-          </div>
+          </figure>
           <div class="paper-body">
             <div class="paper-topline"><span>2024</span><b>Computer Science</b></div>
             <h3><a href="https://www.jsjkx.com/CN/10.11896/jsjkx.230900003" target="_blank" rel="noopener">面向多样化数据清洗任务的证据集智能选择方法（Evidence Set Selection for Diverse Data Cleaning Tasks）</a></h3>
             <p class="paper-authors"><strong>Zekai Qian</strong>, Xiaoou Ding, Zhe Sun, Hongzhi Wang, Yan Zhang. <span class="zh">51(8) 封面文章。</span><span class="en">Cover article, 51(8).</span></p>
-            <p class="paper-note zh">从“证据集怎么选”这个小切口切入多样化清洗任务，关注清洗系统该如何拿到足够有用、又不过量的证据。</p>
+            <p class="paper-note zh">研究多样化数据清洗任务中的证据集选择，关注不同任务需要哪些证据以及证据规模如何控制。</p>
             <p class="paper-note en">Studies evidence selection for diverse cleaning tasks, focusing on how a cleaning system can use enough useful evidence without over-collecting.</p>
-            <div class="paper-tags"><span>Evidence selection</span><span>Data cleaning</span><span>Cover article</span></div>
+            <div class="paper-tags"><span>Computer Science 2024</span><span>Cover</span></div>
             <div class="paper-links">
               <a href="https://www.jsjkx.com/CN/10.11896/jsjkx.230900003" target="_blank" rel="noopener">Paper</a>
             </div>
@@ -374,29 +377,59 @@
         <p class="eyebrow"><span class="zh">获奖</span><span class="en">Awards</span></p>
         <h2><span class="zh">部分奖项</span><span class="en">Selected awards</span></h2>
       </div>
-      <div class="paper-list">
-        <article class="paper-item">
-          <div class="paper-meta"><span>2023</span><b>Best Paper</b></div>
+      <div class="award-grid">
+        <article class="award-card">
+          <a class="award-image" href="assets/awards/ccf-bigdata-best-paper.jpg" target="_blank" rel="noopener" aria-label="Open CCF BigData certificate">
+            <img src="assets/awards/ccf-bigdata-best-paper.jpg" alt="CCF BigData 2023 best student paper certificate">
+          </a>
           <div>
+            <p class="award-meta">2023 / Best Student Paper</p>
             <h3><span class="zh">CCF BigData 2023 最佳学生论文（第一作者）</span><span class="en">Best Student Paper at CCF BigData 2023 (first author)</span></h3>
           </div>
         </article>
-        <article class="paper-item">
-          <div class="paper-meta"><span>2024</span><b>封面文章</b></div>
+        <article class="award-card">
+          <a class="award-image" href="assets/awards/computer-science-cover.jpg" target="_blank" rel="noopener" aria-label="Open Computer Science cover">
+            <img src="assets/awards/computer-science-cover.jpg" alt="Computer Science 2024 cover">
+          </a>
           <div>
+            <p class="award-meta">2024 / Cover Article</p>
             <h3><span class="zh">《计算机科学》2024 年 51(8) 封面文章（第一作者）</span><span class="en">Cover article of Computer Science 51(8), 2024 (first author)</span></h3>
           </div>
         </article>
-        <article class="paper-item">
-          <div class="paper-meta"><span>2022</span><b>一等奖</b></div>
+        <article class="award-card">
+          <a class="award-image" href="assets/awards/information-security-first-prize.jpg" target="_blank" rel="noopener" aria-label="Open information security contest certificate">
+            <img src="assets/awards/information-security-first-prize.jpg" alt="National College Student Information Security Contest first prize certificate">
+          </a>
           <div>
+            <p class="award-meta">2022 / First Prize</p>
             <h3><span class="zh">全国大学生信息安全竞赛（作品赛）全国一等奖（队长）</span><span class="en">First Prize, National College Student Information Security Contest (team lead)</span></h3>
           </div>
         </article>
-        <article class="paper-item">
-          <div class="paper-meta"><span>2023</span><b>全国决赛</b></div>
+        <article class="award-card">
+          <a class="award-image" href="assets/awards/oceanbase-third-prize.jpg" target="_blank" rel="noopener" aria-label="Open OceanBase contest certificate">
+            <img src="assets/awards/oceanbase-third-prize.jpg" alt="OceanBase database contest third place certificate">
+          </a>
           <div>
+            <p class="award-meta">2023 / Provincial Third Prize</p>
             <h3><span class="zh">全国大学生计算机系统能力大赛黑龙江省第三名，入围全国决赛</span><span class="en">National Student Computer System Capability Contest: 3rd place in Heilongjiang, national finalist</span></h3>
+          </div>
+        </article>
+        <article class="award-card">
+          <a class="award-image" href="assets/awards/software-copyright.jpg" target="_blank" rel="noopener" aria-label="Open software copyright certificate">
+            <img src="assets/awards/software-copyright.jpg" alt="Software copyright registration certificate">
+          </a>
+          <div>
+            <p class="award-meta">2023 / Software Copyright</p>
+            <h3><span class="zh">数据清洗相关软件著作权登记</span><span class="en">Software copyright registration for data-cleaning software</span></h3>
+          </div>
+        </article>
+        <article class="award-card">
+          <a class="award-image" href="assets/awards/internet-plus-silver.jpg" target="_blank" rel="noopener" aria-label="Open Internet Plus certificate">
+            <img src="assets/awards/internet-plus-silver.jpg" alt="Internet Plus innovation and entrepreneurship silver prize certificate">
+          </a>
+          <div>
+            <p class="award-meta">2023 / Silver Prize</p>
+            <h3><span class="zh">中国国际“互联网+”大学生创新创业大赛黑龙江省银奖</span><span class="en">Silver Prize, China International College Students' Innovation Competition, Heilongjiang</span></h3>
           </div>
         </article>
       </div>
@@ -405,41 +438,41 @@
     <section class="section software-band" id="software">
       <div class="section-head">
         <p class="eyebrow"><span class="zh">开源项目</span><span class="en">Open Source</span></p>
-        <h2><span class="zh">每篇论文对应的代码和实验记录都放在 GitHub 上。</span><span class="en">The code and experiment records for each paper are on GitHub.</span></h2>
+        <h2><span class="zh">围绕论文整理的代码、benchmark 与可复现实验材料。</span><span class="en">Code, benchmarks, and reproducible artifacts organized around the papers.</span></h2>
       </div>
       <div class="software-grid">
         <a class="software-card featured" href="https://github.com/qzkinhit/DMCO" target="_blank" rel="noopener">
-          <span>ICML 2026 Artifact</span>
+          <span>CleanML Artifact</span>
           <h3>DMCO</h3>
           <p class="zh">数据清洗与 AutoML 的预算感知协同优化代码，包含对齐数据集、baseline runner、Table 2 风格复现实验和论文逻辑映射。</p>
           <p class="en">Artifact for budget-aware co-optimization of data cleaning and AutoML, with aligned datasets, baseline runners, Table 2 style reproduction scripts, and paper-code alignment notes.</p>
         </a>
         <a class="software-card" href="https://github.com/qzkinhit/DemandPrep-artifact" target="_blank" rel="noopener">
-          <span>Artifact</span>
+          <span>Data Preparation Agent</span>
           <h3>DemandPrep</h3>
-          <p class="zh">数据准备智能体的完整 artifact，含动作分配、算子执行和真实运行 trace，可以直接复跑实验。对应论文在投 VLDB 2026 Workshop。</p>
-          <p class="en">The complete artifact of the data preparation agent, with action allocation, operator-grounded execution, and real run traces; experiments can be rerun directly. The accompanying paper is under submission to a VLDB 2026 workshop.</p>
+          <p class="zh">VLDB 2026 Workshop 论文 artifact，包含动作分配、算子执行、运行 trace、缓存结果和 demo。</p>
+          <p class="en">Artifact for the VLDB 2026 Workshop paper, including action allocation, operator execution, traces, cached results, and demo assets.</p>
         </a>
         <a class="software-card" href="https://github.com/qzkinhit/DemandClean" target="_blank" rel="noopener">
-          <span>RL Cleaning</span>
+          <span>Clean System & Benchmark</span>
           <h3>DemandClean</h3>
           <p class="zh">VLDB 2025 论文代码：DQN agent 在单元格粒度选择 no-op、repair 或 delete，在模型收益和数据真实性之间权衡。</p>
           <p class="en">Code for the VLDB 2025 paper: a DQN agent picks no-op, repair, or delete per cell, trading off model utility against data authenticity.</p>
         </a>
         <a class="software-card" href="https://github.com/qzkinhit/UniClean-bench-Result" target="_blank" rel="noopener">
-          <span>Benchmark</span>
-          <h3>UniClean Result</h3>
+          <span>Clean System & Benchmark</span>
+          <h3>UniClean</h3>
           <p class="zh">UniClean 的实验结果仓库：真实脏数据、清洗输出、运行日志、baseline 对比和评估脚本。</p>
           <p class="en">Experiment results for UniClean: real-world dirty data, cleaned outputs, run logs, baseline comparisons, and evaluation scripts.</p>
         </a>
         <a class="software-card" href="https://github.com/qzkinhit/MADClean" target="_blank" rel="noopener">
-          <span>Model-aware</span>
+          <span>Model-aware Cleaning</span>
           <h3>MADClean</h3>
           <p class="zh">以 SVM 性能为优化目标的模型感知清洗框架，提供 DP、greedy 和 RL 三种实现。</p>
           <p class="en">A model-aware cleaning framework that optimizes for SVM utility, with DP, greedy, and RL implementations.</p>
         </a>
         <a class="software-card" href="https://github.com/qzkinhit/MDCBaseline" target="_blank" rel="noopener">
-          <span>Baselines</span>
+          <span>Cleaning Baselines</span>
           <h3>MDCBaseline</h3>
           <p class="zh">Baran、BigDansing、Holistic、HoloClean、Horizon 等经典清洗 baseline 的统一运行脚本。</p>
           <p class="en">Unified scripts for running classic cleaning baselines: Baran, BigDansing, Holistic, HoloClean, and Horizon.</p>
@@ -455,6 +488,8 @@
       <p class="en">Questions about Data Quality for AI, data construction, data cleaning, data governance, or agent-based data preparation are welcome; email me at qzk010728@gmail.com or find me on GitHub.</p>
     </div>
     <div class="footer-links">
+      <a href="snapshot.html"><span class="zh">简洁主页</span><span class="en">Plain Home</span></a>
+      <a href="assets/cv/zekai-qian-cv.pdf" target="_blank" rel="noopener"><span class="zh">简历</span><span class="en">CV</span></a>
       <a href="mailto:qzk010728@gmail.com">Email</a>
       <a href="https://github.com/qzkinhit" target="_blank" rel="noopener">GitHub</a>
       <a href="https://scholar.google.com/citations?user=T2CXrMwAAAAJ" target="_blank" rel="noopener">Scholar</a>
