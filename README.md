@@ -1,6 +1,6 @@
 # Hi, I'm Zekai Qian :wave:
 
-Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of Technology, working on data cleaning and data-centric AI.
+Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of Technology, working on **Data Quality for AI**, especially data quality management for AI and data construction for AI.
 
 <p>
   <a href="https://qzkinhit.github.io/qzkinhit/"><img alt="Homepage" src="https://img.shields.io/badge/Homepage-qzkinhit.github.io-0f766e?style=flat-square"></a>
@@ -14,7 +14,7 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 
 ## :mortar_board: About
 
-- I study how data cleaning decisions should depend on the downstream task: which errors actually hurt the model, which can be left alone, and how to split a limited budget between cleaning and model training.
+- I study **Data Quality for AI**: how data quality management and data construction should serve downstream AI models, including which errors actually hurt the model, which can be left alone, and how to split a limited budget between cleaning and model training.
 - Recent work: DemandClean (VLDB 2025), UniClean (VLDB / ICDE 2025), DMCO (ICML 2026), and DemandPrep, an agent-based data preparation artifact.
 - I try to keep the code behind each paper runnable: scripts, cached results, traces, and baseline runners are in the repositories below.
 - Best Student Paper at CCF BigData 2023 (first author).
