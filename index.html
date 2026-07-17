@@ -48,6 +48,32 @@
   </header>
 
   <main id="top">
+    <section class="snapshot" aria-labelledby="snapshot-title">
+      <div class="snapshot-profile">
+        <img src="https://avatars.githubusercontent.com/u/58599846?v=4" alt="Zekai Qian">
+        <div>
+          <p class="eyebrow"><span class="zh">一页速览</span><span class="en">Snapshot</span></p>
+          <h2 id="snapshot-title">Zekai Qian <span>钱泽凯</span></h2>
+          <p class="snapshot-role zh">哈尔滨工业大学博士生 | 海量数据计算研究中心</p>
+          <p class="snapshot-role en">Ph.D. student at Harbin Institute of Technology | Massive Data Computing Research Center</p>
+        </div>
+      </div>
+      <div class="snapshot-copy">
+        <p class="snapshot-line zh">如果只记住一句话：我做 <strong>Data Quality for AI</strong>，让数据质量管理、数据构建和数据准备真正服务下游 AI 模型。</p>
+        <p class="snapshot-line en">One-line version: I work on <strong>Data Quality for AI</strong>, turning data quality management, data construction, and data preparation into reliable support for downstream AI models.</p>
+        <div class="snapshot-links" aria-label="Quick links">
+          <a href="#papers">VLDB / ICDE / ICML</a>
+          <a href="#software">DemandPrep / UniClean</a>
+          <a href="mailto:qzk010728@gmail.com">qzk010728@gmail.com</a>
+        </div>
+      </div>
+      <div class="snapshot-facts" aria-label="Profile facts">
+        <span><b>Research</b><small>Data Quality for AI</small></span>
+        <span><b>Systems</b><small>DemandPrep, DemandClean, UniClean</small></span>
+        <span><b>Open Source</b><small>Artifacts, benchmarks, reproducible traces</small></span>
+      </div>
+    </section>
+
     <section class="hero" aria-labelledby="hero-title">
       <canvas id="signalCanvas" aria-hidden="true"></canvas>
       <div class="hero-inner">
@@ -108,8 +134,10 @@
     <section class="section research-band" id="research">
       <div class="section-head">
         <p class="eyebrow"><span class="zh">研究方向</span><span class="en">Research</span></p>
-        <h2><span class="zh">我的研究围绕面向人工智能的数据质量管理与面向人工智能的数据构建展开。</span><span class="en">My work centers on Data Quality for AI and data construction for AI systems.</span></h2>
+        <h2><span class="zh">我关心一个朴素但很要命的问题：AI 模型到底需要什么样的数据，以及这些数据应该怎样被清洗、构建和维护。</span><span class="en">I study a simple but consequential question: what data AI models actually need, and how that data should be cleaned, constructed, and maintained.</span></h2>
       </div>
+      <p class="research-brief zh">这条主线可以概括为面向人工智能的数据质量管理与面向人工智能的数据构建。相比“把脏数据洗干净”，我更关心哪些错误真正伤害模型、哪些清洗动作值得预算、哪些数据准备流程可以被复现并持续改进。</p>
+      <p class="research-brief en">This line of work is Data Quality for AI: beyond merely cleaning dirty data, I care about which errors hurt models, which cleaning actions deserve budget, and which preparation workflows can be reproduced and improved over time.</p>
       <div class="research-grid">
         <article class="research-card">
           <span class="card-index">01</span>
@@ -186,61 +214,156 @@
         <p class="eyebrow"><span class="zh">论文</span><span class="en">Publications</span></p>
         <h2><span class="zh">面向人工智能的数据质量管理、数据构建与数据治理方向的论文</span><span class="en">Papers on Data Quality for AI, data construction, and data governance</span></h2>
       </div>
-      <div class="paper-list" data-paper-list>
-        <article class="paper-item">
-          <div class="paper-meta"><span>2026</span><b>ICML</b></div>
-          <div>
+      <div class="publication-board" aria-label="Publication overview">
+        <p class="publication-board-title"><span class="zh">一条线索</span><span class="en">Through line</span></p>
+        <p class="zh">这些工作从“发现错误”走向“为模型分配数据质量预算”：哪些单元格该修、哪些可以保留、清洗流程怎样组合、数据资产如何被治理，最后都回到 AI 系统能不能更可靠。</p>
+        <p class="en">These papers move from detecting data errors to allocating data-quality budget for models: what to repair, what to keep, how workflows should be composed, and how governed data assets make AI systems more reliable.</p>
+        <div class="publication-tags" aria-label="Publication topics">
+          <span>Data Quality for AI <b>4</b></span>
+          <span>Data Cleaning <b>5</b></span>
+          <span>Data Construction <b>2</b></span>
+          <span>Data Governance <b>2</b></span>
+          <span>AutoML <b>1</b></span>
+        </div>
+      </div>
+      <div class="paper-list showcase-papers" data-paper-list>
+        <article class="paper-item featured-paper">
+          <div class="paper-visual visual-dmco" role="img" aria-label="Budget allocation curves for data cleaning and AutoML">
+            <span>ICML 2026</span>
+          </div>
+          <div class="paper-body">
+            <div class="paper-topline"><span>2026</span><b>Poster</b></div>
             <h3><a href="https://icml.cc/virtual/2026/poster/64882" target="_blank" rel="noopener">DMCO: Budget-Aware Co-Optimization of Data Cleaning and AutoML</a></h3>
-            <p>Xiaoou Ding, <strong>Zekai Qian</strong>, Siying Chen, Hongbin Hu, Chen Wang, Hongzhi Wang, Jianmin Wang.</p>
+            <p class="paper-authors">Xiaoou Ding, <strong>Zekai Qian</strong>, Siying Chen, Hongbin Hu, Chen Wang, Hongzhi Wang, Jianmin Wang.</p>
+            <p class="paper-note zh">把数据清洗和 AutoML 放进同一个预算问题里：不是先洗完再建模，而是联合决定钱、时间和搜索该投向哪里。</p>
+            <p class="paper-note en">A joint budget-allocation view of data cleaning and AutoML: decide where time, money, and search effort should go instead of cleaning first and modeling later.</p>
+            <div class="paper-tags"><span>Budget-aware ML</span><span>AutoML</span><span>Data cleaning</span></div>
+            <div class="paper-links">
+              <a href="https://icml.cc/virtual/2026/poster/64882" target="_blank" rel="noopener">Project</a>
+              <a href="https://github.com/qzkinhit/DMCO" target="_blank" rel="noopener">Code</a>
+            </div>
           </div>
         </article>
+
         <article class="paper-item">
-          <div class="paper-meta"><span>2025</span><b>VLDB</b></div>
-          <div>
+          <div class="paper-visual visual-demandclean" role="img" aria-label="Cell-level cleaning decisions for DemandClean">
+            <span>VLDB 2025</span>
+          </div>
+          <div class="paper-body">
+            <div class="paper-topline"><span>2025</span><b>PVLDB</b></div>
             <h3><a href="https://doi.org/10.14778/3750601.3750666" target="_blank" rel="noopener">DemandClean: A Multi-Objective Learning Framework for Balancing Model Tolerance to Data Authenticity and Diversity</a></h3>
-            <p><strong>Zekai Qian</strong>, Xiaoou Ding, Chen Wang, Hongzhi Wang.</p>
+            <p class="paper-authors"><strong>Zekai Qian</strong>, Xiaoou Ding, Chen Wang, Hongzhi Wang.</p>
+            <p class="paper-note zh">让清洗动作尊重下游模型：在 no-op、repair 和 delete 之间做任务感知选择，平衡模型收益、真实性和多样性。</p>
+            <p class="paper-note en">Task-aware cleaning at cell level: choose among no-op, repair, and delete while balancing model utility, authenticity, and diversity.</p>
+            <div class="paper-tags"><span>Reinforcement learning</span><span>Model tolerance</span><span>Cleaning policy</span></div>
+            <div class="paper-links">
+              <a href="https://doi.org/10.14778/3750601.3750666" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/qzkinhit/DemandClean" target="_blank" rel="noopener">Code</a>
+            </div>
           </div>
         </article>
+
         <article class="paper-item">
-          <div class="paper-meta"><span>2025</span><b>VLDB</b></div>
-          <div>
+          <div class="paper-visual visual-uniclean" role="img" aria-label="Unified cleaners and optimized workflow for mixed errors">
+            <span>VLDB 2025</span>
+          </div>
+          <div class="paper-body">
+            <div class="paper-topline"><span>2025</span><b>PVLDB</b></div>
             <h3><a href="https://doi.org/10.14778/3749646.3749681" target="_blank" rel="noopener">UniClean: A Scalable Data Cleaning Solution for Mixed Errors based on Unified Cleaners and Optimized Cleaning Workflow</a></h3>
-            <p>Xiaoou Ding, <strong>Zekai Qian</strong>, Hongzhi Wang, Siying Chen, Yafeng Tang, Hongbin Su, Huan Hu, Chen Wang.</p>
+            <p class="paper-authors">Xiaoou Ding, <strong>Zekai Qian</strong>, Hongzhi Wang, Siying Chen, Yafeng Tang, Hongbin Su, Huan Hu, Chen Wang.</p>
+            <p class="paper-note zh">把混合错误放进统一清洗框架，核心不是堆更多算法，而是让 cleaner 和 workflow 能被组合、选择和扩展。</p>
+            <p class="paper-note en">A unified cleaning framework for mixed errors, emphasizing composable cleaners and optimized workflows rather than isolated algorithms.</p>
+            <div class="paper-tags"><span>Mixed errors</span><span>Workflow optimization</span><span>Scalable cleaning</span></div>
+            <div class="paper-links">
+              <a href="https://doi.org/10.14778/3749646.3749681" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/qzkinhit/UniClean-bench-Result" target="_blank" rel="noopener">Artifact</a>
+            </div>
           </div>
         </article>
+
         <article class="paper-item">
-          <div class="paper-meta"><span>2025</span><b>ICDE</b></div>
-          <div>
+          <div class="paper-visual visual-uniclean-icde" role="img" aria-label="Multi-signal fusion pipeline for optimizing cleaning workflow">
+            <span>ICDE 2025</span>
+          </div>
+          <div class="paper-body">
+            <div class="paper-topline"><span>2025</span><b>ICDE</b></div>
             <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00362" target="_blank" rel="noopener">UniClean: A Multi-Signal Fusion Pipeline for Optimizing Data Cleaning Workflow</a></h3>
-            <p>Xiaoou Ding, <strong>Zekai Qian</strong>, Hongzhi Wang, Zhe Sun, Siying Chen, Hongbin Su, Huan Hu.</p>
+            <p class="paper-authors">Xiaoou Ding, <strong>Zekai Qian</strong>, Hongzhi Wang, Zhe Sun, Siying Chen, Hongbin Su, Huan Hu.</p>
+            <p class="paper-note zh">面向清洗 workflow 的多信号融合版本，把错误类型、算子能力和执行收益放到同一条管线里优化。</p>
+            <p class="paper-note en">A multi-signal pipeline for optimizing cleaning workflows by jointly considering error types, operator capability, and execution benefit.</p>
+            <div class="paper-tags"><span>Pipeline</span><span>Signal fusion</span><span>Data quality</span></div>
+            <div class="paper-links">
+              <a href="https://doi.org/10.1109/ICDE65448.2025.00362" target="_blank" rel="noopener">Paper</a>
+              <a href="https://github.com/qzkinhit/UniClean-bench-Result" target="_blank" rel="noopener">Artifact</a>
+            </div>
           </div>
         </article>
+
         <article class="paper-item">
-          <div class="paper-meta"><span>2025</span><b>ICDE</b></div>
-          <div>
+          <div class="paper-visual visual-tdc" role="img" aria-label="Threshold denial constraints from time series">
+            <span>ICDE 2025</span>
+          </div>
+          <div class="paper-body">
+            <div class="paper-topline"><span>2025</span><b>ICDE</b></div>
             <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00193" target="_blank" rel="noopener">tDCDiscover: Mining Threshold Denial Constraints from Time Series Data</a></h3>
-            <p>Xiaoou Ding, Muyun Zhou, Yida Liu, <strong>Zekai Qian</strong>, Chen Wang, Hongzhi Wang, Jianmin Wang.</p>
+            <p class="paper-authors">Xiaoou Ding, Muyun Zhou, Yida Liu, <strong>Zekai Qian</strong>, Chen Wang, Hongzhi Wang, Jianmin Wang.</p>
+            <p class="paper-note zh">从时间序列里挖掘阈值拒绝约束，让数据质量规则不只适用于静态表，也能描述连续变化中的异常边界。</p>
+            <p class="paper-note en">Mines threshold denial constraints from time-series data, extending quality rules from static tables to evolving temporal patterns.</p>
+            <div class="paper-tags"><span>Constraints</span><span>Time series</span><span>Rule discovery</span></div>
+            <div class="paper-links">
+              <a href="https://doi.org/10.1109/ICDE65448.2025.00193" target="_blank" rel="noopener">Paper</a>
+            </div>
           </div>
         </article>
+
         <article class="paper-item">
-          <div class="paper-meta"><span>2025</span><b>ICDE</b></div>
-          <div>
+          <div class="paper-visual visual-cba" role="img" aria-label="Cost-benefit recommendation for data cleaning solutions">
+            <span>ICDE 2025</span>
+          </div>
+          <div class="paper-body">
+            <div class="paper-topline"><span>2025</span><b>ICDE</b></div>
             <h3><a href="https://doi.org/10.1109/ICDE65448.2025.00371" target="_blank" rel="noopener">CBAClean: A Comprehensive System for Recommending Data Cleaning Solutions Through Cost-Benefit Analysis in Data Quality Management</a></h3>
-            <p>Xiaoou Ding, Hongbin Su, <strong>Zekai Qian</strong>, Wenxuan Cui, Siying Chen, Zheng Liang, Chen Wang, Hongzhi Wang.</p>
+            <p class="paper-authors">Xiaoou Ding, Hongbin Su, <strong>Zekai Qian</strong>, Wenxuan Cui, Siying Chen, Zheng Liang, Chen Wang, Hongzhi Wang.</p>
+            <p class="paper-note zh">把清洗方案推荐变成成本收益问题：不仅问“能不能修”，还问“值不值得修、该先修什么”。</p>
+            <p class="paper-note en">Frames cleaning recommendation as cost-benefit analysis: not only whether something can be fixed, but whether and when it is worth fixing.</p>
+            <div class="paper-tags"><span>Cost-benefit</span><span>Recommendation</span><span>DQM</span></div>
+            <div class="paper-links">
+              <a href="https://doi.org/10.1109/ICDE65448.2025.00371" target="_blank" rel="noopener">Paper</a>
+            </div>
           </div>
         </article>
+
         <article class="paper-item">
-          <div class="paper-meta"><span>2025</span><b>BDMA</b></div>
-          <div>
+          <div class="paper-visual visual-governance" role="img" aria-label="Data asset value and governance map">
+            <span>BDMA 2025</span>
+          </div>
+          <div class="paper-body">
+            <div class="paper-topline"><span>2025</span><b>Survey</b></div>
             <h3><a href="https://doi.org/10.26599/bdma.2025.9020034" target="_blank" rel="noopener">A Survey on Data Asset Value Change Estimation and Appreciation with Data Governance</a></h3>
-            <p>Xiaoou Ding, Genglong Li, Yafeng Tang, Chen Liang, Tianren Yu, Muyun Zhou, Yida Liu, <strong>Zekai Qian</strong>, Zixuan Song, Hongzhi Wang.</p>
+            <p class="paper-authors">Xiaoou Ding, Genglong Li, Yafeng Tang, Chen Liang, Tianren Yu, Muyun Zhou, Yida Liu, <strong>Zekai Qian</strong>, Zixuan Song, Hongzhi Wang.</p>
+            <p class="paper-note zh">从数据治理视角梳理数据资产价值的变化、估计和增值，把“数据质量”放进更长周期的数据资产管理里。</p>
+            <p class="paper-note en">A survey on data-asset value change, estimation, and appreciation under data governance, situating quality in longer-term asset management.</p>
+            <div class="paper-tags"><span>Data asset</span><span>Governance</span><span>Survey</span></div>
+            <div class="paper-links">
+              <a href="https://doi.org/10.26599/bdma.2025.9020034" target="_blank" rel="noopener">Paper</a>
+            </div>
           </div>
         </article>
+
         <article class="paper-item">
-          <div class="paper-meta"><span>2024</span><b>计算机科学</b></div>
-          <div>
+          <div class="paper-visual visual-evidence" role="img" aria-label="Evidence selection for diverse data cleaning tasks">
+            <span>Cover 2024</span>
+          </div>
+          <div class="paper-body">
+            <div class="paper-topline"><span>2024</span><b>Computer Science</b></div>
             <h3><a href="https://www.jsjkx.com/CN/10.11896/jsjkx.230900003" target="_blank" rel="noopener">面向多样化数据清洗任务的证据集智能选择方法（Evidence Set Selection for Diverse Data Cleaning Tasks）</a></h3>
-            <p><strong>Zekai Qian</strong>, Xiaoou Ding, Zhe Sun, Hongzhi Wang, Yan Zhang. <span class="zh">51(8) 封面文章。</span><span class="en">Cover article, 51(8).</span></p>
+            <p class="paper-authors"><strong>Zekai Qian</strong>, Xiaoou Ding, Zhe Sun, Hongzhi Wang, Yan Zhang. <span class="zh">51(8) 封面文章。</span><span class="en">Cover article, 51(8).</span></p>
+            <p class="paper-note zh">从“证据集怎么选”这个小切口切入多样化清洗任务，关注清洗系统该如何拿到足够有用、又不过量的证据。</p>
+            <p class="paper-note en">Studies evidence selection for diverse cleaning tasks, focusing on how a cleaning system can use enough useful evidence without over-collecting.</p>
+            <div class="paper-tags"><span>Evidence selection</span><span>Data cleaning</span><span>Cover article</span></div>
+            <div class="paper-links">
+              <a href="https://www.jsjkx.com/CN/10.11896/jsjkx.230900003" target="_blank" rel="noopener">Paper</a>
+            </div>
           </div>
         </article>
       </div>
