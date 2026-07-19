@@ -103,13 +103,20 @@ button {
 
 .nav-links {
   align-items: center;
+  background: rgba(246, 248, 251, 0.78);
+  border: 1px solid #c8d3df;
+  border-radius: 6px;
   display: flex;
   flex: 1 1 auto;
   gap: 10px;
   max-width: 100%;
   min-width: 0;
   overflow-x: auto;
+  overscroll-behavior-inline: contain;
+  padding: 5px;
+  scroll-padding-inline: 5px;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
 
 .nav-links::-webkit-scrollbar {
@@ -1127,10 +1134,12 @@ h1 {
   }
 
   .nav-links {
+    border-color: #aebdcb;
+    box-shadow: inset -14px 0 16px -18px rgba(23, 32, 47, 0.9);
     flex: 1 1 100%;
     order: 3;
     overflow-x: auto;
-    padding-bottom: 6px;
+    padding: 5px;
     width: 100%;
   }
 
