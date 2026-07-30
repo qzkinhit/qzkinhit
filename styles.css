@@ -367,7 +367,8 @@ h1 {
 
 .mini-metrics b,
 .mini-metrics small {
-  overflow-wrap: anywhere;
+  overflow-wrap: normal;
+  word-break: normal;
 }
 
 .mini-metrics small {
@@ -1163,11 +1164,8 @@ h1 {
     max-width: 620px;
   }
 
-  .portrait-panel img {
-    grid-row: span 2;
-  }
-
   .mini-metrics {
+    grid-column: 1 / -1;
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 
