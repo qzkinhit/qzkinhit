@@ -1343,3 +1343,11 @@ h1 {
     transition-duration: 1ms !important;
   }
 }
+
+/* Certificate remains fully visible inside its publication card. */
+.paper-visual.certificate-visual { padding: 36px 12px 12px; }
+.paper-visual.certificate-visual .visual-link { height: auto; align-self: center; }
+.paper-visual.certificate-visual img { height: auto; object-fit: contain; }
+.submission-list { display: grid; gap: 20px; }
+.submission-item { padding: 22px; background: #fff; border: 1px solid var(--line); }
+.submission-item h3 { margin-bottom: 12px; overflow-wrap: anywhere; }
