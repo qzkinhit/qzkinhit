@@ -43,7 +43,7 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 | Year | Venue | Work |
 | --- | --- | --- |
 | 2026 | ICML | [DMCO: Budget-Aware Co-Optimization of Data Cleaning and AutoML](https://icml.cc/virtual/2026/poster/64882) |
-| 2026 | VLDB Workshop | [DemandPrep: Demand-Driven Data Preparation via Agentic Action Allocation and Operator-Grounded Execution](https://qzkinhit.github.io/qzkinhit/assets/papers/demandprep-vldb-workshop2026.pdf) |
+| 2026 | VLDB Workshop · **Oral Paper Award** | [DemandPrep: Demand-Driven Data Preparation via Agentic Action Allocation and Operator-Grounded Execution](https://qzkinhit.github.io/qzkinhit/assets/papers/demandprep-vldb-workshop2026.pdf) |
 | 2025 | VLDB | [DemandClean: A Multi-Objective Learning Framework for Balancing Model Tolerance to Data Authenticity and Diversity](https://doi.org/10.14778/3750601.3750666) |
 | 2025 | VLDB | [UniClean: A Scalable Data Cleaning Solution for Mixed Errors based on Unified Cleaners and Optimized Cleaning Workflow](https://doi.org/10.14778/3749646.3749681) |
 | 2025 | ICDE | [UniClean: A Multi-Signal Fusion Pipeline for Optimizing Data Cleaning Workflow](https://doi.org/10.1109/ICDE65448.2025.00362) |
@@ -51,6 +51,11 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 | 2025 | ICDE | [CBAClean: A Comprehensive System for Recommending Data Cleaning Solutions Through Cost-Benefit Analysis in Data Quality Management](https://doi.org/10.1109/ICDE65448.2025.00371) |
 | 2025 | BDMA | [A Survey on Data Asset Value Change Estimation and Appreciation with Data Governance](https://doi.org/10.26599/bdma.2025.9020034) |
 | 2024 | 计算机科学 | [面向多样化数据清洗任务的证据集智能选择方法 (Evidence Set Selection for Diverse Data Cleaning Tasks) — cover article](https://www.jsjkx.com/CN/10.11896/jsjkx.230900003) |
+
+## Manuscripts Under Review
+
+- **DemandClean: Task-Driven Operation Selection for Data Cleaning with Constrained Ground-Truth**. Zekai Qian, Xiaoou Ding, Z. Zhao, S. Chen, Chen Wang, Hongzhi Wang. **VLDB 2027, under review**.
+- **OmniSelect: Adaptive Data Selection with Complementary Quality Signals for Modality-Specific Foundation Models**. Zekai Qian, Xiaoou Ding, Yafeng Tang, Sijia Cheng, Chunyu Zhao, Hongzhi Wang, Chen Wang. **AAAI 2027, under review**.
 
 ## :toolbox: Toolbox
 
