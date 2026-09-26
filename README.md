@@ -55,7 +55,7 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 ## Manuscripts Under Review
 
 - **DemandClean: Task-Driven Operation Selection for Data Cleaning with Constrained Ground-Truth**. Zekai Qian, Xiaoou Ding, Z. Zhao, S. Chen, Chen Wang, Hongzhi Wang. **VLDB 2027, under review**.
-- **OmniSelect: Adaptive Data Selection with Complementary Quality Signals for Modality-Specific Foundation Models**. Zekai Qian, Xiaoou Ding, Yafeng Tang, Sijia Cheng, Chunyu Zhao, Hongzhi Wang, Chen Wang. **AAAI 2027, under review**.
+- **OmniSelect: Adaptive Data Selection with Complementary Quality Signals for Modality-Specific Foundation Models**. Zekai Qian, Xiaoou Ding, Yafeng Tang, Sijia Cheng, Chunyu Zhao, Hongzhi Wang, Chen Wang. **VLDB 2027, under review**.
 
 ## :toolbox: Toolbox
 
