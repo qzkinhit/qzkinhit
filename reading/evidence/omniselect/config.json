@@ -1,0 +1,291 @@
+{
+  "schema_version": "omniselect.run-record.v1",
+  "omniselect": {
+    "protocol": "v2_2",
+    "seed": 2,
+    "paired_rng": true,
+    "splits": {
+      "mode": "three_way",
+      "fractions": [
+        0.3,
+        0.5,
+        0.2
+      ],
+      "perm_seed_offset": 41,
+      "time_blocks": true,
+      "text_sizes": [
+        400,
+        600,
+        500,
+        500
+      ]
+    },
+    "cache": {
+      "by_subset_hash": true
+    },
+    "fidelity": {
+      "scoring_equals_reported": true
+    },
+    "gate": {
+      "kind": "margin",
+      "split": "rank",
+      "pair_split": "rank",
+      "margin_frac": 0.015,
+      "delta": 0.05,
+      "eps": 0.0,
+      "reading_order": "stratified",
+      "audit": true,
+      "audit_split": "conf",
+      "n_boot": 1000,
+      "p_beat_min": 0.9,
+      "k_challengers": 3,
+      "text_clip": 1.0,
+      "ts_block_steps": 0
+    },
+    "precheck": {
+      "enabled": true,
+      "decide": false,
+      "threshold_kind": "radius",
+      "threshold_multiplier": 2.0,
+      "threshold": 0.03
+    },
+    "portfolio": {
+      "membership": "unified_v22"
+    },
+    "influence": {
+      "reference": "v_con"
+    },
+    "screening": {
+      "kind": "full",
+      "sh_keep": 4,
+      "low_fidelity_fraction": 0.4
+    },
+    "synthesis": {
+      "consensus": true,
+      "consensus_top": 3,
+      "consensus_diversity_lam": 0.0,
+      "consensus_complementarity_threshold": 0.0,
+      "coordinate_ascent": true,
+      "ca_rounds": 2,
+      "ca_step": 0.15,
+      "policy_search": false,
+      "bayes": false,
+      "held_half": false,
+      "infomax_solver": false,
+      "bayes_probes": 12
+    },
+    "fixes": {
+      "fixed_fusion_gate": "finite_subset",
+      "vision_flip_range": "n_classes",
+      "density_seed": "run_seed"
+    },
+    "robustness": {
+      "mechanism_set": "canonical",
+      "val_noise_kind": "none",
+      "val_noise_rate": 0.0,
+      "injection_ratio": -1.0
+    },
+    "store": {
+      "per_unit_scope": "all"
+    },
+    "signals": {
+      "alignment": false
+    },
+    "coverage": {
+      "space": "feature"
+    },
+    "cooperative": {
+      "enabled": true,
+      "screen_keep": 3,
+      "reference_rho": 1.3,
+      "knn": 10,
+      "outlier_veto": true,
+      "outlier_z": 3.0,
+      "duplicate_veto": true,
+      "duplicate_ratio": 0.1
+    },
+    "cleanliness": {
+      "folds": 5,
+      "logreg_iter": 300,
+      "ridge_alpha": 1.0,
+      "max_iter": 200,
+      "learning_rate": 0.05,
+      "max_leaf_nodes": 15
+    },
+    "report_all_candidates": true,
+    "save_models": "elected"
+  },
+  "track": {
+    "track": "vision",
+    "dataset": "cifar100n",
+    "learner": "clip_vitb32",
+    "seed": 2,
+    "pool_n": 4000,
+    "val_n": 800,
+    "test_n": 2000,
+    "budget_frac": 0.5,
+    "noise_frac": 0.4,
+    "knn": 15,
+    "lam": 0.5,
+    "auth_q": 0.25,
+    "w_infl": 0.5,
+    "influence_ref_n": 1000000,
+    "influence_within_class": true,
+    "dsdm_runs": 20,
+    "dmf_rounds": 6,
+    "methods": [
+      "full",
+      "random",
+      "coreset",
+      "auth_only",
+      "herding",
+      "el2n",
+      "grand",
+      "ccs",
+      "density",
+      "quadmix_pub",
+      "dmf_pub",
+      "influence_only",
+      "mmdataselect",
+      "mmds_adapt"
+    ],
+    "grid_weights": null,
+    "grid_q": [
+      0.0,
+      0.25
+    ],
+    "grid_lam": [
+      0.0,
+      0.25,
+      0.6
+    ],
+    "grid_protocols": [
+      "canonical",
+      "v2"
+    ],
+    "coop_scores": [
+      "authenticity",
+      "cleanliness"
+    ],
+    "coop_rhos": [
+      "1.15",
+      "1.3",
+      "1.5"
+    ],
+    "coop_selectors": [
+      "herding",
+      "kcenter"
+    ],
+    "coop_ungated": [
+      "herding",
+      "kcenter"
+    ],
+    "device": "auto",
+    "selection_device": "cpu",
+    "data_root": "<data>",
+    "smoke": false,
+    "hf_dataset": "uoft-cs/cifar100",
+    "encoder": "openai/clip-vit-base-patch32",
+    "vis_noise": "real",
+    "scoring_max_iter": 150,
+    "reported_max_iter": 300,
+    "screen_max_iter": 60,
+    "learner_encoder": "facebook/dinov2-small",
+    "last_layer_warm": 100,
+    "resnet_epochs": 60,
+    "resnet_screen_epochs": 15,
+    "resnet_batch": 128,
+    "resnet_lr": 0.05,
+    "blur_sigma": 1.5,
+    "jpeg_quality": 20
+  },
+  "cli": [
+    "python",
+    "-m",
+    "tracks.common.experiment",
+    "--track",
+    "vision",
+    "--dataset",
+    "cifar100n",
+    "--seed",
+    "2",
+    "--protocol",
+    "v2_2",
+    "--batch",
+    "R1v23",
+    "--out",
+    "<repo>/results_and_logs",
+    "--set",
+    "store.per_unit_scope=all",
+    "--track-set",
+    "data_root=<data>",
+    "--set",
+    "save_models=elected",
+    "--track-set",
+    "influence_within_class=true",
+    "--track-set",
+    "influence_ref_n=1000000"
+  ],
+  "git": {
+    "sha": "5cfa44b9adc8c24ba2278124718c96118c6620fc",
+    "dirty": false
+  },
+  "environment": {
+    "python": "3.12.14",
+    "platform": "Linux-5.15.0-139-generic-x86_64-with-glibc2.31",
+    "hostname": "<host>",
+    "packages": {
+      "numpy": "2.3.2",
+      "scipy": "1.18.0",
+      "scikit-learn": "1.9.0",
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.1",
+      "datasets": "5.0.0",
+      "tabpfn": "8.1.0",
+      "chronos-forecasting": "2.3.1",
+      "xgboost": "3.3.0",
+      "lm-eval": "0.4.12"
+    },
+    "accelerator": {
+      "cuda": "12.8",
+      "name": "NVIDIA RTX A6000",
+      "visible_devices": "2"
+    },
+    "threads": {
+      "OMP_NUM_THREADS": "4",
+      "MKL_NUM_THREADS": "4",
+      "OPENBLAS_NUM_THREADS": "4",
+      "torch_num_threads": 4,
+      "cpu_count": 40,
+      "load_avg_1min": 39.04
+    }
+  },
+  "start_time": "2026-09-30T13:19:28+0800",
+  "protocol": "v2_2",
+  "batch": "R1v23",
+  "encoding": {
+    "settings": {
+      "PIL": "11.3.0",
+      "cuda_matmul_allow_tf32": null,
+      "cudnn_allow_tf32": null,
+      "device": "cpu",
+      "dtype": "float32",
+      "encoder": "openai/clip-vit-base-patch32",
+      "encoder_revision": "3d74acf9a28c67741b2f4f2ea7635f0aaf6f0268",
+      "fixture_check": {
+        "min_cosine_Xp_Xval_Xt": 1.0,
+        "passed": true,
+        "reference": "2026-07 cache of the same dataset and seed (<data>)"
+      },
+      "processor": "CLIPImageProcessorPil",
+      "source": "run_omniselect/server/encode_clip_cpu.py on <host>, 2026-09-26 22:49 to 23:31",
+      "torch": "2.11.0+cu128",
+      "transformers": "5.13.1",
+      "use_fast": false
+    },
+    "features_sha256": "47328d06bb84e22eaced3b29f31689ee1d69982f7fc46323048dda09da16c99e",
+    "note": null
+  },
+  "end_time": "2026-09-30T13:48:21+0800",
+  "elapsed_secs": 1732.628609418869
+}
