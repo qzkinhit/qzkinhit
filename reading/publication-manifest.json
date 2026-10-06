@@ -1,0 +1,117 @@
+{
+  "generated_on": "2026-10-06 Asia/Singapore",
+  "scope": "五篇静态阅读页、直接链接的证据与有限源码摘录；不含原始数据集、模型或完整论文PDF",
+  "files": [
+    {
+      "path": "01-uniclean.html",
+      "source_sha256": "9b90ecbfa3cdcd3b844ae9434bab219cf7c1546ecf09b4a6df452cce21e240be",
+      "published_sha256": "b2f325bef31553f075beffbc0c5a47daf756203d69c78aad682779e71c8d3172"
+    },
+    {
+      "path": "02-demandclean.html",
+      "source_sha256": "a6319b74a31e231d0c62568ce82bcdd2c1c7d526397f12973fa2be6f0db3361a",
+      "published_sha256": "0d4aec7d1918dfd530106a950a915e204c14be3bee905161f86ad91b479d9907"
+    },
+    {
+      "path": "03-carveprep.html",
+      "source_sha256": "130932efd3fa43a8c5675a83cafa50fb79b1a16d335693c7a4ffa132194f5fe3",
+      "published_sha256": "08984c41a7c649f02cc31ff6e6723fdbea35ca642a04bdd30e81ee9d2377827d"
+    },
+    {
+      "path": "04-omniselect.html",
+      "source_sha256": "75966e3b5cc498f9f908de6d003ec88235dfbfbc93447df978aee59de21d0d75",
+      "published_sha256": "4269a93b8946bdba5eca17bfc73dba4397bdaf9092bb6a9cb2ab6ebf02d1a05e"
+    },
+    {
+      "path": "05-vioexplain.html",
+      "source_sha256": "5ba95333de26c2d15304e7e404d45d98b908573275949dcb7a0f76a276f3681b",
+      "published_sha256": "bb8b4feb5777cbf720a72e8a9237b5ff9dd3f729084f0adfea5af17620863cc2"
+    },
+    {
+      "path": "evidence/demandclean-notes.md",
+      "source_sha256": "a56d7b6d4f52bc48c3561a578a4f90c2a68d6237ead35ba1b2987be15553d260",
+      "published_sha256": "459292ea5bea572af2b81b19316ec6d303828ec7303a8d2ca5296881d5e5e68b"
+    },
+    {
+      "path": "evidence/carveprep-trace.json",
+      "source_sha256": "65200e53345d32a51bd6411ee0ca0953d2a8cf43d58b3dc50dfdcb469ac4db77",
+      "published_sha256": "822d4d4cf6c8b36a9577e4d51ab7a2e5af12899e33cd51330e5380d7b1e0d379"
+    },
+    {
+      "path": "evidence/carveprep-notes.md",
+      "source_sha256": "3258aa518e791b57a2d521757ea73e55eaffc9f8629ee7ceae6482918ca331f5",
+      "published_sha256": "a7d0e0fb495c91d40480ef77f67879a1013fc5152f9b5655a719177303cd71d6"
+    },
+    {
+      "path": "evidence/omniselect/config.json",
+      "source_sha256": "396d0c8232ee4b728ba8d67f8f9512bed11179044c34a221ac3fb65b3326b6c3",
+      "published_sha256": "396d0c8232ee4b728ba8d67f8f9512bed11179044c34a221ac3fb65b3326b6c3"
+    },
+    {
+      "path": "evidence/omniselect-notes.md",
+      "source_sha256": "b210e2c7100a31c2710c175fc87b526156ec669b7419995983096521230179a7",
+      "published_sha256": "b9c63a1e3f11acec7642428396d89bc86f3a1c982d1ee0e3778912934d363020"
+    },
+    {
+      "path": "evidence/omniselect-paper-coverage.json",
+      "source_sha256": "090bf55f942b246d9397c0e3be10620ccb3cbade6f6e6ca39fb0aa08d679855f",
+      "published_sha256": "50d6fff11ba8229f353ea2275154724f1c9ddbf1ae914ee4685f98a898fda552"
+    },
+    {
+      "path": "evidence/omniselect/decision.json",
+      "source_sha256": "1e13f485bb7c7f724a98f340ab4a94daa528a089c21519d5a45b8e2e05619846",
+      "published_sha256": "1e13f485bb7c7f724a98f340ab4a94daa528a089c21519d5a45b8e2e05619846"
+    },
+    {
+      "path": "evidence/omniselect/metrics.json",
+      "source_sha256": "73589158e3c8bd90a05ddae4953190394c04d689f435bfcff1db18210e346e40",
+      "published_sha256": "73589158e3c8bd90a05ddae4953190394c04d689f435bfcff1db18210e346e40"
+    },
+    {
+      "path": "evidence/omniselect/splits.json",
+      "source_sha256": "01392e31c6bbc46b47973e0873e57b6ed7d25e0c89e95af4d64cf3b69ad80d92",
+      "published_sha256": "01392e31c6bbc46b47973e0873e57b6ed7d25e0c89e95af4d64cf3b69ad80d92"
+    },
+    {
+      "path": "evidence/omniselect/selection.json",
+      "source_sha256": "6870262b64f5351921627f7719e34b481614be1ea4c8628fa8777ab0cd889978",
+      "published_sha256": "eea337f5136bd3b5c3e14b830c1d73aaf7635ab0c350a5fa9efd0defb541373d"
+    },
+    {
+      "path": "evidence/omniselect/timings.json",
+      "source_sha256": "22fecdbc0297f8880a25c9098843817bfa6f6df09a3319dd234685feca012390",
+      "published_sha256": "22fecdbc0297f8880a25c9098843817bfa6f6df09a3319dd234685feca012390"
+    },
+    {
+      "path": "evidence/vioexplain-method-notes.md",
+      "source_sha256": "114163ccafc5f72b1322eff5517093e199d5fc6ce67ad4abf40264604169b6b1",
+      "published_sha256": "5084e2780b632d2a5e51533883c00fce33433adeb7b8216bf71b88f362329064"
+    },
+    {
+      "path": "evidence/vioexplain-paper-notes.md",
+      "source_sha256": "b123a8f60a509280720226272af35e9515acceaec7ea77187f700fc0c73682d4",
+      "published_sha256": "a819b81c054e5074df0e7a4a95f889336474f18e8eb4ce467f4ad35dbeeea1e6"
+    },
+    {
+      "path": "evidence/vioexplain-code-notes.md",
+      "source_sha256": "437330c29b7593f6fb57a6ad52d25c37b7eda9cf3f52d5c4aba3f4c5f8174038",
+      "published_sha256": "437330c29b7593f6fb57a6ad52d25c37b7eda9cf3f52d5c4aba3f4c5f8174038"
+    },
+    {
+      "path": "evidence/vioexplain-results-notes.md",
+      "source_sha256": "f26e9e1f5a95ce40e58b8726fe9833093dcc9f2da645022552c5eaf2d0424a01",
+      "published_sha256": "8eb84616368318f6b92d5d29f15db192a4a872a2b7531c26723215add266cf32"
+    },
+    {
+      "path": "evidence/trace_vioexplain.py",
+      "source_sha256": "1d56210352ffddf3bf90c17da43f9a047274f0c02261184a758aaaa4e5be87cd",
+      "published_sha256": "1d56210352ffddf3bf90c17da43f9a047274f0c02261184a758aaaa4e5be87cd"
+    },
+    {
+      "path": "evidence/omniselect-depth-review.md",
+      "source_sha256": "5478f6b16eac04ff0990f735fae3eb93b2b9080ae7aae3d18e80b8ebbf5e6329",
+      "published_sha256": "5478f6b16eac04ff0990f735fae3eb93b2b9080ae7aae3d18e80b8ebbf5e6329"
+    }
+  ],
+  "source_excerpts": 123
+}

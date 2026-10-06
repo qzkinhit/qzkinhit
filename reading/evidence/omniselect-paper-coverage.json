@@ -1,0 +1,218 @@
+[
+  {
+    "level": "section",
+    "title": "引言",
+    "line": 170,
+    "section": "intro",
+    "coverage": "问题动机与反转案例",
+    "code": "README及各track入口"
+  },
+  {
+    "level": "subsection",
+    "title": "挑战",
+    "line": 199,
+    "section": "flow",
+    "coverage": "候选构建、隔离验证、训练代价",
+    "code": "controller.py/cache.py"
+  },
+  {
+    "level": "subsection",
+    "title": "贡献",
+    "line": 208,
+    "section": "limits",
+    "coverage": "按角色协同、裁决与保证",
+    "code": "cooperative.py/cleanliness.py"
+  },
+  {
+    "level": "section",
+    "title": "相关工作",
+    "line": 220,
+    "section": "os-experiments",
+    "coverage": "基线机制和协议保真度",
+    "code": "benchmark/Methods/*/README.md"
+  },
+  {
+    "level": "section",
+    "title": "问题陈述",
+    "line": 252,
+    "section": "data",
+    "coverage": "数据、预算、策略、效用、组合定义",
+    "code": "core/datatypes.py/tracks/common/task.py"
+  },
+  {
+    "level": "subsection",
+    "title": "预备知识",
+    "line": 255,
+    "section": "data",
+    "coverage": "上述核心对象",
+    "code": "datatypes.py/portfolio/membership.py"
+  },
+  {
+    "level": "subsection",
+    "title": "问题定义",
+    "line": 280,
+    "section": "flow",
+    "coverage": "预算内有限策略选择目标",
+    "code": "controller.py::adjudicate"
+  },
+  {
+    "level": "section",
+    "title": "OmniSelect 方法",
+    "line": 292,
+    "section": "flow",
+    "coverage": "算法全流程",
+    "code": "controller.py"
+  },
+  {
+    "level": "subsection",
+    "title": "第一层：组合构建",
+    "line": 305,
+    "section": "os-control",
+    "coverage": "信号、融合、筛选与合成",
+    "code": "signals/*/fusion_grid.py/synthesis.py"
+  },
+  {
+    "level": "subsection",
+    "title": "信号的按角色协同",
+    "line": 317,
+    "section": "coop",
+    "coverage": "准入、过滤、回填与代表性",
+    "code": "cooperative.py/cleanliness.py"
+  },
+  {
+    "level": "subsection",
+    "title": "第二层：验证引导的裁决",
+    "line": 350,
+    "section": "os-control",
+    "coverage": "候选冻结及排序控制流",
+    "code": "controller.py/_decide"
+  },
+  {
+    "level": "subsection",
+    "title": "选举的误差界",
+    "line": 412,
+    "section": "os-theory",
+    "coverage": "P1–P4、配对半径与确认假设",
+    "code": "gates/paired.py/audit.py/eprocess.py"
+  },
+  {
+    "level": "section",
+    "title": "实验评估",
+    "line": 491,
+    "section": "os-experiments",
+    "coverage": "主表、机制、消融、部署",
+    "code": "results/paper/tables/*"
+  },
+  {
+    "level": "subsection",
+    "title": "实验设置",
+    "line": 560,
+    "section": "data",
+    "coverage": "数据、模型、指标、划分与配对",
+    "code": "tracks/*/config.py"
+  },
+  {
+    "level": "subsection",
+    "title": "实验组 I：总体性能",
+    "line": 571,
+    "section": "results",
+    "coverage": "11主任务、2规模扩展、1辅助任务",
+    "code": "paper_numbers.json"
+  },
+  {
+    "level": "subsubsection",
+    "title": "发现 1：OmniSelect 从不低于随机选择，也从不输给最强基线",
+    "line": 574,
+    "section": "os-experiments",
+    "coverage": "逐条发现及证据口径",
+    "code": "当前论文相应行与results/paper/tables/*"
+  },
+  {
+    "level": "subsubsection",
+    "title": "发现 2：最佳固定策略随任务反转",
+    "line": 579,
+    "section": "os-experiments",
+    "coverage": "逐条发现及证据口径",
+    "code": "当前论文相应行与results/paper/tables/*"
+  },
+  {
+    "level": "subsubsection",
+    "title": "发现 3：在七个任务上，预算内子集优于整个数据池",
+    "line": 587,
+    "section": "os-experiments",
+    "coverage": "逐条发现及证据口径",
+    "code": "当前论文相应行与results/paper/tables/*"
+  },
+  {
+    "level": "subsection",
+    "title": "实验组 II：信号为何需要角色分工",
+    "line": 592,
+    "section": "os-experiments",
+    "coverage": "损坏选入率与信号移除",
+    "code": "admit_table.py/figure6_validation_size_and_signal_ablation.json"
+  },
+  {
+    "level": "subsubsection",
+    "title": "发现 4：各信号在互补的损坏类型上失效",
+    "line": 599,
+    "section": "os-experiments",
+    "coverage": "逐条发现及证据口径",
+    "code": "当前论文相应行与results/paper/tables/*"
+  },
+  {
+    "level": "subsubsection",
+    "title": "发现 5：协同策略提高组合的上限",
+    "line": 610,
+    "section": "os-experiments",
+    "coverage": "逐条发现及证据口径",
+    "code": "当前论文相应行与results/paper/tables/*"
+  },
+  {
+    "level": "subsection",
+    "title": "实验组 III：裁决的作用",
+    "line": 617,
+    "section": "os-control",
+    "coverage": "策略上限、选择增益和核验",
+    "code": "decision.json/adoption_numbers.json"
+  },
+  {
+    "level": "subsubsection",
+    "title": "发现 6：选举获得组合中可得增益的大部分",
+    "line": 649,
+    "section": "os-experiments",
+    "coverage": "逐条发现及证据口径",
+    "code": "当前论文相应行与results/paper/tables/*"
+  },
+  {
+    "level": "subsection",
+    "title": "实验组 IV：部署",
+    "line": 654,
+    "section": "os-experiments",
+    "coverage": "污染、验证噪声、替换学习器、代价",
+    "code": "robust_cells_view.json/timings.json"
+  },
+  {
+    "level": "subsubsection",
+    "title": "发现 7：增益随损坏对学习器造成的伤害而增大",
+    "line": 657,
+    "section": "os-experiments",
+    "coverage": "逐条发现及证据口径",
+    "code": "当前论文相应行与results/paper/tables/*"
+  },
+  {
+    "level": "subsubsection",
+    "title": "发现 8：在训练一次缓存下，裁决的代价为几十次全数据训练",
+    "line": 666,
+    "section": "os-experiments",
+    "coverage": "逐条发现及证据口径",
+    "code": "当前论文相应行与results/paper/tables/*"
+  },
+  {
+    "level": "section",
+    "title": "结论",
+    "line": 673,
+    "section": "limits",
+    "coverage": "总结与经验适用边界",
+    "code": "无独立执行函数"
+  }
+]

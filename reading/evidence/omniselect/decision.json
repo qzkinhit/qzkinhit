@@ -1,0 +1,424 @@
+{
+  "gate": {
+    "kind": "margin",
+    "reference": "influence_only",
+    "elected": "coop gate=authenticity rho=1.15 within=kcenter",
+    "adopted": true,
+    "k_tested": 3,
+    "tests": [
+      {
+        "kind": "margin",
+        "reference": "influence_only",
+        "challenger": "coop gate=authenticity rho=1.15 within=kcenter",
+        "adopted": true,
+        "statistics": {
+          "u_reference": 0.4175,
+          "u_challenger": 0.44,
+          "margin_frac": 0.015,
+          "tau": 0.0062625,
+          "difference": 0.02250000000000002
+        }
+      },
+      {
+        "kind": "margin",
+        "reference": "influence_only",
+        "challenger": "coop gate=cleanliness rho=1.3 within=kcenter",
+        "adopted": true,
+        "statistics": {
+          "u_reference": 0.4175,
+          "u_challenger": 0.425,
+          "margin_frac": 0.015,
+          "tau": 0.0062625,
+          "difference": 0.007500000000000007
+        }
+      },
+      {
+        "kind": "margin",
+        "reference": "influence_only",
+        "challenger": "fuse w=(0, 1, 0) q=0.0 lam=0.25",
+        "adopted": false,
+        "statistics": {
+          "u_reference": 0.4175,
+          "u_challenger": 0.4225,
+          "margin_frac": 0.015,
+          "tau": 0.0062625,
+          "difference": 0.0050000000000000044
+        }
+      }
+    ]
+  },
+  "elected": "coop gate=authenticity rho=1.15 within=kcenter",
+  "elected_sel_sha12": "cc6240a97224",
+  "reference": "influence_only",
+  "rank_best_reference": "influence_only",
+  "overall_rank_best": "coop gate=authenticity rho=1.15 within=kcenter",
+  "adopted": true,
+  "switched": true,
+  "kappa_hat": 0.08750000000000002,
+  "u_rank_elected": 0.44,
+  "audit": {
+    "split": "conf",
+    "reference": "influence_only",
+    "K": 3,
+    "delta": 0.05,
+    "eps": 0.0,
+    "n_boot": 1000,
+    "reading_order": "stratified",
+    "seed": 2,
+    "entries": [
+      {
+        "challenger": "coop gate=authenticity rho=1.15 within=kcenter",
+        "mean_gain": -0.025,
+        "boot_interval90": [
+          -0.06875000000000002,
+          0.025000000000000005
+        ],
+        "p_win": 0.193,
+        "e_value": 1.0,
+        "log_e_value": 0.0,
+        "threshold": 60.0,
+        "certified": false,
+        "stop_index": null,
+        "n_units": 160,
+        "n_read": 160,
+        "reading": "uniform"
+      },
+      {
+        "challenger": "coop gate=cleanliness rho=1.3 within=kcenter",
+        "mean_gain": -0.025000000000000005,
+        "boot_interval90": [
+          -0.08125000000000002,
+          0.031250000000000014
+        ],
+        "p_win": 0.243,
+        "e_value": 1.5,
+        "log_e_value": 0.4054651081081644,
+        "threshold": 60.0,
+        "certified": false,
+        "stop_index": null,
+        "n_units": 160,
+        "n_read": 160,
+        "reading": "uniform"
+      },
+      {
+        "challenger": "fuse w=(0, 1, 0) q=0.0 lam=0.25",
+        "mean_gain": 0.00625,
+        "boot_interval90": [
+          -0.012500000000000002,
+          0.025000000000000005
+        ],
+        "p_win": 0.623,
+        "e_value": 1.0,
+        "log_e_value": 0.0,
+        "threshold": 60.0,
+        "certified": false,
+        "stop_index": null,
+        "n_units": 160,
+        "n_read": 160,
+        "reading": "uniform"
+      }
+    ],
+    "note": "diagnostic, the election does not read it"
+  },
+  "precheck": {
+    "enabled": true,
+    "decide": false,
+    "skipped": false,
+    "headroom": 0.1275,
+    "best_reference_headroom": 0.065,
+    "r1": 0.06119367076702042,
+    "threshold": 0.12238734153404084,
+    "threshold_kind": "radius",
+    "n_eff": 399.99999999999994,
+    "delta": 0.05,
+    "multiplier": 2.0,
+    "relative_threshold": 0.03
+  },
+  "screening": {
+    "kind": "full",
+    "applied": true,
+    "total": 20,
+    "finalists": 4,
+    "evaluations": 35,
+    "rounds": [
+      [
+        [
+          "fuse w=(1, 0, 0) q=0.0 lam=0.0",
+          0.35833333333333334
+        ],
+        [
+          "fuse w=(1, 0, 0) q=0.0 lam=0.25",
+          0.3625
+        ],
+        [
+          "fuse w=(0, 1, 0) q=0.0 lam=0.0",
+          0.4375
+        ],
+        [
+          "fuse w=(0, 1, 0) q=0.0 lam=0.25",
+          0.44583333333333336
+        ],
+        [
+          "fuse w=(0, 1, 0) q=0.0 lam=0.6",
+          0.4375
+        ],
+        [
+          "fuse w=(0, 0, 1) q=0.0 lam=0.0",
+          0.2708333333333333
+        ],
+        [
+          "fuse w=(0, 0, 1) q=0.0 lam=0.25",
+          0.2625
+        ],
+        [
+          "fuse w=(0, 0, 1) q=0.0 lam=0.6",
+          0.2625
+        ],
+        [
+          "fuse w=(0.5, 0.5, 0) q=0.0 lam=0.0",
+          0.3875
+        ],
+        [
+          "fuse w=(0.5, 0.5, 0) q=0.0 lam=0.25",
+          0.39166666666666666
+        ],
+        [
+          "fuse w=(0.5, 0.5, 0) q=0.0 lam=0.6",
+          0.39166666666666666
+        ],
+        [
+          "fuse w=(0.5, 0, 0.5) q=0.0 lam=0.0",
+          0.3333333333333333
+        ],
+        [
+          "fuse w=(0.5, 0, 0.5) q=0.0 lam=0.25",
+          0.32916666666666666
+        ],
+        [
+          "fuse w=(0.5, 0, 0.5) q=0.0 lam=0.6",
+          0.325
+        ],
+        [
+          "fuse w=(0, 0.5, 0.5) q=0.0 lam=0.0",
+          0.425
+        ],
+        [
+          "fuse w=(0, 0.5, 0.5) q=0.0 lam=0.25",
+          0.425
+        ],
+        [
+          "fuse w=(0, 0.5, 0.5) q=0.0 lam=0.6",
+          0.425
+        ],
+        [
+          "fuse w=(0.34, 0.33, 0.33) q=0.0 lam=0.0",
+          0.37916666666666665
+        ],
+        [
+          "fuse w=(0.34, 0.33, 0.33) q=0.0 lam=0.25",
+          0.375
+        ],
+        [
+          "fuse w=(0.34, 0.33, 0.33) q=0.0 lam=0.6",
+          0.39166666666666666
+        ]
+      ],
+      [
+        [
+          "fuse w=(0, 1, 0) q=0.0 lam=0.25",
+          0.44583333333333336
+        ],
+        [
+          "fuse w=(0, 1, 0) q=0.0 lam=0.0",
+          0.4375
+        ],
+        [
+          "fuse w=(0, 1, 0) q=0.0 lam=0.6",
+          0.4375
+        ],
+        [
+          "fuse w=(0, 0.5, 0.5) q=0.0 lam=0.0",
+          0.425
+        ],
+        [
+          "fuse w=(0, 0.5, 0.5) q=0.0 lam=0.25",
+          0.425
+        ],
+        [
+          "fuse w=(0, 0.5, 0.5) q=0.0 lam=0.6",
+          0.425
+        ],
+        [
+          "fuse w=(0.5, 0.5, 0) q=0.0 lam=0.25",
+          0.39166666666666666
+        ],
+        [
+          "fuse w=(0.5, 0.5, 0) q=0.0 lam=0.6",
+          0.39166666666666666
+        ],
+        [
+          "fuse w=(0.34, 0.33, 0.33) q=0.0 lam=0.6",
+          0.39166666666666666
+        ],
+        [
+          "fuse w=(0.5, 0.5, 0) q=0.0 lam=0.0",
+          0.3875
+        ]
+      ],
+      [
+        [
+          "fuse w=(0, 1, 0) q=0.0 lam=0.25",
+          0.44583333333333336
+        ],
+        [
+          "fuse w=(0, 1, 0) q=0.0 lam=0.0",
+          0.4375
+        ],
+        [
+          "fuse w=(0, 1, 0) q=0.0 lam=0.6",
+          0.4375
+        ],
+        [
+          "fuse w=(0, 0.5, 0.5) q=0.0 lam=0.0",
+          0.425
+        ],
+        [
+          "fuse w=(0, 0.5, 0.5) q=0.0 lam=0.25",
+          0.425
+        ]
+      ]
+    ],
+    "screened_out": [
+      "fuse w=(1, 0, 0) q=0.0 lam=0.0",
+      "fuse w=(1, 0, 0) q=0.0 lam=0.25",
+      "fuse w=(0, 0, 1) q=0.0 lam=0.0",
+      "fuse w=(0, 0, 1) q=0.0 lam=0.25",
+      "fuse w=(0, 0, 1) q=0.0 lam=0.6",
+      "fuse w=(0.5, 0.5, 0) q=0.0 lam=0.0",
+      "fuse w=(0.5, 0.5, 0) q=0.0 lam=0.25",
+      "fuse w=(0.5, 0.5, 0) q=0.0 lam=0.6",
+      "fuse w=(0.5, 0, 0.5) q=0.0 lam=0.0",
+      "fuse w=(0.5, 0, 0.5) q=0.0 lam=0.25",
+      "fuse w=(0.5, 0, 0.5) q=0.0 lam=0.6",
+      "fuse w=(0, 0.5, 0.5) q=0.0 lam=0.25",
+      "fuse w=(0, 0.5, 0.5) q=0.0 lam=0.6",
+      "fuse w=(0.34, 0.33, 0.33) q=0.0 lam=0.0",
+      "fuse w=(0.34, 0.33, 0.33) q=0.0 lam=0.25",
+      "fuse w=(0.34, 0.33, 0.33) q=0.0 lam=0.6"
+    ],
+    "cooperative": {
+      "kind": "full",
+      "applied": true,
+      "total": 14,
+      "finalists": 3,
+      "evaluations": 21,
+      "rounds": [
+        [
+          [
+            "coop gate=authenticity rho=1.15 within=herding",
+            0.32916666666666666
+          ],
+          [
+            "coop gate=authenticity rho=1.15 within=kcenter",
+            0.375
+          ],
+          [
+            "coop gate=authenticity rho=1.3 within=herding",
+            0.3375
+          ],
+          [
+            "coop gate=authenticity rho=1.3 within=kcenter",
+            0.3625
+          ],
+          [
+            "coop gate=authenticity rho=1.5 within=herding",
+            0.3333333333333333
+          ],
+          [
+            "coop gate=authenticity rho=1.5 within=kcenter",
+            0.37916666666666665
+          ],
+          [
+            "coop gate=cleanliness rho=1.15 within=herding",
+            0.3625
+          ],
+          [
+            "coop gate=cleanliness rho=1.15 within=kcenter",
+            0.35833333333333334
+          ],
+          [
+            "coop gate=cleanliness rho=1.3 within=herding",
+            0.36666666666666664
+          ],
+          [
+            "coop gate=cleanliness rho=1.3 within=kcenter",
+            0.37083333333333335
+          ],
+          [
+            "coop gate=cleanliness rho=1.5 within=herding",
+            0.31666666666666665
+          ],
+          [
+            "coop gate=cleanliness rho=1.5 within=kcenter",
+            0.3625
+          ],
+          [
+            "coop rho=none within=herding",
+            0.3541666666666667
+          ],
+          [
+            "coop rho=none within=kcenter",
+            0.29583333333333334
+          ]
+        ],
+        [
+          [
+            "coop gate=authenticity rho=1.5 within=kcenter",
+            0.37916666666666665
+          ],
+          [
+            "coop gate=authenticity rho=1.15 within=kcenter",
+            0.375
+          ],
+          [
+            "coop gate=cleanliness rho=1.3 within=kcenter",
+            0.37083333333333335
+          ],
+          [
+            "coop gate=cleanliness rho=1.3 within=herding",
+            0.36666666666666664
+          ],
+          [
+            "coop gate=authenticity rho=1.3 within=kcenter",
+            0.3625
+          ],
+          [
+            "coop gate=cleanliness rho=1.15 within=herding",
+            0.3625
+          ],
+          [
+            "coop gate=cleanliness rho=1.5 within=kcenter",
+            0.3625
+          ]
+        ]
+      ],
+      "screened_out": [
+        "coop gate=authenticity rho=1.15 within=herding",
+        "coop gate=authenticity rho=1.3 within=herding",
+        "coop gate=authenticity rho=1.3 within=kcenter",
+        "coop gate=authenticity rho=1.5 within=herding",
+        "coop gate=cleanliness rho=1.15 within=herding",
+        "coop gate=cleanliness rho=1.15 within=kcenter",
+        "coop gate=cleanliness rho=1.3 within=herding",
+        "coop gate=cleanliness rho=1.5 within=herding",
+        "coop gate=cleanliness rho=1.5 within=kcenter",
+        "coop rho=none within=herding",
+        "coop rho=none within=kcenter"
+      ]
+    }
+  },
+  "construction_errors": [],
+  "protocol": "v2_2",
+  "elected_test_utility": 0.3955,
+  "utility": "accuracy"
+}

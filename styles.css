@@ -17,6 +17,18 @@
   --content-max: 1520px;
 }
 
+.footer-links .footer-notes {
+  color: var(--muted);
+  font-size: 0.75rem;
+  padding: 8px 2px;
+}
+
+.footer-links .footer-notes:hover,
+.footer-links .footer-notes:focus-visible {
+  color: var(--teal);
+  text-decoration: underline;
+}
+
 * {
   box-sizing: border-box;
 }
