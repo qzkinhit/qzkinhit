@@ -1,36 +1,36 @@
 {
-  "generated_on": "2026-10-06 Asia/Singapore",
-  "scope": "五篇静态阅读页、直接链接的证据与有限源码摘录；不含原始数据集、模型或完整论文PDF",
+  "generated_on": "2026-10-08 Asia/Singapore",
+  "scope": "五篇静态阅读页、三页手撕代码笔记、直接链接的证据与有限源码摘录；不含原始数据集、模型或完整论文PDF",
   "files": [
     {
       "path": "01-uniclean.html",
       "source_sha256": "9b90ecbfa3cdcd3b844ae9434bab219cf7c1546ecf09b4a6df452cce21e240be",
-      "published_sha256": "b2f325bef31553f075beffbc0c5a47daf756203d69c78aad682779e71c8d3172"
+      "published_sha256": "10269707aeb0b3a9474dc207c49e6d89451867fcfd31c57367771ee4f87d6836"
     },
     {
       "path": "02-demandclean.html",
       "source_sha256": "a6319b74a31e231d0c62568ce82bcdd2c1c7d526397f12973fa2be6f0db3361a",
-      "published_sha256": "0d4aec7d1918dfd530106a950a915e204c14be3bee905161f86ad91b479d9907"
+      "published_sha256": "612eeef48c9b4246c3be126294b2a33bd8bc55658ba57043ee4a537c5121cae6"
     },
     {
       "path": "03-carveprep.html",
       "source_sha256": "130932efd3fa43a8c5675a83cafa50fb79b1a16d335693c7a4ffa132194f5fe3",
-      "published_sha256": "08984c41a7c649f02cc31ff6e6723fdbea35ca642a04bdd30e81ee9d2377827d"
+      "published_sha256": "43806fb579a14ba054cd02e4110f82270e57d3521250d5daafd61db2bda3fec2"
     },
     {
       "path": "04-omniselect.html",
       "source_sha256": "75966e3b5cc498f9f908de6d003ec88235dfbfbc93447df978aee59de21d0d75",
-      "published_sha256": "4269a93b8946bdba5eca17bfc73dba4397bdaf9092bb6a9cb2ab6ebf02d1a05e"
+      "published_sha256": "f43b2fbdff51bd5d65d56aff11f014f5e8e6d233cfecb3b90528f56029fc57ed"
     },
     {
       "path": "05-vioexplain.html",
       "source_sha256": "5ba95333de26c2d15304e7e404d45d98b908573275949dcb7a0f76a276f3681b",
-      "published_sha256": "bb8b4feb5777cbf720a72e8a9237b5ff9dd3f729084f0adfea5af17620863cc2"
+      "published_sha256": "69179c1dbef822f90124867e4c64bdb671d9400d1099cb8c900b5a14e41abd64"
     },
     {
       "path": "evidence/demandclean-notes.md",
       "source_sha256": "a56d7b6d4f52bc48c3561a578a4f90c2a68d6237ead35ba1b2987be15553d260",
-      "published_sha256": "459292ea5bea572af2b81b19316ec6d303828ec7303a8d2ca5296881d5e5e68b"
+      "published_sha256": "4f2ac93cfe3a6b3ad3d49e2bd837605f4dec6f3e70807c050878c2b168373a99"
     },
     {
       "path": "evidence/carveprep-trace.json",
@@ -40,17 +40,12 @@
     {
       "path": "evidence/carveprep-notes.md",
       "source_sha256": "3258aa518e791b57a2d521757ea73e55eaffc9f8629ee7ceae6482918ca331f5",
-      "published_sha256": "a7d0e0fb495c91d40480ef77f67879a1013fc5152f9b5655a719177303cd71d6"
+      "published_sha256": "18f52cf2f7d0bab44db9af2bbe7992708a8f9958a13f135441d2595733653d9f"
     },
     {
       "path": "evidence/omniselect/config.json",
       "source_sha256": "396d0c8232ee4b728ba8d67f8f9512bed11179044c34a221ac3fb65b3326b6c3",
       "published_sha256": "396d0c8232ee4b728ba8d67f8f9512bed11179044c34a221ac3fb65b3326b6c3"
-    },
-    {
-      "path": "evidence/omniselect-notes.md",
-      "source_sha256": "b210e2c7100a31c2710c175fc87b526156ec669b7419995983096521230179a7",
-      "published_sha256": "b9c63a1e3f11acec7642428396d89bc86f3a1c982d1ee0e3778912934d363020"
     },
     {
       "path": "evidence/omniselect-paper-coverage.json",
@@ -83,24 +78,14 @@
       "published_sha256": "22fecdbc0297f8880a25c9098843817bfa6f6df09a3319dd234685feca012390"
     },
     {
-      "path": "evidence/vioexplain-method-notes.md",
-      "source_sha256": "114163ccafc5f72b1322eff5517093e199d5fc6ce67ad4abf40264604169b6b1",
-      "published_sha256": "5084e2780b632d2a5e51533883c00fce33433adeb7b8216bf71b88f362329064"
-    },
-    {
       "path": "evidence/vioexplain-paper-notes.md",
       "source_sha256": "b123a8f60a509280720226272af35e9515acceaec7ea77187f700fc0c73682d4",
-      "published_sha256": "a819b81c054e5074df0e7a4a95f889336474f18e8eb4ce467f4ad35dbeeea1e6"
+      "published_sha256": "f252854ec02b5505c90198ea2d727263ff06d1c47ab41f4e789be7d8593000b9"
     },
     {
       "path": "evidence/vioexplain-code-notes.md",
       "source_sha256": "437330c29b7593f6fb57a6ad52d25c37b7eda9cf3f52d5c4aba3f4c5f8174038",
-      "published_sha256": "437330c29b7593f6fb57a6ad52d25c37b7eda9cf3f52d5c4aba3f4c5f8174038"
-    },
-    {
-      "path": "evidence/vioexplain-results-notes.md",
-      "source_sha256": "f26e9e1f5a95ce40e58b8726fe9833093dcc9f2da645022552c5eaf2d0424a01",
-      "published_sha256": "8eb84616368318f6b92d5d29f15db192a4a872a2b7531c26723215add266cf32"
+      "published_sha256": "391ebdebd375e243691008453aba89344e0c77f3b81067435d53a16a60a0c45d"
     },
     {
       "path": "evidence/trace_vioexplain.py",
@@ -108,9 +93,19 @@
       "published_sha256": "1d56210352ffddf3bf90c17da43f9a047274f0c02261184a758aaaa4e5be87cd"
     },
     {
-      "path": "evidence/omniselect-depth-review.md",
-      "source_sha256": "5478f6b16eac04ff0990f735fae3eb93b2b9080ae7aae3d18e80b8ebbf5e6329",
-      "published_sha256": "5478f6b16eac04ff0990f735fae3eb93b2b9080ae7aae3d18e80b8ebbf5e6329"
+      "path": "06-hot100.html",
+      "source_sha256": null,
+      "published_sha256": "1d17e38a696e94b60084e8d95022c6db96b74d37c5fe80f9e4d2a58a507c94e3"
+    },
+    {
+      "path": "07-ml-handcode.html",
+      "source_sha256": null,
+      "published_sha256": "7a1e6ba603a3c5180c0df70932c78f173b3f024970d77539bc0490b43a930340"
+    },
+    {
+      "path": "08-python-cheatsheet.html",
+      "source_sha256": null,
+      "published_sha256": "295e45a314c3dd76cadd17eb8af68746ff063e87441f5500eef6de17e8265ae6"
     }
   ],
   "source_excerpts": 123

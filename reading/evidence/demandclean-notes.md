@@ -333,4 +333,3 @@ v5 报告 RAHA 20 行 + 5 GT 单元格 = 25 的 cost_ratio 混合计数单位，
 
 ## 深度升级
 共24节、31项论文目录覆盖、22帧episode执行器、Dueling/Double计算器、检测与VE条件台、数据隔离和9段逐段源码解释。详见 demandclean-coverage.md。
-本轮发现预算强制降级仅适用于CleaningEnv；TwoPhaseCleaningEnv没有同等硬检查，旧笔记中泛化描述以本条为准。

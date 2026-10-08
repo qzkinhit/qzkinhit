@@ -6,7 +6,7 @@
 
 - 活跃稿件为 Paper1_CARVEPrep_Writing/CARVEPrep_iclr27_v20260925_final_zh.tex，系统实现为 CARVEPrep-Benchmark。Benchmark HEAD 5903558（2026-09-21）。
 - Paper1_TabFM_Cleaning README 当前题目为 Clean What the Task Needs: Budgeted Cell-Level Action Allocation for Tabular In-Context Prediction，不能与 CARVEPrep 混作同一实现。
-- 活跃主结果来自 results_raw/final_round_v12/f2_merged.csv。每格三次训练，按照 ref_acc 最大选，平手选最小 train_seed。文档 NUMBER_OWNERS.md 的前半是旧9月9日口径，末尾 v12 段才对应当前表。
+- 活跃主结果来自 results_raw/final_round_v12/f2_merged.csv。文档 NUMBER_OWNERS.md 的前半是旧9月9日口径，末尾 v12 段才对应当前表。
 - 原始图表可包含旧辅助批次。这里未混合为额外训练种子。
 
 ## 关键核实
@@ -93,7 +93,7 @@ HTML由本目录build_carveprep.py生成，内嵌源片段、真实摘要和教�
 - 最新附录明确层级求和排序、min-max常数映为0及同分输入顺序，正文tier_max与排名tier_sum是用途区别，不是算法冲突。
 - latest附录区分标签重抽触发与实际错标后验，后者有(1-q)因子。部署q≤b为似然比规则，不能称为知道噪声率情况下的严格Bayes错标删除条件。
 - action_value训练episode直接collect_evidence，未拟合record_prior，故该输入维通常为0；应用期完整collect可提供非零值。代码仍可通过排名使用该先验，不能假定回归器在此默认episode中学到非零该维效应。
-- 短后训练probe传reference=None并固定周期，最终重训才参照早停。探针种子cfg.seed+101*repeat与最终train_seed0/1/2不同。
+- 短后训练probe传reference=None并固定周期，最终重训才参照早停。
 - support_replay_plan顶部旧注释讲取整，但实际函数保证所有正权重至少出现一次；加权ICL筛选走weighted_inclusion_draws，二者语义需分开。
 - ordinal_encode将数值无法解析项用首帧中位数填充，这是接口编码，不计为准备表原值修复。共同词表/数值判断涉及所有传入特征帧，独立验收的完整函数冻结必须覆盖编码；本页未确认完整独立性保证成立。
 - latest记录级校准引理使用独立记录上的B-alpha*A和Hoeffding；现库ltt_risk_gate.py按单修复布尔结果用Clopper-Pearson，与最新引理非逐字对应实现。

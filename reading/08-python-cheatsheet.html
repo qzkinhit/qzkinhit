@@ -1,0 +1,271 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><title>Python 语法速查</title><style>:root{--bg:#f7f8f5;--paper:#fff;--ink:#20332f;--muted:#5a6a65;--line:#d9dfd7;--acc:#176c63;--acc2:#e3f0ec;--easy:#2f8a5b;--mid:#b07a14;--hard:#b4443c;--code:#f3f5f1;--warn:#fbf1e2;--warnink:#8a5413;--blue:#2c5d8f;--blue2:#e6eef7;--red2:#f8e3e1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.75 system-ui,-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+a{color:var(--acc)}
+header.top{position:sticky;top:0;z-index:20;background:rgba(247,248,245,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header.top .in{max-width:1180px;margin:auto;padding:10px 16px;display:flex;gap:6px 18px;flex-wrap:wrap;align-items:center}
+header.top b{font-size:15px}
+header.top nav{display:flex;gap:4px 14px;flex-wrap:wrap;font-size:14px}
+header.top nav a{text-decoration:none;padding:2px 0}
+header.top nav a.on{font-weight:700;color:var(--ink);border-bottom:2px solid var(--acc)}
+main{max-width:1180px;margin:auto;padding:22px 16px 90px}
+h1{font-size:28px;line-height:1.3;margin:6px 0 6px}
+h2{font-size:22px;margin:34px 0 10px}
+h3{font-size:18px;margin:22px 0 8px}
+.lead{color:var(--muted);max-width:860px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:14px 0}
+.toolbar{position:sticky;top:46px;z-index:15;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:12px 0;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:#fff;padding:5px 11px;font:inherit;font-size:14px;cursor:pointer;color:var(--ink)}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button.on{background:var(--acc);color:#fff}
+.chip{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:2px 10px;font-size:13px;cursor:pointer;margin:2px 3px 2px 0;user-select:none}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+input[type=search]{font:inherit;font-size:14px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;min-width:160px}
+select{font:inherit;font-size:14px;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:#fff}
+button.btn{font:inherit;font-size:14px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:5px 12px;cursor:pointer}
+button.btn:hover{border-color:var(--acc)}
+button.btn.pri{background:var(--acc);color:#fff;border-color:var(--acc)}
+.small{font-size:13px;color:var(--muted)}
+.progress{height:8px;background:#e8ece6;border-radius:99px;overflow:hidden;min-width:120px;flex:1}
+.progress i{display:block;height:100%;background:var(--acc)}
+.prog-row{display:flex;align-items:center;gap:10px;font-size:13px}
+.catgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+.catgrid a{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.catgrid a b{display:block;font-size:14.5px}
+.catgrid a .progress{margin-top:6px}
+/* cards */
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden}
+.card .hd{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+.card .hd .no{font-weight:700;font-variant-numeric:tabular-nums;color:var(--muted)}
+.card .hd .tt{font-weight:700;font-size:16px}
+.badge{font-size:12px;border-radius:5px;padding:0 6px;border:1px solid currentColor}
+.d-简单{color:var(--easy)}.d-中等{color:var(--mid)}.d-困难{color:var(--hard)}
+.must{background:var(--hard);color:#fff;border-color:var(--hard)}
+.tier{color:var(--blue)}
+.status{margin-left:auto;display:inline-flex;gap:4px}
+.status button{font:inherit;font-size:12px;border:1px solid var(--line);background:#fff;border-radius:6px;padding:1px 8px;cursor:pointer;color:var(--muted)}
+.status button.on[data-s="0"]{background:var(--hard);color:#fff;border-color:var(--hard)}
+.status button.on[data-s="1"]{background:var(--mid);color:#fff;border-color:var(--mid)}
+.status button.on[data-s="2"]{background:var(--easy);color:#fff;border-color:var(--easy)}
+.card .bd{padding:10px 14px 14px}
+.hook{font-size:16.5px;font-weight:600;background:var(--acc2);border-left:4px solid var(--acc);padding:8px 12px;border-radius:6px;margin:4px 0 10px}
+.kv{margin:4px 0;font-size:14.5px}
+.kv b{color:var(--acc);margin-right:6px}
+.hidden{display:none!important}
+.masked{filter:blur(6px);user-select:none;cursor:pointer}
+.reveal{cursor:pointer;color:var(--acc);font-size:13.5px}
+pre.code{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 0;margin:10px 0;overflow:auto;font:13.2px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;counter-reset:ln}
+pre.code .ln{display:block;padding:0 12px 0 46px;position:relative;white-space:pre}
+pre.code .ln::before{counter-increment:ln;content:counter(ln);position:absolute;left:0;width:34px;text-align:right;color:#a7b2ac}
+pre.code .ln.cur{background:#fff6d6}
+pre.code .ln.hide{color:transparent;text-shadow:none}
+pre.code .ln.hide *{color:transparent!important}
+pre.code .ln.hide::after{content:"";position:absolute;left:46px;right:14px;top:50%;border-top:2px dashed #c9d2cb}
+.tk-k{color:#8a3fb0;font-weight:600}.tk-s{color:#2f7d32}.tk-c{color:#8a968f;font-style:italic}.tk-n{color:#b0560e}.tk-b{color:#1f5fa8}.tk-f{color:#0e6e8c}
+.recall-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13.5px}
+.kbd{display:inline-block;border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 5px;font-size:12px;background:#fff}
+/* category headers */
+.cathd{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:40px;border-top:2px solid var(--ink);padding-top:12px}
+.cathd h2{margin:0}
+.template{font-size:15.5px;background:var(--blue2);border-left:4px solid var(--blue);padding:8px 12px;border-radius:6px;margin:10px 0}
+/* animation */
+.anim{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.anim .ah{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.anim .ah b{font-size:14.5px}
+.stage{min-height:120px;overflow-x:auto}
+.arr{display:flex;gap:4px;align-items:flex-end;padding:22px 2px 20px;position:relative}
+.cell{min-width:36px;height:36px;border:1px solid #b9c4bd;border-radius:6px;display:flex;align-items:center;justify-content:center;font:14px ui-monospace,Menlo,monospace;background:#fff;position:relative;transition:background .2s}
+.cell.bar{align-items:flex-end;padding-bottom:2px;border-radius:4px 4px 0 0}
+.cell.hl{background:#ffe9a8;border-color:#d1a52a}
+.cell.in{background:var(--acc2);border-color:var(--acc)}
+.cell.dim{opacity:.35}
+.cell.ok{background:#d9efe0;border-color:var(--easy)}
+.cell.bad{background:var(--red2);border-color:var(--hard)}
+.cell .idx{position:absolute;bottom:-18px;left:0;right:0;text-align:center;font-size:10.5px;color:#9aa69f}
+.cell .ptr{position:absolute;top:-20px;left:-6px;right:-6px;text-align:center;font-size:11px;font-weight:700;color:var(--hard);white-space:nowrap}
+.grid{display:inline-grid;gap:3px;padding:6px}
+.grid .cell{min-width:34px;height:34px}
+.vars{display:flex;flex-wrap:wrap;gap:6px 10px;margin:6px 0;font:13px ui-monospace,Menlo,monospace}
+.vars span{background:var(--code);border:1px solid var(--line);border-radius:6px;padding:1px 8px}
+.note{font-size:14px;margin-top:6px;min-height:22px}
+.ll{display:flex;align-items:center;gap:0;padding:26px 4px 10px;flex-wrap:wrap}
+.ll .node{min-width:38px;height:34px;border:1.5px solid var(--ink);border-radius:8px;display:flex;align-items:center;justify-content:center;font:14px ui-monospace,Menlo,monospace;background:#fff;position:relative}
+.ll .arrow{width:34px;text-align:center;color:var(--muted);font-size:18px}
+.ll .arrow.rev{color:var(--hard)}
+.ll .node .ptr{position:absolute;top:-20px;left:-10px;right:-10px;text-align:center;font-size:11px;font-weight:700;color:var(--hard);white-space:nowrap}
+.flip{perspective:800px}
+.quiz .opt{display:block;width:100%;text-align:left;font:13.5px ui-monospace,Menlo,monospace;border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;margin:5px 0;cursor:pointer}
+.quiz .opt.right{background:#d9efe0;border-color:var(--easy)}
+.quiz .opt.wrong{background:var(--red2);border-color:var(--hard)}
+table.t{border-collapse:collapse;width:100%;font-size:14px;background:#fff}
+table.t th,table.t td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.t th{background:#eef2ec}
+table.t code,.kv code,p code,li code{background:var(--code);border-radius:4px;padding:0 4px;font-size:.92em}
+.tw{overflow-x:auto}
+.check li{list-style:none;margin:4px 0}
+.check label{cursor:pointer}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:760px){.twocol{grid-template-columns:1fr}.toolbar{top:0;position:static}h1{font-size:23px}.status{margin-left:0}}
+
+.lcgo{font-size:12.5px;font-weight:600;color:#fff;background:var(--acc);border-radius:999px;padding:2px 10px;text-decoration:none;white-space:nowrap}
+.lcgo:hover{filter:brightness(1.12)}
+.card .hd .lcgo{margin-left:auto}
+.card .hd .lcgo+.status{margin-left:6px}
+.vizwrap{margin:6px 0 10px}
+.vizbox .ah code{font-size:12.5px}
+.vizbox .grid{row-gap:18px;padding-top:18px}
+
+.toc{display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px}
+.quizbox .qq{font:14px ui-monospace,Menlo,monospace;margin:10px 0 2px}
+.quizbox .why{font-size:13.5px;margin:4px 0 10px;color:var(--ink)}
+section{scroll-margin-top:16px}
+</style></head><body><header class="top"><div class="in"><b>手撕代码笔记</b><nav><a href="index.html">阅读笔记首页</a><a href="06-hot100.html">Hot 100</a><a href="07-ml-handcode.html">ML 手撕 20 段</a><a href="08-python-cheatsheet.html" class="on">Python 速查</a></nav></div></header><main>
+<h1>手撕算法 Python 语法速查与防错</h1>
+<p class="lead">面试前 5 分钟过一遍，目标是不在语法上出错。内容按“括号、命名差异、容器、类型、循环”的顺序排列，穿插 23 道点选小测，最后是一张交卷前的自检清单。代码片段的输出值都在 Python 3 中运行核对过。</p>
+<div class="panel toc"><a href="#p0">〇 三条规则</a><a href="#p1">一 圆括号还是方括号</a><a href="#p2">二 和其他语言不同的写法</a><a href="#p3">三 四种容器对照</a><a href="#p4">四 list</a><a href="#p5">五 set</a><a href="#p6">六 dict、defaultdict、Counter</a><a href="#p7">七 str</a><a href="#p8">八 算法常用容器</a><a href="#p9">九 类型转换</a><a href="#p10">十 数字与初始化</a><a href="#p11">十一 for 循环与 range</a><a href="#p12">十二 不能用作变量名的词</a><a href="#p13">十三 交卷前 60 秒自检</a></div>
+<section id="p0"><h2>〇 三条规则</h2>
+<p>手撕代码时，语法错误让代码跑不起来，面试官往往不会再看思路。算法想错还可以讨论，所以第一目标是写出能运行的代码。</p>
+<ol><li>写完后逐个变量过一遍类型，确认它是 list、set 还是 dict，再确认调用的方法名在这个类型上存在。</li>
+<li>拿不准的地方用最保守的写法，不用不熟的语法糖。</li>
+<li>写代码前切英文输入法。全角逗号和全角括号会直接报 SyntaxError。</li></ol></section><section id="p1"><h2>一 圆括号还是方括号</h2>
+<p>判断规则只看括号前面是什么。前面是一个名字时，圆括号表示调用这个函数或方法，方括号表示从这个容器里取值。前面什么都没有时，方括号推导式产出列表，圆括号推导式产出生成器。</p>
+<div class="tw"><table class="t"><tr><th>括号前面</th><th>写法</th><th>含义</th><th>例子</th></tr><tr><td>名字</td><td><code>名字()</code></td><td>调用函数或方法</td><td><code>len(a)  print(x)  a.append(x)</code></td></tr><tr><td>名字</td><td><code>名字[]</code></td><td>按下标或键取值</td><td><code>a[0]  d[&#x27;key&#x27;]  s[i]  a[1:3]</code></td></tr><tr><td>空</td><td><code>[... for ...]</code></td><td>列表推导，得到列表</td><td><code>[x**2 for x in range(5)]</code></td></tr><tr><td>空</td><td><code>(... for ...)</code></td><td>生成器，只是一个惰性对象</td><td><code>(x**2 for x in range(5))</code></td></tr></table></div>
+<div class="cb" data-i="0"></div>
+<div class="panel quizbox" data-q="bracket"><b>小测 1 圆括号还是方括号</b>　<span class="small qs"></span><div class="qi"></div></div></section><section id="p2"><h2>二 和其他语言不同的写法</h2>
+<p>Python 把“问容器一个数量”的操作做成全局函数，把“让容器修改自己”的操作做成方法。长度、最值、求和、排序出新列表都是全局函数，追加、原地排序、原地翻转是方法。</p>
+<div class="cb" data-i="1"></div>
+<div class="tw"><table class="t"><tr><th>Python</th><th>其他语言</th><th>写错的后果</th></tr><tr><td><code>True / False</code></td><td><code>true / false</code></td><td>NameError: name 'true' is not defined</td></tr><tr><td><code>None</code></td><td><code>null / nil</code></td><td>NameError</td></tr><tr><td><code>and / or / not</code></td><td><code>&amp;&amp; / || / !</code></td><td>SyntaxError</td></tr><tr><td><code>elif</code></td><td><code>else if</code></td><td>SyntaxError</td></tr><tr><td><code>//</code></td><td>整数除法 /</td><td>7 / 2 在 Python 里得 3.5</td></tr><tr><td><code>**</code></td><td>乘方函数</td><td><code>^</code> 是异或，2 ^ 10 得 8</td></tr></table></div>
+<div class="cb" data-i="2"></div>
+<div class="panel quizbox" data-q="op"><b>小测 2 这行输出什么</b>　<span class="small qs"></span><div class="qi"></div></div></section><section id="p3"><h2>三 四种容器对照</h2>
+<p>同一个动作在四种容器上名字不同，这张表是本页最该背的部分。list 用 append 追加到末尾，set 用 add 放进无序集合，dict 用 d[k] = v 按键存，str 不可变，没有任何原地修改操作。混用方法名会报 AttributeError。</p>
+<div class="tw"><table class="t"><tr><th>动作</th><th>list</th><th>set</th><th>dict</th><th>str</th></tr><tr><td>创建空的</td><td><code>[]</code></td><td><code>set()</code>　不是 {}</td><td><code>{}</code></td><td><code>&quot;&quot;</code></td></tr><tr><td>加一个</td><td><code>a.append(x)</code></td><td><code>s.add(x)</code></td><td><code>d[k] = v</code></td><td>不可变</td></tr><tr><td>批量加</td><td><code>a.extend([x, y])</code></td><td><code>s.update({x, y})</code></td><td><code>d.update({k: v})</code></td><td>不可变</td></tr><tr><td>拼出新对象</td><td><code>a + [x]</code></td><td><code>s | {x}</code></td><td><code>{**d, k: v}</code></td><td><code>s + &quot;x&quot;</code></td></tr><tr><td>删指定值</td><td><code>a.remove(x)</code></td><td><code>s.remove(x)</code></td><td><code>del d[k]</code></td><td>不可变</td></tr><tr><td>弹出一个</td><td><code>a.pop()</code></td><td><code>s.pop()</code></td><td><code>d.pop(k)</code></td><td>不可变</td></tr><tr><td>按位置取</td><td><code>a[i]</code></td><td>无序，不能取</td><td><code>d[key]</code></td><td><code>s[i]</code></td></tr><tr><td>改某个值</td><td><code>a[i] = x</code></td><td>无序，不能改</td><td><code>d[k] = x</code></td><td>不可变</td></tr><tr><td>查存在</td><td><code>x in a</code>　O(n)</td><td><code>x in s</code>　O(1)</td><td><code>k in d</code>　O(1)</td><td><code>sub in s</code>　O(n)</td></tr><tr><td>长度</td><td><code>len(a)</code></td><td><code>len(s)</code></td><td><code>len(d)</code></td><td><code>len(s)</code></td></tr><tr><td>遍历</td><td><code>for x in a</code></td><td><code>for x in s</code></td><td><code>for k, v in d.items()</code></td><td><code>for ch in s</code></td></tr></table></div>
+<p>下面这些方法原地修改容器并返回 None，所以不能写成 x = a.append(...)。需要新对象时用右列的写法。</p>
+<div class="tw"><table class="t"><tr><th>原地修改，返回 None</th><th>产生新对象</th></tr><tr><td><code>a.sort()</code></td><td><code>sorted(a)</code></td></tr><tr><td><code>a.reverse()</code></td><td><code>a[::-1]</code></td></tr><tr><td><code>a.append(x)</code></td><td><code>a + [x]</code></td></tr><tr><td><code>s.add(x)</code></td><td><code>s | {x}</code></td></tr></table></div>
+<div class="panel quizbox" data-q="none"><b>小测 3 返回值是什么</b>　<span class="small qs"></span><div class="qi"></div></div></section><section id="p4"><h2>四 list</h2>
+<div class="cb" data-i="3"></div>
+<p>remove 的参数是值，pop 的参数是下标，这两个最容易写反。二维数组不能写成 [[0] * n] * m，外层乘法复制的是同一个内层列表的引用，改一行会同时改所有行。</p></section><section id="p5"><h2>五 set</h2>
+<div class="cb" data-i="4"></div>
+<p>代码里出现 x in 容器，并且这个容器会随循环变大，就应该用 set。用 list 会让每次查找变成 O(n)，整体复杂度多乘一个 n。</p></section><section id="p6"><h2>六 dict、defaultdict、Counter</h2>
+<div class="cb" data-i="5"></div>
+<p>滑动窗口题里经常用 len(cnt) 判断窗口内有几种字符。计数减到 0 时不删键，len(cnt) 就会偏大，这是这类题最常见的错误来源。</p></section><section id="p7"><h2>七 str</h2>
+<p>字符串不可变，s[0] = 'H' 会报 TypeError。要修改只能构造一个新字符串。</p>
+<div class="cb" data-i="6"></div>
+<p>只判断是否包含用 in，需要下标用 find，不用 index，因为 index 在找不到时会抛异常。</p></section><section id="p8"><h2>八 算法常用容器</h2>
+<div class="cb" data-i="7"></div>
+<p>BFS 必须用 deque，list.pop(0) 每次要移动后面所有元素，是 O(n)。堆里放元组 (优先级, 值) 时，优先级相同会继续比较第二个元素，第二个元素不可比较（例如链表节点）就会报错，这时插入一个递增序号作为第二项。</p>
+<div class="panel quizbox" data-q="box"><b>小测 4 容器怎么选</b>　<span class="small qs"></span><div class="qi"></div></div></section><section id="p9"><h2>九 类型转换</h2><div class="cb" data-i="8"></div><p>列表不可哈希，不能放进 set，也不能当字典的键。需要用一组值做键时先转成 tuple。</p></section><section id="p10"><h2>十 数字与初始化</h2><div class="cb" data-i="9"></div><p>初值不要用 999999 这类魔数，数据范围一变就出错。Python 不需要 long 或 BigInteger，但题目要求取模时仍然要在每一步取模，否则大数运算会变慢。</p></section><section id="p11"><h2>十一 for 循环与 range</h2><div class="cb" data-i="10"></div></section><section id="p12"><h2>十二 不能用作变量名的词</h2><p>下面这些是内置函数或内置类型，用作变量名后，同一作用域里就调用不了原来的函数。</p><div class="cb" data-i="11"></div><p>典型的报错是先写了 max = 0，后面再调用 max(a, b) 时报 TypeError，提示 int 对象不可调用。</p></section><section id="p13"><h2>十三 交卷前 60 秒自检</h2><p>写完代码、交给面试官之前，按这张清单逐项核对。勾选状态保存在这个浏览器里，练习时可以每做完一题勾一遍再清空。</p><div class="prog-row"><div class="progress"><i id="chkbar"></i></div><b id="chkn"></b><button class="btn" id="chkreset">清空</button></div><ul class="check" id="chk"><li><label><input type="checkbox" data-k="0"> 输入法切成英文了，没有全角逗号和全角括号</label></li><li><label><input type="checkbox" data-k="1"> 取值用方括号，调用用圆括号</label></li><li><label><input type="checkbox" data-k="2"> 收割答案写的是 res.append([... for ...])，外层方括号齐全</label></li><li><label><input type="checkbox" data-k="3"> 集合用 add，没有写成 append</label></li><li><label><input type="checkbox" data-k="4"> 字典用 d[k] = v，没有写成 d.append</label></li><li><label><input type="checkbox" data-k="5"> 长度用 len(a)，没有写 a.length 或 a.size()</label></li><li><label><input type="checkbox" data-k="6"> 最值用 max(a) 和 min(a)，没有写 a.max()</label></li><li><label><input type="checkbox" data-k="7"> 没有直接给字符串某一位赋值 s[i] = x</label></li><li><label><input type="checkbox" data-k="8"> append、sort、reverse、add 的返回值没有赋给变量</label></li><li><label><input type="checkbox" data-k="9"> 变量名没有用 len、str、list、max、min 这些内置名</label></li><li><label><input type="checkbox" data-k="10"> 空集合写的是 set()，不是 {}</label></li><li><label><input type="checkbox" data-k="11"> True、False、None 首字母大写</label></li><li><label><input type="checkbox" data-k="12"> 逻辑运算用 and、or、not，不是 &amp;&amp;、||、!</label></li><li><label><input type="checkbox" data-k="13"> 乘方用 **，不是 ^</label></li><li><label><input type="checkbox" data-k="14"> 整除用 //，不是 /</label></li><li><label><input type="checkbox" data-k="15"> BFS 出队用 deque.popleft()，不是 list.pop(0)</label></li><li><label><input type="checkbox" data-k="16"> 回溯的撤销操作写在 for 循环里面，递归出口有 return</label></li></ul></section>
+<p class="small" style="margin-top:40px">内容整理自《手撕算法 Python 语法速查与防错手册》，二维数组、负数取余、int 截断与堆中元组比较四处为补充。</p>
+</main><script type="application/json" id="data">{"codes": ["a(0)        # ✗ a 是列表，不能调用，TypeError\nd(key)      # ✗ TypeError: 'dict' object is not callable\nlen[a]      # ✗ len 是函数，不能取下标，TypeError\n\n# 回溯收割答案，从里到外都是方括号\nres.append([queen[k] for k in range(n)])   # ✓\nres.append([queen(k) for k in range(n)])   # ✗ 取值写成调用，TypeError\nres.append(queen[k] for k in range(n))     # ✗ 存进去的是生成器，结果判错", "len(a)      # 不是 a.length（JS），也不是 a.size()（Java）\nmax(a)      # 不是 a.max()\nmin(a)\nsum(a)\nabs(x)\nsorted(a)   # 返回新列表。a.sort() 是原地排序，返回 None\nreversed(a) # 返回迭代器\nstr(x)      # 不是 x.toString()\nint(\"123\")  # 不是 parseInt(\"123\")\n\na.append(x)         # 方法，修改 a 自己\na.sort()\na.reverse()\ns.find(\"x\")\ns.replace(\"a\", \"b\")\ns.split(\",\")\n\",\".join(parts)     # join 的主语是分隔符", "7 / 2       # 3.5   单斜杠永远返回 float\n7 // 2      # 3     整除\n-7 // 2     # -4    向下取整，不是向零取整\n-7 % 3      # 2     余数和除数同号\n2 ** 10     # 1024  乘方\n7 ^ 2       # 5     异或\na == b      # 值相等，绝大多数情况用它\nx is None   # is 判断是否同一个对象，只在和 None 比较时用", "a = [1, 2, 3]\na.append(4)          # [1, 2, 3, 4]\na.insert(0, 0)       # [0, 1, 2, 3, 4]  在下标 0 处插入\na.extend([5, 6])     # [0, 1, 2, 3, 4, 5, 6]\nb = a + [7]          # 新列表，a 不变\n\na = [1]; a.append([2, 3])   # [1, [2, 3]]  整个列表作为一个元素\na = [1]; a.extend([2, 3])   # [1, 2, 3]    逐个加入\na = [1]; b = a + [2, 3]     # b 是 [1, 2, 3]，a 仍是 [1]\n\na.pop()          # 删末尾，返回被删的值\na.pop(0)         # 删下标 0，返回被删的值，O(n)\na.remove(3)      # 删第一个值等于 3 的元素，返回 None\ndel a[0]         # 删下标 0，没有返回值\n\na[-1]            # 最后一个\na[1:3]           # 切片，左闭右开\na.index(4)       # 4 的下标，不存在时报 ValueError\na.count(4)       # 4 出现的次数\n\nsorted(a, key=lambda x: -x)               # 降序\nsorted(a, key=lambda x: (x[1], -x[0]))    # 先按第 2 维升序，再按第 1 维降序\n\nb = a[:]               # 浅拷贝。b = a 只复制引用\na, b = b, a            # 交换，不需要临时变量\ngrid = [[0] * n for _ in range(m)]   # 二维数组必须这样写", "s = set()        # 空集合。{} 是空字典\ns = {1, 2, 3}    # 非空集合可以用花括号\ns.add(4)\ns.remove(2)      # 不存在时报 KeyError\ns.discard(99)    # 不存在时不报错\n2 in s           # 平均 O(1)，这是用 set 的主要理由\na | b            # 并集\na & b            # 交集\na - b            # 差集", "d = {}\nd['a'] = 1           # 新增或修改\nd['a']               # 取值，不存在时报 KeyError\nd.get('c', 0)        # 取值，不存在时返回默认值 0\ndel d['a']\n'a' in d             # 查键，O(1)\nfor k in d: ...                  # 遍历键\nfor v in d.values(): ...         # 遍历值\nfor k, v in d.items(): ...       # 遍历键值对\n\nfrom collections import defaultdict\ng = defaultdict(list)\ng['u'].append('v')   # 键不存在时自动建一个空列表\ncnt = defaultdict(int)\ncnt['a'] += 1        # 键不存在时自动从 0 开始\n\nfrom collections import Counter\ncnt = Counter(\"aaabbc\")   # Counter({'a': 3, 'b': 2, 'c': 1})\ncnt['z']                  # 0，不报错，也不会插入 'z'\ncnt.most_common(2)        # [('a', 3), ('b', 2)]\ncnt['c'] -= 1             # 计数减到 0 后键仍然存在，需要 del cnt['c']", "s.replace('h', 'H')                          # 替换全部匹配\n''.join('H' if ch == 'h' else ch for ch in s)\nlst = list(s); lst[0] = 'H'; s = ''.join(lst) # 转成列表修改再拼回去\n\n\"world\" in s          # 返回 True 或 False，最常用\ns.find(\"world\")       # 返回下标，找不到返回 -1\ns.index(\"world\")      # 返回下标，找不到报 ValueError\ns.count(\"l\")\ns.startswith(\"he\")\ns.endswith(\"ld\")\n\ns.upper(); s.lower(); s.strip()\n\"a,b,c\".split(\",\")          # ['a', 'b', 'c']\n\",\".join([\"a\", \"b\", \"c\"])   # 'a,b,c'\n\nord('a')              # 97\nchr(97)               # 'a'\nord(ch) - ord('a')    # 小写字母转成 0 到 25 的下标\n\n\"123\".isdigit(); \"abc\".isalpha(); \"abc123\".isalnum()", "from collections import deque\nq = deque()\nq.append(x)        # 右端入队，O(1)\nq.popleft()        # 左端出队，O(1)\nq.appendleft(x)    # 左端入队，O(1)\n\nimport heapq\nh = []\nheapq.heappush(h, x)\nheapq.heappop(h)           # 弹出最小值，heapq 只有小顶堆\nheapq.heappush(h, -val)    # 大顶堆的做法是存负数\n-heapq.heappop(h)          # 取出后再取反\nheapq.nlargest(k, arr)     # 前 k 大\n\nimport bisect\nbisect.bisect_left(a, x)   # 第一个大于等于 x 的下标\nbisect.bisect_right(a, x)  # 第一个大于 x 的下标\nbisect.insort(a, x)        # 插入并保持有序", "list(\"abc\")          # ['a', 'b', 'c']\nset([1, 2, 2, 3])    # {1, 2, 3}\n\"\".join(['a', 'b'])  # 'ab'\nstr(123)             # '123'\nint(\"123\")           # 123\nfloat(\"3.14\")        # 3.14\ntuple([1, 2, 3])     # (1, 2, 3)，可哈希，能当字典的键\nlist(range(5))       # [0, 1, 2, 3, 4]", "float('inf')     # 正无穷，求最小值时的初值\nfloat('-inf')    # 负无穷，求最大值时的初值\n2 ** 1000        # Python 整数没有上限，结果是 302 位数\nint(-3.7)        # -3，向零截断\n-7 // 2          # -4，向下取整", "for ch in s: ...                    # 只要值\nfor i, ch in enumerate(s): ...      # 同时要下标和值\nfor x, y in zip(xs, ys): ...        # 并行遍历两个序列\nrange(5)           # 0, 1, 2, 3, 4，不含 5\nrange(1, 5)        # 1, 2, 3, 4\nrange(0, 10, 2)    # 0, 2, 4, 6, 8\nrange(5, 0, -1)    # 5, 4, 3, 2, 1，倒序必须写步长 -1", "# str list dict set int float bool type\n# len max min sum abs sorted map filter\n# id input range print open\n# 可用的短名字  s  a  d  st  n  cnt  cur  ans  res"], "quiz": {"bracket": [{"q": "取列表 a 的第 0 个元素", "opts": ["a(0)", "a[0]"], "ans": 1, "why": "a 是容器，从容器里拿东西用方括号。a(0) 会报 TypeError，提示 list 对象不可调用。"}, {"q": "求列表 a 的长度", "opts": ["len(a)", "len[a]", "a.length"], "ans": 0, "why": "len 是函数，调用函数用圆括号。Python 的列表没有 length 属性。"}, {"q": "从字典 d 取键 key 对应的值", "opts": ["d('key')", "d['key']"], "ans": 1, "why": "字典也是容器，取值用方括号。"}, {"q": "回溯收割答案，把 queen 里 n 个值存成一个新列表", "opts": ["res.append([queen[k] for k in range(n)])", "res.append(queen[k] for k in range(n))", "res.append([queen(k) for k in range(n)])"], "ans": 0, "why": "第二个选项少了外层方括号，存进去的是生成器对象，结果判错。第三个选项把取值写成调用，运行时报 TypeError。"}, {"q": "得到 0 到 4 的平方组成的列表", "opts": ["(x**2 for x in range(5))", "[x**2 for x in range(5)]"], "ans": 1, "why": "方括号推导式直接得到列表。圆括号得到的是生成器，打印出来只是一个对象地址。"}, {"q": "往集合 s 里加入 x", "opts": ["s.append(x)", "s.add(x)", "s[x] = 1"], "ans": 1, "why": "集合没有顺序，所以没有 append。s[x]=1 是字典的写法，用在集合上报 TypeError。"}], "none": [{"q": "b = a.sort() 之后，b 是什么", "opts": ["排好序的列表", "None"], "ans": 1, "why": "sort 原地修改 a，返回 None。要拿到新列表写 b = sorted(a)。"}, {"q": "b = a.append(4) 之后，b 是什么", "opts": ["追加后的列表", "None"], "ans": 1, "why": "append 原地修改，返回 None。要得到新列表写 b = a + [4]。"}, {"q": "b = a[::-1] 之后，b 是什么", "opts": ["翻转后的新列表", "None"], "ans": 0, "why": "切片总是产生新对象，a 本身不变。a.reverse() 才是原地翻转并返回 None。"}, {"q": "x = a.pop() 之后，x 是什么", "opts": ["被删掉的末尾元素", "None"], "ans": 0, "why": "pop 是少数既修改原列表又有返回值的方法，返回被删掉的元素。"}, {"q": "t = s.replace('a', 'b') 之后，s 变了吗", "opts": ["s 变了", "s 没变，新字符串在 t 里"], "ans": 1, "why": "字符串不可变，所有字符串方法都返回新字符串。"}], "op": [{"q": "7 / 2", "opts": ["3", "3.5"], "ans": 1, "why": "单斜杠除法在 Python 3 里永远返回 float。"}, {"q": "-7 // 2", "opts": ["-3", "-4"], "ans": 1, "why": "整除向下取整，-3.5 向下取整是 -4。C++ 和 Java 是向零取整，得 -3。"}, {"q": "2 ^ 10", "opts": ["1024", "8"], "ans": 1, "why": "^ 是按位异或，二进制 0010 异或 1010 得 1000，即 8。乘方写 2 ** 10。"}, {"q": "-7 % 3", "opts": ["-1", "2"], "ans": 1, "why": "Python 的余数和除数同号，满足 a == (a // b) * b + a % b，即 -7 == (-3) * 3 + 2。"}, {"q": "type({})", "opts": ["set", "dict"], "ans": 1, "why": "空花括号是空字典。空集合只能写 set()。"}, {"q": "int(-3.7)", "opts": ["-4", "-3"], "ans": 1, "why": "int 对浮点数向零截断。要向下取整用 math.floor 或 //。"}], "box": [{"q": "判断 x 是否出现过，容器会不断变大，选哪个容器", "opts": ["list", "set"], "ans": 1, "why": "x in list 要逐个比较，是 O(n)。x in set 是哈希查找，平均 O(1)。"}, {"q": "BFS 队列从左边出队", "opts": ["list.pop(0)", "deque.popleft()"], "ans": 1, "why": "list.pop(0) 要把后面所有元素前移一位，是 O(n)。deque 两端操作都是 O(1)。"}, {"q": "cnt = Counter(\"ab\")，读 cnt[\"z\"] 的结果", "opts": ["KeyError", "0"], "ans": 1, "why": "Counter 对不存在的键返回 0，并且不会把这个键插入进去。普通 dict 会报 KeyError。"}, {"q": "想要大顶堆，heapq 怎么用", "opts": ["heapq.heappush(h, -x)，取出时再取反", "heapq.maxheap(h)"], "ans": 0, "why": "heapq 只有小顶堆。存负数后最小的负数对应最大的原值。"}, {"q": "g = [[0] * 2] * 2，执行 g[0][0] = 1 后 g 是", "opts": ["[[1, 0], [0, 0]]", "[[1, 0], [1, 0]]"], "ans": 1, "why": "外层乘法复制的是同一个内层列表的引用，两行是同一个对象。二维数组要写 [[0] * 2 for _ in range(2)]。"}, {"q": "有序列表 a = [1, 2, 2, 4]，bisect_left(a, 2) 是", "opts": ["1", "3"], "ans": 0, "why": "bisect_left 返回第一个大于等于 x 的位置，是 1。bisect_right 返回第一个大于 x 的位置，是 3。"}]}}</script><script>const CN = (() => {
+  const KW = new Set('def return if elif else for while in not and or is None True False class import from as with lambda yield pass break continue try except finally raise global nonlocal del assert'.split(' '));
+  const BI = new Set('len range enumerate zip sorted min max sum abs list dict set tuple int float str print map filter reversed any all isinstance super ord chr iter next divmod pow round heapq deque defaultdict Counter OrderedDict bisect math torch np nn F self'.split(' '));
+  const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  function hlLine(line) {
+    let out = '', i = 0;
+    while (i < line.length) {
+      const c = line[i];
+      if (c === '#') { out += '<span class="tk-c">' + esc(line.slice(i)) + '</span>'; break; }
+      if (c === '"' || c === "'") {
+        let q = c, j = i + 1;
+        if (line.slice(i, i + 3) === q.repeat(3)) { q = q.repeat(3); j = i + 3; }
+        while (j < line.length && line.slice(j, j + q.length) !== q) { if (line[j] === '\\') j++; j++; }
+        j = Math.min(line.length, j + q.length);
+        out += '<span class="tk-s">' + esc(line.slice(i, j)) + '</span>'; i = j; continue;
+      }
+      if (/[0-9]/.test(c) && !/[A-Za-z_]/.test(line[i - 1] || '')) {
+        const m = line.slice(i).match(/^[0-9][0-9_.e]*/); out += '<span class="tk-n">' + m[0] + '</span>'; i += m[0].length; continue;
+      }
+      if (/[A-Za-z_]/.test(c)) {
+        const m = line.slice(i).match(/^[A-Za-z_][A-Za-z0-9_]*/)[0];
+        const after = line.slice(i + m.length);
+        let cls = KW.has(m) ? 'tk-k' : BI.has(m) ? 'tk-b' : /^\s*\(/.test(after) && line.slice(0, i).trim().endsWith('def') ? 'tk-f' : '';
+        out += cls ? '<span class="' + cls + '">' + m + '</span>' : m; i += m.length; continue;
+      }
+      out += esc(c); i++;
+    }
+    return out;
+  }
+  function codeHTML(code) {
+    return '<pre class="code">' + code.split('\n').map(l => '<span class="ln">' + (hlLine(l) || ' ') + '</span>').join('') + '</pre>';
+  }
+  // storage
+  function store(prefix) {
+    let mem = {};
+    try { mem = JSON.parse(localStorage.getItem(prefix) || '{}'); } catch (e) { mem = {}; }
+    return {
+      get: k => mem[k],
+      set: (k, v) => { if (v === undefined) delete mem[k]; else mem[k] = v; try { localStorage.setItem(prefix, JSON.stringify(mem)); } catch (e) {} },
+      all: () => mem
+    };
+  }
+  // line-by-line recall on a <pre class="code">
+  let active = null;
+  function recall(pre, bar) {
+    const lines = [...pre.querySelectorAll('.ln')];
+    // skip leading blank lines automatically when revealing
+    let shown = 0;
+    const paint = () => {
+      lines.forEach((l, i) => { l.classList.toggle('hide', i >= shown); l.classList.toggle('cur', i === shown - 1); });
+      if (bar) bar.querySelector('.cnt').textContent = shown + ' / ' + lines.length;
+    };
+    const api = {
+      next() { do { shown = Math.min(lines.length, shown + 1); } while (shown < lines.length && !lines[shown - 1].textContent.trim()); paint(); },
+      prev() { shown = Math.max(0, shown - 1); paint(); },
+      all() { shown = lines.length; paint(); },
+      reset() { shown = 0; paint(); },
+      stop() { shown = lines.length; lines.forEach(l => l.classList.remove('hide', 'cur')); }
+    };
+    paint(); active = api; return api;
+  }
+  document.addEventListener('keydown', e => {
+    if (!active || /input|select|textarea/i.test(e.target.tagName)) return;
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') { e.preventDefault(); active.next(); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); active.prev(); }
+  });
+  function recallBar() {
+    const d = document.createElement('div');
+    d.className = 'recall-bar';
+    d.innerHTML = '<button class="btn pri" data-r="next">下一行</button><button class="btn" data-r="prev">退一行</button><button class="btn" data-r="all">全部显示</button><button class="btn" data-r="reset">从头再来</button><span class="cnt small"></span><span class="small">键盘 <span class="kbd">空格</span> 或 <span class="kbd">→</span> 揭示下一行，<span class="kbd">←</span> 退回</span>';
+    return d;
+  }
+  function attachRecall(container, pre) {
+    const bar = recallBar();
+    container.insertBefore(bar, pre);
+    const api = recall(pre, bar);
+    bar.addEventListener('click', e => { const r = e.target.dataset.r; if (r) { active = api; api[r](); } });
+    pre.addEventListener('click', () => { active = api; });
+    return { api, bar };
+  }
+  return { esc, hlLine, codeHTML, store, recall, attachRecall };
+})();
+</script><script>
+(() => {
+  const D = JSON.parse(document.getElementById('data').textContent);
+  document.querySelectorAll('.cb').forEach(el => { el.innerHTML = CN.codeHTML(D.codes[+el.dataset.i]); });
+  document.querySelectorAll('.quizbox').forEach(box => {
+    const qs = D.quiz[box.dataset.q], wrap = box.querySelector('.qi'), sc = box.querySelector('.qs');
+    let done = 0, ok = 0;
+    const upd = () => { sc.textContent = `已答 ${done} / ${qs.length}，答对 ${ok}`; };
+    qs.forEach((q, qi) => {
+      const d = document.createElement('div'); d.className = 'quiz';
+      d.innerHTML = `<div class="qq">${qi + 1}. ${CN.esc(q.q)}</div>` + q.opts.map((o, i) => `<button class="opt" data-i="${i}">${CN.esc(o)}</button>`).join('') + `<div class="why hidden">${CN.esc(q.why)}</div>`;
+      d.addEventListener('click', e => {
+        const b = e.target.closest('.opt'); if (!b || d.dataset.done) return;
+        d.dataset.done = 1; done++; if (+b.dataset.i === q.ans) ok++;
+        d.querySelectorAll('.opt').forEach(x => { if (+x.dataset.i === q.ans) x.classList.add('right'); else if (x === b) x.classList.add('wrong'); });
+        d.querySelector('.why').classList.remove('hidden'); upd();
+      });
+      wrap.appendChild(d);
+    });
+    const r = document.createElement('button'); r.className = 'btn'; r.textContent = '重做';
+    r.onclick = () => { done = ok = 0; wrap.querySelectorAll('.quiz').forEach(d => { delete d.dataset.done; d.querySelectorAll('.opt').forEach(x => x.classList.remove('right', 'wrong')); d.querySelector('.why').classList.add('hidden'); }); upd(); };
+    box.appendChild(r); upd();
+  });
+  const ST = CN.store('py-check-v1'), boxes = [...document.querySelectorAll('#chk input')];
+  const paint = () => { const n = boxes.filter(b => b.checked).length; document.getElementById('chkn').textContent = `${n} / ${boxes.length}`; document.getElementById('chkbar').style.width = (100 * n / boxes.length) + '%'; };
+  boxes.forEach(b => { b.checked = !!ST.get(b.dataset.k); b.onchange = () => { ST.set(b.dataset.k, b.checked ? 1 : undefined); paint(); }; });
+  document.getElementById('chkreset').onclick = () => { boxes.forEach(b => { b.checked = false; ST.set(b.dataset.k, undefined); }); paint(); };
+  paint();
+})();
+</script></body></html>

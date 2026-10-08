@@ -1,0 +1,286 @@
+<!doctype html><html lang="zh-CN"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex,nofollow,noarchive"><title>ML 手撕 20 段</title><style>:root{--bg:#f7f8f5;--paper:#fff;--ink:#20332f;--muted:#5a6a65;--line:#d9dfd7;--acc:#176c63;--acc2:#e3f0ec;--easy:#2f8a5b;--mid:#b07a14;--hard:#b4443c;--code:#f3f5f1;--warn:#fbf1e2;--warnink:#8a5413;--blue:#2c5d8f;--blue2:#e6eef7;--red2:#f8e3e1}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:15.5px/1.75 system-ui,-apple-system,"PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+a{color:var(--acc)}
+header.top{position:sticky;top:0;z-index:20;background:rgba(247,248,245,.96);backdrop-filter:blur(6px);border-bottom:1px solid var(--line)}
+header.top .in{max-width:1180px;margin:auto;padding:10px 16px;display:flex;gap:6px 18px;flex-wrap:wrap;align-items:center}
+header.top b{font-size:15px}
+header.top nav{display:flex;gap:4px 14px;flex-wrap:wrap;font-size:14px}
+header.top nav a{text-decoration:none;padding:2px 0}
+header.top nav a.on{font-weight:700;color:var(--ink);border-bottom:2px solid var(--acc)}
+main{max-width:1180px;margin:auto;padding:22px 16px 90px}
+h1{font-size:28px;line-height:1.3;margin:6px 0 6px}
+h2{font-size:22px;margin:34px 0 10px}
+h3{font-size:18px;margin:22px 0 8px}
+.lead{color:var(--muted);max-width:860px}
+.panel{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:14px 16px;margin:14px 0}
+.toolbar{position:sticky;top:46px;z-index:15;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:10px 12px;margin:12px 0;display:flex;flex-wrap:wrap;gap:8px 14px;align-items:center;box-shadow:0 2px 10px rgba(0,0,0,.04)}
+.seg{display:inline-flex;border:1px solid var(--line);border-radius:8px;overflow:hidden}
+.seg button{border:0;background:#fff;padding:5px 11px;font:inherit;font-size:14px;cursor:pointer;color:var(--ink)}
+.seg button+button{border-left:1px solid var(--line)}
+.seg button.on{background:var(--acc);color:#fff}
+.chip{display:inline-block;border:1px solid var(--line);background:#fff;border-radius:999px;padding:2px 10px;font-size:13px;cursor:pointer;margin:2px 3px 2px 0;user-select:none}
+.chip.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+input[type=search]{font:inherit;font-size:14px;padding:5px 10px;border:1px solid var(--line);border-radius:8px;min-width:160px}
+select{font:inherit;font-size:14px;padding:4px 8px;border:1px solid var(--line);border-radius:8px;background:#fff}
+button.btn{font:inherit;font-size:14px;border:1px solid var(--line);background:#fff;border-radius:8px;padding:5px 12px;cursor:pointer}
+button.btn:hover{border-color:var(--acc)}
+button.btn.pri{background:var(--acc);color:#fff;border-color:var(--acc)}
+.small{font-size:13px;color:var(--muted)}
+.progress{height:8px;background:#e8ece6;border-radius:99px;overflow:hidden;min-width:120px;flex:1}
+.progress i{display:block;height:100%;background:var(--acc)}
+.prog-row{display:flex;align-items:center;gap:10px;font-size:13px}
+.catgrid{display:grid;grid-template-columns:repeat(auto-fill,minmax(180px,1fr));gap:8px}
+.catgrid a{display:block;text-decoration:none;color:var(--ink);background:#fff;border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.catgrid a b{display:block;font-size:14.5px}
+.catgrid a .progress{margin-top:6px}
+/* cards */
+.card{background:var(--paper);border:1px solid var(--line);border-radius:12px;margin:12px 0;overflow:hidden}
+.card .hd{display:flex;flex-wrap:wrap;align-items:center;gap:6px 10px;padding:10px 14px;border-bottom:1px solid var(--line);cursor:pointer}
+.card .hd .no{font-weight:700;font-variant-numeric:tabular-nums;color:var(--muted)}
+.card .hd .tt{font-weight:700;font-size:16px}
+.badge{font-size:12px;border-radius:5px;padding:0 6px;border:1px solid currentColor}
+.d-简单{color:var(--easy)}.d-中等{color:var(--mid)}.d-困难{color:var(--hard)}
+.must{background:var(--hard);color:#fff;border-color:var(--hard)}
+.tier{color:var(--blue)}
+.status{margin-left:auto;display:inline-flex;gap:4px}
+.status button{font:inherit;font-size:12px;border:1px solid var(--line);background:#fff;border-radius:6px;padding:1px 8px;cursor:pointer;color:var(--muted)}
+.status button.on[data-s="0"]{background:var(--hard);color:#fff;border-color:var(--hard)}
+.status button.on[data-s="1"]{background:var(--mid);color:#fff;border-color:var(--mid)}
+.status button.on[data-s="2"]{background:var(--easy);color:#fff;border-color:var(--easy)}
+.card .bd{padding:10px 14px 14px}
+.hook{font-size:16.5px;font-weight:600;background:var(--acc2);border-left:4px solid var(--acc);padding:8px 12px;border-radius:6px;margin:4px 0 10px}
+.kv{margin:4px 0;font-size:14.5px}
+.kv b{color:var(--acc);margin-right:6px}
+.hidden{display:none!important}
+.masked{filter:blur(6px);user-select:none;cursor:pointer}
+.reveal{cursor:pointer;color:var(--acc);font-size:13.5px}
+pre.code{background:var(--code);border:1px solid var(--line);border-radius:8px;padding:10px 0;margin:10px 0;overflow:auto;font:13.2px/1.6 ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;counter-reset:ln}
+pre.code .ln{display:block;padding:0 12px 0 46px;position:relative;white-space:pre}
+pre.code .ln::before{counter-increment:ln;content:counter(ln);position:absolute;left:0;width:34px;text-align:right;color:#a7b2ac}
+pre.code .ln.cur{background:#fff6d6}
+pre.code .ln.hide{color:transparent;text-shadow:none}
+pre.code .ln.hide *{color:transparent!important}
+pre.code .ln.hide::after{content:"";position:absolute;left:46px;right:14px;top:50%;border-top:2px dashed #c9d2cb}
+.tk-k{color:#8a3fb0;font-weight:600}.tk-s{color:#2f7d32}.tk-c{color:#8a968f;font-style:italic}.tk-n{color:#b0560e}.tk-b{color:#1f5fa8}.tk-f{color:#0e6e8c}
+.recall-bar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;font-size:13.5px}
+.kbd{display:inline-block;border:1px solid var(--line);border-bottom-width:2px;border-radius:4px;padding:0 5px;font-size:12px;background:#fff}
+/* category headers */
+.cathd{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-top:40px;border-top:2px solid var(--ink);padding-top:12px}
+.cathd h2{margin:0}
+.template{font-size:15.5px;background:var(--blue2);border-left:4px solid var(--blue);padding:8px 12px;border-radius:6px;margin:10px 0}
+/* animation */
+.anim{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:12px 14px;margin:10px 0}
+.anim .ah{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-bottom:8px}
+.anim .ah b{font-size:14.5px}
+.stage{min-height:120px;overflow-x:auto}
+.arr{display:flex;gap:4px;align-items:flex-end;padding:22px 2px 20px;position:relative}
+.cell{min-width:36px;height:36px;border:1px solid #b9c4bd;border-radius:6px;display:flex;align-items:center;justify-content:center;font:14px ui-monospace,Menlo,monospace;background:#fff;position:relative;transition:background .2s}
+.cell.bar{align-items:flex-end;padding-bottom:2px;border-radius:4px 4px 0 0}
+.cell.hl{background:#ffe9a8;border-color:#d1a52a}
+.cell.in{background:var(--acc2);border-color:var(--acc)}
+.cell.dim{opacity:.35}
+.cell.ok{background:#d9efe0;border-color:var(--easy)}
+.cell.bad{background:var(--red2);border-color:var(--hard)}
+.cell .idx{position:absolute;bottom:-18px;left:0;right:0;text-align:center;font-size:10.5px;color:#9aa69f}
+.cell .ptr{position:absolute;top:-20px;left:-6px;right:-6px;text-align:center;font-size:11px;font-weight:700;color:var(--hard);white-space:nowrap}
+.grid{display:inline-grid;gap:3px;padding:6px}
+.grid .cell{min-width:34px;height:34px}
+.vars{display:flex;flex-wrap:wrap;gap:6px 10px;margin:6px 0;font:13px ui-monospace,Menlo,monospace}
+.vars span{background:var(--code);border:1px solid var(--line);border-radius:6px;padding:1px 8px}
+.note{font-size:14px;margin-top:6px;min-height:22px}
+.ll{display:flex;align-items:center;gap:0;padding:26px 4px 10px;flex-wrap:wrap}
+.ll .node{min-width:38px;height:34px;border:1.5px solid var(--ink);border-radius:8px;display:flex;align-items:center;justify-content:center;font:14px ui-monospace,Menlo,monospace;background:#fff;position:relative}
+.ll .arrow{width:34px;text-align:center;color:var(--muted);font-size:18px}
+.ll .arrow.rev{color:var(--hard)}
+.ll .node .ptr{position:absolute;top:-20px;left:-10px;right:-10px;text-align:center;font-size:11px;font-weight:700;color:var(--hard);white-space:nowrap}
+.flip{perspective:800px}
+.quiz .opt{display:block;width:100%;text-align:left;font:13.5px ui-monospace,Menlo,monospace;border:1px solid var(--line);background:#fff;border-radius:8px;padding:6px 10px;margin:5px 0;cursor:pointer}
+.quiz .opt.right{background:#d9efe0;border-color:var(--easy)}
+.quiz .opt.wrong{background:var(--red2);border-color:var(--hard)}
+table.t{border-collapse:collapse;width:100%;font-size:14px;background:#fff}
+table.t th,table.t td{border-bottom:1px solid var(--line);padding:7px 9px;text-align:left;vertical-align:top}
+table.t th{background:#eef2ec}
+table.t code,.kv code,p code,li code{background:var(--code);border-radius:4px;padding:0 4px;font-size:.92em}
+.tw{overflow-x:auto}
+.check li{list-style:none;margin:4px 0}
+.check label{cursor:pointer}
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:760px){.twocol{grid-template-columns:1fr}.toolbar{top:0;position:static}h1{font-size:23px}.status{margin-left:0}}
+
+.lcgo{font-size:12.5px;font-weight:600;color:#fff;background:var(--acc);border-radius:999px;padding:2px 10px;text-decoration:none;white-space:nowrap}
+.lcgo:hover{filter:brightness(1.12)}
+.card .hd .lcgo{margin-left:auto}
+.card .hd .lcgo+.status{margin-left:6px}
+.vizwrap{margin:6px 0 10px}
+.vizbox .ah code{font-size:12.5px}
+.vizbox .grid{row-gap:18px;padding-top:18px}
+</style></head><body><header class="top"><div class="in"><b>手撕代码笔记</b><nav><a href="index.html">阅读笔记首页</a><a href="06-hot100.html">Hot 100</a><a href="07-ml-handcode.html" class="on">ML 手撕 20 段</a><a href="08-python-cheatsheet.html">Python 速查</a></nav></div></header><main>
+<h1>机器学习手撕代码 20 段</h1>
+<p class="lead">从数值稳定的 softmax 到 GRPO、RoPE、KV 缓存、扩散采样，按 7 个主题排列。每段给一句记忆钩子、要点、代码和一道常见追问。代码已与 PyTorch 官方实现、librosa 或暴力参照对拍，共 203 条断言通过。</p>
+<div class="panel"><b>怎么用</b>　和 Hot 100 页一样有三种模式。<b>逐行背</b>会挡住要点和代码，按 <span class="kbd">空格</span> 逐行揭示；<b>闭卷自测</b>先让你在纸上写出函数签名、张量形状和核心公式再翻面。面试里这类题最容易丢分的是形状和数值稳定细节，揭示每一行前先说出这一行张量的形状。<div id="tot" style="margin-top:10px"></div></div>
+<div class="toolbar" id="toolbar"><span class="seg"><button data-mode="browse">浏览</button><button data-mode="recall">逐行背</button><button data-mode="test">闭卷自测</button></span>
+<span class="chip" id="must">只看必写</span><select id="stat"><option value="all">全部状态</option><option value="weak">还没熟练</option><option value="0">不会</option><option value="1">模糊</option><option value="2">熟练</option></select>
+<button class="btn pri" id="rand">随机抽一段</button><button class="btn" id="expand">展开全部</button><button class="btn" id="collapse">折叠全部</button></div>
+<div id="list"></div></main>
+<script type="application/json" id="data">{"items": [{"id": "H1", "title": "数值稳定的 softmax 与交叉熵（含梯度）", "level": "必写", "key": "softmax 先减去每行最大值再取指数，结果不变但不会上溢。log_softmax 用 logsumexp 写法，避免先算 softmax 再取对数时下溢成负无穷。交叉熵对 logits 的梯度是 softmax 减去 one-hot，再除以样本数。", "code": "def softmax(z, axis=-1):\n    z = z - z.max(axis=axis, keepdims=True)          # 减最大值防止 exp 上溢，结果不变\n    e = np.exp(z)\n    return e / e.sum(axis=axis, keepdims=True)\n\n\ndef log_softmax(z, axis=-1):\n    z = z - z.max(axis=axis, keepdims=True)\n    return z - np.log(np.exp(z).sum(axis=axis, keepdims=True))   # logsumexp 技巧\n\n\ndef cross_entropy(logits, y):\n    \"\"\"logits: [N, C]，y: [N] 整数标签。返回平均损失和对 logits 的梯度。\"\"\"\n    N = logits.shape[0]\n    loss = -log_softmax(logits)[np.arange(N), y].mean()\n    grad = softmax(logits)\n    grad[np.arange(N), y] -= 1                        # 梯度就是 softmax 减 one-hot\n    return loss, grad / N", "q": "为什么框架里的交叉熵直接收 logits 而不收概率？", "a": "把 log_softmax 与负对数似然合在一起算，可以走 logsumexp 的稳定路径。先做 softmax 再传进去，既多一次计算，又会在极端 logits 下丢精度，重复 softmax 更是常见 bug。", "hook": "softmax 先减行最大值，CE 的梯度就是 softmax − one-hot 再除以 N"}, {"id": "H2", "title": "LayerNorm 与 RMSNorm", "level": "必写", "key": "LayerNorm 在最后一维上减均值、除以标准差，再做缩放和平移，方差用有偏估计。RMSNorm 去掉减均值与平移，只除以均方根再乘增益，少一次归约与一组参数。eps 加在根号里面，防止除零。", "code": "class LayerNorm(nn.Module):\n    def __init__(self, d, eps=1e-5):\n        super().__init__()\n        self.g = nn.Parameter(torch.ones(d))\n        self.b = nn.Parameter(torch.zeros(d))\n        self.eps = eps\n\n    def forward(self, x):\n        mu = x.mean(-1, keepdim=True)\n        var = x.var(-1, keepdim=True, unbiased=False)  # 有偏方差，与 PyTorch 实现一致\n        return (x - mu) / torch.sqrt(var + self.eps) * self.g + self.b\n\n\nclass RMSNorm(nn.Module):\n    def __init__(self, d, eps=1e-6):\n        super().__init__()\n        self.g = nn.Parameter(torch.ones(d))\n        self.eps = eps\n\n    def forward(self, x):\n        rms = torch.sqrt(x.pow(2).mean(-1, keepdim=True) + self.eps)   # 不减均值、无偏置\n        return x / rms * self.g", "q": "为什么大模型用 RMSNorm 而不是 LayerNorm？", "a": "实验上质量相当，而 RMSNorm 计算与访存更少。重新中心化对训练稳定性的贡献不大，缩放不变性才是关键。", "hook": "LayerNorm 减均值除标准差再仿射，RMSNorm 只除均方根"}, {"id": "H3", "title": "SwiGLU 前馈层", "level": "熟悉", "key": "一路过 SiLU 作为门，与另一路线性输出逐元素相乘，再投影回原维度。有三个权重矩阵，中间维取三分之八倍隐维，参数量与四倍中间维的标准前馈层相同。", "code": "class SwiGLU(nn.Module):\n    def __init__(self, d, hidden=None):\n        super().__init__()\n        hidden = hidden or int(8 * d / 3)              # 三个矩阵，取 8/3 倍使参数量与 4 倍 FFN 相同\n        self.w1 = nn.Linear(d, hidden, bias=False)     # 门控支路\n        self.w3 = nn.Linear(d, hidden, bias=False)     # 线性支路\n        self.w2 = nn.Linear(hidden, d, bias=False)\n\n    def forward(self, x):\n        return self.w2(F.silu(self.w1(x)) * self.w3(x))", "q": "门控为什么比单纯的激活更好？", "a": "门控让每个中间单元的通过量由输入决定，相当于数据相关的特征选择。实证上相同参数量下困惑度更低，这是 LLaMA 之后普遍采用的原因。", "hook": "SiLU(xW₁) ⊙ xW₃ 再乘 W₂，中间维取 8/3 倍"}, {"id": "H4", "title": "AdamW 优化器", "level": "必写", "key": "一阶矩与二阶矩做指数滑动平均，再除以一减 beta 的 t 次方做偏差修正，否则训练初期估计偏小。权重衰减直接乘在参数上，不进入梯度，这是 AdamW 与 Adam 加 L2 的区别。更新量为修正后一阶矩除以修正后二阶矩的平方根。", "code": "class AdamW:\n    def __init__(self, params, lr=1e-3, betas=(0.9, 0.999), eps=1e-8, wd=0.01):\n        self.params = [p for p in params]\n        self.lr, self.eps, self.wd = lr, eps, wd\n        self.b1, self.b2 = betas\n        self.t = 0\n        self.m = [torch.zeros_like(p) for p in self.params]\n        self.v = [torch.zeros_like(p) for p in self.params]\n\n    @torch.no_grad()\n    def step(self):\n        self.t += 1\n        for p, m, v in zip(self.params, self.m, self.v):\n            if p.grad is None:\n                continue\n            g = p.grad\n            p.mul_(1 - self.lr * self.wd)                          # 解耦权重衰减，直接作用在参数上\n            m.mul_(self.b1).add_(g, alpha=1 - self.b1)             # 一阶矩\n            v.mul_(self.b2).addcmul_(g, g, value=1 - self.b2)      # 二阶矩\n            m_hat = m / (1 - self.b1 ** self.t)                    # 偏差修正\n            v_hat = v / (1 - self.b2 ** self.t)\n            p.addcdiv_(m_hat, v_hat.sqrt().add_(self.eps), value=-self.lr)", "q": "Adam 加 L2 正则和 AdamW 有什么实质差别？", "a": "L2 加进梯度后会被二阶矩归一化，梯度大的参数实际衰减弱、梯度小的参数衰减强，衰减行为不可控。AdamW 把衰减解耦出来，每个参数按同一比例收缩。", "hook": "m、v 两个滑动平均，除以 1−βᵗ 修正，衰减项单独乘 lr·wd"}, {"id": "H5", "title": "Dueling 网络与 Double DQN 目标", "level": "必写", "key": "Dueling 把 Q 拆成状态价值 V 与动作优势 A，减去 A 的均值使二者可辨识。Double DQN 用在线网络选下一状态的动作，用目标网络给这个动作估值，拆开选择与评估以缓解最大化带来的过估计。终止状态乘以一减 done，不再自举。损失用 Huber，对离群 TD 误差更稳。", "code": "class DuelingQ(nn.Module):\n    def __init__(self, s_dim, n_act, h=128):\n        super().__init__()\n        self.body = nn.Sequential(nn.Linear(s_dim, h), nn.ReLU())\n        self.V = nn.Linear(h, 1)\n        self.A = nn.Linear(h, n_act)\n\n    def forward(self, s):\n        z = self.body(s)\n        a = self.A(z)\n        return self.V(z) + a - a.mean(-1, keepdim=True)   # 减优势均值，使 V 与 A 可辨识\n\n\n@torch.no_grad()\ndef double_dqn_target(online, target, r, s2, done, gamma=0.99):\n    a2 = online(s2).argmax(-1, keepdim=True)              # 在线网络选动作\n    q2 = target(s2).gather(-1, a2).squeeze(-1)            # 目标网络估值，缓解过估计\n    return r + gamma * (1 - done) * q2\n\n\ndef dqn_loss(online, s, a, y):\n    q = online(s).gather(-1, a.unsqueeze(-1)).squeeze(-1)\n    return F.smooth_l1_loss(q, y)                         # Huber 损失对离群 TD 误差更稳", "q": "你的 DemandClean 为什么用 Dueling Double DQN？", "a": "清洗动作的价值很多时候由状态决定，不同动作差别小，Dueling 让 V 单独学得更快。动作空间离散且奖励稀疏，Q 值容易被高估，Double 结构正好针对这一点。", "hook": "V + A − mean(A)；Double DQN 用在线网络选动作、目标网络估值"}, {"id": "H6", "title": "广义优势估计 GAE", "level": "熟悉", "key": "从后往前累加一步 TD 误差，每往前一步乘以 gamma 与 lambda。lambda 为零时退化成一步 TD 误差，偏差大方差小；lambda 为一时等于蒙特卡洛回报减价值，偏差小方差大。遇到终止要切断累加与自举。返回的优势加上价值就是价值网络的回归目标。", "code": "def gae(rewards, values, dones, gamma=0.99, lam=0.95):\n    \"\"\"rewards、dones 长度 T；values 长度 T+1，末位是最后状态的自举价值。\"\"\"\n    T = len(rewards)\n    adv = np.zeros(T)\n    last = 0.0\n    for t in reversed(range(T)):\n        nonterm = 1.0 - dones[t]\n        delta = rewards[t] + gamma * values[t + 1] * nonterm - values[t]   # 一步 TD 误差\n        last = delta + gamma * lam * nonterm * last                        # 指数加权累加\n        adv[t] = last\n    return adv, adv + values[:-1]                         # 优势，以及价值网络的回归目标", "q": "lambda 一般取多少？", "a": "常用 0.95 左右，在偏差与方差之间折中。奖励很稀疏或回合很长时，适当调大能让信号传得更远。", "hook": "δ = r + γV′ − V，从后往前累加 (γλ)ᵏ δ"}, {"id": "H7", "title": "PPO 裁剪目标", "level": "必写", "key": "概率比是新策略与采样时旧策略的比值。目标取比率乘优势与裁剪后比率乘优势中的较小者，形成悲观下界：优势为正时比率超过一加 eps 就不再给梯度，优势为负时比率低于一减 eps 也不再给梯度。总损失再加价值损失与熵正则。", "code": "def ppo_loss(logp, old_logp, adv, value, ret, entropy, clip=0.2, vf_coef=0.5, ent_coef=0.01):\n    ratio = torch.exp(logp - old_logp)                    # 新旧策略概率比\n    s1 = ratio * adv\n    s2 = torch.clamp(ratio, 1 - clip, 1 + clip) * adv\n    policy = -torch.min(s1, s2).mean()                    # 取较小者，形成悲观下界\n    vf = F.mse_loss(value, ret)\n    return policy + vf_coef * vf - ent_coef * entropy.mean()", "q": "为什么要取 min 而不是只做 clip？", "a": "只 clip 会在不利方向上也截断梯度，策略变差时得不到纠正。取 min 只截断有利方向的过度更新，不利方向照常惩罚。", "hook": "min(比率×A, clip(比率)×A)，取负号做最小化"}, {"id": "H8", "title": "DPO 损失", "level": "必写", "key": "隐式奖励是 beta 乘以策略与参考策略的对数概率比。损失是偏好回复与被拒回复隐式奖励之差经 logsigmoid 取负。输入是整条回复所有 token 对数概率之和，不是逐 token。策略与参考相同时损失为 log 2。", "code": "def dpo_loss(pi_w, pi_l, ref_w, ref_l, beta=0.1):\n    \"\"\"四个输入都是整条回复的 token 对数概率之和，形状 [B]。w 为偏好回复，l 为被拒回复。\"\"\"\n    margin = (pi_w - ref_w) - (pi_l - ref_l)              # 两条回复隐式奖励之差\n    loss = -F.logsigmoid(beta * margin).mean()\n    acc = (margin > 0).float().mean()                     # 常用监控：偏好回复隐式奖励更高的比例\n    return loss, acc", "q": "DPO 为什么不需要奖励模型？", "a": "在 KL 约束的强化学习目标下，最优策略可以写成参考策略乘以奖励的指数再归一化。反解出奖励等于 beta 乘对数概率比加一个只与提示有关的项，代入 Bradley-Terry 偏好模型后该项相消，于是直接在偏好对上优化策略。", "hook": "−log σ(β[(πw−refw) − (πl−refl)])，四个对数概率"}, {"id": "H9", "title": "GRPO 组相对策略优化（重点）", "level": "必写", "key": "同一提示复制 G 份采样，奖励在组内减均值除以标准差得到优势，同一条回复的所有 token 共享这个优势，因此不需要价值网络。每个 token 用 PPO 式的裁剪比率目标，再减去 beta 乘以 KL 惩罚。KL 用 k3 估计，即参考与当前概率比减去其对数再减一，逐 token 非负且期望等于 KL。原论文先在每条回复内按长度平均，再对所有回复平均。一批样本可以更新 mu 次，第一次时比率恒为一。", "code": "def token_logprobs(logits, tokens):\n    \"\"\"logits: [N, T, V]，tokens: [N, T]。取出每个采样 token 的对数概率，形状 [N, T]。\"\"\"\n    return torch.log_softmax(logits, -1).gather(-1, tokens.unsqueeze(-1)).squeeze(-1)\n\n\ndef group_advantage(rewards, G, eps=1e-4):\n    \"\"\"rewards: [B*G]，同一提示的 G 条回复相邻排列。组内标准化得到每条回复的优势。\"\"\"\n    assert G > 1, \"组大小至少为 2，否则组内标准差没有定义\"\n    r = rewards.view(-1, G)\n    adv = (r - r.mean(1, keepdim=True)) / (r.std(1, keepdim=True) + eps)\n    return adv.view(-1)                                   # 组内奖励全相同时优势为 0\n\n\ndef grpo_loss(logp, old_logp, ref_logp, mask, adv, clip=0.2, beta=0.04):\n    \"\"\"logp、old_logp、ref_logp、mask: [B*G, T]；adv: [B*G]。mask 只覆盖回复部分的有效 token。\"\"\"\n    ratio = torch.exp(logp - old_logp)\n    a = adv.unsqueeze(1)                                  # 同一条回复的所有 token 共享一个优势\n    surr = torch.min(ratio * a, torch.clamp(ratio, 1 - clip, 1 + clip) * a)\n    d = ref_logp - logp\n    kl = torch.exp(d) - d - 1                             # k3 估计：逐 token 非负，期望等于 KL\n    per_tok = -(surr - beta * kl)\n    per_seq = (per_tok * mask).sum(1) / mask.sum(1).clamp(min=1)   # 先在每条回复内按长度平均\n    return per_seq.mean()                                 # 再对所有回复平均\n\n\ndef grpo_step(policy, ref, opt, prompts, reward_fn, G=8, T=16, mu=2):\n    \"\"\"一轮 GRPO：旧策略每个提示采样 G 条，打分算组内优势，再对这批样本更新 mu 次。\"\"\"\n    x = prompts.repeat_interleave(G, 0)                   # [B*G, ...]，同一提示的副本相邻\n    with torch.no_grad():\n        tokens = policy.sample(x, T)                      # [B*G, T]\n        old_logp = token_logprobs(policy(x, tokens), tokens)\n        ref_logp = token_logprobs(ref(x, tokens), tokens)\n        adv = group_advantage(reward_fn(x, tokens), G)\n        mask = torch.ones_like(old_logp)                  # 实际任务里要屏蔽提示与填充位置\n    for _ in range(mu):\n        logp = token_logprobs(policy(x, tokens), tokens)\n        loss = grpo_loss(logp, old_logp, ref_logp, mask, adv)\n        opt.zero_grad()\n        loss.backward()\n        opt.step()\n    return loss.item()", "q": "GRPO 有哪些已知问题，DAPO 和 Dr. GRPO 怎么改的？", "a": "一是长度偏置：先按回复长度平均，长回复里每个 token 分到的梯度更小，负优势的长回复受罚更轻，模型倾向把错误回复写长。Dr. GRPO 去掉长度归一化与组内除以标准差；字节 Seed 的 DAPO 改成对整组所有 token 统一平均。二是组内奖励全相同时优势为零、该组没有梯度，DAPO 用动态采样过滤这类组并补采。三是裁剪上界限制了低概率 token 的提升，DAPO 把上下裁剪界解耦并放宽上界，缓解熵塌缩。", "hook": "组内奖励标准化当优势，裁剪比率加 k3 KL，先按长度平均"}, {"id": "H10", "title": "多头注意力（含因果掩码）", "level": "必写", "key": "一次线性层得到 qkv，按头拆成 [B, h, T, dk]。分数除以根号 dk，否则点积方差随维度增大、softmax 饱和、梯度变小。因果掩码是严格上三角填负无穷。各头输出转置拼回 [B, T, D] 后再过输出投影。时间与显存都与 T 的平方成正比。", "code": "class MHA(nn.Module):\n    def __init__(self, d, h):\n        super().__init__()\n        assert d % h == 0\n        self.h, self.dk = h, d // h\n        self.qkv = nn.Linear(d, 3 * d)\n        self.out = nn.Linear(d, d)\n\n    def forward(self, x, causal=True):\n        B, T, D = x.shape\n        q, k, v = self.qkv(x).view(B, T, 3, self.h, self.dk).permute(2, 0, 3, 1, 4)  # 各为 [B,h,T,dk]\n        s = q @ k.transpose(-2, -1) / math.sqrt(self.dk)                               # 缩放防 softmax 饱和\n        if causal:\n            m = torch.triu(torch.ones(T, T, dtype=torch.bool, device=x.device), 1)\n            s = s.masked_fill(m, float('-inf'))                                        # 屏蔽未来位置\n        y = (s.softmax(-1) @ v).transpose(1, 2).reshape(B, T, D)                       # 合并各头\n        return self.out(y)", "q": "为什么除以根号 dk 而不是 dk？", "a": "q 与 k 各分量独立、零均值单位方差时，点积方差等于 dk，除以根号 dk 正好把方差拉回 1。除以 dk 会把分数压得过小，softmax 接近均匀。", "hook": "拆头 → QKᵀ/√d → 加因果掩码 → softmax → 乘 V → 合头"}, {"id": "H11", "title": "RoPE 旋转位置编码", "level": "必写", "key": "第 i 对维度的角频率是 base 的负 2i 除以 d 次方，位置 m 处旋转角为 m 乘该频率。把相邻两维当平面坐标旋转，q 与 k 旋转后的点积只依赖位置差。只作用在 q 和 k 上，不作用在 v 上。", "code": "def rope(x, pos=None, base=10000.0):\n    \"\"\"x: [..., T, d]，d 为偶数。把第 2i 与 2i+1 维看成平面坐标，按位置旋转。\"\"\"\n    T, d = x.shape[-2], x.shape[-1]\n    pos = torch.arange(T, device=x.device) if pos is None else pos\n    inv = base ** (-torch.arange(0, d, 2, device=x.device, dtype=torch.float32) / d)   # 每对的角频率\n    ang = pos.float()[:, None] * inv[None, :]                                          # [T, d/2]\n    cos, sin = ang.cos(), ang.sin()\n    x1, x2 = x[..., 0::2], x[..., 1::2]\n    out = torch.stack([x1 * cos - x2 * sin, x1 * sin + x2 * cos], dim=-1)\n    return out.flatten(-2)                                # 旋转后点积只依赖相对位置差", "q": "实现上相邻两维配对和前后两半配对有区别吗？", "a": "两种都对，只要训练与推理一致。HuggingFace 的 LLaMA 用前后两半配对的 rotate_half 写法，原论文与部分实现用相邻两维配对，二者权重不能混用。", "hook": "两两一组按 θᵢ = base^(−2i/d) 旋转，只转 Q 和 K"}, {"id": "H12", "title": "GQA 与 KV 缓存的增量解码", "level": "必写", "key": "键值只投影出 kv_h 个头，缓存里也只存这么多，用时 repeat_interleave 扩成 h 个头。增量解码时把新 token 的键值拼到缓存后面，查询位置从 S 减 T 到 S 减一，掩码条件是键位置大于查询位置。测试里验证了先 prefill 再逐个 decode 与整段计算结果完全一致。", "code": "class GQA(nn.Module):\n    def __init__(self, d, h, kv_h):\n        super().__init__()\n        assert h % kv_h == 0\n        self.h, self.kv, self.dk = h, kv_h, d // h\n        self.wq = nn.Linear(d, h * self.dk, bias=False)\n        self.wk = nn.Linear(d, kv_h * self.dk, bias=False)\n        self.wv = nn.Linear(d, kv_h * self.dk, bias=False)\n        self.wo = nn.Linear(h * self.dk, d, bias=False)\n\n    def forward(self, x, cache=None):\n        \"\"\"x: [B, T, d]；cache 是上一次返回的 (k, v)，形状 [B, kv_h, S, dk]。\"\"\"\n        B, T, _ = x.shape\n        q = self.wq(x).view(B, T, self.h, self.dk).transpose(1, 2)\n        k = self.wk(x).view(B, T, self.kv, self.dk).transpose(1, 2)\n        v = self.wv(x).view(B, T, self.kv, self.dk).transpose(1, 2)\n        if cache is not None:\n            k = torch.cat([cache[0], k], 2)\n            v = torch.cat([cache[1], v], 2)\n        new_cache = (k, v)                                # 只缓存 kv_h 个头\n        rep = self.h // self.kv\n        k, v = k.repeat_interleave(rep, 1), v.repeat_interleave(rep, 1)\n        S = k.size(2)\n        s = q @ k.transpose(-2, -1) / math.sqrt(self.dk)\n        qpos = torch.arange(S - T, S, device=x.device)[:, None]\n        kpos = torch.arange(S, device=x.device)[None, :]\n        s = s.masked_fill(kpos > qpos, float('-inf'))     # 新 token 只能看到自己和之前\n        y = (s.softmax(-1) @ v).transpose(1, 2).reshape(B, T, -1)\n        return self.wo(y), new_cache", "q": "KV 缓存占多少显存？", "a": "每 token 每层存键和值两份，共 2 乘 kv_h 乘 dk 个数，再乘层数、序列长度、批大小与字节数。GQA 相比 MHA 省下 h 除以 kv_h 倍。", "hook": "多个 Q 头共享一组 K、V；解码时把新 K、V 拼进缓存"}, {"id": "H13", "title": "CLIP/CLAP 对比损失与 SigLIP 损失", "level": "必写", "key": "先把两路向量 L2 归一化，相似度矩阵除以温度，对角线是正例。音频到文本与文本到音频各算一次交叉熵再平均。SigLIP 不做 softmax，把每一对当成独立的二分类，对角标签为一、其余为负一，带可学习的缩放与偏置，偏置初始化为负值补偿正负样本不平衡。", "code": "def clip_loss(a, t, tau=0.07):\n    \"\"\"a、t: [N, D]，第 i 个音频与第 i 条文本互为正例，其余为负例。\"\"\"\n    a, t = F.normalize(a, dim=-1), F.normalize(t, dim=-1)\n    logits = a @ t.T / tau                                 # [N, N] 相似度矩阵\n    y = torch.arange(a.size(0), device=a.device)\n    return (F.cross_entropy(logits, y) + F.cross_entropy(logits.T, y)) / 2   # 两个方向取平均\n\n\ndef siglip_loss(a, t, log_scale, bias):\n    \"\"\"逐对 sigmoid 二分类，不做批内归一化。log_scale 与 bias 是可学习标量。\"\"\"\n    a, t = F.normalize(a, dim=-1), F.normalize(t, dim=-1)\n    logits = a @ t.T * log_scale.exp() + bias\n    labels = 2 * torch.eye(a.size(0), device=a.device) - 1     # 对角为正一，其余为负一\n    return -F.logsigmoid(labels * logits).sum() / a.size(0)", "q": "温度太小或太大会怎样？", "a": "太小时分布过尖，只盯最难的负例，训练不稳；太大时分布过平，正负例区分不开。温度趋于无穷时 softmax 均匀，损失等于 log N。CLIP 把温度设成可学习并加上限。", "hook": "相似度矩阵除温度，行列各做一次交叉熵；SigLIP 换成逐对 sigmoid"}, {"id": "H14", "title": "LoRA 线性层", "level": "必写", "key": "冻结原权重，旁路加 x 乘 A 转置再乘 B 转置，缩放系数为 alpha 除以 r。A 随机初始化、B 零初始化，训练开始时输出与原模型完全相同。推理前把 B 乘 A 乘缩放加回原权重，得到普通线性层，不增加延迟。可训练参数量为 r 乘以输入维与输出维之和。", "code": "class LoRALinear(nn.Module):\n    def __init__(self, base, r=8, alpha=16):\n        super().__init__()\n        self.base = base\n        for p in self.base.parameters():\n            p.requires_grad_(False)                        # 冻结原权重\n        self.A = nn.Parameter(torch.randn(r, base.in_features) / math.sqrt(base.in_features))\n        self.B = nn.Parameter(torch.zeros(base.out_features, r))   # B 零初始化，起点等于原模型\n        self.scale = alpha / r\n\n    def forward(self, x):\n        return self.base(x) + (x @ self.A.T @ self.B.T) * self.scale\n\n    @torch.no_grad()\n    def merged(self):\n        \"\"\"返回合并后的普通线性层，推理时不增加任何延迟。\"\"\"\n        lin = nn.Linear(self.base.in_features, self.base.out_features, bias=self.base.bias is not None)\n        lin.weight.copy_(self.base.weight + (self.B @ self.A) * self.scale)\n        if self.base.bias is not None:\n            lin.bias.copy_(self.base.bias)\n        return lin", "q": "为什么 B 零初始化而不是 A？", "a": "只要乘积为零就能保证起点等于原模型。若 A 为零，B 的梯度依赖 A 的输出而恒为零，两者要等 A 先动起来；B 为零时 A 的梯度虽然为零，但 B 的梯度不为零，训练第一步就能更新。", "hook": "W 冻结，输出加 (α/r)·B A x，B 初始化为 0"}, {"id": "H15", "title": "温度、top-k 与 top-p 采样", "level": "必写", "key": "顺序是先除以温度，再做 top-k，再做 top-p。top-p 在降序概率上算累计和，某个 token 之前的累计已经超过 p 才丢弃它，这样保证至少留一个且留下的是累计首次超过 p 的最小集合。截断后的 logits 用 scatter 还原到原顺序再抽样。", "code": "def sample_next(logits, temperature=1.0, top_k=0, top_p=1.0):\n    \"\"\"logits: [B, V]。温度缩放后依次做 top-k 与 top-p 截断，再按概率抽样。\"\"\"\n    logits = logits / max(temperature, 1e-6)\n    if top_k > 0:\n        kth = torch.topk(logits, min(top_k, logits.size(-1)), dim=-1).values[..., -1:]\n        logits = logits.masked_fill(logits < kth, float('-inf'))\n    if top_p < 1.0:\n        sl, idx = torch.sort(logits, descending=True, dim=-1)\n        probs = sl.softmax(-1)\n        drop = probs.cumsum(-1) - probs > top_p        # 之前的累计已超过 top_p 才丢，至少保留一个\n        sl = sl.masked_fill(drop, float('-inf'))\n        logits = torch.full_like(logits, float('-inf')).scatter(-1, idx, sl)\n    return torch.multinomial(logits.softmax(-1), 1).squeeze(-1)", "q": "top-k 与 top-p 同时开会怎样？", "a": "先按 k 截断，再在剩余集合里按 p 截断，最终候选是两者条件同时满足的交集。温度要在截断之前做，否则改变的是已经截断后的分布。", "hook": "logits/T → 保留 top-k → 累积概率超过 p 截断 → 重新归一化"}, {"id": "H16", "title": "线性注意力：并行与递推两种形式（混合注意力的基础）", "level": "必写", "key": "用非负特征映射代替 softmax 后，注意力可以写成状态递推：状态累加键与值的外积，归一化项累加键。训练用并行形式，推理用递推形式，状态大小固定为 d 乘 dv，与序列长度无关。加上门控衰减就是 RetNet、GLA、GatedDeltaNet 这一族的骨架。测试验证了两种形式等价，门控版与展开式一致。", "code": "def phi(x):\n    return F.elu(x) + 1                                   # 特征映射保证非负，分母不为零\n\n\ndef linear_attn_parallel(q, k, v):\n    \"\"\"q、k: [T, d]，v: [T, dv]。训练用的并行形式，用核函数代替 softmax。\"\"\"\n    q, k = phi(q), phi(k)\n    A = torch.tril(q @ k.T)                               # 因果掩码\n    return (A @ v) / A.sum(-1, keepdim=True)\n\n\ndef linear_attn_recurrent(q, k, v, decay=None):\n    \"\"\"推理用的递推形式，状态大小固定为 d 乘 dv，与序列长度无关。给定 decay 即门控衰减版本。\"\"\"\n    q, k = phi(q), phi(k)\n    S = torch.zeros(q.size(1), v.size(1))\n    z = torch.zeros(q.size(1))\n    out = []\n    for t in range(q.size(0)):\n        g = 1.0 if decay is None else decay[t]            # 门控：由输入决定遗忘多少旧记忆\n        S = g * S + k[t][:, None] * v[t][None, :]         # 状态累加键值外积\n        z = g * z + k[t]\n        out.append((q[t] @ S) / (q[t] @ z))\n    return torch.stack(out)", "q": "既然线性注意力更省，为什么混合注意力还要留全注意力层？", "a": "线性注意力把全部历史压进固定大小的状态，精确回忆某个很早的 token 时能力弱，大海捞针类任务明显掉点。保留约四分之一的全注意力层负责精确检索，其余层用线性注意力负责吞吐，Qwen3-Next 采用的就是这种比例。", "hook": "去掉 softmax 后先算 KᵀV，递推形式维护状态 S += kᵀv"}, {"id": "H17", "title": "Top-k 路由的 MoE 与负载均衡损失", "level": "熟悉", "key": "路由对每个 token 算 softmax 概率，取前 k 个专家，并在这 k 个上重新归一化权重。按专家把 token 分组分别计算再加权累加。辅助损失等于专家数乘以各专家实际分到的 token 比例与平均路由概率的内积，完全均衡时约为 1，偏斜时变大。", "code": "class TopKMoE(nn.Module):\n    def __init__(self, d, n_exp=8, k=2, hidden=None):\n        super().__init__()\n        hidden = hidden or 4 * d\n        self.k, self.n = k, n_exp\n        self.router = nn.Linear(d, n_exp, bias=False)\n        self.experts = nn.ModuleList(\n            nn.Sequential(nn.Linear(d, hidden), nn.GELU(), nn.Linear(hidden, d)) for _ in range(n_exp))\n\n    def forward(self, x):\n        \"\"\"x: [N, d]，N 为展平后的 token 数。返回输出和负载均衡辅助损失。\"\"\"\n        probs = self.router(x).softmax(-1)                          # [N, E]\n        w, idx = probs.topk(self.k, -1)                             # 每个 token 选 k 个专家\n        w = w / w.sum(-1, keepdim=True)                             # 选中的权重重新归一\n        y = torch.zeros_like(x)\n        for e in range(self.n):\n            tok, slot = (idx == e).nonzero(as_tuple=True)           # 分到专家 e 的 token\n            if tok.numel():\n                y[tok] += w[tok, slot, None] * self.experts[e](x[tok])\n        frac = F.one_hot(idx, self.n).float().sum(1).mean(0) / self.k   # 各专家实际接到的 token 比例\n        aux = self.n * (frac * probs.mean(0)).sum()                 # 分配均衡时该值约为 1\n        return y, aux", "q": "辅助损失为什么用分配比例乘平均概率，不直接惩罚分配比例？", "a": "分配比例来自 top-k 选择，不可导；平均路由概率可导。二者相乘后梯度通过概率回传，使被过度选择的专家概率下降。", "hook": "门控取 top-k 专家加权，负载均衡损失 = E·Σ(fᵢ·Pᵢ)"}, {"id": "H18", "title": "从波形手写 log-Mel 谱", "level": "必写", "key": "分帧加汉宁窗，帧数为一加上信号长度减窗长后整除帧移。每帧做实数 FFT 取幅度平方得到功率谱。Mel 滤波器组的中心频率在 Mel 刻度上等间隔，每个滤波器是左升右降的三角形。功率谱乘滤波器矩阵后取对数，加一个小常数防止对零取对数。测试中与 librosa 的 HTK 刻度实现逐元素一致。", "code": "def hz_to_mel(f):\n    return 2595.0 * np.log10(1.0 + f / 700.0)\n\n\ndef mel_to_hz(m):\n    return 700.0 * (10.0 ** (m / 2595.0) - 1.0)\n\n\ndef mel_filterbank(sr, n_fft, n_mels, fmin=0.0, fmax=None):\n    \"\"\"返回 [n_mels, n_fft//2+1] 的三角滤波器，中心频率在 Mel 刻度上等间隔。\"\"\"\n    fmax = fmax or sr / 2\n    hz = mel_to_hz(np.linspace(hz_to_mel(fmin), hz_to_mel(fmax), n_mels + 2))\n    freqs = np.linspace(0, sr / 2, n_fft // 2 + 1)        # 每个 FFT 频点的频率\n    fb = np.zeros((n_mels, len(freqs)))\n    for m in range(n_mels):\n        lo, c, hi = hz[m], hz[m + 1], hz[m + 2]\n        up = (freqs - lo) / (c - lo)                      # 左半边上升\n        down = (hi - freqs) / (hi - c)                    # 右半边下降\n        fb[m] = np.maximum(0, np.minimum(up, down))\n    return fb\n\n\ndef log_mel(y, sr=16000, n_fft=1024, hop=256, n_mels=80):\n    win = np.hanning(n_fft)\n    n = 1 + (len(y) - n_fft) // hop\n    frames = np.stack([y[i * hop: i * hop + n_fft] * win for i in range(n)])   # 分帧加窗\n    power = np.abs(np.fft.rfft(frames, axis=-1)) ** 2                          # 功率谱 [帧, 频点]\n    return np.log(power @ mel_filterbank(sr, n_fft, n_mels).T + 1e-10)         # [帧, n_mels]", "q": "帧率怎么算？16 kHz、帧移 256 时每秒多少帧？", "a": "帧率等于采样率除以帧移，16000 除以 256 约为 62.5 帧每秒。", "hook": "分帧加窗 → FFT 取功率谱 → 乘 Mel 滤波器组 → 取对数"}, {"id": "H19", "title": "残差向量量化 RVQ 与码率计算", "level": "必写", "key": "第一级在原向量上找最近码字，减掉后得到残差，第二级量化残差，以此类推，重建等于各级码字之和。码本用逐级 k-means 在残差上训练。码率等于码本数乘以每码本比特数再乘以帧率，EnCodec 24 kHz 下 8 个 1024 条目码本、75 Hz 帧率对应 6 kbps。测试验证了码本越多重建误差越小。", "code": "def rvq_encode(x, codebooks):\n    \"\"\"x: [N, D]；codebooks 是列表，每个码本 [K, D]。逐级量化上一级留下的残差。\"\"\"\n    res = x.copy()\n    codes, recon = [], np.zeros_like(x)\n    for C in codebooks:\n        idx = ((res[:, None, :] - C[None]) ** 2).sum(-1).argmin(1)   # 最近码字\n        codes.append(idx)\n        recon += C[idx]\n        res -= C[idx]\n    return np.stack(codes, 1), recon                       # 重建等于各级码字之和\n\n\ndef train_rvq(x, n_q, K, iters=20, seed=0):\n    \"\"\"逐级在残差上跑 k-means 得到各级码本。\"\"\"\n    rng = np.random.default_rng(seed)\n    res, books = x.copy(), []\n    for _ in range(n_q):\n        C = res[rng.choice(len(res), K, replace=False)].copy()\n        for _ in range(iters):\n            idx = ((res[:, None] - C[None]) ** 2).sum(-1).argmin(1)\n            for j in range(K):\n                if (idx == j).any():\n                    C[j] = res[idx == j].mean(0)\n        books.append(C)\n        res = res - C[((res[:, None] - C[None]) ** 2).sum(-1).argmin(1)]\n    return books\n\n\ndef bitrate(n_q, K, frame_rate):\n    return n_q * np.log2(K) * frame_rate                   # 码本数乘每码本比特数乘帧率", "q": "神经编解码器里 RVQ 怎么训练，不可导怎么办？", "a": "编码器、量化器、解码器端到端训练，量化用直通估计回传梯度，码本用指数滑动平均更新或加码本损失，编码器加承诺损失。训练时随机只用前若干级，得到一个支持多码率的模型。", "hook": "每级找最近码字，残差送下一级；码率 = 级数 × log₂(码本大小) × 帧率"}, {"id": "H20", "title": "DDPM 训练、速度目标、DDIM 采样与 CFG", "level": "必写", "key": "累积保留系数是一减 beta 的累乘。闭式加噪让训练直接采样任意步，损失是预测噪声的均方误差。速度目标等于保留系数平方根乘噪声减去一减保留系数的平方根乘原图，由 x_t 与 v 可以同时还原原图与噪声。DDIM 先由预测噪声反推原图，再按目标步的系数重新组合，确定性且可以跳步。CFG 在无条件预测上沿条件方向外推。", "code": "def make_schedule(T=1000, b0=1e-4, b1=0.02):\n    betas = torch.linspace(b0, b1, T)\n    return betas, torch.cumprod(1 - betas, 0)              # 累积保留系数 abar\n\n\ndef _bc(v, x):\n    return v.view(-1, *[1] * (x.dim() - 1))                # 把 [B] 广播到 x 的形状\n\n\ndef q_sample(x0, t, abar, noise):\n    \"\"\"闭式加噪：任意步 t 直接得到 x_t，训练时不必逐步迭代。\"\"\"\n    return _bc(abar[t].sqrt(), x0) * x0 + _bc((1 - abar[t]).sqrt(), x0) * noise\n\n\ndef ddpm_loss(model, x0, abar):\n    t = torch.randint(0, len(abar), (x0.size(0),), device=x0.device)\n    noise = torch.randn_like(x0)\n    return F.mse_loss(model(q_sample(x0, t, abar, noise), t), noise)   # 预测噪声的均方误差\n\n\ndef v_target(x0, noise, t, abar):\n    return _bc(abar[t].sqrt(), x0) * noise - _bc((1 - abar[t]).sqrt(), x0) * x0   # 速度参数化目标\n\n\n@torch.no_grad()\ndef ddim_step(model, xt, t, t_prev, abar):\n    \"\"\"确定性 DDIM 一步，从 t 直接跳到 t_prev，t_prev 可以远小于 t。t_prev 为 -1 表示回到原图。\"\"\"\n    eps = model(xt, torch.full((xt.size(0),), t, device=xt.device))\n    a_t = abar[t]\n    a_p = abar[t_prev] if t_prev >= 0 else torch.tensor(1.0)\n    x0 = (xt - (1 - a_t).sqrt() * eps) / a_t.sqrt()        # 由预测噪声反推原图\n    return a_p.sqrt() * x0 + (1 - a_p).sqrt() * eps\n\n\ndef cfg(eps_cond, eps_uncond, w):\n    return eps_uncond + w * (eps_cond - eps_uncond)        # 无分类器引导：沿条件方向外推", "q": "DDIM 为什么能跳步？", "a": "DDIM 构造的非马尔可夫过程与 DDPM 有相同的单步边缘分布，所以训练好的噪声预测模型可以直接用。它的更新只依赖当前步与目标步的累积系数，不依赖相邻步，因此可以从任意 t 跳到更早的 t_prev。测试里理想模型下从 700 跳到 300 正好落在同一条噪声轨迹上。", "hook": "加噪 xₜ = √ᾱ x₀ + √(1−ᾱ) ε，学 ε；DDIM 确定性跳步，CFG 外推条件分支"}], "groups": [{"name": "数值稳定与归一化", "ids": ["H1", "H2", "H3"], "tpl": "先减最大值再取指数，归一化在最后一维做，eps 加在根号里。"}, {"name": "优化器", "ids": ["H4"], "tpl": "一阶矩、二阶矩、偏差修正，AdamW 的权重衰减直接作用在参数上，不进梯度。"}, {"name": "强化学习与对齐", "ids": ["H5", "H6", "H7", "H8", "H9"], "tpl": "价值方法看目标网络，策略方法看优势估计和裁剪比率，偏好方法看对数概率差。"}, {"name": "注意力与位置编码", "ids": ["H10", "H11", "H12", "H16"], "tpl": "QKᵀ 除以 √d 再 softmax，掩码加负无穷，位置信息靠旋转 Q 和 K，推理靠缓存 K、V。"}, {"name": "对比学习、参数高效与 MoE", "ids": ["H13", "H14", "H17"], "tpl": "相似度矩阵的对角线是正样本，LoRA 只训低秩增量，MoE 只激活 top-k 个专家。"}, {"name": "解码采样", "ids": ["H15"], "tpl": "先除温度，再截断 top-k，再按累积概率截断 top-p，最后重新归一化采样。"}, {"name": "音频与生成模型", "ids": ["H18", "H19", "H20"], "tpl": "STFT 取幅度平方再过 Mel 滤波器取对数，RVQ 逐级量化残差，扩散模型学噪声再一步步去噪。"}]}</script><script>const CN = (() => {
+  const KW = new Set('def return if elif else for while in not and or is None True False class import from as with lambda yield pass break continue try except finally raise global nonlocal del assert'.split(' '));
+  const BI = new Set('len range enumerate zip sorted min max sum abs list dict set tuple int float str print map filter reversed any all isinstance super ord chr iter next divmod pow round heapq deque defaultdict Counter OrderedDict bisect math torch np nn F self'.split(' '));
+  const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+  function hlLine(line) {
+    let out = '', i = 0;
+    while (i < line.length) {
+      const c = line[i];
+      if (c === '#') { out += '<span class="tk-c">' + esc(line.slice(i)) + '</span>'; break; }
+      if (c === '"' || c === "'") {
+        let q = c, j = i + 1;
+        if (line.slice(i, i + 3) === q.repeat(3)) { q = q.repeat(3); j = i + 3; }
+        while (j < line.length && line.slice(j, j + q.length) !== q) { if (line[j] === '\\') j++; j++; }
+        j = Math.min(line.length, j + q.length);
+        out += '<span class="tk-s">' + esc(line.slice(i, j)) + '</span>'; i = j; continue;
+      }
+      if (/[0-9]/.test(c) && !/[A-Za-z_]/.test(line[i - 1] || '')) {
+        const m = line.slice(i).match(/^[0-9][0-9_.e]*/); out += '<span class="tk-n">' + m[0] + '</span>'; i += m[0].length; continue;
+      }
+      if (/[A-Za-z_]/.test(c)) {
+        const m = line.slice(i).match(/^[A-Za-z_][A-Za-z0-9_]*/)[0];
+        const after = line.slice(i + m.length);
+        let cls = KW.has(m) ? 'tk-k' : BI.has(m) ? 'tk-b' : /^\s*\(/.test(after) && line.slice(0, i).trim().endsWith('def') ? 'tk-f' : '';
+        out += cls ? '<span class="' + cls + '">' + m + '</span>' : m; i += m.length; continue;
+      }
+      out += esc(c); i++;
+    }
+    return out;
+  }
+  function codeHTML(code) {
+    return '<pre class="code">' + code.split('\n').map(l => '<span class="ln">' + (hlLine(l) || ' ') + '</span>').join('') + '</pre>';
+  }
+  // storage
+  function store(prefix) {
+    let mem = {};
+    try { mem = JSON.parse(localStorage.getItem(prefix) || '{}'); } catch (e) { mem = {}; }
+    return {
+      get: k => mem[k],
+      set: (k, v) => { if (v === undefined) delete mem[k]; else mem[k] = v; try { localStorage.setItem(prefix, JSON.stringify(mem)); } catch (e) {} },
+      all: () => mem
+    };
+  }
+  // line-by-line recall on a <pre class="code">
+  let active = null;
+  function recall(pre, bar) {
+    const lines = [...pre.querySelectorAll('.ln')];
+    // skip leading blank lines automatically when revealing
+    let shown = 0;
+    const paint = () => {
+      lines.forEach((l, i) => { l.classList.toggle('hide', i >= shown); l.classList.toggle('cur', i === shown - 1); });
+      if (bar) bar.querySelector('.cnt').textContent = shown + ' / ' + lines.length;
+    };
+    const api = {
+      next() { do { shown = Math.min(lines.length, shown + 1); } while (shown < lines.length && !lines[shown - 1].textContent.trim()); paint(); },
+      prev() { shown = Math.max(0, shown - 1); paint(); },
+      all() { shown = lines.length; paint(); },
+      reset() { shown = 0; paint(); },
+      stop() { shown = lines.length; lines.forEach(l => l.classList.remove('hide', 'cur')); }
+    };
+    paint(); active = api; return api;
+  }
+  document.addEventListener('keydown', e => {
+    if (!active || /input|select|textarea/i.test(e.target.tagName)) return;
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'Enter') { e.preventDefault(); active.next(); }
+    else if (e.key === 'ArrowLeft') { e.preventDefault(); active.prev(); }
+  });
+  function recallBar() {
+    const d = document.createElement('div');
+    d.className = 'recall-bar';
+    d.innerHTML = '<button class="btn pri" data-r="next">下一行</button><button class="btn" data-r="prev">退一行</button><button class="btn" data-r="all">全部显示</button><button class="btn" data-r="reset">从头再来</button><span class="cnt small"></span><span class="small">键盘 <span class="kbd">空格</span> 或 <span class="kbd">→</span> 揭示下一行，<span class="kbd">←</span> 退回</span>';
+    return d;
+  }
+  function attachRecall(container, pre) {
+    const bar = recallBar();
+    container.insertBefore(bar, pre);
+    const api = recall(pre, bar);
+    bar.addEventListener('click', e => { const r = e.target.dataset.r; if (r) { active = api; api[r](); } });
+    pre.addEventListener('click', () => { active = api; });
+    return { api, bar };
+  }
+  return { esc, hlLine, codeHTML, store, recall, attachRecall };
+})();
+</script><script>(() => {
+  const D = JSON.parse(document.getElementById('data').textContent);
+  const ST = CN.store('ml-status-v1');
+  const NAMES = ['不会', '模糊', '熟练'];
+  let mode = 'browse';
+  try { mode = localStorage.getItem('ml-mode') || 'browse'; } catch (e) {}
+  const byId = Object.fromEntries(D.items.map(x => [x.id, x]));
+  const root = document.getElementById('list'), cards = {};
+  D.groups.forEach((g, gi) => {
+    const sec = document.createElement('section');
+    sec.id = 'g' + gi;
+    sec.innerHTML = `<div class="cathd"><h2>${gi + 1}. ${g.name}</h2><span class="small">${g.ids.length} 段</span></div><div class="template"><b>主线</b>　${g.tpl}</div>`;
+    g.ids.forEach(id => { const el = card(byId[id]); sec.appendChild(el); cards[id] = el; });
+    root.appendChild(sec);
+  });
+  function card(p) {
+    const el = document.createElement('div');
+    el.className = 'card'; el.dataset.id = p.id; el.id = p.id;
+    el.innerHTML = `<div class="hd"><span class="no">${p.id}</span><span class="tt">${p.title}</span><span class="badge ${p.level === '必写' ? 'must' : 'tier'}">${p.level}</span>
+      <span class="status">${NAMES.map((n, i) => `<button data-s="${i}">${n}</button>`).join('')}</span>
+      <div class="hhook small" style="flex-basis:100%;color:var(--ink)">💡 ${p.hook}</div></div>
+      <div class="bd hidden">
+        <div class="selftest hidden"><span class="small">先在纸上写出函数签名、形状和核心公式，再翻面核对。</span> <button class="btn pri" data-t="full">翻面看要点和代码</button></div>
+        <div class="more">
+          <div class="kv key"><b>要点</b><span>${CN.esc(p.key)}</span></div>
+          <div class="codewrap">${CN.codeHTML(p.code)}</div>
+          <details class="panel" style="margin:8px 0 0"><summary><b>追问</b>　${CN.esc(p.q)}</summary><p style="margin:8px 0 0">${CN.esc(p.a)}</p></details>
+        </div>
+      </div>`;
+    el.querySelector('.hd').addEventListener('click', e => { if (!e.target.closest('.status')) toggle(el); });
+    el.querySelector('.status').addEventListener('click', e => { const b = e.target.closest('button'); if (!b) return; const s = +b.dataset.s; ST.set(p.id, ST.get(p.id) === s ? undefined : s); paint(el); stats(); apply(); });
+    el.querySelector('.selftest').addEventListener('click', e => { if (e.target.dataset.t) { el.querySelector('.more').classList.remove('hidden'); el.querySelector('.selftest').classList.add('hidden'); startRecall(el); } });
+    el.querySelector('.key span').addEventListener('click', ev => ev.currentTarget.classList.remove('masked'));
+    paint(el); return el;
+  }
+  function paint(el) { const s = ST.get(el.dataset.id); el.querySelectorAll('.status button').forEach(b => b.classList.toggle('on', +b.dataset.s === s)); }
+  function startRecall(el) { const w = el.querySelector('.codewrap'); if (w.dataset.r) return; w.dataset.r = 1; CN.attachRecall(w, w.querySelector('pre')); }
+  function stopRecall(el) { const w = el.querySelector('.codewrap'); if (!w.dataset.r) return; w.querySelector('.recall-bar').remove(); w.querySelectorAll('.ln').forEach(l => l.classList.remove('hide', 'cur')); delete w.dataset.r; }
+  function open(el) {
+    el.querySelector('.bd').classList.remove('hidden');
+    const more = el.querySelector('.more'), st = el.querySelector('.selftest'), key = el.querySelector('.key span');
+    stopRecall(el); key.classList.remove('masked'); more.classList.remove('hidden'); st.classList.add('hidden');
+    if (mode === 'recall') { key.classList.add('masked'); startRecall(el); }
+    if (mode === 'test') { more.classList.add('hidden'); st.classList.remove('hidden'); }
+  }
+  function toggle(el) { const bd = el.querySelector('.bd'); bd.classList.contains('hidden') ? open(el) : bd.classList.add('hidden'); }
+  let stat = 'all', must = false;
+  function apply() {
+    Object.entries(cards).forEach(([id, el]) => {
+      const s = ST.get(id), p = byId[id];
+      let v = true;
+      if (must && p.level !== '必写') v = false;
+      if (stat === 'weak' && s === 2) v = false;
+      if (/^[012]$/.test(stat) && s !== +stat) v = false;
+      el.classList.toggle('hidden', !v);
+    });
+    document.querySelectorAll('#list section').forEach(s => s.classList.toggle('hidden', !s.querySelector('.card:not(.hidden)')));
+    document.querySelectorAll('.hhook').forEach(h => h.classList.toggle('hidden', mode === 'test'));
+  }
+  function stats() {
+    const n = D.items.length, m = D.items.filter(x => ST.get(x.id) === 2).length;
+    document.getElementById('tot').innerHTML = `<div class="prog-row"><div class="progress"><i style="width:${100 * m / n}%"></i></div><b>${m} / ${n} 熟练</b></div>`;
+  }
+  const tb = document.getElementById('toolbar');
+  const setMode = m => { mode = m; try { localStorage.setItem('ml-mode', m); } catch (e) {} tb.querySelectorAll('[data-mode]').forEach(b => b.classList.toggle('on', b.dataset.mode === m)); document.querySelectorAll('.card').forEach(el => { if (!el.querySelector('.bd').classList.contains('hidden')) open(el); }); apply(); };
+  tb.addEventListener('click', e => {
+    const b = e.target.closest('[data-mode],#must,#expand,#collapse,#rand'); if (!b) return;
+    if (b.dataset.mode) return setMode(b.dataset.mode);
+    if (b.id === 'must') { must = !must; b.classList.toggle('on'); }
+    if (b.id === 'expand') document.querySelectorAll('.card:not(.hidden)').forEach(open);
+    if (b.id === 'collapse') document.querySelectorAll('.card .bd').forEach(x => x.classList.add('hidden'));
+    if (b.id === 'rand') { const pool = Object.keys(cards).filter(id => !cards[id].classList.contains('hidden') && ST.get(id) !== 2); if (!pool.length) return alert('当前范围内都标成熟练了。'); const el = cards[pool[Math.floor(Math.random() * pool.length)]]; setMode('test'); open(el); el.scrollIntoView({ behavior: 'smooth', block: 'start' }); return; }
+    apply();
+  });
+  document.getElementById('stat').onchange = e => { stat = e.target.value; apply(); };
+  setMode(mode); stats(); apply();
+})();
+</script></body></html>
