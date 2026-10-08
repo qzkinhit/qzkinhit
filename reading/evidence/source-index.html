@@ -862,23 +862,7 @@
   494
   495  （2）\textbf{对比方法。}我们在表~\ref{tab:main} 的 13 个结果列上，与表~\ref{tab:related} 中的 \nMethods{} 种方法和\nOpenSet{}种开放集分数比较。主要比较中，每种方法都用相同的单故障与无故障运行训练，只有 \sys 用这些运行组合出反事实窗口。图~\ref{fig:compabl}(a) 把同样的组合也交给多标签方法。所有方法在相同的校准窗口上决定何时不命名事件以及命名几个事件。MSP 与 Energy 来自已知类别的分类器，MDS 是到最近已知类别均值的距离。代码与结果见 \codeurl。
   496
-  497  （3）\textbf{指标。}表~\ref{tab:data} 给出每个数据集上报告的指标。宏 F1（\textbf{MF1}）是 $\tfrac{2P_cR_c}{P_c+R_c}$ 在各类别 $c$ 上的平均，其中精确率 $P_c$ 与召回率 $R_c$ 把每个窗口首先被命名的事件与该窗口的类别标签比较，没有命名时记为正常运行。一个窗口的事件集合 F1（\textbf{SF1}）为 $\tfrac{2\lvert\hat H\cap H^*\rvert}{\lvert\hat H\rvert+\lvert H^*\rvert}$，其中 $\hat H$ 是输出集合，$H^*$ 是定义~\ref{def:effective} 的有效事件，两个集合都为空时取 1，再在窗口上取平均。它评价的是解释，所以在一个窗口中没有引起任何违反的事件不属于 $H^*$。\RD{HYD 没有成对运行，$H^*$ 取带标签的事件集合。}表~\ref{tab:main} 报告含两个及以上并发事件的窗口上合并计算的 SF1，在 TEP-C\RD{ 与其他仿真过程}上它是两个、三个和四个故障上的等权平均，图~\ref{fig:results} 再按故障数分别给出。归因 F1（\textbf{AF1}）为（违反，事件）对上的 $\tfrac{2\,TP}{N_{\mathrm{pred}}+N_{\mathrm{true}}}$，每种方法的输出集合都按步骤~2 的规则指派给违反，事件是该违反的原因时预测的一对计为真阳性，表~\ref{tab:main} 给出它在两个、三个和四个故障上的平均。一种方法的命名率是它在其上命名了事件的无故障窗口所占的比例。表~\ref{tab:main} 中的排名按各方法在各列上的平均名次排序。</code></pre><p class="meta">原文件 SHA256 135a8f6cb330dc2cec9a27662ebcb19b6e8165474bba936ec840f322e21b6119</p></section><section id="s-1d80883f8d4b2e"><h2>VioExplain/paper_v3/tools/backfill.py</h2><p class="meta">来源行号 222 至 238。每项最多显示80行；这是来源摘录，不是完整文件。</p><pre><code>  222  EXTRA = [  # one dataset column each, in this order; show=False removes the dataset everywhere (switch \\ifds&lt;key&gt;)
-  223      dict(key=&#x27;HYD&#x27;, head=&#x27;HYD&#x27;, show=True, value=v_hyd, names=NAMES,
-  224           files=[&#x27;cpu1/hyd_v1/metrics_f0_final_3splits.json&#x27;, &#x27;cpu1/hyd_v1/metrics_f0_3splits.json&#x27;],
-  225           ours=[&#x27;cpu1/hyd_v1/metrics_f100t_final_3splits.json&#x27;, &#x27;cpu1/hyd_v1/metrics_f100t_3splits.json&#x27;]),
-  226      sim(&#x27;CSTR&#x27;, &#x27;CSTR&#x27;, &#x27;cstr&#x27;, &#x27;Pilario2018CVDA&#x27;, &#x27;the stirred-tank reactor&#x27;, &#x27;搅拌釜反应器&#x27;, types=&#x27;P/D/S/A&#x27;),
-  227      sim(&#x27;QTank&#x27;, &#x27;QTank&#x27;, &#x27;qtank&#x27;, &#x27;Johansson2000QuadTank&#x27;, &#x27;the quadruple tank&#x27;, &#x27;四容水箱&#x27;, types=&#x27;P/S/A&#x27;),
-  228      sim(&#x27;DIST&#x27;, &#x27;DIST&#x27;, &#x27;dist&#x27;, &#x27;Skogestad1988Dynamic&#x27;, &#x27;the distillation column&#x27;, &#x27;精馏塔&#x27;),
-  229      sim(&#x27;CSTH&#x27;, &#x27;CSTH&#x27;, &#x27;csth&#x27;, &#x27;Thornhill2008CSTH&#x27;, &#x27;the stirred tank heater&#x27;, &#x27;搅拌釜加热器&#x27;),
-  230      sim(&#x27;Three&#x27;, r&#x27;\dsthree&#x27;, &#x27;third&#x27;, &#x27;Theilliol2002ThreeTank&#x27;, &#x27;the three-tank system&#x27;, &#x27;三容水箱&#x27;),
-  231      # EVAP: MF1 of VioExplain equals the best single-label method within 0.001, AF1 leads by 0.037 -&gt; attribution column
-  232      sim(&#x27;EVAP&#x27;, &#x27;EVAP&#x27;, &#x27;evap&#x27;, &#x27;Newell1989Evap&#x27;, &#x27;the forced-circulation evaporator&#x27;, &#x27;强制循环蒸发器&#x27;, group=&#x27;attr&#x27;),
-  233      sim(&#x27;PH&#x27;, &#x27;PH&#x27;, &#x27;ph&#x27;, &#x27;Henson1994pH&#x27;, &#x27;the pH neutralization process&#x27;, &#x27;pH 中和过程&#x27;, group=&#x27;attr&#x27;),
-  234      sim(&#x27;FERM&#x27;, &#x27;FERM&#x27;, &#x27;ferm&#x27;, &#x27;Henson1992Fermenter&#x27;, &#x27;the continuous fermenter&#x27;, &#x27;连续发酵罐&#x27;, group=&#x27;mf1&#x27;),
-  235      sim(&#x27;HEX&#x27;, &#x27;HEX&#x27;, &#x27;hex&#x27;, &#x27;Luyben1990Process&#x27;, &#x27;the shell-and-tube heat exchanger&#x27;, &#x27;管壳式换热器&#x27;, group=&#x27;mf1&#x27;),
-  236      # further simulated processes: one sim(...) line each, e.g.
-  237      # sim(&#x27;KEY&#x27;, &#x27;KEY&#x27;, &#x27;&lt;dir under simproc_v1&gt;&#x27;, &#x27;&lt;bib key&gt;&#x27;, &#x27;the &lt;process&gt;&#x27;, &#x27;&lt;中文名&gt;&#x27;),
-  238      # a single-fault column (macro F1) only for a process where VioExplain has a clear MF1 lead: group=&#x27;mf1&#x27;</code></pre><p class="meta">原文件 SHA256 562eee35a6979b0fd349c81ddbbe21e3756a89ef5ba9dbf25a2a7403a4041950</p></section><section id="s-08e87c6a5762c8"><h2>VioExplain/paper_v3/zh/main.tex</h2><p class="meta">来源行号 535 至 559。每项最多显示80行；这是来源摘录，不是完整文件。</p><pre><code>  535  \begin{finding}[Q3]
+  497  （3）\textbf{指标。}表~\ref{tab:data} 给出每个数据集上报告的指标。宏 F1（\textbf{MF1}）是 $\tfrac{2P_cR_c}{P_c+R_c}$ 在各类别 $c$ 上的平均，其中精确率 $P_c$ 与召回率 $R_c$ 把每个窗口首先被命名的事件与该窗口的类别标签比较，没有命名时记为正常运行。一个窗口的事件集合 F1（\textbf{SF1}）为 $\tfrac{2\lvert\hat H\cap H^*\rvert}{\lvert\hat H\rvert+\lvert H^*\rvert}$，其中 $\hat H$ 是输出集合，$H^*$ 是定义~\ref{def:effective} 的有效事件，两个集合都为空时取 1，再在窗口上取平均。它评价的是解释，所以在一个窗口中没有引起任何违反的事件不属于 $H^*$。\RD{HYD 没有成对运行，$H^*$ 取带标签的事件集合。}表~\ref{tab:main} 报告含两个及以上并发事件的窗口上合并计算的 SF1，在 TEP-C\RD{ 与其他仿真过程}上它是两个、三个和四个故障上的等权平均，图~\ref{fig:results} 再按故障数分别给出。归因 F1（\textbf{AF1}）为（违反，事件）对上的 $\tfrac{2\,TP}{N_{\mathrm{pred}}+N_{\mathrm{true}}}$，每种方法的输出集合都按步骤~2 的规则指派给违反，事件是该违反的原因时预测的一对计为真阳性，表~\ref{tab:main} 给出它在两个、三个和四个故障上的平均。一种方法的命名率是它在其上命名了事件的无故障窗口所占的比例。表~\ref{tab:main} 中的排名按各方法在各列上的平均名次排序。</code></pre><p class="meta">原文件 SHA256 135a8f6cb330dc2cec9a27662ebcb19b6e8165474bba936ec840f322e21b6119</p></section><section id="s-08e87c6a5762c8"><h2>VioExplain/paper_v3/zh/main.tex</h2><p class="meta">来源行号 535 至 559。每项最多显示80行；这是来源摘录，不是完整文件。</p><pre><code>  535  \begin{finding}[Q3]
   536  \label{find:unknown}
   537  \sys 把未知事件与已知事件区分开，并用一个留出故障的少量被标记窗口就把它转化为知识，同时不损害已知事件。
   538  \end{finding}
@@ -2770,33 +2754,4 @@
   567  \bibliographystyle{IEEEtran}
   568  \bibliography{../refs}
   569
-  570  \end{document}</code></pre><p class="meta">原文件 SHA256 135a8f6cb330dc2cec9a27662ebcb19b6e8165474bba936ec840f322e21b6119</p></section><section id="s-a1064e23d31582"><h2>VioExplain/paper_v3/tools/backfill.py</h2><p class="meta">来源行号 222 至 251。每项最多显示80行；这是来源摘录，不是完整文件。</p><pre><code>  222  EXTRA = [  # one dataset column each, in this order; show=False removes the dataset everywhere (switch \\ifds&lt;key&gt;)
-  223      dict(key=&#x27;HYD&#x27;, head=&#x27;HYD&#x27;, show=True, value=v_hyd, names=NAMES,
-  224           files=[&#x27;cpu1/hyd_v1/metrics_f0_final_3splits.json&#x27;, &#x27;cpu1/hyd_v1/metrics_f0_3splits.json&#x27;],
-  225           ours=[&#x27;cpu1/hyd_v1/metrics_f100t_final_3splits.json&#x27;, &#x27;cpu1/hyd_v1/metrics_f100t_3splits.json&#x27;]),
-  226      sim(&#x27;CSTR&#x27;, &#x27;CSTR&#x27;, &#x27;cstr&#x27;, &#x27;Pilario2018CVDA&#x27;, &#x27;the stirred-tank reactor&#x27;, &#x27;搅拌釜反应器&#x27;, types=&#x27;P/D/S/A&#x27;),
-  227      sim(&#x27;QTank&#x27;, &#x27;QTank&#x27;, &#x27;qtank&#x27;, &#x27;Johansson2000QuadTank&#x27;, &#x27;the quadruple tank&#x27;, &#x27;四容水箱&#x27;, types=&#x27;P/S/A&#x27;),
-  228      sim(&#x27;DIST&#x27;, &#x27;DIST&#x27;, &#x27;dist&#x27;, &#x27;Skogestad1988Dynamic&#x27;, &#x27;the distillation column&#x27;, &#x27;精馏塔&#x27;),
-  229      sim(&#x27;CSTH&#x27;, &#x27;CSTH&#x27;, &#x27;csth&#x27;, &#x27;Thornhill2008CSTH&#x27;, &#x27;the stirred tank heater&#x27;, &#x27;搅拌釜加热器&#x27;),
-  230      sim(&#x27;Three&#x27;, r&#x27;\dsthree&#x27;, &#x27;third&#x27;, &#x27;Theilliol2002ThreeTank&#x27;, &#x27;the three-tank system&#x27;, &#x27;三容水箱&#x27;),
-  231      # EVAP: MF1 of VioExplain equals the best single-label method within 0.001, AF1 leads by 0.037 -&gt; attribution column
-  232      sim(&#x27;EVAP&#x27;, &#x27;EVAP&#x27;, &#x27;evap&#x27;, &#x27;Newell1989Evap&#x27;, &#x27;the forced-circulation evaporator&#x27;, &#x27;强制循环蒸发器&#x27;, group=&#x27;attr&#x27;),
-  233      sim(&#x27;PH&#x27;, &#x27;PH&#x27;, &#x27;ph&#x27;, &#x27;Henson1994pH&#x27;, &#x27;the pH neutralization process&#x27;, &#x27;pH 中和过程&#x27;, group=&#x27;attr&#x27;),
-  234      sim(&#x27;FERM&#x27;, &#x27;FERM&#x27;, &#x27;ferm&#x27;, &#x27;Henson1992Fermenter&#x27;, &#x27;the continuous fermenter&#x27;, &#x27;连续发酵罐&#x27;, group=&#x27;mf1&#x27;),
-  235      sim(&#x27;HEX&#x27;, &#x27;HEX&#x27;, &#x27;hex&#x27;, &#x27;Luyben1990Process&#x27;, &#x27;the shell-and-tube heat exchanger&#x27;, &#x27;管壳式换热器&#x27;, group=&#x27;mf1&#x27;),
-  236      # further simulated processes: one sim(...) line each, e.g.
-  237      # sim(&#x27;KEY&#x27;, &#x27;KEY&#x27;, &#x27;&lt;dir under simproc_v1&gt;&#x27;, &#x27;&lt;bib key&gt;&#x27;, &#x27;the &lt;process&gt;&#x27;, &#x27;&lt;中文名&gt;&#x27;),
-  238      # a single-fault column (macro F1) only for a process where VioExplain has a clear MF1 lead: group=&#x27;mf1&#x27;
-  239  ]
-  240  SIMS = [e for e in EXTRA if &#x27;proc&#x27; in e]
-  241  # Third new dataset: DTS200 three-tank benchmark (simulated); the name comes from dataset_stats.json when present.
-  242  _t_stats = load(SIM + &#x27;third/dataset_stats.json&#x27;) or {}
-  243  THREE_NAME = str(_t_stats.get(&#x27;process&#x27;, &#x27;dts200&#x27;)).upper()
-  244  THREE_KIND = &#x27;simulated&#x27;
-  245  # Dataset-table cells of the simulated processes: (value, final) or None = red placeholder. Read from
-  246  # &lt;proc&gt;/dataset_stats.json; CSTR and QTank have none, their cells come from the generators and the run logs of
-  247  # cpu1 results/simproc_v1/&lt;process&gt;/f100t/log_B.txt (CSTR 64,272 single-fault + 23,760 pair + 10,800 triple + 14,400
-  248  # four-fault windows, QTank 54,384 + 16,200 + 9,000 + 14,400).
-  249  SIZES = {&#x27;CSTR&#x27;: dict(events=(&#x27;12&#x27;, True), sensors=(&#x27;13&#x27;, True), size=(&#x27;113{,}232&#x27;, True)),
-  250           &#x27;QTank&#x27;: dict(events=(&#x27;10&#x27;, True), sensors=(&#x27;8&#x27;, True), size=(&#x27;93{,}984&#x27;, True))}
-  251  </code></pre><p class="meta">原文件 SHA256 562eee35a6979b0fd349c81ddbbe21e3756a89ef5ba9dbf25a2a7403a4041950</p></section></main></body></html>
+  570  \end{document}</code></pre><p class="meta">原文件 SHA256 135a8f6cb330dc2cec9a27662ebcb19b6e8165474bba936ec840f322e21b6119</p></section></main></body></html>

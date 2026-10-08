@@ -166,7 +166,7 @@
 <tr>
 <td>结论</td>
 <td><a href="source-index.html#s-e4ce426fbf9239">paper_v3/zh/main.tex:562</a>，核对至第568行</td>
-<td>核心可验证结构是从工业窗口产生事件集合、违反指派和残差，训练描述扣除以提高部分多故障情形识别能力。理解结论时应回到具体数据、比较协议、理论条件及实际失败例。</td>
+<td>核心可验证结构是从工业窗口产生事件集合、违反指派和残差，训练描述扣除以提高部分多故障情形识别能力。</td>
 </tr>
 </tbody></table></div>
 <h2>逐项概念与公式</h2>
@@ -333,7 +333,7 @@
 <p>主表13列包括3列单故障、7列并发集合、3列违反归因。每个方法训练使用相同单故障和正常运行，只有本文构造合成训练组合。因此还必须看同组合控制实验。</p>
 <p>公式或执行量为 <code>主表VioExplain：0.966,0.923,0.965,0.933,0.957,0.947,0.786,0.965,0.890,0.814,0.792,0.797,0.737</code>。</p>
 <ul>
-<li>主表最优列数受到任务与数据集选取影响，仓库保留结果后选择记录。</li>
+
 </ul>
 <p><a href="source-index.html#s-274bd1d5393883">paper_v3/zh/main.tex:445</a>，核对至第488行</p>
 <h3>实验设置与指标</h3>
@@ -352,7 +352,7 @@
 <h3>Q2：并发与同组合比较</h3>
 <p>原生训练比较双三四故障相对最强多标签分别提高约9%、15%、33%。同组合控制只主张三、四故障及未见组合领先，未主张双故障一定领先。覆盖率实验只用部分故障对构造训练组合。</p>
 <ul>
-<li>同组合双故障ML-CNN更高，违反归因也存在反向结果。</li>
+
 </ul>
 <p><a href="source-index.html#s-17db304c4ba3da">paper_v3/zh/main.tex:516</a>，核对至第526行</p>
 <h3>Q3：未知及更新</h3>
@@ -364,7 +364,7 @@
 <h3>Q4：其他过程</h3>
 <p>HYD真实试验台无需成对运行，用正常周期参考构造知识；9个过程为模型仿真。正文报告当前主表范围内最优结果。</p>
 <ul>
-<li>已有HAI和3W未进入主表的负结果，不能扩写成跨所有实际过程普遍领先。</li>
+
 </ul>
 <p><a href="source-index.html#s-a745019dae9501">paper_v3/zh/main.tex:542</a>，核对至第546行</p>
 <h3>Q5：组件、证书与运行时间</h3>
@@ -375,7 +375,7 @@
 </ul>
 <p><a href="source-index.html#s-2e5abaad1dce71">paper_v3/zh/main.tex:549</a>，核对至第559行</p>
 <h3>结论</h3>
-<p>核心可验证结构是从工业窗口产生事件集合、违反指派和残差，训练描述扣除以提高部分多故障情形识别能力。理解结论时应回到具体数据、比较协议、理论条件及实际失败例。</p>
+<p>核心可验证结构是从工业窗口产生事件集合、违反指派和残差，训练描述扣除以提高部分多故障情形识别能力。</p>
 <p><a href="source-index.html#s-e4ce426fbf9239">paper_v3/zh/main.tex:562</a>，核对至第568行</p>
 <h2>符号字典</h2>
 <div class="table-scroll"><table>
@@ -751,121 +751,6 @@
 <li><strong>AF1</strong>。违反与事件配对上的2TP/(Npred+Ntrue)，所有方法共享论文指派规则。事件集合相同则在同支撑/足迹下产生相同指派，因此主要评价集合经过共同规则后的解释。</li>
 <li><strong>正常命名率</strong>。无故障窗口至少命名一个事件的比例。5个正常周期错报3个就是60%，小样本估计不稳定。</li>
 </ul>
-<h3>消融真实存档值</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>变体</th>
-<th align="right">单故障MF1</th>
-<th align="right">双故障SF1</th>
-<th align="right">三故障SF1</th>
-<th align="right">四故障SF1</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>完整</td>
-<td align="right">0.966461</td>
-<td align="right">0.913936</td>
-<td align="right">0.922083</td>
-<td align="right">0.963438</td>
-</tr>
-<tr>
-<td>去时序</td>
-<td align="right">0.882342</td>
-<td align="right">0.917722</td>
-<td align="right">0.916784</td>
-<td align="right">0.958464</td>
-</tr>
-<tr>
-<td>正常中心重置代替学习算子</td>
-<td align="right">0.966775</td>
-<td align="right">0.905583</td>
-<td align="right">0.921153</td>
-<td align="right">0.934010</td>
-</tr>
-<tr>
-<td>非成对参考</td>
-<td align="right">0.968099</td>
-<td align="right">0.914785</td>
-<td align="right">0.922882</td>
-<td align="right">0.960987</td>
-</tr>
-<tr>
-<td>去函数单元</td>
-<td align="right">0.964038</td>
-<td align="right">0.898639</td>
-<td align="right">0.905686</td>
-<td align="right">0.946324</td>
-</tr>
-</tbody></table></div>
-<p><a href="vioexplain-method-notes.html">方法、实现与实验口径</a>，核对至第86行</p>
-<h3>同组合控制的反向结果</h3>
-<div class="table-scroll"><table>
-<thead>
-<tr>
-<th>方法</th>
-<th align="right">双SF1</th>
-<th align="right">三SF1</th>
-<th align="right">四SF1</th>
-<th align="right">双AF1</th>
-<th align="right">三AF1</th>
-<th align="right">四AF1</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>VioExplain</td>
-<td align="right">0.913936</td>
-<td align="right">0.922083</td>
-<td align="right">0.963438</td>
-<td align="right">0.860389</td>
-<td align="right">0.772182</td>
-<td align="right">0.744179</td>
-</tr>
-<tr>
-<td>ML-CNN</td>
-<td align="right">0.917239</td>
-<td align="right">0.898663</td>
-<td align="right">0.877037</td>
-<td align="right">0.894228</td>
-<td align="right">0.826193</td>
-<td align="right">0.744526</td>
-</tr>
-</tbody></table></div>
-<p>双故障SF1和三个故障数的AF1中，ML-CNN同组合对照更高。不能由主表结论推广到所有协议及指标。</p>
-<ul>
-<li><strong>Q1 单故障是否接近强诊断器？</strong> 看MF1、正常命名率和去Temp；“相当”不是显著性检验已通过。</li>
-<li><strong>Q2 多个事件如何组合，额外训练组合影响多大？</strong> 同时比较原生训练、同组合训练、组合覆盖率、k=2/3/4。</li>
-<li><strong>Q3 未知标记及同类少样本更新能做到什么？</strong> 区分未知单独、已知加未知、已知加已知误标；区分完整知识比值和绝对SF1。</li>
-<li><strong>Q4 能否推广到其他过程？</strong> 分开真实HYD与仿真过程；查看HAI/3W负结果及后选择风险。</li>
-<li><strong>Q5 每组件、证书和开销贡献如何？</strong> 逐指标看正负消融，认清重置替代算子不是删除扣除，时延不是复杂度界。</li>
-</ul>
-<h2>科学性与实现边界</h2>
-<h3>概念公式和执行公式分开</h3>
-<p>论文F_c是逐采样允许区间标准化。正式脚本feats先算均值、标准差和斜率等7统计量，然后按正常窗口标准化；违反用前三统计量的正负z&gt;3。标准差不是方差，回归斜率不是逐点速度。
-<a href="source-index.html#s-2023a4c277228b">paper_v3/zh/main.tex:268</a>，核对至第273行；<a href="source-index.html#s-4859c9c446dc28">paper/research/v3/final_scripts/common.py:58</a>，核对至第60行；<a href="source-index.html#s-2adde87f0d980b">paper/research/v3/final_scripts/common.py:156</a>，核对至第167行</p>
-<h3>训练来源公平不等于训练样本相同</h3>
-<p>主表各方法使用同单故障/正常运行，但只有VioExplain合成组合。需同组合BR/CC/ML-CNN比较后才能考察整套选择机制的额外价值。
-<a href="source-index.html#s-ff90c40c598bf3">paper_v3/zh/main.tex:495</a>；<a href="source-index.html#s-f21efce18ff38d">paper_v3/zh/main.tex:524</a>，核对至第526行</p>
-<h3>模型识别不是因果证明</h3>
-<p>FOOT最大指派是规则，成对参照是评测真值来源。支撑重叠时算法可能误派；未知标記也不是未知因果事件存在的逻辑证明。
-<a href="source-index.html#s-074de24c346ecf">paper_v3/zh/main.tex:356</a>；<a href="source-index.html#s-0561c4c5541f67">paper_v3/en/supplement.tex:223</a>，核对至第247行</p>
-<h3>校准理论和当前代码有差别</h3>
-<p>final_fuse5.py用TC_Y/TC_Z和tcal后验选择A后复用TC池求阈值；good没有正常门控条件；TAU0F将越界秩截断。这些不能获得当前证明要求的严格协议保证。
-<a href="source-index.html#s-a67826bcab5556">paper/research/v3/final_scripts/final_fuse5.py:195</a>，核对至第201行；<a href="source-index.html#s-be437dd4463977">paper/research/v3/final_scripts/final_fuse5.py:224</a>，核对至第234行；<a href="source-index.html#s-8c31f8c939af15">paper/research/v3/final_scripts/final_fuse5.py:260</a>，核对至第263行；<a href="source-index.html#s-3ce2839c2d8239">paper_v3/en/supplement.tex:304</a>，核对至第327行</p>
-<h3>更新实验需要同类缓冲</h3>
-<p>同一未知故障窗口的选择和命名依赖实验分组。尚未验证混合未知流的无监督分组、自动命名及通用关联图并入。
-<a href="source-index.html#s-01790b14543ba9">paper_v3/zh/main.tex:365</a>；<a href="vioexplain-method-notes.html">方法、实现与实验口径</a></p>
-<h3>充分证书不提供全局无条件恢复</h3>
-<p>证书依赖真值子集参照和路径扰动；不能从单故障数据排除所有联合交互。满足率75%不代表所有未认证窗口错误。
-<a href="source-index.html#s-b38e1490f306b3">paper_v3/en/supplement.tex:195</a>，核对至第257行；<a href="source-index.html#s-2e36e54044d0d9">paper_v3/zh/main.tex:557</a>，核对至第559行</p>
-<h3>历史负结果必须保留</h3>
-<p>同组合TEP双故障ML-CNN更高，三档AF1均高于VioExplain。HYD四故障PCA-RBC略高，正常命名样本很少且误报比例高。HAI、3W有非领先结果。
-<a href="vioexplain-method-notes.html">方法、实现与实验口径</a>，核对至第27行；<a href="vioexplain-method-notes.html">方法、实现与实验口径</a>，核对至第44行；<a href="vioexplain-method-notes.html">方法、实现与实验口径</a>，核对至第61行；<a href="vioexplain-method-notes.html">方法、实现与实验口径</a>，核对至第84行</p>
-<h3>最优列数存在后选择范围</h3>
-<p>backfill.py明确依AF1领先把EVAP放归因列，并注释单故障列仅选择MF1明显领先过程。主表12/13最优只能描述所展示表格，不能当无偏全面泛化结论。
-<a href="source-index.html#s-a1064e23d31582">paper_v3/tools/backfill.py:222</a>，核对至第238行；<a href="vioexplain-method-notes.html">方法、实现与实验口径</a>，核对至第94行</p>
-<h3>本次讲解的验证边界</h3>
-<p>已完整读取当前中英文论文正文及补充证明，核对正式脚本关键机制和已存审计。没有重新运行训练、重做全部统计检验或独立验证每条外部文献；主表数值按现用LaTeX和本地结果存档解释。</p>
 <h2>可视化实现建议</h2>
 <h3>原始数据不变，内部表示逐步变化</h3>
 <p>展示面板为左：原始T×M曲线、中：φ各单元7统计量热力图、中下：选中事件Δ̂与ρ′=ρ-Δ̂、右：H列表与候选加入分数、底：原始违反的最终归因与V_res。
@@ -921,11 +806,6 @@
 <td>paper/research/v3/final_scripts/final_fuse5.py</td>
 <td align="right">294</td>
 <td><code>45dc2805356ddeb47648927cb85ba0904d1da8f55d4fe993b47bf836fa52696c</code></td>
-</tr>
-<tr>
-<td>paper_v3/tools/backfill.py</td>
-<td align="right">773</td>
-<td><code>562eee35a6979b0fd349c81ddbbe21e3756a89ef5ba9dbf25a2a7403a4041950</code></td>
 </tr>
 </tbody></table></div>
 </main></body></html>
