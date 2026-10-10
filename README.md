@@ -38,6 +38,13 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 | [MADClean](https://github.com/qzkinhit/MADClean) | Model-aware cleaning framework that optimizes for SVM utility, with DP, greedy, and RL implementations. |
 | [MDCBaseline](https://github.com/qzkinhit/MDCBaseline) | Unified runner for classic cleaning baselines: Baran, BigDansing, Holistic, HoloClean, and Horizon. |
 
+Tools for research writing:
+
+| Name | What it is |
+| --- | --- |
+| [BiWrite](https://github.com/zzccppp/biwrite) | Bilingual (English and Chinese) paper editor, co-developed with [zzccppp](https://github.com/zzccppp). It keeps two mirrored LaTeX versions in step, switches the edited language at any time, pairs an existing Chinese version paragraph by paragraph, and builds PDFs with source sync and a writing assistant. macOS and Windows installers. |
+| [research-builder](https://github.com/qzkinhit/research-builder) | Research workflow skill for Claude Code and Codex. The researcher leads, the work goes through alignment and five stages with a checkpoint after each, and every number in the paper comes from experiment records. |
+
 ## :books: Publications
 
 | Year | Venue | Work |
