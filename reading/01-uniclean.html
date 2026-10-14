@@ -18,7 +18,7 @@
 <div class="grid"><div class="card"><h3>论文想解决什么</h3><p>同一张表里可能同时有缺失、拼写错误、格式不统一和属性之间的依赖冲突。先修城市还是先修邮编，会影响后面的修复。把所有清洗器和所有执行顺序挨个试一遍，代价又太高。</p><p>论文先把各种清洗器统一成一种表示，再缩小搜索范围，即在哪些数据上、试哪些修复、按什么顺序执行。</p></div><div class="card"><h3>数据最后变成了什么样</h3><p>常规的清洗路径保留原来的行和列，只改写一部分单元格。中间的核心集是<strong>用来找修复规则的工作集</strong>，最终交出的是把规则作用到原始全表后得到的 D′。</p><p>UniClean 的目标函数主要由检测分数和修改代价组成，不看下游模型在验证集上的准确率。</p></div></div>
 <div class="note"><strong>本页依据</strong><p>论文用的是终稿目录里的 <code>uniclean-cameraready-final.tex</code>。代码用的是本地 <code>UnicleanResult/uniclean_cleaners</code>，重点跟踪医院数据的入口，同时讲解仓库里存在的采样分支。真实数据的统计来自仓库现有的 dirty、cleaned、clean 三份 CSV，这次没有重新跑 Spark 清洗。</p><p class="source" id="paper-path"></p><p class="source">代码仓库 HEAD 为 ccf388d0247d290ecc8c4c5c8905b9ad979a48f6。解释以读取时工作区里的文件为准，证据目录里保存了文件的 SHA-256。</p></div></section>
 
-<!--PG-START--><style>
+<!--PG-START--><a href="10-papers.html?id=uniclean" style="display:flex;align-items:center;gap:12px;margin:16px 0;padding:14px 16px;border-radius:14px;background:linear-gradient(120deg,#176c63,#2c5d8f);color:#fff;text-decoration:none"><span style="font-size:28px">🎓</span><span><b style="font-size:16px">这篇论文的面试卡（适合手机）</b><br><span style="font-size:13px;opacity:.92">18 张卡覆盖动机、创新、方法、定理、实验数字和常见追问，可以挖空复述，也可以连播收听</span></span></a><style>
 #paper-guide{--pg-ink:#1f312d;--pg-muted:#55665f;--pg-line:#d6ded6;--pg-acc:#137c74;--pg-soft:#e3f0ec;--pg-warm:#fbf2e3;--pg-warm-ink:#8a5413;
   background:#fff;border:1px solid var(--pg-line);border-radius:14px;padding:28px 30px 22px;margin:28px 0 36px;color:var(--pg-ink);line-height:1.85;font-size:16px}
 #paper-guide *{box-sizing:border-box}
