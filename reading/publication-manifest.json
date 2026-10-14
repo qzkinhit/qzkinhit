@@ -110,7 +110,12 @@
     {
       "path": "09-swipe.html",
       "source_sha256": null,
-      "published_sha256": "b926b497d3a2119d370d97ede31cbd57b68bc30fdd2be3c049d05672441fbd13"
+      "published_sha256": "2dd860f871ba562cd0d25a5178a310abb63f3bafcb63cf29f0996d82da194943"
+    },
+    {
+      "path": "hot100-trace.json",
+      "source_sha256": null,
+      "published_sha256": "da2469e40321618543061a98483efe0b38dcc3586ad99d21e915bcc6763d5b14"
     }
   ],
   "source_excerpts": 123
