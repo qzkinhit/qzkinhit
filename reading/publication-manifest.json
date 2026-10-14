@@ -1,6 +1,6 @@
 {
-  "generated_on": "2026-10-08 Asia/Singapore",
-  "scope": "五篇静态阅读页、三页手撕代码笔记、直接链接的证据与有限源码摘录；不含原始数据集、模型或完整论文PDF",
+  "generated_on": "2026-10-14 Asia/Singapore",
+  "scope": "五篇静态阅读页、四页手撕代码笔记、直接链接的证据与有限源码摘录；不含原始数据集、模型或完整论文PDF",
   "files": [
     {
       "path": "01-uniclean.html",
@@ -95,17 +95,22 @@
     {
       "path": "06-hot100.html",
       "source_sha256": null,
-      "published_sha256": "1d17e38a696e94b60084e8d95022c6db96b74d37c5fe80f9e4d2a58a507c94e3"
+      "published_sha256": "e79c8bf93df25b13f1918042fc9807f8a1df1fdc2073d0889c25f4729048b75b"
     },
     {
       "path": "07-ml-handcode.html",
       "source_sha256": null,
-      "published_sha256": "7a1e6ba603a3c5180c0df70932c78f173b3f024970d77539bc0490b43a930340"
+      "published_sha256": "5a4fc688ae27f165d8f70b6393bac46f4616aeb961e7dbda2173aabeccccdcdb"
     },
     {
       "path": "08-python-cheatsheet.html",
       "source_sha256": null,
-      "published_sha256": "295e45a314c3dd76cadd17eb8af68746ff063e87441f5500eef6de17e8265ae6"
+      "published_sha256": "af58854bbafc1c2ed051df450d5f4efc8ba8a22f6786eaa56f540c3def9c9a71"
+    },
+    {
+      "path": "09-swipe.html",
+      "source_sha256": null,
+      "published_sha256": "175ac46a1aea90158adda90a8a0b96e710180813a1b48b124d51e7b1c2f0df65"
     }
   ],
   "source_excerpts": 123
