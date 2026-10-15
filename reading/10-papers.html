@@ -325,9 +325,9 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
 <main id="feed"></main>
 <div id="sheet"><div class="body"></div></div>
 <div id="guide"><div class="gbox"><h3>论文面试卡怎么刷</h3>
-<div class="g"><span class="hand up"><span>👆</span></span><div><b>上滑</b> 换下一张<small>每张卡是一个面试官会问的问题，先在心里完整答一遍</small></div></div>
-<div class="g"><span class="hand left"><span>👈</span></span><div><b>向左滑</b> 看标准回答<small>记忆钩子、按“结论、做法、数字”组织的回答、必须记住的数字表</small></div></div>
-<div class="g"><span class="hand right"><span>👉</span></span><div><b>向右滑</b> 挖空复述<small>回答里的数字和关键说法挖成了空，说出来再点开核对</small></div></div>
+<div class="g"><span class="hand up"><span>👆</span></span><div><b><span class="gm">上滑</span><span class="gd">按 ↓</span></b> 换下一张<small>每张卡是一个面试官会问的问题，先在心里完整答一遍</small></div></div>
+<div class="g"><span class="hand left"><span>👈</span></span><div><b><span class="gm">向左滑</span><span class="gd">按 →</span></b> 看标准回答<small>记忆钩子、按“结论、做法、数字”组织的回答、必须记住的数字表</small></div></div>
+<div class="g"><span class="hand right"><span>👉</span></span><div><b><span class="gm">向右滑</span><span class="gd">按 ←</span></b> 挖空复述<small>回答里的数字和关键说法挖成了空，说出来再点开核对</small></div></div>
 <div class="g"><span class="hand"><span>🎧</span></span><div><b>听卡</b> 跑步、睡前用<small>每张卡先念问题，停 3 秒给你想，再念标准回答。连播时自动下滑，锁屏也能听</small></div></div>
 <div class="g"><span class="hand"><span>💪</span></span><div><b>标熟练程度</b> 自动安排复习<small>不会的当天再刷，模糊的明天，熟练的隔 3、7、15、30 天</small></div></div>
 <button class="big" id="gok">开始刷卡</button></div></div>
@@ -352,6 +352,7 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
   const isDue = id => { const r = SRS[id]; if (r) return r.d <= dayNum(); const s = ST.get(id); return s === 0 || s === 1; };
   try { if (localStorage.getItem('cards-desk-mode') === 'one') document.body.classList.add('deskone'); } catch (e) {}
   const DESK = () => matchMedia('(min-width:1100px)').matches && !document.body.classList.contains('deskone');
+  (() => { if (document.getElementById('deskkeys')) return; const k = document.createElement('div'); k.id = 'deskkeys'; k.innerHTML = '<span class="dk3"><b class="dn">↓</b>下一题<i></i><b>↑</b>上一题<i></i><b>←</b><b>→</b>开关两侧栏<i></i><b>1</b><b>2</b><b>3</b>标记<i></i><b>Esc</b>退出输入框</span><span class="dk1"><b class="dn">↓</b>下一题<i></i><b>↑</b>上一题<i></i><b>←</b><b>→</b>切换三页<i></i><b>1</b><b>2</b><b>3</b>标记<i></i><b>Esc</b>退出输入框</span>'; document.body.appendChild(k); document.addEventListener('keydown', e => { if (e.key === 'Escape' && /input|textarea/i.test(e.target.tagName)) e.target.blur(); }); })();
   (() => { const r1 = document.querySelector('#top .r1'); if (!r1 || r1.querySelector('.deskmode')) return; const b = document.createElement('button'); b.className = 'ib deskmode'; b.type = 'button'; const paint = () => { const one = document.body.classList.contains('deskone'); b.textContent = one ? '▥ 三栏' : '⇆ 滑动'; b.title = one ? '切换成三栏并排，两侧点开才显示' : '切换成像手机一样左右滑'; }; paint(); const tabs = r1.querySelector('#tabs'); r1.insertBefore(b, tabs ? tabs.nextSibling : null); b.addEventListener('click', () => { const one = !document.body.classList.contains('deskone'); document.body.classList.toggle('deskone', one); try { localStorage.setItem('cards-desk-mode', one ? 'one' : 'three'); } catch (e) {} paint(); document.querySelectorAll('#feed .slide[data-f]').forEach(sl => { if (DESK()) deskPrep(sl); if (typeof deskPlace === 'function') deskPlace(sl); }); dispatchEvent(new Event('resize')); }); })();
   const NAMES = ['不会', '模糊', '熟练'], FACES = ['😵', '🤔', '💪'];
   const SECS = ['概述', '动机', '现状', '创新', '方法', '理论', '实验', '追问'];
@@ -475,7 +476,7 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
     sl.dataset.f = 1;
     const c = BY[order[+sl.dataset.k]];
     sl.innerHTML = `<div class="hx">${paneRecall(c)}${paneMain(c)}${paneAnswer(c)}</div>`;
-    const hx = sl.querySelector('.hx'); hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl); else if (typeof deskPlace === 'function') deskNote(sl);
+    const hx = sl.querySelector('.hx'); hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl);
     const czp = sl.querySelector('.czp'), ccnt = sl.querySelector('.ccnt');
     const html0 = czp.innerHTML;
     let opened = new Set(), total = czp.querySelectorAll('.bk').length;
