@@ -30,8 +30,11 @@
   .desknote .dnta:focus{border-color:hsl(var(--h,160) 50% 45%);background:#fff}
   body:not(.deskone) .prec [data-rm="full"],body:not(.deskone) .prec [data-rm="say"]{display:none}
   body:not(.deskone) .prec .rm-cloze:not(.rm).hidden{display:block!important}
-  body:not(.deskone) .desknote .rm-full.hidden,body:not(.deskone) .desknote .rm-say.hidden{display:block!important}
+  body:not(.deskone) .desknote .rm-full.hidden{display:flex!important}body:not(.deskone) .desknote .rm-say.hidden{display:block!important}
   .desknote .dnslot textarea.draft{min-height:max(200px,calc(100vh - 700px))}
+  body:not(.deskone) .desknote .rm-full{display:flex!important;flex-direction:column}
+  .desknote .rm-full>.ansbar{order:1}.desknote .rm-full>.ans{order:2}.desknote .rm-full>textarea.draft{order:3;margin-top:10px}.desknote .rm-full>.btns{order:4}.desknote .rm-full>.score{order:5}
+  .desknote .rm-full .ans .ln{cursor:pointer}
   .desknote .dnlc{display:block;width:100%;box-sizing:border-box;margin-top:10px;text-align:center;text-decoration:none}
   .slide.rev .deskrev,.slide.recl .deskrec,body.deskone .deskrev,body.deskone .deskrec{display:none!important}
 }

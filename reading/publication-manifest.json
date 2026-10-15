@@ -110,7 +110,7 @@
     {
       "path": "09-swipe.html",
       "source_sha256": null,
-      "published_sha256": "036dd180a53a5ddc2ecc4c4b040b71830ebbfbb7747760a4a871b0accedd86df"
+      "published_sha256": "185bb8c92648b38acb7c86ac455b073f609c0814211e3bc8e446d986081bdaac"
     },
     {
       "path": "hot100-trace.json",
@@ -1110,7 +1110,7 @@
     {
       "path": "cards-desk.css",
       "source_sha256": null,
-      "published_sha256": "80d632ddab1f228d20e0038f7da2e718cee012dae7d93927c2bdc2fa75751df9"
+      "published_sha256": "fd2f5a57c86722a0561fac77c8e70661896a2a6755e839369be6a69f7c98bb27"
     }
   ],
   "source_excerpts": 123
