@@ -2,9 +2,7 @@
 (() => {
   if (window.__psync) return; window.__psync = 1;
   const REPO = 'https://api.github.com/repos/qzkinhit/study-progress', API = REPO + '/contents/progress.json';
-  // 密码只防止别人拿着本机误点，真正的访问控制靠令牌
-  const PW = '03ac674216f3e15c761ee1a5e255f067953623c8b388b4459e13f978d7c846f4';
-  const K_TOKEN = 'psync-token-v1', K_LAST = 'psync-last-v1', K_OK = 'psync-ok-v1';
+  const K_TOKEN = 'psync-token-v1', K_LAST = 'psync-last-v1';
   const MAPS = ['hot100-status-v1', 'swipe-srs-v1', 'swipe-draft-v1', 'paper-status-v1', 'paper-srs-v1', 'paper-note-v1', 'bagu-status-v1', 'bagu-srs-v1', 'bagu-draft-v1'];
   const WHOLE = ['swipe-pos-v1', 'swipe-cfg-v1', 'paper-pos-v1', 'paper-cfg-v1', 'bagu-pos-v1', 'bagu-cfg-v1'];
   const STATUS = ['hot100-status-v1', 'paper-status-v1', 'bagu-status-v1'];
@@ -15,8 +13,6 @@
   const wr = (k, v) => { try { if (v === undefined) localStorage.removeItem(k); else localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} };
   const token = () => { try { return localStorage.getItem(K_TOKEN) || ''; } catch (e) { return ''; } };
   const setToken = t => { try { if (t) localStorage.setItem(K_TOKEN, t); else localStorage.removeItem(K_TOKEN); } catch (e) {} };
-  const unlocked = () => { try { return sessionStorage.getItem(K_OK) === '1'; } catch (e) { return false; } };
-  const setUnlocked = () => { try { sessionStorage.setItem(K_OK, '1'); } catch (e) {} };
   const eq = (a, b) => JSON.stringify(a) === JSON.stringify(b);
   const has = (o, k) => Object.prototype.hasOwnProperty.call(o, k);
 
@@ -106,10 +102,6 @@
     return { n, msg: n ? `已读取${from}，本机更新了 ${n} 处，页面马上刷新` : `本机已经是最新${from}` };
   }
   const fmt = ms => { if (!ms) return ''; const d = new Date(ms), p = x => String(x).padStart(2, '0'); return `${d.getMonth() + 1}-${p(d.getDate())} ${p(d.getHours())}:${p(d.getMinutes())}`; };
-  async function pwOk(p) {
-    const h = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(p));
-    return [...new Uint8Array(h)].map(x => x.toString(16).padStart(2, '0')).join('') === PW;
-  }
 
   const css = `#psync-dlg{position:fixed;inset:0;z-index:1000;display:none;align-items:center;justify-content:center;padding:16px;background:rgba(10,14,16,.5);font:15px/1.6 system-ui,-apple-system,'PingFang SC',sans-serif}
 #psync-dlg.on{display:flex}
@@ -144,7 +136,6 @@
 <ol><li>打开 <a href="https://github.com/settings/personal-access-tokens/new" target="_blank" rel="noopener">GitHub 新建令牌页</a></li><li>Repository access 选 Only select repositories，选中 study-progress</li><li>Permissions 里把 Contents 设为 Read and write</li><li>生成后复制令牌，粘贴到下面</li></ol>
 <input type="password" data-ps="token" placeholder="github_pat_ 开头的令牌" autocomplete="off" spellcheck="false">
 <p class="ps-hint">令牌只保存在这台设备的浏览器里，不会写进网页。</p></div>
-<label class="ps-pw">密码<input type="password" inputmode="numeric" data-ps="pw" autocomplete="off" placeholder="输入密码"></label>
 <div class="ps-acts"><button type="button" class="ps-pri" data-ps="up">⬆ 上传进度</button><button type="button" data-ps="down">⬇ 读取进度</button></div>
 <p class="ps-msg" role="status"></p><p class="ps-meta"></p>
 <div class="ps-more"><button type="button" data-ps="link">复制手机设置链接</button><button type="button" data-ps="forget">清除本机令牌</button></div></div>`;
@@ -152,20 +143,16 @@
   const $ = s => dlg.querySelector(s), msg = (t, cls) => { const m = $('.ps-msg'); m.textContent = t || ''; m.className = 'ps-msg' + (cls ? ' ps-' + cls : ''); };
   const paint = () => {
     const t = token(), last = rd(K_LAST) || {};
-    $('.ps-tok').hidden = !!t; $('.ps-pw').hidden = unlocked(); $('.ps-more').hidden = !t;
+    $('.ps-tok').hidden = !!t; $('.ps-more').hidden = !t;
     $('.ps-meta').textContent = [last.up ? '这台设备上次上传 ' + fmt(last.up) : '', last.down ? '上次读取 ' + fmt(last.down) : ''].filter(Boolean).join('，');
   };
-  const open = () => { msg(''); paint(); dlg.classList.add('on'); const f = !token() ? $('[data-ps=token]') : !unlocked() ? $('[data-ps=pw]') : $('[data-ps=up]'); setTimeout(() => f.focus(), 30); };
+  const open = () => { msg(''); paint(); dlg.classList.add('on'); const f = !token() ? $('[data-ps=token]') : $('[data-ps=up]'); setTimeout(() => f.focus(), 30); };
   const close = () => dlg.classList.remove('on');
   let busy = false;
   async function run(kind) {
     if (busy) return;
     const ti = $('[data-ps=token]').value.trim();
     if (!token() && !ti) { msg('先粘贴 GitHub 令牌', 'err'); $('[data-ps=token]').focus(); return; }
-    if (!unlocked()) {
-      if (!(await pwOk($('[data-ps=pw]').value))) { msg('密码不对', 'err'); $('[data-ps=pw]').select(); return; }
-      setUnlocked();
-    }
     if (ti) { setToken(ti); $('[data-ps=token]').value = ''; }
     busy = true; dlg.querySelectorAll('.ps-acts button').forEach(b => { b.disabled = true; }); msg(kind === 'up' ? '正在上传…' : '正在读取…');
     try {
@@ -192,7 +179,7 @@
 
   // 手机设置链接：地址里带 #ptoken= 时保存令牌并从地址栏去掉
   const hm = location.hash.match(/^#ptoken=([^&]+)/);
-  if (hm) { setToken(decodeURIComponent(hm[1])); history.replaceState(null, '', location.pathname + location.search); setTimeout(() => { open(); msg('这台设备已记住令牌，输入密码后就能上传和读取', 'ok'); }, 300); }
+  if (hm) { setToken(decodeURIComponent(hm[1])); history.replaceState(null, '', location.pathname + location.search); setTimeout(() => { open(); msg('这台设备已记住令牌，可以上传和读取了', 'ok'); }, 300); }
 
   const btn = document.createElement('button'); btn.type = 'button'; btn.className = 'psync-btn'; btn.title = '上传和读取进度'; btn.setAttribute('aria-label', '上传和读取进度');
   btn.addEventListener('click', e => { e.stopPropagation(); open(); });
