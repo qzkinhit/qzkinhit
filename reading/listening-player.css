@@ -1,0 +1,53 @@
+/* 听题面板的高度随声音设置展开而变化，给刷题正文留出滚动空间。 */
+#top .ib.on{background:#fff;color:#111}
+#player{position:absolute;left:8px;right:8px;bottom:calc(8px + env(safe-area-inset-bottom));z-index:30;display:none;box-sizing:border-box;max-height:calc(100% - 90px - env(safe-area-inset-top) - env(safe-area-inset-bottom));overflow:auto;overscroll-behavior:contain;background:rgba(18,23,27,.97);color:#f4f8f6;border:1px solid rgba(173,220,205,.2);border-radius:18px;padding:7px 12px 9px;box-shadow:0 6px 24px rgba(0,0,0,.35);scrollbar-width:thin;-webkit-overflow-scrolling:touch}
+#player.on{display:block}
+#player [hidden]{display:none!important}
+#player button,#player .pfile-label,#player .pdownloads a{font:inherit;cursor:pointer;touch-action:manipulation}
+#player button{border:0;color:inherit;background:#30383d;border-radius:9px}
+#player button:focus-visible,#player input:focus-visible,#player a:focus-visible,#player .pfile-label:focus-within{outline:2px solid #a7f4da;outline-offset:3px}
+#player button:hover,#player .pfile-label:hover,#player .pdownloads a:hover{background:#3b474c}
+#player input[type=range]{accent-color:#77ddbc;min-width:0;cursor:pointer;touch-action:pan-y}
+#player .pseek{display:block;width:100%;height:19px;margin:0 0 1px;appearance:none;-webkit-appearance:none;background:transparent}
+#player .pseek::-webkit-slider-runnable-track{height:4px;border-radius:4px;background:linear-gradient(to right,#7ee0c3 var(--progress,0%),#475057 var(--progress,0%))}
+#player .pseek::-moz-range-track{height:4px;border-radius:4px;background:#475057}
+#player .pseek::-moz-range-progress{height:4px;background:#7ee0c3}
+#player .pseek::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:12px;height:12px;margin-top:-4px;border:0;border-radius:50%;background:#b5f5e0}
+#player .pseek::-moz-range-thumb{width:12px;height:12px;border:0;border-radius:50%;background:#b5f5e0}
+#player .pseek:disabled{opacity:.5;cursor:default}
+#player .prow{display:flex;justify-content:space-between;align-items:center;gap:8px;font-size:13px;margin-bottom:7px}
+#player .ptitle{font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+#player .ptime{flex:0 0 auto;color:#bac7c6;font-size:11px;font-variant-numeric:tabular-nums}
+#player .pbtns{display:flex;gap:5px}
+#player .pbtns button{flex:1;min-width:0;min-height:42px;padding:6px 0;font-size:15px;font-weight:600}
+#player .pbtns button.pri{background:#6cddba;color:#102b25;font-size:19px}
+#player .pbtns button.pri:hover{background:#99ecd1}
+#player .pmeta{display:flex;gap:8px;align-items:center;margin-top:4px;font-size:11px;color:#bfceca}
+#player .pmeta>span{flex:1;white-space:nowrap}
+#player .pmeta button{min-height:34px;padding:3px 8px;font-size:11px;background:transparent;white-space:nowrap}
+#player .pmeta button[aria-expanded=true],#player .pmeta button.sleep-on{color:#a7f4da;background:#253d35}
+#player .pstatus,#player .pmusic-status{font-size:12px;line-height:1.6;color:#f5d8a7;margin:3px 0 5px;overflow-wrap:anywhere}
+#listening-settings{border-top:1px solid #3b4848;margin-top:5px;padding-top:9px}
+#player .pmix{display:flex;gap:8px;align-items:center;min-height:38px;font-size:12px}
+#player .pmix>span{flex:0 0 52px}
+#player .pmix input{flex:1;width:50px;min-height:28px;margin:0}
+#player .pmix output{flex:0 0 37px;text-align:right;color:#bfceca;font-variant-numeric:tabular-nums}
+#player .pmusic-toggle{display:flex;justify-content:space-between;align-items:center;margin-top:3px;font-size:12px}
+#player .pmusic-toggle button{min-height:34px;min-width:64px;padding:3px 10px;font-size:12px}
+#player .pmusic-toggle button[aria-pressed=true]{background:#254d40;color:#b4f2db}
+#player .pmusic-name{margin:3px 0 8px;color:#d1ded9;font-size:12px;overflow-wrap:anywhere}
+#player .pfile-actions{display:flex;align-items:center;gap:8px;position:relative}
+#player .pfile-actions button,#player .pfile-label{display:inline-flex;justify-content:center;align-items:center;min-height:38px;box-sizing:border-box;padding:6px 12px;font-size:12px;background:#30383d;border-radius:9px}
+#player .pfile-label{flex:1}
+#listening-music-file{position:absolute;left:0;top:0;width:1px;height:1px;opacity:0}
+#player .pfile-actions:focus-within .pfile-label{outline:2px solid #a7f4da;outline-offset:2px}
+#player .pstorage,#player .pfootnote{color:#a9bdb4;font-size:11px;line-height:1.7;margin:7px 0}
+#player .pdownloads{display:flex;gap:8px;margin-top:9px}
+#player .pdownloads a{flex:1;display:flex;align-items:center;justify-content:center;min-height:38px;box-sizing:border-box;padding:6px;color:#b4f2db;background:#253d35;border:1px solid #3a5b4d;border-radius:9px;font-size:12px;text-align:center;text-decoration:none}
+#player .pfootnote{margin-bottom:2px}
+body.listening .edge{bottom:calc(var(--player-height,150px) + 20px + env(safe-area-inset-bottom))}
+body.listening .rail{bottom:calc(var(--player-height,150px) + 72px + env(safe-area-inset-bottom))}
+body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom:calc(var(--player-height,150px) + 32px + env(safe-area-inset-bottom))}
+body.listening-settings-open .rail,body.listening-settings-open .edge{visibility:hidden;pointer-events:none}
+.rb.lis.on span{background:#2bb58f;box-shadow:0 0 0 3px rgba(43,181,143,.45)}
+@media(max-width:359px){#player{left:5px;right:5px;padding-left:8px;padding-right:8px}#player .pmeta{gap:2px}#player .pmeta button{padding-left:5px;padding-right:5px}#player .pbtns{gap:4px}}
