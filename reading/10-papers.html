@@ -496,7 +496,8 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
     });
     sl._next = () => cz.next();
   }
-  function deskPrep(sl) { const pe = sl.querySelector('.pexp'), pr = sl.querySelector('.prec'); if (!pe || pe.querySelector('.deskrev')) return; pe.insertAdjacentHTML('afterbegin', '<button class="deskrev" type="button">先自己回答一遍，再点这里或按 → 看解析</button>'); pe.querySelector('.deskrev').addEventListener('click', e => { e.stopPropagation(); deskReveal(sl); }); if (pr) { pr.insertAdjacentHTML('afterbegin', '<button class="deskrec" type="button">先看中间的题目，想好了再点这里或按 ← 默写</button>'); pr.querySelector('.deskrec').addEventListener('click', e => { e.stopPropagation(); sl.classList.add('recl'); }); } }
+  function deskPrep(sl) { const pe = sl.querySelector('.pexp'), pr = sl.querySelector('.prec'); if (!pe || pe.querySelector('.deskrev')) return; const hide = '<button class="deskhide" type="button" title="再按一次方向键也可以遮住">🙈 遮住</button>'; pe.insertAdjacentHTML('afterbegin', '<button class="deskrev" type="button">先自己回答一遍，再点这里或按 → 看解析</button>' + hide); pe.querySelector('.deskrev').addEventListener('click', e => { e.stopPropagation(); deskReveal(sl); }); pe.querySelector('.deskhide').addEventListener('click', e => { e.stopPropagation(); sl.classList.remove('rev'); }); if (pr) { pr.insertAdjacentHTML('afterbegin', '<button class="deskrec" type="button">先看中间的题目，想好了再点这里或按 ← 默写</button>' + hide); pr.querySelector('.deskrec').addEventListener('click', e => { e.stopPropagation(); sl.classList.add('recl'); }); pr.querySelector('.deskhide').addEventListener('click', e => { e.stopPropagation(); sl.classList.remove('recl'); }); } }
+  function deskToggle(sl, i) { if (i === 0) sl.classList.toggle('recl'); else if (sl.classList.contains('rev')) sl.classList.remove('rev'); else deskReveal(sl); }
   function deskReveal(sl) { sl.classList.add('rev');  }
   function goPane(sl, i) { if (DESK()) { if (i === 2) deskReveal(sl); else if (i === 0) sl.classList.add('recl'); return; } const hx = sl.querySelector('.hx'); if (hx) hx.scrollTo({ left: i * hx.clientWidth, behavior: 'smooth' }); }
   function mark(id, s, sl, where, btn) {
@@ -629,8 +630,8 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
     const sl = slideAt(cur), pane = sl && sl.dataset.pane !== undefined ? +sl.dataset.pane : 1;
     if (e.key === 'ArrowDown' || e.key === 'j') { e.preventDefault(); next(); }
     else if (e.key === 'ArrowUp' || e.key === 'k') { e.preventDefault(); prev(); }
-    else if (e.key === 'ArrowLeft' && sl && sl.querySelector('.hx')) { e.preventDefault(); goPane(sl, Math.max(0, pane - 1)); }
-    else if (e.key === 'ArrowRight' && sl && sl.querySelector('.hx')) { e.preventDefault(); goPane(sl, Math.min(2, pane + 1)); }
+    else if (e.key === 'ArrowLeft' && sl && sl.querySelector('.hx')) { e.preventDefault(); (DESK() ? deskToggle(sl, 0) : goPane(sl, Math.max(0, pane - 1))); }
+    else if (e.key === 'ArrowRight' && sl && sl.querySelector('.hx')) { e.preventDefault(); (DESK() ? deskToggle(sl, 2) : goPane(sl, Math.min(2, pane + 1))); }
     else if (e.key === ' ' && sl && sl._next && pane === 0) { e.preventDefault(); sl._next(); }
     else if (/^[123]$/.test(e.key) && sl && sl.querySelector('.hx')) { const s = +e.key - 1; mark(order[cur], s, sl, pane === 0 ? 'rec' : 'main', sl.querySelector(`.rb[data-s="${s}"]`)); }
   });
