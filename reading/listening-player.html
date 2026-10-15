@@ -1,0 +1,25 @@
+<section id="player" data-study-player="{{collection}}" aria-label="听题播放器">
+  <input class="pseek" type="range" min="0" max="1000" step="1" value="0" aria-label="人声播放进度" disabled>
+  <div class="prow"><span class="ptitle"></span><span class="ptime">0:00 / 0:00</span></div>
+  <div class="pbtns">
+    <button data-p="prev" title="上一题，或回到开头" aria-label="上一题，或回到开头">⏮</button>
+    <button data-p="back" title="人声后退 10 秒" aria-label="人声后退 10 秒">↺10</button>
+    <button data-p="toggle" class="pri" title="播放" aria-label="播放人声与背景音乐">▶</button>
+    <button data-p="next" title="下一题" aria-label="下一题">⏭</button>
+    <button data-p="rate" title="人声倍速" aria-label="人声倍速 1.2 倍">1.2×</button>
+    <button data-p="close" title="关闭听题" aria-label="关闭听题">✕</button>
+  </div>
+  <div class="pmeta"><span data-voice-label>自然合成女声</span><button data-p="sleep" aria-label="睡眠定时，当前关闭">定时</button><button data-p="settings" aria-expanded="false" aria-controls="listening-settings">声音与下载 ▾</button></div>
+  <p class="pstatus" role="status" hidden></p>
+  <div id="listening-settings" hidden>
+    <label class="pmix"><span>人声音量</span><input data-volume="voice" type="range" min="0" max="100" value="100"><output data-level="voice">100%</output></label>
+    <div class="pmusic-toggle"><span>背景音乐</span><button data-p="music" aria-pressed="true">已开启</button></div>
+    <label class="pmix"><span>音乐音量</span><input data-volume="music" type="range" min="0" max="100" value="22"><output data-level="music">22%</output></label>
+    <p class="pmusic-name">轻柔学习伴奏</p>
+    <div class="pfile-actions"><label class="pfile-label" for="listening-music-file">换一首本地音乐</label><input id="listening-music-file" type="file" accept="audio/*,.mp3,.m4a,.aac,.wav,.ogg,.flac,.webm"><button data-p="restore-music">恢复默认</button></div>
+    <p class="pstorage">自选音乐只保存在这个浏览器，不会上传。</p>
+    <p class="pmusic-status" role="status" hidden></p>
+    <div class="pdownloads"><a data-download="voice" download>下载这题纯人声</a><a data-download="music" href="audio/music/quiet-study.m4a" download="quiet-study.m4a">下载纯背景音乐</a></div>
+    <p class="pfootnote">人声与音乐是两个独立音轨，倍速只影响人声。</p>
+  </div>
+</section>

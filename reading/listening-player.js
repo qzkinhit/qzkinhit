@@ -14,13 +14,14 @@ window.createStudyAudioPlayer = function (options) {
   }
   const DEFAULT_MUSIC = 'audio/music/quiet-study.m4a';
   const RATES = [0.8, 1, 1.2, 1.5, 1.8, 2];
-  const storedRate = Number(storage.get('swipe-rate-v2', 1.2));
+  const rateStorageKey = options.rateStorageKey || 'swipe-rate-v2';
+  const storedRate = Number(storage.get(rateStorageKey, 1.2));
   let rate = RATES.includes(storedRate) ? storedRate : 1.2;
   const savedMix = storage.get('swipe-mix-v1', {}) || {};
   const volume = (value, fallback) => typeof value === 'number' && isFinite(value) ? Math.max(0, Math.min(1, value)) : fallback;
   let voiceVolume = volume(savedMix.voice, 1), musicVolume = volume(savedMix.music, 0.22);
   let musicEnabled = savedMix.enabled !== false;
-  let active = false, wanted = false, index = -1, entry = null, expectedVoiceSrc = '';
+  let active = false, wanted = false, index = -1, entry = null, expectedVoiceSrc = '', fallbackUsed = false;
   let voiceAttempt = 0, musicAttempt = 0, musicBroken = false;
   let sleepTimer = null, sleepEnd = 0, sleepMinutes = 0;
   let audioContext = null, voiceGain = null, musicGain = null;
@@ -120,13 +121,49 @@ window.createStudyAudioPlayer = function (options) {
     if (!entry) return;
     $('.ptitle').textContent = entry.title;
     const download = $('[data-download=voice]');
-    download.href = 'audio/hot100-natural/' + encodeURIComponent(entry.id) + '.mp3';
-    download.download = entry.id + '-纯人声.mp3';
-    download.setAttribute('aria-label', `下载 ${entry.title} 的纯人声`);
+    if (expectedVoiceSrc && entry.audioAvailable !== false) {
+      download.href = expectedVoiceSrc;
+      const extension = new URL(expectedVoiceSrc).pathname.match(/\.(mp3|m4a|aac|wav|ogg|flac|webm)$/i)?.[1] || 'mp3';
+      download.download = entry.id + '-纯人声.' + extension.toLowerCase();
+      download.removeAttribute('aria-disabled');
+    } else {
+      download.removeAttribute('href');
+      download.removeAttribute('download');
+      download.setAttribute('aria-disabled', 'true');
+    }
+    download.textContent = entry.audioAvailable === false ? '本题尚未配音' : '下载这题纯人声';
+    download.setAttribute('aria-label', entry.audioAvailable === false ? '本题尚未配音，暂无人声可下载' : `下载 ${entry.title} 的纯人声`);
+    const voiceLabel = entry.audioAvailable === false ? '尚未配音' : fallbackUsed ? (entry.fallbackVoiceLabel || '原版合成音频') : (entry.voiceLabel || '自然合成女声');
+    const label = $('[data-voice-label]') || $('.pmeta > span');
+    if (label) label.textContent = voiceLabel;
     options.markActive(active ? index : -1);
     if ('mediaSession' in navigator && 'MediaMetadata' in window) {
-      try { navigator.mediaSession.metadata = new MediaMetadata({ title: entry.title, artist: '自然合成女声 · Hot 100 听题', album: entry.album }); } catch (error) {}
+      try { navigator.mediaSession.metadata = new MediaMetadata({ title: entry.title, artist: `${voiceLabel} · ${entry.artist || options.artist || 'Hot 100 听题'}`, album: entry.album }); } catch (error) {}
     }
+  }
+
+  function loadVoiceSource(source) {
+    ++voiceAttempt;
+    expectedVoiceSrc = new URL(source, document.baseURI).href;
+    voice.src = expectedVoiceSrc;
+    voice.preload = 'metadata';
+    voice.load();
+    paintRate();
+    paintMetadata();
+    paintProgress();
+  }
+
+  function tryVoiceFallback() {
+    if (!active || !entry || fallbackUsed || !entry.fallbackAudioSrc) return false;
+    const fallback = new URL(entry.fallbackAudioSrc, document.baseURI).href;
+    if (fallback === expectedVoiceSrc) return false;
+    // 每次选题只允许一次自动回退。旧 play 的 rejection 由代次检查隔离。
+    fallbackUsed = true;
+    loadVoiceSource(fallback);
+    setStatus('新版女声暂未就绪，已切换到原版合成音频。');
+    if (wanted) resumeBoth();
+    else paintPlayback();
+    return true;
   }
 
   function paintProgress() {
@@ -170,9 +207,30 @@ window.createStudyAudioPlayer = function (options) {
     if (message !== undefined) setStatus(message);
   }
 
+  function requestAvailabilityRefresh() {
+    if (typeof options.refreshAvailability !== 'function') return;
+    // 刷新只更新清单和当前状态，结果返回后不会代替用户重新开始播放。
+    try { Promise.resolve(options.refreshAvailability({ explicit: true })).catch(() => {}); } catch (error) {}
+  }
+
+  function availabilityUpdated() {
+    if (!active || !entry) return;
+    const question = options.getQuestion(index);
+    if (!question || question.id !== entry.id) return;
+    const wasUnavailable = entry.audioAvailable === false;
+    if (question.audioAvailable === false && !wasUnavailable) { playAt(index, false, false); return; }
+    entry = question;
+    if (question.audioAvailable !== false && (wasUnavailable || voice.error || !voice.getAttribute('src'))) {
+      expectedVoiceSrc = new URL(question.audioSrc || 'audio/hot100-natural/' + encodeURIComponent(question.id) + '.mp3', document.baseURI).href;
+      setStatus(question.audioAvailable === true ? '本题配音已就绪，点播放即可收听。' : '配音清单暂不可用，点播放可尝试加载本题。');
+    }
+    paintMetadata();
+  }
+
   function resumeBoth() {
     if (!active || !entry || checkSleep()) return;
-    if (voice.error) { playAt(index, false, true); return; }
+    if (options.getQuestion(index)?.audioAvailable === false) { playAt(index, false, false); requestAvailabilityRefresh(); return; }
+    if (voice.error || !voice.getAttribute('src')) { playAt(index, false, true); return; }
     const attempt = ++voiceAttempt;
     wanted = true;
     if (!prepareAudio(attempt)) return;
@@ -187,10 +245,11 @@ window.createStudyAudioPlayer = function (options) {
       }).catch(error => {
         // 切题和暂停会使旧的 play Promise 失败，它不能影响当前题目。
         if (attempt !== voiceAttempt || !active || !wanted) return;
+        if (error.name !== 'NotAllowedError' && tryVoiceFallback()) return;
         pauseBoth(error.name === 'NotAllowedError' ? '请点播放继续听题。' : '这题人声暂时无法播放，点播放重试或手动切换下一题。');
       });
     } catch (error) {
-      if (attempt === voiceAttempt) pauseBoth('这题人声暂时无法播放，点播放重试或手动切换下一题。');
+      if (attempt === voiceAttempt && !tryVoiceFallback()) pauseBoth('这题人声暂时无法播放，点播放重试或手动切换下一题。');
     }
   }
 
@@ -201,21 +260,35 @@ window.createStudyAudioPlayer = function (options) {
       toast(options.getCount() ? '本轮都听完了' : '当前没有可播放的题目');
       return;
     }
-    ++voiceAttempt;
     index = k;
     entry = nextEntry;
     wanted = !!resume;
-    expectedVoiceSrc = new URL('audio/hot100-natural/' + encodeURIComponent(entry.id) + '.mp3', document.baseURI).href;
-    voice.src = expectedVoiceSrc;
-    voice.preload = 'metadata';
-    voice.load();
-    paintRate();
-    paintMetadata();
-    paintProgress();
+    fallbackUsed = false;
+    if (entry.audioAvailable === false) {
+      pauseBoth('本题尚未配音。可用上一题、下一题继续收听已配音内容。');
+      expectedVoiceSrc = '';
+      voice.removeAttribute('src');
+      voice.load();
+      paintMetadata();
+      paintProgress();
+      if (scroll) options.showQuestion(k);
+      return;
+    }
+    loadVoiceSource(entry.audioSrc || 'audio/hot100-natural/' + encodeURIComponent(entry.id) + '.mp3');
     setStatus('');
     if (scroll) options.showQuestion(k);
     if (wanted) resumeBoth();
     else { music.pause(); ++musicAttempt; paintPlayback(); }
+  }
+
+  function step(direction) {
+    for (let k = index + direction; k >= 0 && k < options.getCount(); k += direction) {
+      const question = options.getQuestion(k);
+      if (question && question.audioAvailable !== false) { playAt(k, true, true); return; }
+    }
+    if (direction > 0) { stop(); toast('本轮已配音内容都听完了'); }
+    else if (entry && entry.audioAvailable !== false) playAt(index, true, true);
+    else pauseBoth('前面没有可播放的题目。');
   }
 
   function start(k) {
@@ -227,6 +300,7 @@ window.createStudyAudioPlayer = function (options) {
     trigger.classList.add('on');
     trigger.setAttribute('aria-pressed', 'true');
     playAt(k === undefined ? Math.min(options.getCurrentIndex(), options.getCount() - 1) : k, false, true);
+    if (entry?.audioAvailable === false) requestAvailabilityRefresh();
     syncHeight();
   }
 
@@ -274,10 +348,10 @@ window.createStudyAudioPlayer = function (options) {
     if (active && wanted && voice.paused && !voice.ended) pauseBoth('');
   });
   voice.addEventListener('ended', () => {
-    if (active && wanted && voice.ended && voice.src === expectedVoiceSrc && !checkSleep()) playAt(index + 1, true, true);
+    if (active && wanted && voice.ended && voice.src === expectedVoiceSrc && !checkSleep()) step(1);
   });
   voice.addEventListener('error', () => {
-    if (active && voice.error && voice.src === expectedVoiceSrc) pauseBoth('这题人声暂时无法加载，点播放重试或手动切换下一题。');
+    if (active && entry?.audioAvailable !== false && voice.error && voice.src === expectedVoiceSrc && !tryVoiceFallback()) pauseBoth('这题人声暂时无法加载，点播放重试或手动切换下一题。');
   });
   for (const event of ['timeupdate', 'durationchange', 'loadedmetadata']) voice.addEventListener(event, paintProgress);
   music.addEventListener('play', () => { if (!canPlayMusic()) music.pause(); });
@@ -381,14 +455,15 @@ window.createStudyAudioPlayer = function (options) {
   }
 
   panel.addEventListener('click', event => {
+    if (event.target.closest('[data-download=voice][aria-disabled=true]')) { event.preventDefault(); return; }
     const button = event.target.closest('[data-p]');
     if (!button) return;
     switch (button.dataset.p) {
       case 'toggle': wanted ? pauseBoth('') : resumeBoth(); break;
-      case 'next': playAt(index + 1, true, true); break;
-      case 'prev': if (voice.currentTime > 5) seekTo(0); else playAt(Math.max(0, index - 1), true, true); break;
+      case 'next': step(1); break;
+      case 'prev': if (voice.currentTime > 5) seekTo(0); else step(-1); break;
       case 'back': seekTo(voice.currentTime - 10); break;
-      case 'rate': rate = RATES[(RATES.indexOf(rate) + 1) % RATES.length]; storage.set('swipe-rate-v2', rate); paintRate(); paintProgress(); break;
+      case 'rate': rate = RATES[(RATES.indexOf(rate) + 1) % RATES.length]; storage.set(rateStorageKey, rate); paintRate(); paintProgress(); break;
       case 'sleep': {
         const values = [0, 15, 30, 60];
         sleepMinutes = values[(values.indexOf(sleepMinutes) + 1) % values.length];
@@ -416,16 +491,18 @@ window.createStudyAudioPlayer = function (options) {
     }
   });
   panel.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && !$('#listening-settings').hidden) { setSettings(false); $('[data-p=settings]').focus(); }
+    event.stopPropagation();
+    if (event.key === 'Escape' && !$('#listening-settings').hidden) { event.preventDefault(); setSettings(false); $('[data-p=settings]').focus(); }
   });
+  panel.addEventListener('keyup', event => event.stopPropagation());
 
   if ('mediaSession' in navigator) {
     const set = (action, handler) => { try { navigator.mediaSession.setActionHandler(action, handler); } catch (error) {} };
     set('play', () => active ? resumeBoth() : start());
     set('pause', () => pauseBoth(''));
     set('stop', stop);
-    set('nexttrack', () => { if (active) playAt(index + 1, true, true); });
-    set('previoustrack', () => { if (active) playAt(Math.max(0, index - 1), true, true); });
+    set('nexttrack', () => { if (active) step(1); });
+    set('previoustrack', () => { if (active) step(-1); });
     set('seekbackward', event => seekTo(voice.currentTime - (event.seekOffset || 10)));
     set('seekforward', event => seekTo(voice.currentTime + (event.seekOffset || 10)));
     set('seekto', event => { if (Number.isFinite(event.seekTime)) seekTo(event.seekTime); });
@@ -455,9 +532,10 @@ window.createStudyAudioPlayer = function (options) {
       if (!active) return;
       const question = options.getQuestion(k);
       if (!question) { stop(); return; }
-      if (k !== index || !entry || question.id !== entry.id) playAt(k, false, wanted);
+      if (k !== index || !entry || question.id !== entry.id || (question.audioAvailable === false) !== (entry.audioAvailable === false)) playAt(k, false, wanted);
       else { entry = question; paintMetadata(); }
     },
+    availabilityUpdated,
     stop
   };
 };
