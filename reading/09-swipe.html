@@ -969,15 +969,19 @@ const RUN = (() => {
     ta.addEventListener('input', () => { drafts[p.id] = ta.value; if (!ta.value) delete drafts[p.id]; LS.set('swipe-draft-v1', drafts); });
     ta.addEventListener('keydown', e => { if (e.key === 'Tab') { e.preventDefault(); const a = ta.selectionStart; ta.setRangeText('    ', a, ta.selectionEnd, 'end'); ta.dispatchEvent(new Event('input')); } });
     const lines = [...sl.querySelectorAll('.ans .ln')], codeLines = p.code.split('\n');
-    let shown = 0;
-    const cnt = sl.querySelector('.ansbar .cnt');
-    const paintAns = () => { lines.forEach((l, i) => { l.classList.toggle('hide', i >= shown); l.classList.toggle('cur', i === shown - 1 && shown < lines.length); }); cnt.textContent = `${shown} / ${lines.length}`; };
+    // 每行单独记录是否打开，点一行切换，「揭开一行」打开下一条还盖着的行
+    const cnt = sl.querySelector('.ansbar .cnt'), open = new Set();
+    let last = -1;
+    const paintAns = () => { lines.forEach((l, i) => { l.classList.toggle('hide', !open.has(i)); l.classList.toggle('cur', i === last && open.has(i) && open.size < lines.length); }); cnt.textContent = `${open.size} / ${lines.length}`; };
+    const firstShut = () => lines.findIndex((l, i) => !open.has(i));
     const rv = {
-      next() { do { shown = Math.min(lines.length, shown + 1); } while (shown < lines.length && !lines[shown - 1].textContent.trim()); paintAns(); },
-      all() { shown = lines.length; paintAns(); },
-      reset() { shown = 0; lines.forEach(l => l.classList.remove('hit', 'near', 'miss')); sl.querySelector('.score').innerHTML = ''; paintAns(); }
+      next() { let i = firstShut(); while (i >= 0) { open.add(i); last = i; if (lines[i].textContent.trim()) break; i = firstShut(); } paintAns(); },
+      all() { lines.forEach((l, i) => open.add(i)); last = -1; paintAns(); },
+      reset() { open.clear(); last = -1; lines.forEach(l => l.classList.remove('hit', 'near', 'miss')); sl.querySelector('.score').innerHTML = ''; paintAns(); },
+      toggle(i) { if (i < 0) return; if (open.has(i)) { open.delete(i); if (last === i) last = -1; } else { open.add(i); last = i; } paintAns(); }
     };
     paintAns();
+    sl.querySelector('.ans').addEventListener('click', e => { const ln = e.target.closest('.ln'); if (!ln) return; e.stopPropagation(); rv.toggle(lines.indexOf(ln)); });
     // 挖空默写
     const czBox = sl.querySelector('.cz-box'), ccnt = sl.querySelector('.ccnt');
     let czAns = [], czOpen = new Set(), level = 'core';
@@ -1055,7 +1059,7 @@ const RUN = (() => {
     }
   }
   function deskPrep(sl) { deskNote(sl); const pe = sl.querySelector('.pexp'), pr = sl.querySelector('.prec'); if (!pe || pe.querySelector('.deskrev')) return; const hide = '<button class="deskhide" type="button" title="再按一次方向键也可以遮住">🙈 遮住</button>'; pe.insertAdjacentHTML('afterbegin', '<button class="deskrev" type="button">先自己回答一遍，再点这里或按 → 看解析</button>' + hide); pe.querySelector('.deskrev').addEventListener('click', e => { e.stopPropagation(); deskReveal(sl); }); pe.querySelector('.deskhide').addEventListener('click', e => { e.stopPropagation(); sl.classList.remove('rev'); }); if (pr) { pr.insertAdjacentHTML('afterbegin', '<button class="deskrec" type="button">先看中间的题目，想好了再点这里或按 ← 默写</button>' + hide); pr.querySelector('.deskrec').addEventListener('click', e => { e.stopPropagation(); sl.classList.add('recl'); }); pr.querySelector('.deskhide').addEventListener('click', e => { e.stopPropagation(); sl.classList.remove('recl'); }); } }
-  function deskNote(sl) { const ms = sl.querySelector('.pmain .mscroll'); if (!ms) return; let card = ms.querySelector('.desknote'); if (!card) { ms.insertAdjacentHTML('beforeend', '<div class="card desknote"><div class="dnh"><b>📝 完整默写</b><span>写完点「核对」逐行标出写对和漏掉的地方，也可以点「揭开一行」对着答案一行行回忆。Tab 键缩进四格，自动保存。</span></div><div class="dnslot"></div><a class="big ghost dnlc" target="_blank" rel="noopener">✍ 去力扣提交</a></div>'); card = ms.querySelector('.desknote'); const lc = card.querySelector('.dnlc'); lc.href = D.probs[order[+sl.dataset.k]].url; lc.addEventListener('click', e => e.stopPropagation()); } deskPlace(sl); }
+  function deskNote(sl) { const ms = sl.querySelector('.pmain .mscroll'); if (!ms || ms.querySelector('.desknote')) return; const id = D.probs[order[+sl.dataset.k]].id, st = drafts; ms.insertAdjacentHTML('beforeend', '<div class="card desknote"><div class="dnh"><b>📝 写代码</b><span>在这里写代码，Tab 键缩进四格，自动保存。写完点「核对」，左栏打开并逐行标出写对和漏掉的地方</span></div><div class="dnbtns"><button class="big" type="button" data-dnchk>核对</button><a class="big ghost" target="_blank" rel="noopener" data-dnlc>✍ 去力扣提交</a></div><div class="dnscore"></div><textarea class="dnta code" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" placeholder="def solve(...):"></textarea></div>'); const ta = ms.querySelector('.dnta'), left = sl.querySelector('.prec .draft'); ta.value = st[id] || ''; ta.addEventListener('input', () => { st[id] = ta.value; if (!ta.value) delete st[id]; LS.set('swipe-draft-v1', st); if (left) left.value = ta.value; }); if (left) left.addEventListener('input', () => { ta.value = left.value; }); ta.addEventListener('keydown', e => { if (e.key === 'Tab') { e.preventDefault(); const a = ta.selectionStart; ta.setRangeText('    ', a, ta.selectionEnd, 'end'); ta.dispatchEvent(new Event('input')); } }); const cb = ms.querySelector('[data-dnchk]'); cb.addEventListener('click', e => { e.stopPropagation(); const m = sl.querySelector('.prec [data-rm="full"]'); if (m && !m.classList.contains('on')) m.click(); sl.classList.add('recl'); const c = sl.querySelector('.prec [data-chk]'); if (c) c.click(); setTimeout(() => { const sc = sl.querySelector('.prec .score'); ms.querySelector('.dnscore').innerHTML = sc ? sc.innerHTML : ''; }, 60); }); const lc = ms.querySelector('[data-dnlc]'); lc.href = D.probs[order[+sl.dataset.k]].url; lc.addEventListener('click', e => e.stopPropagation()); }
   function deskPlace(sl) { const full = sl.querySelector('.rm-full'), slot = sl.querySelector('.desknote .dnslot'), back = sl.querySelector('.prec .rm-cloze'); if (!full || !slot) return; if (DESK()) { if (full.parentNode !== slot) slot.appendChild(full); } else if (back && full.parentNode === slot) back.after(full); }
   function deskToggle(sl, i) { if (i === 0) sl.classList.toggle('recl'); else if (sl.classList.contains('rev')) sl.classList.remove('rev'); else deskReveal(sl); }
   function deskReveal(sl) { sl.classList.add('rev'); if (!sl._viz) { sl._viz = 1; const p = D.probs[order[+sl.dataset.k]]; const box = sl.querySelector('.vizbox'); VZ.mount(box, p.viz); setTimeout(() => { const b = box.querySelector('[data-a=play]'); if (b) b.click(); }, 450); RUN.mount(sl.querySelector('.runbox'), p); } }
