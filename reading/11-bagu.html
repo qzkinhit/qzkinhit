@@ -382,7 +382,7 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
 .bvpre{background:#f3f6f3;border-radius:8px;padding:8px 10px;font:12px/1.6 ui-monospace,Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin:4px 0}
 .bvtab td.dupe{background:#fdf1cc}.bvtab tr.on td{background:#e3f3ec;font-weight:600}
 .bvseg.s2,.bvseg.s3{margin-top:-2px}
-</style><link rel="stylesheet" href="cards-desk.css?v=06a5d1e1caf4"><link data-study-audio-asset="css" rel="stylesheet" href="listening-player.css?v=17c7192ae057"></head><body>
+</style><link rel="stylesheet" href="cards-desk.css?v=d6978449b56d"><link data-study-audio-asset="css" rel="stylesheet" href="listening-player.css?v=17c7192ae057"></head><body>
 <div id="app">
 <div id="top"><div class="r1"><a class="back" href="12-cards.html" title="回到刷卡总览">‹</a><button class="ib" id="deckbtn" title="切换卡组">🎯</button><div id="tabs"><button data-p="0">默写</button><button data-p="1" class="on">问题</button><button data-p="2">解析</button></div><button class="ib" id="listen" title="连播听题">🎧</button><button class="ib" id="help" title="玩法">?</button><button class="ib" id="gear" title="设置">⚙</button></div>
 <div class="bar"><i></i></div><div class="r2"><span id="pos"></span><span><button id="due" class="hidden"></button> <span id="today"></span></span></div></div>
@@ -3039,7 +3039,7 @@ W.kkt = el => {
       ${(() => { const rel = sameTopic(c).filter(id => BY[id].topic === c.topic).slice(0, 3), pre = (PRE[c.topic] || []).filter(id => id !== c.id && BY[id]); return rel.length || pre.length ? `<div class="rel">${pre.length ? `<b>🧭 先补基础</b>${pre.map(id => `<button data-rel="${id}">${esc(BY[id].q)}</button>`).join('')}` : ''}${rel.length ? `<b>🔗 同主题</b>${rel.map(id => `<button data-rel="${id}">${esc(BY[id].q)}</button>`).join('')}` : ''}</div>` : ''; })()}
     </div></div>
     <div class="rail">${[2, 1, 0].map(v => `<button class="rb${s === v ? ' on' : ''}" data-s="${v}"><span>${FACES[v]}</span><i>${NAMES[v]}</i></button>`).join('')}<button class="rb lis" data-listen="1"><span>🎧</span><i>听</i></button></div>
-    <div class="edge"><button data-go="0">‹ 默写</button><span class="up">↑ 上滑下一题</span><button data-go="2">解析 ›</button></div></div>`;
+    <div class="edge"><button data-go="0">‹ 默写</button><button class="up nx" data-next>下一题 ↓</button><button data-go="2">解析 ›</button></div></div>`;
   }
   function paneAnswer(c) {
     const cmp = c.cmp ? `<div class="sec"><b>对比表</b><div class="tw"><table class="numt cmp"><tr>${c.cmp.head.map(h => `<th>${esc(h)}</th>`).join('')}</tr>${c.cmp.rows.map(r => `<tr>${r.map((x, i) => i ? `<td>${esc(x)}</td>` : `<th>${esc(x)}</th>`).join('')}</tr>`).join('')}</table></div></div>` : '';
@@ -3078,7 +3078,7 @@ W.kkt = el => {
     sl.dataset.f = 1;
     const c = BY[order[+sl.dataset.k]], kws = keywords(c);
     sl.innerHTML = `<div class="hx">${paneRecall(c)}${paneMain(c)}${paneAnswer(c)}</div>`;
-    const hx = sl.querySelector('.hx'); hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl);
+    const hx = sl.querySelector('.hx'); hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl);
     // 挖关键词
     const czp = sl.querySelector('.czp'), ccnt = sl.querySelector('.ccnt'), html0 = czp.innerHTML;
     let opened = 0;
@@ -3103,7 +3103,7 @@ W.kkt = el => {
     let t0 = null;
     hx.addEventListener('scroll', () => { clearTimeout(t0); t0 = setTimeout(() => { const i = Math.round(hx.scrollLeft / hx.clientWidth); if (+sl.dataset.pane !== i) { sl.dataset.pane = i; if (+sl.dataset.k === cur) paintTabs(i); if (i === 2) mountViz(sl); } }, 90); }, { passive: true });
     sl.addEventListener('click', e => {
-      const g = e.target.closest('[data-go]'); if (g) return goPane(sl, +g.dataset.go);
+      const nx = e.target.closest('[data-next]'); if (nx) return next(); const g = e.target.closest('[data-go]'); if (g) return goPane(sl, +g.dataset.go);
       if (e.target.closest('[data-next]')) return next();
       if (e.target.closest('[data-listen]')) { listener.toggleFor(+sl.dataset.k); return; }
       const km = e.target.closest('.kwm'); if (km) { km.textContent = km.classList.contains('on') ? mask(km.dataset.k) : km.dataset.k; km.classList.toggle('on'); return; }
