@@ -110,7 +110,7 @@
     {
       "path": "09-swipe.html",
       "source_sha256": null,
-      "published_sha256": "b35d50921441110b60069689db82db372d3dc021652c67b40ee766d6e8e72b37"
+      "published_sha256": "3d0f47b2af8515c9456f27aa9c504483bf4f67229702995a3e9be59c90a7a38e"
     },
     {
       "path": "hot100-trace.json",
@@ -635,7 +635,7 @@
     {
       "path": "10-papers.html",
       "source_sha256": null,
-      "published_sha256": "d3521418b57ec92edecd12fd026022cfdd9d0275b8e5a2abb0605df156202a31"
+      "published_sha256": "4da35f6a707567a3ec38e0c96cdc1a07aca1037a22757286a8e5e89e4ff37a92"
     },
     {
       "path": "audio/papers/carveprep-1.m4a",
@@ -1095,7 +1095,7 @@
     {
       "path": "11-bagu.html",
       "source_sha256": null,
-      "published_sha256": "ca9bb920216622bc3ace9831592d24c390d2e993e4e5997e5a650589e7001979"
+      "published_sha256": "a3de32a069fa8b0ae9a1eda6651040effb1c744fc84c20ea6b95b459f9dc8b21"
     },
     {
       "path": "index.html",
@@ -1105,7 +1105,7 @@
     {
       "path": "12-cards.html",
       "source_sha256": null,
-      "published_sha256": "341221508f8bf83c82d0ad91397ff0f6495880987e802be74c14b329be24cf79"
+      "published_sha256": "6c77dc7ee2acf987599473e6f36cae9f66d65326909d6b0499c0af674c9d067e"
     },
     {
       "path": "cards-desk.css",
@@ -4821,6 +4821,11 @@
       "path": "listening-player.js",
       "source_sha256": null,
       "published_sha256": "6bef5c5ad2b5cf84e0ac14b72a0f7ac87676fdb802808a7ac396da99a321055e"
+    },
+    {
+      "path": "progress-sync.js",
+      "source_sha256": null,
+      "published_sha256": "f72896d04546597f0d6acc64bc1c1bfee079d2ef150141ac8b166a693712dd4b"
     }
   ],
   "source_excerpts": 123
