@@ -2,3 +2,7 @@ scripts/audio/__pycache__/
 scripts/audio/.venv/
 reading/audio/hot100-natural/.*.pending.mp3
 reading/audio/hot100-natural/manifest.tmp
+reading/audio/*-natural/.generation.lock
+reading/audio/*-natural/.*.pending.mp3
+reading/audio/*-natural/manifest.tmp
+reading/.*.audio.lock
