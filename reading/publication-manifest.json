@@ -1095,7 +1095,7 @@
     {
       "path": "11-bagu.html",
       "source_sha256": null,
-      "published_sha256": "e759952adaa894fd646ac5ddbd84746f05b770f39caf1bae499f0301d8f0b26d"
+      "published_sha256": "4df8ebd6d41e353e8c232d10d50a9ffd7b2b8a8a045c7cfc5c8f9454583adc85"
     },
     {
       "path": "index.html",
@@ -1105,7 +1105,7 @@
     {
       "path": "12-cards.html",
       "source_sha256": null,
-      "published_sha256": "7d7d89d9ecb16f73f5b76bc551209c3d4a8c516e5964e9cdd882613c672eb224"
+      "published_sha256": "341221508f8bf83c82d0ad91397ff0f6495880987e802be74c14b329be24cf79"
     },
     {
       "path": "cards-desk.css",
