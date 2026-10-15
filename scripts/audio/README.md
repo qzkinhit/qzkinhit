@@ -48,7 +48,7 @@ python3 scripts/audio/verify_audio.py --report reading/audio/hot100-natural/vali
 
 ## 论文面试卡与八股速记
 
-第一批以 `snapshots/papers-20261015.json` 的 90 张论文卡和 `snapshots/bagu-20261015.json` 的 349 张八股卡为固定范围。后续按用户要求增加 295 张八股卡，扩展批次保存在 `snapshots/bagu-20261015-expanded.json`，共 644 张。原 349 张的可朗读内容未变，保留其已核对的来源记录与音频，只生成新增题号。口播稿分别保存到 `narrations-papers/` 与 `narrations-bagu/`，音轨输出到 `reading/audio/papers-natural/` 与 `reading/audio/bagu-natural/`。
+第一批以 `snapshots/papers-20261015.json` 的 90 张论文卡和 `snapshots/bagu-20261015.json` 的 349 张八股卡为固定范围。后续按用户要求增加 295 张八股卡，扩展批次保存在 `snapshots/bagu-20261015-expanded.json`，共 644 张。原 349 张的可朗读内容未变，保留其已核对的来源记录与音频，只生成新增题号。 本次扩展已补齐全部 644 张八股卡的口播稿和独立人声音轨；论文卡共 90 条，两个集合继续共用可替换的独立背景音乐。口播稿分别保存到 `narrations-papers/` 与 `narrations-bagu/`，音轨输出到 `reading/audio/papers-natural/` 与 `reading/audio/bagu-natural/`。
 
 每张卡先读主题与完整问题，然后插入 3.6 秒静音，以默认 1.2 倍播放时约为 3 秒。再讲解答案、公式与需要记忆的数字。所有静音都在人声音轨内，背景音乐独立播放。源卡中已确认的技术口径问题及口播中的澄清，记录在相应口播稿目录的 `review-notes.md` 或 `review-part02.md`。
 
