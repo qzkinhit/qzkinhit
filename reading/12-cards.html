@@ -9,6 +9,8 @@ main{max-width:1180px;margin:0 auto;padding:18px 16px 80px}
 a{color:var(--acc);text-decoration:none}
 .top{display:flex;align-items:center;gap:12px;flex-wrap:wrap}
 .top a.home{font-size:14px;background:#fff;border:1px solid var(--line);border-radius:999px;padding:4px 12px}
+.top [data-psync]{margin-left:auto}
+.psync-btn{font:inherit;font-size:14px;background:var(--acc);color:#fff;border:0;border-radius:999px;padding:5px 14px;cursor:pointer}
 h1{font-size:26px;margin:6px 0 2px}
 .sub{color:var(--muted);font-size:14px;margin:0 0 14px}
 .tiles{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
@@ -62,9 +64,9 @@ li .due{flex:none;font-size:11.5px;color:var(--s0);margin-top:3px}
 .legend i{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px;vertical-align:0}
 @media (max-width:860px){.tiles{grid-template-columns:1fr}.groups{columns:1}h1{font-size:23px}}
 </style></head><body><main>
-<div class="top"><a class="home" href="index.html">‹ 阅读笔记</a></div>
+<div class="top"><a class="home" href="index.html">‹ 阅读笔记</a><span data-psync></span></div>
 <h1>刷卡总览</h1>
-<p class="sub">LeetCode、论文面试卡、八股速记三套卡的共同入口，三页左上角的返回都回到这里。熟练程度和复习日程从各页的本地记录读取，只保存在这台设备的浏览器里。</p>
+<p class="sub">LeetCode、论文面试卡、八股速记三套卡的共同入口，三页左上角的返回都回到这里。熟练程度和复习日程从各页的本地记录读取，保存在这台设备的浏览器里。点右上角「☁ 上传和读取进度」可以存到 GitHub 私有仓库，换设备后读取接着刷。</p>
 <section class="tiles" id="tiles"></section>
 <section class="browse">
 <div class="tabs" id="tabs"></div>
@@ -138,4 +140,4 @@ li .due{flex:none;font-size:11.5px;color:var(--s0);margin-top:3px}
   addEventListener('pageshow', e => { if (e.persisted) location.reload(); });
   paint();
 })();
-</script></body></html>
+</script><script src="progress-sync.js?v=f72896d04546"></script></body></html>
