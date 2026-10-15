@@ -1,9 +1,19 @@
 /* 09、10、11 三套卡在电脑宽屏上的布局。默认三栏并排（默写、问题、解析），两侧先模糊，点开才显示；顶栏按钮可切换成和手机一样的单栏左右滑 */
-.deskmode{display:none}
+#top .ib.deskmode{display:none}
 .deskhide{display:none}
 .desknote{display:none}
+.desknote.ansnote{display:block;margin-top:12px}
+.desknote .dntip{font-size:12px;line-height:1.6;color:var(--muted,#6b7a75);margin:8px 0 0}
+.desknote .dnh{margin-bottom:6px}.desknote .dnh b{font-size:15px}
+.desknote.ansnote .dnh{display:none}
+.desknote .dnh b span{font-size:15px;color:inherit}
+.dn-d,.dntip-d{display:none}
+.desknote.ansnote .ans .ln{cursor:pointer}
+.desknote.ansnote .dnlc{display:block;width:100%;box-sizing:border-box;margin-top:10px;text-align:center;text-decoration:none}
 @media (min-width:1100px){
-  #top .deskmode{display:inline-flex;font-size:13px;white-space:nowrap}
+  #top .ib.deskmode{display:inline-flex;font-size:13px;white-space:nowrap}
+  body:not(.deskone) .desknote.ansnote .dnh{display:block}
+  body:not(.deskone) .dn-d{display:inline}body:not(.deskone) .dntip-d{display:block}body:not(.deskone) .dn-m,body:not(.deskone) .dntip-m{display:none}
   #side{display:none!important}
   body.deskone #app{max-width:760px}
   body:not(.deskone) #app{max-width:none;border:0}
