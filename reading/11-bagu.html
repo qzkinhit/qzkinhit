@@ -3244,7 +3244,7 @@ W.kkt = el => {
         id: c.id, title: c.q,
         album: `${deckOf(cfg.deck).name} · 第 ${k + 1} / ${order.length} 题`,
         audioAvailable: availableAudio === null ? undefined : availableAudio.has(c.id),
-        audioSrc: 'audio/bagu-natural/' + encodeURIComponent(c.id) + '.mp3?v=' + (availableAudioVersions.get(c.id) || '65192866f0d6')
+        audioSrc: 'audio/bagu-natural/' + encodeURIComponent(c.id) + '.mp3?v=' + (availableAudioVersions.get(c.id) || '13f66b9bea77')
       } : null;
     },
     showQuestion: k => jump(k),
