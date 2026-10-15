@@ -1,0 +1,22 @@
+{
+  "verifiedAt": "2026-10-15T04:09:37.858916+00:00",
+  "questionCount": 102,
+  "narrationCount": 102,
+  "musicCount": 1,
+  "allFilesDecoded": true,
+  "allScriptAndAudioChecksumsMatch": true,
+  "totalNarrationMinutes": 192.29,
+  "listeningMinutesAtDefaultRate": 160.24,
+  "shortestNarrationSeconds": 97.416,
+  "longestNarrationSeconds": 127.632,
+  "totalNarrationBytes": 92374421,
+  "narrationLufsRange": [
+    -18.49,
+    -18.41
+  ],
+  "highestNarrationTruePeakDbtp": -2.1,
+  "musicSeconds": 106.671995,
+  "musicLufs": -26.01,
+  "musicTruePeakDbtp": -13.21,
+  "separateNarrationAndMusicFiles": true
+}

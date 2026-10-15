@@ -1,0 +1,106 @@
+{
+  "title": "Quiet Study",
+  "description_zh": "原创温和键盘背景音乐，稀疏旋律、低音与轻柔房间混响。无鼓点、无人声、无外部采样。",
+  "source_script": "scripts/audio/generate_music.py",
+  "source_sha256": "2417bcc6acfca7794faf9caf7bc0924b787f4f30d5ba71964d7cf4ad1bb10a67",
+  "audio_sha256": "4317cc340176332f9c4862d4b85555806a47a813124ba9cb698d040b24e063db",
+  "seed": 20261015,
+  "bars": 32,
+  "meter": "4/4",
+  "bpm": 71.996082,
+  "nominal_bpm": 72.0,
+  "key": "C major / A minor",
+  "note_events": 258,
+  "chord_progression": [
+    "Cmaj9",
+    "Cmaj9/E",
+    "Am9",
+    "Am9/G",
+    "Fmaj9",
+    "F6/9",
+    "Dm9",
+    "G13sus",
+    "Cmaj9",
+    "Cmaj9/E",
+    "Am9",
+    "Em7",
+    "Fmaj9",
+    "Cmaj9/E",
+    "Dm9",
+    "G6sus"
+  ],
+  "codec": {
+    "name": "aac",
+    "profile": "LC",
+    "sample_rate": 44100,
+    "channels": 2,
+    "bit_rate": 160337
+  },
+  "target_integrated_lufs": -26.0,
+  "maximum_true_peak_dbtp": -6.0,
+  "recommended_browser_volume": 0.16,
+  "gain_db": -1.13,
+  "decoded_loudness": {
+    "integrated_lufs": -26.01,
+    "true_peak_dbtp": -13.21,
+    "loudness_range_lu": 2.8
+  },
+  "decoded_signal": {
+    "sample_count": 4704256,
+    "duration_seconds": 106.672472,
+    "sample_peak_dbfs": -13.21,
+    "rms_dbfs": -27.938,
+    "dc_offset": [
+      -5.16e-07,
+      7.51e-07
+    ],
+    "stereo_correlation": 0.21415,
+    "seam_step_dbfs": -52.356,
+    "ordinary_step_p999_dbfs": -44.407,
+    "seam_to_ordinary_p999_ratio": 0.40043,
+    "first_20ms_rms_dbfs": -41.133,
+    "last_20ms_rms_dbfs": -41.728,
+    "spectral_energy_fraction": {
+      "below_180_hz": 0.190904,
+      "180_to_2000_hz": 0.809093,
+      "2000_to_6000_hz": 2e-06,
+      "above_6000_hz": 0.0
+    },
+    "clipped_samples": 0
+  },
+  "uncompressed_signal": {
+    "sample_count": 4704256,
+    "duration_seconds": 106.672472,
+    "sample_peak_dbfs": -13.201,
+    "rms_dbfs": -27.932,
+    "dc_offset": [
+      0.0,
+      -0.0
+    ],
+    "stereo_correlation": 0.21391,
+    "seam_step_dbfs": -64.944,
+    "ordinary_step_p999_dbfs": -44.4,
+    "seam_to_ordinary_p999_ratio": 0.09393,
+    "first_20ms_rms_dbfs": -41.39,
+    "last_20ms_rms_dbfs": -41.742,
+    "spectral_energy_fraction": {
+      "below_180_hz": 0.190892,
+      "180_to_2000_hz": 0.809105,
+      "2000_to_6000_hz": 2e-06,
+      "above_6000_hz": 0.0
+    },
+    "clipped_samples": 0
+  },
+  "loop": {
+    "type": "periodic synthesis and circular reverb",
+    "sample_count": 4704256,
+    "aac_frame_aligned": true,
+    "playback_note_zh": "音符尾音与混响跨越文件边界连续相接。浏览器 HTMLAudioElement 的循环调度仍可能引入设备相关的微小间隙。"
+  },
+  "verification_zh": "已通过 ffmpeg 响度、真峰值、解码样本数、频带能量与循环接缝检查。本执行环境没有模型可用的音频审听接口，未声称完成人耳审听。",
+  "provenance_zh": "全部音符与波形由本脚本生成，没有下载或复用第三方录音，也没有混入题目讲解。",
+  "tools": {
+    "numpy": "1.26.4",
+    "ffmpeg": "ffmpeg version 8.1 Copyright (c) 2000-2026 the FFmpeg developers"
+  }
+}

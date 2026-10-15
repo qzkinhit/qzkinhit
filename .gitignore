@@ -1,0 +1,4 @@
+scripts/audio/__pycache__/
+scripts/audio/.venv/
+reading/audio/hot100-natural/.*.pending.mp3
+reading/audio/hot100-natural/manifest.tmp
