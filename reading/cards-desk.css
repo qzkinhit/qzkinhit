@@ -12,6 +12,15 @@
 .dn-d,.dntip-d{display:none}
 .desknote.ansnote .ans .ln{cursor:pointer}
 .desknote.ansnote .dnlc{display:block;width:100%;box-sizing:border-box;margin-top:10px;text-align:center;text-decoration:none}
+/* 听题播放器收起成一条小栏，声音继续播放 */
+#player.on.mini{display:flex;align-items:center;gap:8px;padding:5px 6px 5px 14px;border-radius:999px;overflow:hidden}
+#player.mini .pseek,#player.mini .pmeta,#player.mini #listening-settings,#player.mini .pstatus,#player.mini [data-p=prev],#player.mini [data-p=back],#player.mini [data-p=rate]{display:none!important}
+#player.mini .prow{flex:1;min-width:0;margin:0;flex-direction:column;align-items:flex-start;gap:0}
+#player.mini .ptitle{max-width:100%;font-size:12.5px}
+#player.mini .pbtns{flex:none;gap:4px}
+#player.mini .pbtns button{flex:none;width:40px;min-height:36px;padding:0;font-size:14px}
+#player.mini .pbtns button.pri{font-size:16px}
+#player [data-pm]{font-size:12.5px!important}
 @media (min-width:1100px){
   #top .ib.deskmode{display:inline-flex;font-size:13px;white-space:nowrap}
   body:not(.deskone) .desknote.ansnote .dnh{display:block}
@@ -28,7 +37,9 @@
   body:not(.deskone) .edge{display:none}
   body:not(.deskone) .pmain .card{margin-right:0}
   body:not(.deskone) .rail{left:0;right:0;bottom:40px;flex-direction:row;justify-content:center;gap:22px}
-  body:not(.deskone) #player{left:50%!important;right:auto!important;transform:translateX(-50%);width:min(620px,92vw)}
+  body:not(.deskone) #player{left:auto!important;right:16px!important;transform:none;width:min(440px,calc(37vw - 40px));box-sizing:border-box}
+  body:not(.deskone) #player.mini{width:300px}
+  body:not(.deskone).listening .rail{bottom:40px}
   body:not(.deskone) .pane.pexp,body:not(.deskone) .pane.prec{position:relative}
   body:not(.deskone) .slide:not(.rev) .pane.pexp>*:not(.deskrev):not(.deskhide),body:not(.deskone) .slide:not(.recl) .pane.prec>*:not(.deskrec):not(.deskhide){filter:blur(10px);opacity:.5;pointer-events:none;user-select:none}
   body:not(.deskone) .deskrev,body:not(.deskone) .deskrec{position:sticky;top:42%;z-index:6;display:block;margin:0 auto -54px;width:min(320px,86%);padding:14px 16px;border:0;border-radius:14px;background:rgba(255,255,255,.95);color:#20332f;font:600 15px/1.5 inherit;box-shadow:0 8px 28px rgba(0,0,0,.28);cursor:pointer}
@@ -49,12 +60,14 @@
   .desknote .rm-full .ans .ln{cursor:pointer}
   .desknote .dnlc{display:block;width:100%;box-sizing:border-box;margin-top:10px;text-align:center;text-decoration:none}
   #guide .gd{display:inline}#guide .gm{display:none}
-  #deskkeys{display:block;position:fixed;left:50%;bottom:8px;transform:translateX(-50%);z-index:8;white-space:nowrap;padding:3px 14px;border-radius:999px;background:rgba(18,10,28,.42);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:rgba(255,255,255,.9);font-size:12px;line-height:20px;pointer-events:none}
+  #deskkeys{display:block;position:fixed;left:46.5%;bottom:8px;transform:translateX(-50%);z-index:8;white-space:nowrap;padding:3px 14px;border-radius:999px;background:rgba(18,10,28,.42);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);color:rgba(255,255,255,.9);font-size:12px;line-height:20px;pointer-events:none}
   #deskkeys b{display:inline-block;min-width:16px;padding:0 4px;margin-right:4px;border-radius:5px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.3);color:#fff;font:700 12px/17px system-ui,-apple-system,sans-serif;text-align:center}
   #deskkeys b+b{margin-left:-1px}
   #deskkeys b.dn{background:#fff;color:#2a1838;border-color:#fff}
   #deskkeys i{display:inline-block;width:14px}
-  body.deskone #deskkeys .dk3,body:not(.deskone) #deskkeys .dk1,body.listening #deskkeys{display:none}
+  body.deskone #deskkeys{left:50%}
+  body.deskone #deskkeys .dk3,body:not(.deskone) #deskkeys .dk1,body.deskone.listening #deskkeys{display:none}
   .slide.rev .deskrev,.slide.recl .deskrec,body.deskone .deskrev,body.deskone .deskrec{display:none!important}
 }
+@media (min-width:1100px) and (max-width:1299px){body.listening:not(.listening-mini) #deskkeys{display:none}}
 @media (max-width:1099px){.deskrev,.deskrec{display:none!important}}
