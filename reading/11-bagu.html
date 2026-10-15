@@ -382,9 +382,9 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
 .bvpre{background:#f3f6f3;border-radius:8px;padding:8px 10px;font:12px/1.6 ui-monospace,Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin:4px 0}
 .bvtab td.dupe{background:#fdf1cc}.bvtab tr.on td{background:#e3f3ec;font-weight:600}
 .bvseg.s2,.bvseg.s3{margin-top:-2px}
-</style></head><body>
+</style><link rel="stylesheet" href="cards-desk.css"></head><body>
 <div id="app">
-<div id="top"><div class="r1"><a class="back" href="index.html" title="回到阅读笔记">‹</a><button class="ib" id="deckbtn" title="切换卡组">🎯</button><div id="tabs"><button data-p="0">默写</button><button data-p="1" class="on">问题</button><button data-p="2">解析</button></div><button class="ib" id="listen" title="连播听题">🎧</button><button class="ib" id="help" title="玩法">?</button><button class="ib" id="gear" title="设置">⚙</button></div>
+<div id="top"><div class="r1"><a class="back" href="12-cards.html" title="回到刷卡总览">‹</a><button class="ib" id="deckbtn" title="切换卡组">🎯</button><div id="tabs"><button data-p="0">默写</button><button data-p="1" class="on">问题</button><button data-p="2">解析</button></div><button class="ib" id="listen" title="连播听题">🎧</button><button class="ib" id="help" title="玩法">?</button><button class="ib" id="gear" title="设置">⚙</button></div>
 <div class="bar"><i></i></div><div class="r2"><span id="pos"></span><span><button id="due" class="hidden"></button> <span id="today"></span></span></div></div>
 <main id="feed"></main>
 <div id="sheet"><div class="body"></div></div>
@@ -2220,6 +2220,9 @@ W.featgen = el => {
   const IV = [0, 1, 3, 7, 15, 30];
   const schedule = (id, s) => { const r = SRS[id] || { b: 0 }; const b = s === 0 ? 0 : s === 1 ? 1 : Math.min(5, Math.max(2, r.b + 1)); SRS[id] = { b, d: dayNum() + IV[b] }; LS.set('bagu-srs-v1', SRS); return IV[b]; };
   const isDue = id => { const r = SRS[id]; if (r) return r.d <= dayNum(); const s = ST.get(id); return s === 0 || s === 1; };
+  try { if (localStorage.getItem('cards-desk-mode') === 'one') document.body.classList.add('deskone'); } catch (e) {}
+  const DESK = () => matchMedia('(min-width:1100px)').matches && !document.body.classList.contains('deskone');
+  (() => { const r1 = document.querySelector('#top .r1'); if (!r1 || r1.querySelector('.deskmode')) return; const b = document.createElement('button'); b.className = 'ib deskmode'; b.type = 'button'; const paint = () => { const one = document.body.classList.contains('deskone'); b.textContent = one ? '▥ 三栏' : '⇆ 滑动'; b.title = one ? '切换成三栏并排，两侧点开才显示' : '切换成像手机一样左右滑'; }; paint(); const tabs = r1.querySelector('#tabs'); r1.insertBefore(b, tabs ? tabs.nextSibling : null); b.addEventListener('click', () => { const one = !document.body.classList.contains('deskone'); document.body.classList.toggle('deskone', one); try { localStorage.setItem('cards-desk-mode', one ? 'one' : 'three'); } catch (e) {} paint(); if (DESK()) document.querySelectorAll('#feed .slide[data-f]').forEach(sl => deskPrep(sl)); dispatchEvent(new Event('resize')); }); })();
   const NAMES = ['不会', '模糊', '熟练'], FACES = ['😵', '🤔', '💪'];
   const hueOf = id => { let h = 7; for (const ch of String(id)) h = (h * 31 + ch.charCodeAt(0)) % 3600; return (h * 37) % 360; };
   const shuffle = a => { for (let i = a.length - 1; i > 0; i--) { const j = Math.floor(Math.random() * (i + 1)); [a[i], a[j]] = [a[j], a[i]]; } return a; };
@@ -2385,7 +2388,7 @@ W.featgen = el => {
     sl.dataset.f = 1;
     const c = BY[order[+sl.dataset.k]], kws = keywords(c);
     sl.innerHTML = `<div class="hx">${paneRecall(c)}${paneMain(c)}${paneAnswer(c)}</div>`;
-    const hx = sl.querySelector('.hx'); hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1;
+    const hx = sl.querySelector('.hx'); hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl);
     // 挖关键词
     const czp = sl.querySelector('.czp'), ccnt = sl.querySelector('.ccnt'), html0 = czp.innerHTML;
     let opened = 0;
@@ -2451,7 +2454,9 @@ W.featgen = el => {
     const fn = W[box.dataset.viz];
     if (fn) { try { fn(box); } catch (e) { box.innerHTML = '<p class="tip">图解加载出错：' + esc(e.message) + '</p>'; } }
   }
-  function goPane(sl, i) { const hx = sl.querySelector('.hx'); if (hx) hx.scrollTo({ left: i * hx.clientWidth, behavior: 'smooth' }); }
+  function deskPrep(sl) { const pe = sl.querySelector('.pexp'), pr = sl.querySelector('.prec'); if (!pe || pe.querySelector('.deskrev')) return; pe.insertAdjacentHTML('afterbegin', '<button class="deskrev" type="button">先自己回答一遍，再点这里或按 → 看解析</button>'); pe.querySelector('.deskrev').addEventListener('click', e => { e.stopPropagation(); deskReveal(sl); }); if (pr) { pr.insertAdjacentHTML('afterbegin', '<button class="deskrec" type="button">先看中间的题目，想好了再点这里或按 ← 默写</button>'); pr.querySelector('.deskrec').addEventListener('click', e => { e.stopPropagation(); sl.classList.add('recl'); }); } }
+  function deskReveal(sl) { sl.classList.add('rev'); mountViz(sl); }
+  function goPane(sl, i) { if (DESK()) { if (i === 2) deskReveal(sl); else if (i === 0) sl.classList.add('recl'); return; } const hx = sl.querySelector('.hx'); if (hx) hx.scrollTo({ left: i * hx.clientWidth, behavior: 'smooth' }); }
   function mark(id, s, sl, where, btn) {
     ST.set(id, s); const days = schedule(id, s);
     const before = day.ids.length; if (!day.ids.includes(id)) day.ids.push(id); LS.set('bagu-day-v1', day);
@@ -2595,8 +2600,12 @@ W.featgen = el => {
   });
   let rt = null;
   addEventListener('resize', () => { clearTimeout(rt); rt = setTimeout(() => { ready = false; feed.querySelectorAll('.slide[data-f]').forEach(sl => { const hx = sl.querySelector('.hx'); hx.scrollLeft = (+sl.dataset.pane || 0) * hx.clientWidth; }); feed.scrollTop = cur * feed.clientHeight; requestAnimationFrame(() => { ready = true; }); }, 120); });
+  // 从总览页带参数进入：?deck=卡组 或 ?id=卡片
+  const QS = new URLSearchParams(location.search), qd = QS.get('deck'), qid = QS.get('id');
+  if (qd && DECKS.some(d => d.id === qd) && qd !== cfg.deck) { cfg = Object.assign({}, cfg, { deck: qd, topics: [], filter: 'all', order: 'seq' }); LS.set('bagu-cfg-v1', cfg); }
   paintDeckChip();
   start(true);
+  if (qid && BY[qid]) setTimeout(() => openCard(qid), 250);
 })();
 </script>
 </body></html>
