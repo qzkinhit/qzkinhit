@@ -1,6 +1,6 @@
 {
   "generated_on": "2026-10-15 Asia/Singapore",
-  "scope": "五篇静态阅读页、四页手撕代码笔记、论文面试卡与听题音频、直接链接的证据与有限源码摘录；不含原始数据集、模型或完整论文PDF",
+  "scope": "五篇静态阅读页、四页手撕代码笔记、论文面试卡、八股速记与听题音频、直接链接的证据与有限源码摘录；不含原始数据集、模型或完整论文PDF",
   "files": [
     {
       "path": "01-uniclean.html",
@@ -95,17 +95,17 @@
     {
       "path": "06-hot100.html",
       "source_sha256": null,
-      "published_sha256": "0fcee229d7ad65af6f61c88aeba4fa13d5dae5f8b63bc9b5963c454dd6f2f818"
+      "published_sha256": "0e17e1d60e21e31f025fe73924fc3c6a4c11090892e68a4479def3b3fbf00e5c"
     },
     {
       "path": "07-ml-handcode.html",
       "source_sha256": null,
-      "published_sha256": "184154aece880d38e1328f95ddc87a3b5993b0572a44a57e6f98ffd55d87c440"
+      "published_sha256": "4a122d74994dcd15818d1b5ac64be0b5972e049cfd5c654dad2a41af5a3154b8"
     },
     {
       "path": "08-python-cheatsheet.html",
       "source_sha256": null,
-      "published_sha256": "93ebabf22e2e6abe8160576d0634be24a0f292f37de98387c6e44e314dc1594d"
+      "published_sha256": "dd6398eedbb69c24a7318427753774ff198c9762e8660c2b1798ae1e4e7a70cc"
     },
     {
       "path": "09-swipe.html",
@@ -635,7 +635,7 @@
     {
       "path": "10-papers.html",
       "source_sha256": null,
-      "published_sha256": "77251255a585fc2957fa588c41f4c28a768be3a93785790d90cda818375c0aea"
+      "published_sha256": "44e57425d22fa42711b204afb0434044b8848d1c0496db8081218faea16fb966"
     },
     {
       "path": "audio/papers/carveprep-1.m4a",
@@ -1091,6 +1091,16 @@
       "path": "audio/papers/vioexplain-9.m4a",
       "source_sha256": null,
       "published_sha256": "3c57e0ae1092a653f8a008a74809b9dec4d1e7e2fa0f9e1c9530bf3a9b7894d3"
+    },
+    {
+      "path": "11-bagu.html",
+      "source_sha256": null,
+      "published_sha256": "8a27dcbc4cfb74b801e60c1b332c5494367d24362592c380a61426efb8f69533"
+    },
+    {
+      "path": "index.html",
+      "source_sha256": null,
+      "published_sha256": "bcfcb239b776ce57bd5b0c6f4ad47c6253fcc05f0091460637d1205f93c30494"
     }
   ],
   "source_excerpts": 123
