@@ -318,9 +318,9 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
 .czp p{margin:8px 0;font-size:15px;line-height:2.1}
 .czp .bk{height:1.35em;vertical-align:-4px}
 .czp .bk-on{padding:0 2px}
-</style></head><body>
+</style><link rel="stylesheet" href="cards-desk.css"></head><body>
 <div id="app">
-<div id="top"><div class="r1"><a class="back" href="index.html" title="回到阅读笔记">‹</a><div id="tabs"><button data-p="0">复述</button><button data-p="1" class="on">问题</button><button data-p="2">答案</button></div><button class="ib" id="listen" title="连播听卡">🎧</button><button class="ib" id="help" title="玩法">?</button><button class="ib" id="gear" title="设置">⚙</button></div>
+<div id="top"><div class="r1"><a class="back" href="12-cards.html" title="回到刷卡总览">‹</a><div id="tabs"><button data-p="0">复述</button><button data-p="1" class="on">问题</button><button data-p="2">答案</button></div><button class="ib" id="listen" title="连播听卡">🎧</button><button class="ib" id="help" title="玩法">?</button><button class="ib" id="gear" title="设置">⚙</button></div>
 <div class="bar"><i></i></div><div class="r2"><span id="pos"></span><span><button id="due" class="hidden"></button> <span id="today"></span></span></div></div>
 <main id="feed"></main>
 <div id="sheet"><div class="body"></div></div>
@@ -350,6 +350,9 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
   const IV = [0, 1, 3, 7, 15, 30];
   const schedule = (id, s) => { const r = SRS[id] || { b: 0 }; const b = s === 0 ? 0 : s === 1 ? 1 : Math.min(5, Math.max(2, r.b + 1)); SRS[id] = { b, d: dayNum() + IV[b] }; LS.set('paper-srs-v1', SRS); return IV[b]; };
   const isDue = id => { const r = SRS[id]; if (r) return r.d <= dayNum(); const s = ST.get(id); return s === 0 || s === 1; };
+  try { if (localStorage.getItem('cards-desk-mode') === 'one') document.body.classList.add('deskone'); } catch (e) {}
+  const DESK = () => matchMedia('(min-width:1100px)').matches && !document.body.classList.contains('deskone');
+  (() => { const r1 = document.querySelector('#top .r1'); if (!r1 || r1.querySelector('.deskmode')) return; const b = document.createElement('button'); b.className = 'ib deskmode'; b.type = 'button'; const paint = () => { const one = document.body.classList.contains('deskone'); b.textContent = one ? '▥ 三栏' : '⇆ 滑动'; b.title = one ? '切换成三栏并排，两侧点开才显示' : '切换成像手机一样左右滑'; }; paint(); const tabs = r1.querySelector('#tabs'); r1.insertBefore(b, tabs ? tabs.nextSibling : null); b.addEventListener('click', () => { const one = !document.body.classList.contains('deskone'); document.body.classList.toggle('deskone', one); try { localStorage.setItem('cards-desk-mode', one ? 'one' : 'three'); } catch (e) {} paint(); if (DESK()) document.querySelectorAll('#feed .slide[data-f]').forEach(sl => deskPrep(sl)); dispatchEvent(new Event('resize')); }); })();
   const NAMES = ['不会', '模糊', '熟练'], FACES = ['😵', '🤔', '💪'];
   const SECS = ['概述', '动机', '现状', '创新', '方法', '理论', '实验', '追问'];
   const SEMO = { '概述': '🎯', '动机': '💥', '现状': '🧱', '创新': '💡', '方法': '🛠️', '理论': '📐', '实验': '📊', '追问': '❓' };
@@ -472,7 +475,7 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
     sl.dataset.f = 1;
     const c = BY[order[+sl.dataset.k]];
     sl.innerHTML = `<div class="hx">${paneRecall(c)}${paneMain(c)}${paneAnswer(c)}</div>`;
-    const hx = sl.querySelector('.hx'); hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1;
+    const hx = sl.querySelector('.hx'); hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl);
     const czp = sl.querySelector('.czp'), ccnt = sl.querySelector('.ccnt');
     const html0 = czp.innerHTML;
     let opened = new Set(), total = czp.querySelectorAll('.bk').length;
@@ -493,7 +496,9 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
     });
     sl._next = () => cz.next();
   }
-  function goPane(sl, i) { const hx = sl.querySelector('.hx'); if (hx) hx.scrollTo({ left: i * hx.clientWidth, behavior: 'smooth' }); }
+  function deskPrep(sl) { const pe = sl.querySelector('.pexp'), pr = sl.querySelector('.prec'); if (!pe || pe.querySelector('.deskrev')) return; pe.insertAdjacentHTML('afterbegin', '<button class="deskrev" type="button">先自己回答一遍，再点这里或按 → 看解析</button>'); pe.querySelector('.deskrev').addEventListener('click', e => { e.stopPropagation(); deskReveal(sl); }); if (pr) { pr.insertAdjacentHTML('afterbegin', '<button class="deskrec" type="button">先看中间的题目，想好了再点这里或按 ← 默写</button>'); pr.querySelector('.deskrec').addEventListener('click', e => { e.stopPropagation(); sl.classList.add('recl'); }); } }
+  function deskReveal(sl) { sl.classList.add('rev');  }
+  function goPane(sl, i) { if (DESK()) { if (i === 2) deskReveal(sl); else if (i === 0) sl.classList.add('recl'); return; } const hx = sl.querySelector('.hx'); if (hx) hx.scrollTo({ left: i * hx.clientWidth, behavior: 'smooth' }); }
   function mark(id, s, sl, where, btn) {
     ST.set(id, s); const days = schedule(id, s);
     const before = day.ids.length; if (!day.ids.includes(id)) day.ids.push(id); LS.set('paper-day-v1', day);

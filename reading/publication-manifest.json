@@ -95,22 +95,22 @@
     {
       "path": "06-hot100.html",
       "source_sha256": null,
-      "published_sha256": "0e17e1d60e21e31f025fe73924fc3c6a4c11090892e68a4479def3b3fbf00e5c"
+      "published_sha256": "30e86af6895a896db33e29d70e890369dd80e14cd72c6ae6cb34d1c6b8381a83"
     },
     {
       "path": "07-ml-handcode.html",
       "source_sha256": null,
-      "published_sha256": "4a122d74994dcd15818d1b5ac64be0b5972e049cfd5c654dad2a41af5a3154b8"
+      "published_sha256": "6dd4104525b164a5bd555f2b80f3fb1e205858d3dd55672089849f507410d5f3"
     },
     {
       "path": "08-python-cheatsheet.html",
       "source_sha256": null,
-      "published_sha256": "dd6398eedbb69c24a7318427753774ff198c9762e8660c2b1798ae1e4e7a70cc"
+      "published_sha256": "990c5f25d5b4c41c4744d288b0fd1c3ed75d33cede91a2dff2f7c22dd67dfc38"
     },
     {
       "path": "09-swipe.html",
       "source_sha256": null,
-      "published_sha256": "abe59a168e1f6191e776ff59971f840f66cce17f73251a93bb74d85bc778b386"
+      "published_sha256": "c755687f07d332805d3721e8aa1c9178baae45a1979243981150f1b82eca869a"
     },
     {
       "path": "hot100-trace.json",
@@ -635,7 +635,7 @@
     {
       "path": "10-papers.html",
       "source_sha256": null,
-      "published_sha256": "44e57425d22fa42711b204afb0434044b8848d1c0496db8081218faea16fb966"
+      "published_sha256": "fc96307cc77d7662fa87d897dac2e88598cec72c23903eb16c9058c9a98ad163"
     },
     {
       "path": "audio/papers/carveprep-1.m4a",
@@ -1095,12 +1095,22 @@
     {
       "path": "11-bagu.html",
       "source_sha256": null,
-      "published_sha256": "98a0c446deab5116910e71ed0e3220c150e2c6c9ccec38deaf3c20c8490b986a"
+      "published_sha256": "e759952adaa894fd646ac5ddbd84746f05b770f39caf1bae499f0301d8f0b26d"
     },
     {
       "path": "index.html",
       "source_sha256": null,
-      "published_sha256": "bcfcb239b776ce57bd5b0c6f4ad47c6253fcc05f0091460637d1205f93c30494"
+      "published_sha256": "3def7dece390da963a74622c2d098d83d01b0455f2cb6488618454ce2496a15d"
+    },
+    {
+      "path": "12-cards.html",
+      "source_sha256": null,
+      "published_sha256": "7d7d89d9ecb16f73f5b76bc551209c3d4a8c516e5964e9cdd882613c672eb224"
+    },
+    {
+      "path": "cards-desk.css",
+      "source_sha256": null,
+      "published_sha256": "2c9dd09c1238d7cfcb2b3ffcb759296bd988b6c7480962d676a5f606779441bd"
     }
   ],
   "source_excerpts": 123
