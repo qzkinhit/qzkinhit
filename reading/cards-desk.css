@@ -12,6 +12,14 @@
 .dn-d,.dntip-d{display:none}
 .desknote.ansnote .ans .ln{cursor:pointer}
 .desknote.ansnote .dnlc{display:block;width:100%;box-sizing:border-box;margin-top:10px;text-align:center;text-decoration:none}
+/* 手机和滑动模式底部中间的「下一题」按钮 */
+.edge .nx{animation:none;opacity:1;background:rgba(255,255,255,.92);color:#1f2f2b;border:0;border-radius:999px;padding:8px 18px;font:700 14px/1 inherit;box-shadow:0 2px 10px rgba(0,0,0,.18);cursor:pointer;backdrop-filter:none}
+.edge .nx:active{transform:scale(.96)}
+/* 论文卡的笔记框在手机上也显示 */
+.desknote.pnote{display:block;margin-top:12px}
+.desknote.pnote .dnh{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px}
+.desknote.pnote .dnh b{font-size:15px}.desknote.pnote .dnh span{font-size:12px;color:var(--muted,#6b7a75)}
+.desknote.pnote .dnta{display:block;margin-top:8px;width:100%;box-sizing:border-box;min-height:150px;resize:vertical;border:1px solid #dfe5e1;border-radius:10px;padding:10px 12px;font:16px/1.65 system-ui,-apple-system,'PingFang SC',sans-serif;background:#fbfcfb;color:#20332f;outline:none}
 /* 听题播放器收起成一条小栏，声音继续播放 */
 #player.on.mini{display:flex;align-items:center;gap:8px;padding:5px 6px 5px 14px;border-radius:999px;overflow:hidden}
 #player.mini .pseek,#player.mini .pmeta,#player.mini #listening-settings,#player.mini .pstatus,#player.mini [data-p=prev],#player.mini [data-p=back],#player.mini [data-p=rate]{display:none!important}
@@ -47,6 +55,7 @@
   body:not(.deskone) .desknote{display:block;margin-top:12px}
   .desknote .dnh{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px}.desknote .dnh b{font-size:15px}.desknote .dnh span{font-size:12px;color:var(--muted,#6b7a75)}
   .desknote .dnta{display:block;margin-top:8px;width:100%;box-sizing:border-box;min-height:max(220px,calc(100vh - 640px));resize:vertical;border:1px solid #dfe5e1;border-radius:10px;padding:10px 12px;font:14px/1.65 system-ui,-apple-system,'PingFang SC',sans-serif;background:#fbfcfb;color:#20332f;outline:none}
+  body:not(.deskone) .desknote.pnote .dnta{min-height:max(220px,calc(100vh - 640px));font-size:14px}
   .desknote .dnta.code{font:13px/1.6 ui-monospace,Menlo,Consolas,monospace;tab-size:4}
   .desknote .dnbtns{display:flex;gap:8px;margin-top:8px}.desknote .dnbtns .big{flex:1;text-align:center;text-decoration:none;box-sizing:border-box}
   .desknote .dnscore:not(:empty){margin-top:8px;font-size:13.5px}

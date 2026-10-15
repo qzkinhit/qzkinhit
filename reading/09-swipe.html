@@ -330,7 +330,7 @@ body{font:15px/1.65 system-ui,-apple-system,"PingFang SC","Hiragino Sans GB","Mi
 .xq.tech{background:#eaf6f1}
 .xq.tech p{font-weight:600;font-size:15.5px}
 .xq.tech .fam{font-weight:400;font-size:12px;color:var(--muted);background:#fff;border-radius:999px;padding:0 8px;margin-left:8px}
-</style><link rel="stylesheet" href="listening-player.css"><link rel="stylesheet" href="cards-desk.css?v=06a5d1e1caf4"></head><body>
+</style><link rel="stylesheet" href="listening-player.css"><link rel="stylesheet" href="cards-desk.css?v=d6978449b56d"></head><body>
 <div id="app">
 <div id="top"><div class="r1"><a class="back" href="12-cards.html" title="回到刷卡总览">‹</a><div id="tabs"><button data-p="0">默写</button><button data-p="1" class="on">题目</button><button data-p="2">解析</button></div><button class="ib" id="listen" title="连播听题">🎧</button><button class="ib" id="help" title="玩法">?</button><button class="ib" id="gear" title="设置">⚙</button></div>
 <div class="bar"><i></i></div><div class="r2"><span id="pos"></span><span><button id="due" class="hidden"></button><span id="fire" class="fire"></span> <span id="today"></span></span></div></div>
@@ -909,7 +909,7 @@ const RUN = (() => {
       </div>
     </div></div>
     <div class="rail">${[2, 1, 0].map(v => `<button class="rb${s === v ? ' on' : ''}" data-s="${v}"><span>${FACES[v]}</span><i>${NAMES[v]}</i></button>`).join('')}<button class="rb lis" data-listen="1"><span>🎧</span><i>听</i></button><a class="rb" href="${p.url}" target="_blank" rel="noopener"><span>✍</span><i>力扣</i></a></div>
-    <div class="edge"><button data-go="0">‹ 默写</button><span class="up">↑ 上滑下一题</span><button data-go="2">解析 ›</button></div></div>`;
+    <div class="edge"><button data-go="0">‹ 默写</button><button class="up nx" data-next>下一题 ↓</button><button data-go="2">解析 ›</button></div></div>`;
   }
   function paneExplain(p) {
     const c = realCat(p), sib = ALL.filter(id => id !== p.id && realCat(D.probs[id]) === c);
@@ -964,7 +964,7 @@ const RUN = (() => {
     const p = D.probs[order[+sl.dataset.k]];
     sl.innerHTML = `<div class="hx">${paneRecall(p)}${paneMain(p, !!sl.dataset.again)}${paneExplain(p)}</div>`;
     const hx = sl.querySelector('.hx');
-    hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl);
+    hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl);
     // 完整默写
     const ta = sl.querySelector('.draft');
     ta.value = drafts[p.id] || '';
@@ -1006,7 +1006,7 @@ const RUN = (() => {
     let t = null;
     hx.addEventListener('scroll', () => { clearTimeout(t); t = setTimeout(() => paneChanged(sl, p), 90); }, { passive: true });
     sl.addEventListener('click', e => {
-      const g = e.target.closest('[data-go]'); if (g) return goPane(sl, +g.dataset.go);
+      const nx = e.target.closest('[data-next]'); if (nx) return next(); const g = e.target.closest('[data-go]'); if (g) return goPane(sl, +g.dataset.go);
       if (e.target.closest('[data-next]')) return next();
       if (e.target.closest('[data-listen]')) { listener.toggleFor(+sl.dataset.k); return; }
       const rb = e.target.closest('.rb[data-s]'); if (rb) return mark(p.id, +rb.dataset.s, sl, 'main', rb);
