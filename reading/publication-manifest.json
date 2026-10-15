@@ -1095,7 +1095,7 @@
     {
       "path": "11-bagu.html",
       "source_sha256": null,
-      "published_sha256": "0847c4aae69e3f7c2eaa420b31cb858834c1ed08625e12ca2cb0461f743f2fb6"
+      "published_sha256": "ca9bb920216622bc3ace9831592d24c390d2e993e4e5997e5a650589e7001979"
     },
     {
       "path": "index.html",
@@ -1111,6 +1111,3716 @@
       "path": "cards-desk.css",
       "source_sha256": null,
       "published_sha256": "06a5d1e1caf4b47976f0058a0e84894a9ca154deff18c4bd29cec597db7b11e0"
+    },
+    {
+      "path": "audio/bagu-natural/d1.mp3",
+      "source_sha256": null,
+      "published_sha256": "1f7789bc4e0a2f151a32796f586060b823c424f4cc58d111cd9550b7181ac9c7"
+    },
+    {
+      "path": "audio/bagu-natural/d10.mp3",
+      "source_sha256": null,
+      "published_sha256": "0e5407a61da90d7569dcf65f65b630cb27d002fdcd38fb32d133a5b8a903d118"
+    },
+    {
+      "path": "audio/bagu-natural/d11.mp3",
+      "source_sha256": null,
+      "published_sha256": "f1d5c0ec85d8ff04108884cdf9a9d07bd00a89cf486d43acb228f9fdefac52c9"
+    },
+    {
+      "path": "audio/bagu-natural/d12.mp3",
+      "source_sha256": null,
+      "published_sha256": "9efd6b6c595d0b0ec8c60ad4a5860488f89f1c766634bf2e2f4e3c7b8ccb97fd"
+    },
+    {
+      "path": "audio/bagu-natural/d13.mp3",
+      "source_sha256": null,
+      "published_sha256": "7a70e9a86f427a7fe1369d5e409f59abad8131911aa2bcb4de6b432f34c23813"
+    },
+    {
+      "path": "audio/bagu-natural/d14.mp3",
+      "source_sha256": null,
+      "published_sha256": "6517ed0efff9b65476e0239aeeee1a5558b468e96e0c16cf21586af33be32e9b"
+    },
+    {
+      "path": "audio/bagu-natural/d15.mp3",
+      "source_sha256": null,
+      "published_sha256": "3df889cd4f4271eb780e160f04329d8b3fbac87da4f47a081b77add955b4be44"
+    },
+    {
+      "path": "audio/bagu-natural/d16.mp3",
+      "source_sha256": null,
+      "published_sha256": "44d6f7ade5848232b90c69ec9bfb8748a2af1fd6ce9aa28acaa2c1d8bddd8870"
+    },
+    {
+      "path": "audio/bagu-natural/d17.mp3",
+      "source_sha256": null,
+      "published_sha256": "c1f62c7ed5f627da1c40460bb98909afac364d591f27f1a9554f813e1949783c"
+    },
+    {
+      "path": "audio/bagu-natural/d18.mp3",
+      "source_sha256": null,
+      "published_sha256": "30f9c1bc880bc190a9159e34144b62e7b7de21eedaac001f266d5bde3cae1892"
+    },
+    {
+      "path": "audio/bagu-natural/d19.mp3",
+      "source_sha256": null,
+      "published_sha256": "0b25af66075bb93b7a6f3eead523ffee3748873d62d2db60fe3a0965ce41eb77"
+    },
+    {
+      "path": "audio/bagu-natural/d2.mp3",
+      "source_sha256": null,
+      "published_sha256": "4329a94d706ae897d1b9e9ad278048fdd637802eb710abdab295cbe312a5e2e9"
+    },
+    {
+      "path": "audio/bagu-natural/d20.mp3",
+      "source_sha256": null,
+      "published_sha256": "c7de936871562c7e2b110e1245bb722eac2dbb741faf85e5ad80fc4dc5af2c04"
+    },
+    {
+      "path": "audio/bagu-natural/d21.mp3",
+      "source_sha256": null,
+      "published_sha256": "81429f590075456f1ac784bdf12e15d9807133a5659fbe5da075e6b55f476b28"
+    },
+    {
+      "path": "audio/bagu-natural/d22.mp3",
+      "source_sha256": null,
+      "published_sha256": "45fdd50bf39bd64d8863da486d9c5136d4fddf0cad9ac7309cf44eb76fe2841c"
+    },
+    {
+      "path": "audio/bagu-natural/d23.mp3",
+      "source_sha256": null,
+      "published_sha256": "03a432f0ec0c7b03dbcc19ec95397549bb5fb65e898e6b476abc26c596eaf53d"
+    },
+    {
+      "path": "audio/bagu-natural/d24.mp3",
+      "source_sha256": null,
+      "published_sha256": "acea11fb46c662f3f01985d4a97227e70492bca77bf06b0efcaf94cff9952c14"
+    },
+    {
+      "path": "audio/bagu-natural/d25.mp3",
+      "source_sha256": null,
+      "published_sha256": "261706de17280e0533b0a959679a51d792017eb9dc14a83452d4e86776018b59"
+    },
+    {
+      "path": "audio/bagu-natural/d26.mp3",
+      "source_sha256": null,
+      "published_sha256": "d4338a5ba6b8ceb57378f5aba46f9c487001df290e0831558c0a3478d029624e"
+    },
+    {
+      "path": "audio/bagu-natural/d27.mp3",
+      "source_sha256": null,
+      "published_sha256": "2afda3e772194e8f1715be887b5df31783f7857008a44fa6e034d5d82603b3e3"
+    },
+    {
+      "path": "audio/bagu-natural/d28.mp3",
+      "source_sha256": null,
+      "published_sha256": "c854022a6ff2cc734049f6e577081d786aae5836da35e65d02321a4939fc2b06"
+    },
+    {
+      "path": "audio/bagu-natural/d29.mp3",
+      "source_sha256": null,
+      "published_sha256": "637f1d10c6d135cc5232387b04a1f870462120e8ab22fafac8a2a5b9cd683cad"
+    },
+    {
+      "path": "audio/bagu-natural/d3.mp3",
+      "source_sha256": null,
+      "published_sha256": "fa14b55917ff7c10144aed6744e88bddccb33c84689df0e36c71dd854f580eb3"
+    },
+    {
+      "path": "audio/bagu-natural/d30.mp3",
+      "source_sha256": null,
+      "published_sha256": "35db15ed32753a727be14c8f71da6360d1ae9a8884a077db38864dbe69117623"
+    },
+    {
+      "path": "audio/bagu-natural/d31.mp3",
+      "source_sha256": null,
+      "published_sha256": "b6398b9716fb5c7d6b9be9d9436f735fc48b15fb5c679ba41c6a79434e7dec02"
+    },
+    {
+      "path": "audio/bagu-natural/d32.mp3",
+      "source_sha256": null,
+      "published_sha256": "49f6d106a7b4143f302f07837584cc0768604adaa2086426e4d3227651fb42bb"
+    },
+    {
+      "path": "audio/bagu-natural/d33.mp3",
+      "source_sha256": null,
+      "published_sha256": "f3b63b291790e886df4e44e36ba72495b1d22550bcce994567e59114853ce987"
+    },
+    {
+      "path": "audio/bagu-natural/d34.mp3",
+      "source_sha256": null,
+      "published_sha256": "3a955c34f18a66612bcb7689a5517c0a3da0506e7e7bb59b3c44c1f2463f092b"
+    },
+    {
+      "path": "audio/bagu-natural/d35.mp3",
+      "source_sha256": null,
+      "published_sha256": "ed19d79e3c46db47879d9c30c0e4e52ba787ce234d9252afea8a27a27cb20841"
+    },
+    {
+      "path": "audio/bagu-natural/d36.mp3",
+      "source_sha256": null,
+      "published_sha256": "369dce5716bef7c8c7106110f2eeddd4f7610566b3848c3bd42f69d1f46d8138"
+    },
+    {
+      "path": "audio/bagu-natural/d37.mp3",
+      "source_sha256": null,
+      "published_sha256": "ed1cf9bbe7be69734fa1ad4baf9047cd1c1559b07def4a31fa85a5c49b87474a"
+    },
+    {
+      "path": "audio/bagu-natural/d38.mp3",
+      "source_sha256": null,
+      "published_sha256": "225992df8a84c367277046d39a9a7494bec78b00fbe4e33a2d4ccd43e33d2024"
+    },
+    {
+      "path": "audio/bagu-natural/d39.mp3",
+      "source_sha256": null,
+      "published_sha256": "14c5c327e7036b3c3cbbad2230a51231fb8588c71bce26e6ebbafdc69fd72b58"
+    },
+    {
+      "path": "audio/bagu-natural/d4.mp3",
+      "source_sha256": null,
+      "published_sha256": "0a60016b732f8cb27dbf90abf89cc27c86f257f850bee5dc6987058d758137f2"
+    },
+    {
+      "path": "audio/bagu-natural/d40.mp3",
+      "source_sha256": null,
+      "published_sha256": "1766c15ff47f872864fc6a3945b6aaaf8ddaac3781052f9197962b05c46ad888"
+    },
+    {
+      "path": "audio/bagu-natural/d41.mp3",
+      "source_sha256": null,
+      "published_sha256": "2c1bbde4d9729a83bc9d62be9b3711f4001a4e4570fdbf63eb6754bbc0fef732"
+    },
+    {
+      "path": "audio/bagu-natural/d42.mp3",
+      "source_sha256": null,
+      "published_sha256": "6d75141b50adf3cb69dd4285cb9d8ec0569c351da5c5b094057dd797a7a04ec8"
+    },
+    {
+      "path": "audio/bagu-natural/d43.mp3",
+      "source_sha256": null,
+      "published_sha256": "b0bee8697fec22044d3a8843d593f1dae20f35b39e3e2dde2d591e7e8d2a6bd9"
+    },
+    {
+      "path": "audio/bagu-natural/d44.mp3",
+      "source_sha256": null,
+      "published_sha256": "9b6d9a16d585cb050ef8e99956646fa1f401f3b18cda0e0a19d363536f4f6c79"
+    },
+    {
+      "path": "audio/bagu-natural/d45.mp3",
+      "source_sha256": null,
+      "published_sha256": "a05534ce15b3084822b984c5cd428c878506b5396c40cbbfd0ffb42ad3046c37"
+    },
+    {
+      "path": "audio/bagu-natural/d46.mp3",
+      "source_sha256": null,
+      "published_sha256": "0727d2e9679983ff6a08e611b66fc06114c66baa909f6fb9832eb9713083a80a"
+    },
+    {
+      "path": "audio/bagu-natural/d47.mp3",
+      "source_sha256": null,
+      "published_sha256": "122e8dc2062526eb5d2bb1064745a13340e7f241a59072c5aeb92a9f51c40a0a"
+    },
+    {
+      "path": "audio/bagu-natural/d48.mp3",
+      "source_sha256": null,
+      "published_sha256": "767c8a6d7483bcf6998c4e41e89bf641c0ddcea8ec84377583fef086dbcb005f"
+    },
+    {
+      "path": "audio/bagu-natural/d49.mp3",
+      "source_sha256": null,
+      "published_sha256": "8177fc335335f81b2c30fa30f309fdb646332069092e0247a61afc523dc4a481"
+    },
+    {
+      "path": "audio/bagu-natural/d5.mp3",
+      "source_sha256": null,
+      "published_sha256": "de6504eb00f04958863914920eb99e15855daba36b7ac2d5fe068af0f710d6de"
+    },
+    {
+      "path": "audio/bagu-natural/d50.mp3",
+      "source_sha256": null,
+      "published_sha256": "925991a607de14c6085c93281183d2fb78c8ee1a2a5d8106229036bab48cafb3"
+    },
+    {
+      "path": "audio/bagu-natural/d51.mp3",
+      "source_sha256": null,
+      "published_sha256": "7944e4205c9f058b141e7cdaeddd2a02d87777bdcbae7499a0c998f99de98ee8"
+    },
+    {
+      "path": "audio/bagu-natural/d52.mp3",
+      "source_sha256": null,
+      "published_sha256": "7da04e2ceff3cecea39343f59445aa38ba171aa7536ebea63ca8d2bae7687bef"
+    },
+    {
+      "path": "audio/bagu-natural/d53.mp3",
+      "source_sha256": null,
+      "published_sha256": "ae657cd0b1be21c869b5b86fbdc702a3eed3bb79d47aa304e7eb77c65585b0f2"
+    },
+    {
+      "path": "audio/bagu-natural/d54.mp3",
+      "source_sha256": null,
+      "published_sha256": "981f2c61a6db18aa2371c3e1dab50bc6aa4aaa05ede79bfe9c9496b0d64b4d9f"
+    },
+    {
+      "path": "audio/bagu-natural/d55.mp3",
+      "source_sha256": null,
+      "published_sha256": "c3ab7e65b4acd177a2dcdb2f015b14bf92b51f2818cec711b4ef3acf365a7804"
+    },
+    {
+      "path": "audio/bagu-natural/d56.mp3",
+      "source_sha256": null,
+      "published_sha256": "d5743090bee066590d66e97ff57acb6e20f6d8e34fc4dca3259aa8276a478a31"
+    },
+    {
+      "path": "audio/bagu-natural/d57.mp3",
+      "source_sha256": null,
+      "published_sha256": "4da02eb7380f3c3ed4f73c67b3b7dc5651d5898369ba548cfc01ad25c3a443fc"
+    },
+    {
+      "path": "audio/bagu-natural/d58.mp3",
+      "source_sha256": null,
+      "published_sha256": "a124efbb5edccc52810c4a5a17f87539ef582267828e333ea614548427b075f1"
+    },
+    {
+      "path": "audio/bagu-natural/d59.mp3",
+      "source_sha256": null,
+      "published_sha256": "c646956edebfde699e0acf4eed8a90149b4f5d9f3a094a65eee41d247fe9a097"
+    },
+    {
+      "path": "audio/bagu-natural/d6.mp3",
+      "source_sha256": null,
+      "published_sha256": "47738afa0b9e44641b408bbd22c705886a0ff3595cf0f1b48c7cfd657e067284"
+    },
+    {
+      "path": "audio/bagu-natural/d60.mp3",
+      "source_sha256": null,
+      "published_sha256": "bc438bca5ab19a4b04032da5428398e4a287e5b21f3c4b9b2e6634c28713502b"
+    },
+    {
+      "path": "audio/bagu-natural/d61.mp3",
+      "source_sha256": null,
+      "published_sha256": "914971991e14aa79b1fc8c3472435a6b403e606479b511c15926e8ba4be043e7"
+    },
+    {
+      "path": "audio/bagu-natural/d62.mp3",
+      "source_sha256": null,
+      "published_sha256": "3cb880b9dd7280d11700e44c9710ce451ad0232f01a5e1d6673d08b0924dde29"
+    },
+    {
+      "path": "audio/bagu-natural/d63.mp3",
+      "source_sha256": null,
+      "published_sha256": "e9836b347f8e3d9336d7be807bbb76780f25c1b536835f58c19a84670b24ca20"
+    },
+    {
+      "path": "audio/bagu-natural/d64.mp3",
+      "source_sha256": null,
+      "published_sha256": "d46b7585930b800d403731791b4585ccce1139754aa7aa631e9492522179fcb1"
+    },
+    {
+      "path": "audio/bagu-natural/d65.mp3",
+      "source_sha256": null,
+      "published_sha256": "fdac7214a7ec460b8ce986f5d08348cdea46dcd4a48ef4290710510353cad70c"
+    },
+    {
+      "path": "audio/bagu-natural/d66.mp3",
+      "source_sha256": null,
+      "published_sha256": "a44c1e85a5067a9835c6173cfc3c906f2dee1a87ab917887e9197e84ba26b12d"
+    },
+    {
+      "path": "audio/bagu-natural/d67.mp3",
+      "source_sha256": null,
+      "published_sha256": "38797ffee394bc3181977b212ea9a71e63d410a919db41230e50760b2f0581e9"
+    },
+    {
+      "path": "audio/bagu-natural/d68.mp3",
+      "source_sha256": null,
+      "published_sha256": "0de3ffc30dc77cafc324dd5b348f4c6483cf473d3d4094b08e9f42c2c61715a1"
+    },
+    {
+      "path": "audio/bagu-natural/d69.mp3",
+      "source_sha256": null,
+      "published_sha256": "a3c3253a008492c2b255d743832bd6558b6350daa8b34fc2875c6306e8e23eea"
+    },
+    {
+      "path": "audio/bagu-natural/d7.mp3",
+      "source_sha256": null,
+      "published_sha256": "8cbfdd4cd8fe1e4f2990c1b9be5d71a5787254705bf033d384bef702f89abef9"
+    },
+    {
+      "path": "audio/bagu-natural/d70.mp3",
+      "source_sha256": null,
+      "published_sha256": "a6671cf7970b7eafc6767720b3adeed1af74c76737b937109c4e7a7ebd4e395a"
+    },
+    {
+      "path": "audio/bagu-natural/d71.mp3",
+      "source_sha256": null,
+      "published_sha256": "f429f44590c33195acc2570081d72852c07ffa57d22a830f580670537a25951f"
+    },
+    {
+      "path": "audio/bagu-natural/d72.mp3",
+      "source_sha256": null,
+      "published_sha256": "6b72b56d74c87e755b03a3c936254c364310ed7e1e4f712fa63722b384d6b7b9"
+    },
+    {
+      "path": "audio/bagu-natural/d73.mp3",
+      "source_sha256": null,
+      "published_sha256": "8d4e8349ec82a4fab7304d91cc3b6a5b8733489b4d3097ae52312b2740ebfcbd"
+    },
+    {
+      "path": "audio/bagu-natural/d74.mp3",
+      "source_sha256": null,
+      "published_sha256": "6bc2895f0514aad4c5510e7d7d94d9a328f9768d101ab283dda83dc385919296"
+    },
+    {
+      "path": "audio/bagu-natural/d75.mp3",
+      "source_sha256": null,
+      "published_sha256": "21ffe57fbd863f959bcafc69c19c66d4a6d34ccfc54bbf4a6958cfde0fe82d54"
+    },
+    {
+      "path": "audio/bagu-natural/d76.mp3",
+      "source_sha256": null,
+      "published_sha256": "5c0fcc340e4012f0b3e75fe004a7a02e184a63f87faddf56c3da54c15a033508"
+    },
+    {
+      "path": "audio/bagu-natural/d77.mp3",
+      "source_sha256": null,
+      "published_sha256": "114afa98c7be765bdcea8be289d87b2497326b616d75d5efd26514aae9a5a1dd"
+    },
+    {
+      "path": "audio/bagu-natural/d78.mp3",
+      "source_sha256": null,
+      "published_sha256": "c0af688a48b1d6f68c6195efaedf64a7ca5463a16e7f486704353b5c66d17ff1"
+    },
+    {
+      "path": "audio/bagu-natural/d79.mp3",
+      "source_sha256": null,
+      "published_sha256": "a355e14a19617c1689238f992658f0a86dd8b7dea844b961c92770ddffd8435f"
+    },
+    {
+      "path": "audio/bagu-natural/d8.mp3",
+      "source_sha256": null,
+      "published_sha256": "553a046eadc5b38706cf7bd781540e94f3209738fddc49c92488e6c4842addf1"
+    },
+    {
+      "path": "audio/bagu-natural/d80.mp3",
+      "source_sha256": null,
+      "published_sha256": "75a688a0e29c5352a247458a171fcb83a4c68fda30668d632a1c53c42d64ef69"
+    },
+    {
+      "path": "audio/bagu-natural/d81.mp3",
+      "source_sha256": null,
+      "published_sha256": "20904d644426453678028b585bae9241fdcd46f7723db98da3b8f1d5090e8e53"
+    },
+    {
+      "path": "audio/bagu-natural/d82.mp3",
+      "source_sha256": null,
+      "published_sha256": "0c00077d4680ccb80cb4799474ff8becbdd21cb0d72319f35a8076349e96d155"
+    },
+    {
+      "path": "audio/bagu-natural/d83.mp3",
+      "source_sha256": null,
+      "published_sha256": "02ff9fac039176a72bdbb2cc8663bf93ff7c2f2d4c9795e8a57f2e18d9db234d"
+    },
+    {
+      "path": "audio/bagu-natural/d84.mp3",
+      "source_sha256": null,
+      "published_sha256": "cf89ecf6a1d4afb4554087f67fc1b5be75751c15bdb1fbb15407c86567f65375"
+    },
+    {
+      "path": "audio/bagu-natural/d9.mp3",
+      "source_sha256": null,
+      "published_sha256": "ec1b7842e1c9a42a0c7a1d910df68b14b7bc784e464f04253ccb260e846a56f6"
+    },
+    {
+      "path": "audio/bagu-natural/g1-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "da94ac316ddb0cb41c5c32167a5eafca6b206d31cbc1a8e345e3b525a029bab1"
+    },
+    {
+      "path": "audio/bagu-natural/g1-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "a859196cc5a4000069a84c0b3f0f12b555e652db926b03fb36d56e597c667b79"
+    },
+    {
+      "path": "audio/bagu-natural/g1-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "60f5da7db00df9e2c8fa53a45eac029a35696c4f9e2c9d2e4afd6851d64d34e9"
+    },
+    {
+      "path": "audio/bagu-natural/g1-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "5cd04bde19968267d7a6383baec4eb149dd158515947158aade271fe316bad77"
+    },
+    {
+      "path": "audio/bagu-natural/g1-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "d296a8452d98938f91e326221e03d6fcd795f2020f51807dd57d562e4789e287"
+    },
+    {
+      "path": "audio/bagu-natural/g1-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "315c2d112c1fa07747b5d69907322f311253c54914b5ae50857d5ac715904a4c"
+    },
+    {
+      "path": "audio/bagu-natural/g1-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "6ecd746dc87469cd40c797187e5463777f34e54070264a03e1b5f6086efd5dcf"
+    },
+    {
+      "path": "audio/bagu-natural/g1-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "8edf86b0ee982d3ffc9d934cbc99869514c23642ee7981d4eaae3566de85f84d"
+    },
+    {
+      "path": "audio/bagu-natural/g1-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "6a8a2238737ef5b97f75f5acb7fc2242b857088464cb10b4bbba31308dbb6547"
+    },
+    {
+      "path": "audio/bagu-natural/g2-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "8a57791649783f4342509d34d5a965812d23139355e6b2eb3750e6eb6c486b7d"
+    },
+    {
+      "path": "audio/bagu-natural/g2-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "ff06750e7e614149fdcdc6ef541da18f73c0c2acc2e7c1b5114bcf7eb57767dd"
+    },
+    {
+      "path": "audio/bagu-natural/g2-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "c1629221a56b98910d758662077b982e6f7e580a1caf2613e9f1ed0f286ebb0e"
+    },
+    {
+      "path": "audio/bagu-natural/g2-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "5cb928aaab3ca6060b8247ee17697e150b3fce8616efd6fb8a2929dbd07c097f"
+    },
+    {
+      "path": "audio/bagu-natural/g2-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "902c00fd657cf202d76c9419ffa43ed396c8e921b203994b344b78447b9fca6f"
+    },
+    {
+      "path": "audio/bagu-natural/g2-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "a5156fa1679e4ffe20a6cedffcc2bf3bb70ea3dce0bd563c337fb029e29ce934"
+    },
+    {
+      "path": "audio/bagu-natural/g2-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "3aff19f6dfc8cdcba5683f03f24fd8528849a32a58361cdabe98c911a8fc706b"
+    },
+    {
+      "path": "audio/bagu-natural/g2-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "d17b625c004c4058f5d90baf01d0f9d82fd94ac2622e3e7fa8b2c6fbe2040ed5"
+    },
+    {
+      "path": "audio/bagu-natural/g2-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "bc57614a85b0b59b03b7ea7abd290a5a67e84e9e15c6b391b87da6606850b75b"
+    },
+    {
+      "path": "audio/bagu-natural/g2-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "ebcde043f0248124c140288012221e10b8cc7b2fd20b4acd71bcf333549291aa"
+    },
+    {
+      "path": "audio/bagu-natural/g2-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "1cc73edd0c14eb9002894d670f4597af018cc3946d0cb20704dea0e5b25b13ee"
+    },
+    {
+      "path": "audio/bagu-natural/g2-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "7c8a5342827cfb8619682f2a7b40f1a1bcbfc9d4ddcbd7a04c5e04e8e40104aa"
+    },
+    {
+      "path": "audio/bagu-natural/g3-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "9f54fff60f5e8594cbe6e285209d9ea81f3ba24910244bc3d1234e7dc07d243f"
+    },
+    {
+      "path": "audio/bagu-natural/g3-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "0bfae743dddbe36ad02082f4c01059f8b42b378a201b2d108f59bd6ccee33a1f"
+    },
+    {
+      "path": "audio/bagu-natural/g3-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "a25fc5ad475c369a37cc155e94fa4f9dfba4ceb79bb5bbc2dd7e3510c2ad72cb"
+    },
+    {
+      "path": "audio/bagu-natural/g3-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "94ff9784daf55c6a2dbc77a30e42985d522a1bbd58837814b324d088a02f4ee2"
+    },
+    {
+      "path": "audio/bagu-natural/g3-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "bad2437968c5c58c7efc695816edaa0038a2eb433a5bf430555773d8bfaa9bce"
+    },
+    {
+      "path": "audio/bagu-natural/g3-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "282619361641f5884dd9346c2928a5bc0816c1542581e7a434312e058f9d9a15"
+    },
+    {
+      "path": "audio/bagu-natural/g3-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "0c9f2c87def7f205474f09c9db9da9ff28a501847c015d711e8a2f1324d33334"
+    },
+    {
+      "path": "audio/bagu-natural/g3-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "81b20cb51dddc249cbe2a0749b49f7480a5ba4db90f46d51ed767623f73fdbd8"
+    },
+    {
+      "path": "audio/bagu-natural/g3-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "7010e13acc5c7059851305b96208491a9cba461a93c1a0c05a47b230484c280a"
+    },
+    {
+      "path": "audio/bagu-natural/g3-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "849b4c9deb259abc90434e3f5b5a8cfef8b16a5d6282d0fe25deb28a46888d80"
+    },
+    {
+      "path": "audio/bagu-natural/g3-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "f4a1ebcdd03c46d1ff7f3587a2239a5cd82f3aa5f8c4b4de9e67798cc838bcbe"
+    },
+    {
+      "path": "audio/bagu-natural/g4-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "4bca2cfc037346064dfcc2af25f3d210b807335628daf01223357066aac597cc"
+    },
+    {
+      "path": "audio/bagu-natural/g4-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "f1aa8f901c24133dbbba03c8b2b7bd6df4f92d71d2e94e8b128e0a17e39e063b"
+    },
+    {
+      "path": "audio/bagu-natural/g4-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "4f8173a09199ec1e23726536225ade2d36d54137f15682eabb0c3d5dfb1d7ef6"
+    },
+    {
+      "path": "audio/bagu-natural/g4-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "07898d9e9590ffe7329997ee041a27473f0429ec5a118a3fd81a47a7bd031ccf"
+    },
+    {
+      "path": "audio/bagu-natural/g4-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "11a0e865c7916dfd042dc83a23567127051205ff1813021cd86d8cdd319bde17"
+    },
+    {
+      "path": "audio/bagu-natural/g4-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "128c277c571c87e91cf84a8570609470f463374fbb12e2ae86046e508c5f577b"
+    },
+    {
+      "path": "audio/bagu-natural/g4-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "492f678aeafce2737c9891e05ba0f91ef07ad5eb490d6020c587e2bf278924f0"
+    },
+    {
+      "path": "audio/bagu-natural/g4-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "31fca6cf6933d78572350d9f49cf5c28ed87f59e92cd30bc35ee75c9c7304de5"
+    },
+    {
+      "path": "audio/bagu-natural/g4-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "be24be8a3b7f4d0cbc531b153a579e9b75bb3ef5c1c3dfad6b2ed6f68cf68814"
+    },
+    {
+      "path": "audio/bagu-natural/g4-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "17587e58d1fa569cd043c94f68d5b3872e18e13fc0f0114d27a1f9d1c70ab689"
+    },
+    {
+      "path": "audio/bagu-natural/g4-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "4b8e49258457087bc167728489739b0cd44066cd09dcdd1440ca8452debd7690"
+    },
+    {
+      "path": "audio/bagu-natural/g4-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "ab3ef66d6077f588469518b7b8694f39b7f3cef1e329af3e99a08b1cb5ff6b59"
+    },
+    {
+      "path": "audio/bagu-natural/g4-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "5f98511f13edb4640f3e99ce1a845e8ffdff44a00de913e653607c33cf1e0a01"
+    },
+    {
+      "path": "audio/bagu-natural/g4-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "2c3a5418dc773fe939bfb478513808f2d7a399f9f6656e2fdf5c5ae31c1e8ccc"
+    },
+    {
+      "path": "audio/bagu-natural/g4-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "09d342f198cc958ae574b66944f5557e1114f37c447dc1d959138f4af387a38a"
+    },
+    {
+      "path": "audio/bagu-natural/g4-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "739b7fd73df846a81b3837f1d14644a2d0c965ea00004b4be961d79abc0653b3"
+    },
+    {
+      "path": "audio/bagu-natural/g5-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "347c44755fc3a6ccda074b35c72d1f3fb0162a0068ef43490c181b9804129255"
+    },
+    {
+      "path": "audio/bagu-natural/g5-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "9bc25bc7f9bfcf5f164e0688047b532a74fa972435e5f7e9ade6fd489d629e66"
+    },
+    {
+      "path": "audio/bagu-natural/g5-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "39db8ab9b493d8aad1b4eb209ee1d8da0d48b8fd011e39f5b094686f59cf6e53"
+    },
+    {
+      "path": "audio/bagu-natural/g5-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "e37ca02066d29dc24e3cac7ab0b206c0e5a0b6148ca0f57ce979355d49a468ae"
+    },
+    {
+      "path": "audio/bagu-natural/g5-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "3ac64a6cbce8282c983b1afc9a99fe566318c682e0445460e99e09d7ef69a201"
+    },
+    {
+      "path": "audio/bagu-natural/g5-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "144d2c8e5fe00bd03c101f83943b3c5aa3d326ab0c5341b2c67c69002cb5a261"
+    },
+    {
+      "path": "audio/bagu-natural/g5-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "06c709a69c67897d7a87a6837670e14cb4b8a9adcff45696950deb910d595295"
+    },
+    {
+      "path": "audio/bagu-natural/g5-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "5092701aaada93c49f01563b5ad8a3738679bd87a418b7581155cd2605a535cb"
+    },
+    {
+      "path": "audio/bagu-natural/g5-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "38e23de0a57dfb62aad918c749285dbf2506ecbcf2435e760c35175d27514444"
+    },
+    {
+      "path": "audio/bagu-natural/g6-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "41c29de5fc0380a9a9f1fd9c0803751e50fcd5eaecaee1b59ea5ff4b765078c1"
+    },
+    {
+      "path": "audio/bagu-natural/g6-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "163098b599efe5b7e8b138460bf4be02770d64af050f9d35a97516cbf0782ca2"
+    },
+    {
+      "path": "audio/bagu-natural/g6-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "5f7b2a4d49cb67c5b55f439a959fb13050cccfeff013642f25aef587d8f477d2"
+    },
+    {
+      "path": "audio/bagu-natural/g6-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "37024f4fb621066fb3735dbfd730e5b487045d754f2a7e19c2b757589dd6700d"
+    },
+    {
+      "path": "audio/bagu-natural/g6-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "f1d78a1b4c7c969b7c2ca8af574a4b4ce32fc5d2a26d38d45421d0aa1067da95"
+    },
+    {
+      "path": "audio/bagu-natural/g6-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "3f4243e0d1b4b908e84ad217cdf1c7175ddb9b95b1f090e1ab1c5702a3581a5c"
+    },
+    {
+      "path": "audio/bagu-natural/g6-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "e6e8ec70053109f9d1aa175f758080c0c32137af5184b5961fb029d7ebb14aad"
+    },
+    {
+      "path": "audio/bagu-natural/g6-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "0ff619bc0a42ad3cd795e9695e60f526ff443c7cdb5c391512afeda4ef971907"
+    },
+    {
+      "path": "audio/bagu-natural/g6-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "cc97212a5fd6423c8b09e758e793008f2049b505b15ff41c7c96d34746af73be"
+    },
+    {
+      "path": "audio/bagu-natural/g6-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "e148dc3d021fdde6a3129986d4df1940a9e36bac3d19629c40c226955f97c8c2"
+    },
+    {
+      "path": "audio/bagu-natural/g6-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "747275cfa172ff5f5352239b8fe2d58409e5a6159d2ba9337e45bb0ed518867d"
+    },
+    {
+      "path": "audio/bagu-natural/g6-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "e4a95dca638a211790f149df376f49ddd92690dba9b56d9468d6983a207a294d"
+    },
+    {
+      "path": "audio/bagu-natural/g6-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "6b278f4e574ea436d2e4ededf053ee894191b23e5460091155866337e935b151"
+    },
+    {
+      "path": "audio/bagu-natural/g7-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "444843e844d220c3e77a2b50b064ccb4b197ff8c4432733d6cdbe536e1d30912"
+    },
+    {
+      "path": "audio/bagu-natural/g7-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "baa01bdbf6841af6c79956bf21295228a7147784c4fc2ccacc3cd1f0eb678f3b"
+    },
+    {
+      "path": "audio/bagu-natural/g7-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "ed3d48fbd2b7906729231cbdbc85f89bd337360520796584dfe48a1c9fbdaaa3"
+    },
+    {
+      "path": "audio/bagu-natural/g7-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "6134fa4f4ccde3737afb647eec24801246569572ecbe8aad2647c4ae86a8d12c"
+    },
+    {
+      "path": "audio/bagu-natural/g7-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "e91f1d07e9fedfb65460c0ea64fd33cfff3a15ed08221ad65781c17769df6414"
+    },
+    {
+      "path": "audio/bagu-natural/g7-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "3768b4cd95e1e92d60a3d6c68e0750e58d5e245ac7fc93e31623cd72ceff64a1"
+    },
+    {
+      "path": "audio/bagu-natural/g7-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "8fb02b70699e6bba5fc8f7c0e774350d647782988732fa365487857ff558a1f6"
+    },
+    {
+      "path": "audio/bagu-natural/g7-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "bd5d48680757e69706e82b981ec4cbf1484dffe23592953b913dfd940fc6faa1"
+    },
+    {
+      "path": "audio/bagu-natural/g7-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "fa266e4dd7ff8c7b754cacc72170fdf758a872b3737d771e7521562614a83df1"
+    },
+    {
+      "path": "audio/bagu-natural/g7-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "fda8ccd837ca565db7f2c991b5fe16a97017740da3bf60749e4ccd6d3dde7954"
+    },
+    {
+      "path": "audio/bagu-natural/g7-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "ded4d5f0c495f3fe17407821945e0067a99ef29cca97b46f1dac513c6e258565"
+    },
+    {
+      "path": "audio/bagu-natural/g7-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "d40f1d9bc1bcbe8d418ddef44bdb33abccc933539039213da1be9dba6e0bd015"
+    },
+    {
+      "path": "audio/bagu-natural/g8-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "097948ea4096a57d6dde4d468780fd2d6d7e1f0de608c046a9ce333b5fd72e17"
+    },
+    {
+      "path": "audio/bagu-natural/g9-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "ca30167a3f4a230aa323bd488241093438cac54ba880d0b18c926cec51b7640d"
+    },
+    {
+      "path": "audio/bagu-natural/g9-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "a13d3b3b03413a07735045f9d4551a1eb6eda88e879225163d8f3fd68ff8262e"
+    },
+    {
+      "path": "audio/bagu-natural/g9-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "3d61029bdcf935b438ffad6b4cbd74762b421dc0e5acf64441aaac70820555bd"
+    },
+    {
+      "path": "audio/bagu-natural/g9-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "ff7adeba151de7a52929a2fd4eb2e20d2cb69b479c9cd8f0a0217669579cdcd3"
+    },
+    {
+      "path": "audio/bagu-natural/g9-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "b44bd10e8819252853367f28bf3181dbc5c5ecb5650aad804210ef792266d880"
+    },
+    {
+      "path": "audio/bagu-natural/g9-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "08b465d84f42e83338465837364d7efeba565802e86aa811899176c69859605c"
+    },
+    {
+      "path": "audio/bagu-natural/g9-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "c21d44d52721940b98da72e80f88dd2950b89c1aa6578c7b7eef5aa29fb32584"
+    },
+    {
+      "path": "audio/bagu-natural/ga-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "7a7ba0bb6af123bdae7a004e93ccf603a636333d47ca42709988e5273c7edf6c"
+    },
+    {
+      "path": "audio/bagu-natural/ga-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "2a078cc56501bc8f313590fa36ed32731487f4f95e37dac29bc1db091498a9fc"
+    },
+    {
+      "path": "audio/bagu-natural/ga-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "e0cf64115d6af5557f4cd1f8609267e189a0acc09883d94afbbb4f63116f013e"
+    },
+    {
+      "path": "audio/bagu-natural/ga-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "2366135adb9be0c230995948ed7a98e50844cf0a541dc81485e58d4b093bbcfd"
+    },
+    {
+      "path": "audio/bagu-natural/ga-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "80da40a6781ce9d2664175dbb582093c1883fffdfb237a00488f9b6f0650e63f"
+    },
+    {
+      "path": "audio/bagu-natural/ga-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "90ce747d2ef9fea1334d466c3839efaa2e996d2b4e5caada7ca7321c52f0fc69"
+    },
+    {
+      "path": "audio/bagu-natural/ga-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "5f9b89ffd8e2d894a6d5775a9bced6c322a2e4354ead0f6515f0d5a35c1c0bc5"
+    },
+    {
+      "path": "audio/bagu-natural/ga-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "c498daf92d80a4b0e22a7586a7e9e2e51414868448c0ccab1542c9ddc24eaa76"
+    },
+    {
+      "path": "audio/bagu-natural/ga-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "193110efd77439dc51ca30b1bf3753c9b3c974a21722fe749346b5f1344e0727"
+    },
+    {
+      "path": "audio/bagu-natural/ga-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "e3d41c92369f0ca2e00fae57824b9b544f829f47b6bf7b95989b1ffd5c236b22"
+    },
+    {
+      "path": "audio/bagu-natural/ga-19.mp3",
+      "source_sha256": null,
+      "published_sha256": "19c04560181ef0829302d2117749d50832dd5f91c9f069ba3fc7d6e94db0f421"
+    },
+    {
+      "path": "audio/bagu-natural/ga-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "24cd36d51471ca4e75eb7dfae93ec01cbf4632498cfb64bfc898783940b1fcae"
+    },
+    {
+      "path": "audio/bagu-natural/ga-20.mp3",
+      "source_sha256": null,
+      "published_sha256": "45c9161a12255d003128ffa3317c820c4a002333e313bdb4a4e2e4eeaf3f2435"
+    },
+    {
+      "path": "audio/bagu-natural/ga-21.mp3",
+      "source_sha256": null,
+      "published_sha256": "03269da2c838e3730cf03bbc7768b6397b0599cff8d1fd63e05f920ed5ec79c7"
+    },
+    {
+      "path": "audio/bagu-natural/ga-22.mp3",
+      "source_sha256": null,
+      "published_sha256": "fefd8d44eebf587eb14dd99303321c7b08361b0ca4125514a7cc391e9988e739"
+    },
+    {
+      "path": "audio/bagu-natural/ga-23.mp3",
+      "source_sha256": null,
+      "published_sha256": "68b50196c1c9d8b2a0f7db409a8d10375b9c8b611a2833e606825b28756c3eaa"
+    },
+    {
+      "path": "audio/bagu-natural/ga-24.mp3",
+      "source_sha256": null,
+      "published_sha256": "e11ac6bbc7475675985e5147ebcf5a0b78cfc85af40a30a84ecd4348f38f4198"
+    },
+    {
+      "path": "audio/bagu-natural/ga-25.mp3",
+      "source_sha256": null,
+      "published_sha256": "8b32733b623673dceb0d3819fc9169e82a3ceeb056ef55314c0137f717a22fc8"
+    },
+    {
+      "path": "audio/bagu-natural/ga-26.mp3",
+      "source_sha256": null,
+      "published_sha256": "f0f307a9bf75af990969860537a090e11109eaeef34913866b159d6b2cce5f6c"
+    },
+    {
+      "path": "audio/bagu-natural/ga-27.mp3",
+      "source_sha256": null,
+      "published_sha256": "f038615fc5db9dc494b2a6d47d7e8d131db633440b748859c90a73311b0459b3"
+    },
+    {
+      "path": "audio/bagu-natural/ga-28.mp3",
+      "source_sha256": null,
+      "published_sha256": "a6b055cd5e650a31bbdef09287809ec90e81427680596d688e5ea3c13bdcd0ce"
+    },
+    {
+      "path": "audio/bagu-natural/ga-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "22b99416965150f299e4f54551c10c0e4c58197914e8783c0d4cd64b6a2d9e82"
+    },
+    {
+      "path": "audio/bagu-natural/ga-30.mp3",
+      "source_sha256": null,
+      "published_sha256": "d815df868bec15bd101cd8ecfe18807d91ffacecae33764d4c4a9a460a575eba"
+    },
+    {
+      "path": "audio/bagu-natural/ga-31.mp3",
+      "source_sha256": null,
+      "published_sha256": "607da957782fcec54e63150313c2c8f661c6025412de12a94107e9393fdbd595"
+    },
+    {
+      "path": "audio/bagu-natural/ga-32.mp3",
+      "source_sha256": null,
+      "published_sha256": "23baccc02a747f44586acd95ad07a1fbb16485b52e50824e8fc05617d87d669f"
+    },
+    {
+      "path": "audio/bagu-natural/ga-33.mp3",
+      "source_sha256": null,
+      "published_sha256": "403e02fa17ca1890aa881db7efaf0b2a2a518ab186fd6fa0a03b192fc16c1759"
+    },
+    {
+      "path": "audio/bagu-natural/ga-34.mp3",
+      "source_sha256": null,
+      "published_sha256": "c781fd1ea334e3e65c556a4c6563d01206e634017d1a1c04de0fa30c17c48a5c"
+    },
+    {
+      "path": "audio/bagu-natural/ga-35.mp3",
+      "source_sha256": null,
+      "published_sha256": "bb7afac1a2fc27b4281bde62efda4714a89c9910aa6458d67cd5c6f835f92c95"
+    },
+    {
+      "path": "audio/bagu-natural/ga-36.mp3",
+      "source_sha256": null,
+      "published_sha256": "9f755d4ee87572683df24f8c7fc3451bcd8cd0c107fef5327f0e2ab611611a31"
+    },
+    {
+      "path": "audio/bagu-natural/ga-37.mp3",
+      "source_sha256": null,
+      "published_sha256": "912168088c98c44412091494e82273f4082ae6a533bb55ddaf707d1f61a0c15d"
+    },
+    {
+      "path": "audio/bagu-natural/ga-39.mp3",
+      "source_sha256": null,
+      "published_sha256": "8527efa61555de89c74bebe8cba366b6c06e8ba03e42c5d68553d03306c80643"
+    },
+    {
+      "path": "audio/bagu-natural/ga-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "8e0c890266ba1fcd05b0b153a776c368835cbbee5d3cb0e4fd805f9833f465a7"
+    },
+    {
+      "path": "audio/bagu-natural/ga-40.mp3",
+      "source_sha256": null,
+      "published_sha256": "42122d9631c04d945c7b878b2c6e4d60997872107f5c9a388e8a7a03a52df139"
+    },
+    {
+      "path": "audio/bagu-natural/ga-42.mp3",
+      "source_sha256": null,
+      "published_sha256": "c7c28921803cf7a8ea77158111d1ec0b43f54827fdc721d6b2540d7192dd044b"
+    },
+    {
+      "path": "audio/bagu-natural/ga-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "bc9acccc2ab41512c546334a4aaf2aec14f63b857765d94e7808d89981f17772"
+    },
+    {
+      "path": "audio/bagu-natural/ga-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "0ca1fdef7c640cf4f7d4e1b2b246c1c866d3b8f9944b13810a1924e2733fb46a"
+    },
+    {
+      "path": "audio/bagu-natural/ga-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "71c8caab837e6c04b7d60ab6861224194b0c518c86f5c6ea62994ac183c914f3"
+    },
+    {
+      "path": "audio/bagu-natural/ga-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "6a2692758632254aba400cf88dc2c9a0280001d1914bc505b45515fa799870e0"
+    },
+    {
+      "path": "audio/bagu-natural/ga-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "978eeebb01472e8f227e8b2cdd1d0af8de9aa241546749b0271899ce3f137967"
+    },
+    {
+      "path": "audio/bagu-natural/gd-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "86c91fb85200c7eac9c672c265ea135452c00d64e30aba176b0428fa64230ae8"
+    },
+    {
+      "path": "audio/bagu-natural/gd-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "5945d4411b4f370c041b7696f2d5eb814a6afbad932824dea42d9ea707a9b29d"
+    },
+    {
+      "path": "audio/bagu-natural/gd-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "0569da66bba5bd73d849f26f8893ea946ed4979fce15f09040bf68e9cf072793"
+    },
+    {
+      "path": "audio/bagu-natural/gd-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "829e54ac684da81829f75101603bc836913b90c734701adb119d251d30aeb577"
+    },
+    {
+      "path": "audio/bagu-natural/gd-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "09a230a3a7220c3ec8e091b0bf6a706c61e149684dac127cd912ed0ef2ccdc86"
+    },
+    {
+      "path": "audio/bagu-natural/gd-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "93d7c65973038facbd92a73da60d801c239fe0d8472b55b9723b6e69b91f1c21"
+    },
+    {
+      "path": "audio/bagu-natural/gd-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "ddcdd004a4b0c62b64c08484fa3940e5f46a9fffac3f876cc6fa0ce667418b44"
+    },
+    {
+      "path": "audio/bagu-natural/gd-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "a9db40c165ec0d728cda96c225e4b756ca02ca70553491d74e1bbf862b60967c"
+    },
+    {
+      "path": "audio/bagu-natural/gd-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "52f398d5b1cd4f23711eb50f4aa0fc49e1c89a73ed7b10719f879daedfc51462"
+    },
+    {
+      "path": "audio/bagu-natural/gd-19.mp3",
+      "source_sha256": null,
+      "published_sha256": "043b31b373663d3752d3e513963813a470dcf06a4f7bdac80e38eda35a591e8b"
+    },
+    {
+      "path": "audio/bagu-natural/gd-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "05c8de703b598f466ae003290f9a51bebdf77e2e3d7999253522d29a49156e29"
+    },
+    {
+      "path": "audio/bagu-natural/gd-20.mp3",
+      "source_sha256": null,
+      "published_sha256": "1583f91454edde7d2a62e34423d60a96119c4cd9be392cdbb0aa948cdbf52d25"
+    },
+    {
+      "path": "audio/bagu-natural/gd-21.mp3",
+      "source_sha256": null,
+      "published_sha256": "c27fb1608b899e48aa5398a0e770e11226c724d7449b31e163a237bbbb366ec0"
+    },
+    {
+      "path": "audio/bagu-natural/gd-22.mp3",
+      "source_sha256": null,
+      "published_sha256": "796322aac1284dc42882ed50e24c102526991ea9c65bf9079312ebb22a870bc7"
+    },
+    {
+      "path": "audio/bagu-natural/gd-23.mp3",
+      "source_sha256": null,
+      "published_sha256": "5d51ecf36692a26bf73675f041af3aa5dd0257aaa2ecf274ea4b54b1143fed37"
+    },
+    {
+      "path": "audio/bagu-natural/gd-24.mp3",
+      "source_sha256": null,
+      "published_sha256": "f9d9929b238f0d43f079d7033cdee4dd55f33136beb842b345e5756def24f4cb"
+    },
+    {
+      "path": "audio/bagu-natural/gd-25.mp3",
+      "source_sha256": null,
+      "published_sha256": "beb9e57499c6129107ec735dd7e946eb10c4a2f1ac15a47db5eaa45bee505995"
+    },
+    {
+      "path": "audio/bagu-natural/gd-26.mp3",
+      "source_sha256": null,
+      "published_sha256": "dde831c80593d6381f935fa051fff1b3a658e96f77bff1dfb544df65a164ac07"
+    },
+    {
+      "path": "audio/bagu-natural/gd-27.mp3",
+      "source_sha256": null,
+      "published_sha256": "8e887aa2c80c01a97f3961178b8551ab57dd19a361f0e53677665338bd592e90"
+    },
+    {
+      "path": "audio/bagu-natural/gd-28.mp3",
+      "source_sha256": null,
+      "published_sha256": "108aa842e32dbe7419f796450e4bdc8b01af3d3e6bbc3bfd5895c94d210448b6"
+    },
+    {
+      "path": "audio/bagu-natural/gd-29.mp3",
+      "source_sha256": null,
+      "published_sha256": "79c8879e4529189304a7b8e32c7e6ff9741c9bb7f0a9c6b1a538d0f0405eac0b"
+    },
+    {
+      "path": "audio/bagu-natural/gd-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "a2bf5e91b7d9b572412934eea2ee5094cf4a23a08e7d2f910ec191487f7caa3a"
+    },
+    {
+      "path": "audio/bagu-natural/gd-30.mp3",
+      "source_sha256": null,
+      "published_sha256": "10d70892876867e7d78f131b8cf00576e0e2375bd268c8e05ddb1ab0f6d887ca"
+    },
+    {
+      "path": "audio/bagu-natural/gd-31.mp3",
+      "source_sha256": null,
+      "published_sha256": "46f486045e6dcd7f2089eb9765ca516288f5fb0e386a7b9332f8c530bb9c9788"
+    },
+    {
+      "path": "audio/bagu-natural/gd-32.mp3",
+      "source_sha256": null,
+      "published_sha256": "90830c1ab0c73814b388bde03f3f7693775f7a0e8c3f1634b0a4cacef7df38b2"
+    },
+    {
+      "path": "audio/bagu-natural/gd-33.mp3",
+      "source_sha256": null,
+      "published_sha256": "2a50386c9ecffb3e86acf01bc3be68319de4968df4ec85b226cab1e44cc800f3"
+    },
+    {
+      "path": "audio/bagu-natural/gd-34.mp3",
+      "source_sha256": null,
+      "published_sha256": "8064896f47537eb618566732d2a4b296c8719135edc855d08db12625d53e4e2d"
+    },
+    {
+      "path": "audio/bagu-natural/gd-35.mp3",
+      "source_sha256": null,
+      "published_sha256": "3151f554f23be17ad4e4f721bc40f065173c286d976916bcd85a47fe8dacdb09"
+    },
+    {
+      "path": "audio/bagu-natural/gd-36.mp3",
+      "source_sha256": null,
+      "published_sha256": "635ab3ffe88c08b860c40beb490541653f580b17ba16347479ba33c54628e9c5"
+    },
+    {
+      "path": "audio/bagu-natural/gd-37.mp3",
+      "source_sha256": null,
+      "published_sha256": "732738d152b9d171214fe6a5a325ade5020399b89d5d3c1d50ac563597754d42"
+    },
+    {
+      "path": "audio/bagu-natural/gd-38.mp3",
+      "source_sha256": null,
+      "published_sha256": "de1ebebe2b09957700e6797512e3cd9bc36a7c59bdab51d3c268800b228dc257"
+    },
+    {
+      "path": "audio/bagu-natural/gd-39.mp3",
+      "source_sha256": null,
+      "published_sha256": "64e18ed33badadb8f452a56006dcc743775036d01176875a984e227e723f2706"
+    },
+    {
+      "path": "audio/bagu-natural/gd-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "38c6fcbd37abc9e97c1f603d76511083063f7083d40913e4d9175c638266a258"
+    },
+    {
+      "path": "audio/bagu-natural/gd-40.mp3",
+      "source_sha256": null,
+      "published_sha256": "0a378f5fccb2885391282827b0c85defb5a74f8082c8f16eb0fc81dd926a7a4b"
+    },
+    {
+      "path": "audio/bagu-natural/gd-43.mp3",
+      "source_sha256": null,
+      "published_sha256": "2428f39c5ee6ea4f0ebe23711bba87952594df9263d51b42ba69bb53a0d9b030"
+    },
+    {
+      "path": "audio/bagu-natural/gd-44.mp3",
+      "source_sha256": null,
+      "published_sha256": "19babe1b7d6930972e3fc292be88e01baf876168f23ad23a5135d54797015f5d"
+    },
+    {
+      "path": "audio/bagu-natural/gd-45.mp3",
+      "source_sha256": null,
+      "published_sha256": "e3298b61fe924ab5879fdba2513adbd6560802aaedddfb1001b78b524f5237a7"
+    },
+    {
+      "path": "audio/bagu-natural/gd-46.mp3",
+      "source_sha256": null,
+      "published_sha256": "a7b291aa5db05446c8f142a1a7bb7ce46242ddc6cb724a82922fe1b84ef8a7f7"
+    },
+    {
+      "path": "audio/bagu-natural/gd-47.mp3",
+      "source_sha256": null,
+      "published_sha256": "b58b6c722198d45c49d6051f215376f9cd96fa30ee49949bc7fdb848efa57a5c"
+    },
+    {
+      "path": "audio/bagu-natural/gd-48.mp3",
+      "source_sha256": null,
+      "published_sha256": "965c7c616655fc9897ef77322a03557fac7a6e1f9e53d6e51b9acd82dc27956c"
+    },
+    {
+      "path": "audio/bagu-natural/gd-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "b36a0f65a9be5db30efe8b5fd709f8fde2f31c63a536db4dc77e4380b3d31b39"
+    },
+    {
+      "path": "audio/bagu-natural/gd-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "f63d3c7fc108e0993b737d5bdac1d3934d6027ef8cc328a11bcb01b425caad7d"
+    },
+    {
+      "path": "audio/bagu-natural/gd-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "24522a17e99a2a4e736e7cb84b488a37012834f67043135779ceaf02dd68e1dc"
+    },
+    {
+      "path": "audio/bagu-natural/gd-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "5af6798f44f439994aab3d03fdf95660a8834e23b4775c6445dce18e2a8333bc"
+    },
+    {
+      "path": "audio/bagu-natural/gd-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "a4b69bf715d3feed643a224f889a6e4dc89441cc75faaf372c94d9799e15c639"
+    },
+    {
+      "path": "audio/bagu-natural/gi-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "641f70049c1164e1613f69d88e750ec4bf46f15c90ac3f0691ecc36b7932d0a3"
+    },
+    {
+      "path": "audio/bagu-natural/gi-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "cff1176fcc9410d4adc60766a6f7faec41e98aad4b0bd66e160e35e3f8c4ab22"
+    },
+    {
+      "path": "audio/bagu-natural/gi-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "d16eb51ea52d3b572f43ae6f1a0f6f770a8a84b68bf5cabcfc6760af7fe1d2a4"
+    },
+    {
+      "path": "audio/bagu-natural/gi-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "f9444c190472f8763de12b94fe2c0da6bf8104190d285b9af8357b4e8c428136"
+    },
+    {
+      "path": "audio/bagu-natural/gi-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "a6b8c59ff34fde2a30b748b0763803feb67a434fad1f9255b0b6bbfc1ba40d07"
+    },
+    {
+      "path": "audio/bagu-natural/gi-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "1a1052bb2025f23483bd1d1d20ab159bc3cfc48074d3c5ca660a46ec6334629f"
+    },
+    {
+      "path": "audio/bagu-natural/gi-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "9ef77ae03b8955ed63397346cd89ca18b372e16a8084005b61d941893fa26e66"
+    },
+    {
+      "path": "audio/bagu-natural/gi-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "1f292328c4c19d5b0fb8107989babfc3023b8dbdede53dbf8af44773e0210c36"
+    },
+    {
+      "path": "audio/bagu-natural/gi-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "2ab528985bed3bbe5e4ae96df70de1bdd2377f881b419d996e64238362aec1ab"
+    },
+    {
+      "path": "audio/bagu-natural/gi-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "b99a84c702049953641ecef2ff9ec40f293f1d870fd94a6004e24a85cf99447f"
+    },
+    {
+      "path": "audio/bagu-natural/gi-19.mp3",
+      "source_sha256": null,
+      "published_sha256": "31ea259a362f403f796372f17293518113f6317e2a683f7893a904112b0f2e4f"
+    },
+    {
+      "path": "audio/bagu-natural/gi-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "952d9f14e553203ace2c9735805b10b961681e23321f70bb6836e8835c2afa39"
+    },
+    {
+      "path": "audio/bagu-natural/gi-20.mp3",
+      "source_sha256": null,
+      "published_sha256": "26447009daa45bce6792a80ff53d4515939b42e22f874f825017ee8fe8d670a6"
+    },
+    {
+      "path": "audio/bagu-natural/gi-21.mp3",
+      "source_sha256": null,
+      "published_sha256": "612a8189bc05645030644da5b2e27c7a82910af23b82c18ddb8db0fda33ffdb1"
+    },
+    {
+      "path": "audio/bagu-natural/gi-22.mp3",
+      "source_sha256": null,
+      "published_sha256": "b1deee623b107a36599ad8899402c7d61a628a7c80be1db24cdfb35d53dc05d0"
+    },
+    {
+      "path": "audio/bagu-natural/gi-23.mp3",
+      "source_sha256": null,
+      "published_sha256": "901fbc21ef3557ee3d5141e0c4d15822551c0f98842195ba0f3071ab1132cc59"
+    },
+    {
+      "path": "audio/bagu-natural/gi-24.mp3",
+      "source_sha256": null,
+      "published_sha256": "952cb47f7184a8eb8cf43e0d7ee4f88e421287bc78c83cd907af1371417478ea"
+    },
+    {
+      "path": "audio/bagu-natural/gi-25.mp3",
+      "source_sha256": null,
+      "published_sha256": "7a1c518e19f057a66a5c72d3ba0d3e7b3f17a7f2066fe6a0583380044ef61019"
+    },
+    {
+      "path": "audio/bagu-natural/gi-26.mp3",
+      "source_sha256": null,
+      "published_sha256": "cebd6d3006448e25280d6c4b817c3d82aa3405a88443e9e6fb8c0c3c9312e45e"
+    },
+    {
+      "path": "audio/bagu-natural/gi-27.mp3",
+      "source_sha256": null,
+      "published_sha256": "ba4aa2ba771b6a75767bc964da2637a8c945023e26a11d8e76c8b81e8a5611fb"
+    },
+    {
+      "path": "audio/bagu-natural/gi-28.mp3",
+      "source_sha256": null,
+      "published_sha256": "d0e6f38514ec908fa392ac98a7009f68db03ca431cfeb55cd646828db2fc284d"
+    },
+    {
+      "path": "audio/bagu-natural/gi-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "825896616170da291ccadb02aa6d37b8714a38acc52e3d5b14a900d3413dc3a2"
+    },
+    {
+      "path": "audio/bagu-natural/gi-30.mp3",
+      "source_sha256": null,
+      "published_sha256": "bb2d93c7791ae63c68f01a58f1521367d866aa5852fcccadbdfd5e9188f3abab"
+    },
+    {
+      "path": "audio/bagu-natural/gi-31.mp3",
+      "source_sha256": null,
+      "published_sha256": "8af9a018ca4dce71684359400d24ba2a972b1413bbe1f3762e279e0eca7f8fee"
+    },
+    {
+      "path": "audio/bagu-natural/gi-32.mp3",
+      "source_sha256": null,
+      "published_sha256": "fc58005b97bc4fad3a33428ab5cef6b6a4fde4930434a3ced42165b83a213009"
+    },
+    {
+      "path": "audio/bagu-natural/gi-33.mp3",
+      "source_sha256": null,
+      "published_sha256": "41352553d949df2e3512c7a09557303bb3de55d79dee5e79fd28fe8ffe2c4142"
+    },
+    {
+      "path": "audio/bagu-natural/gi-34.mp3",
+      "source_sha256": null,
+      "published_sha256": "88bdad13a0f2faaf44f81c160b15cc83ca5a9c35a8dcd9af2c34b0d4c2bf81d7"
+    },
+    {
+      "path": "audio/bagu-natural/gi-35.mp3",
+      "source_sha256": null,
+      "published_sha256": "d801a382a15c2821fda27e430fb6529177f49bc5ef2159f7fb8dbe0cdce37d56"
+    },
+    {
+      "path": "audio/bagu-natural/gi-36.mp3",
+      "source_sha256": null,
+      "published_sha256": "917e64fd9ea1d8c80a6338f44d262034c3e5a14a04a9b8d26275d22cf23ac562"
+    },
+    {
+      "path": "audio/bagu-natural/gi-37.mp3",
+      "source_sha256": null,
+      "published_sha256": "a9d5958087dea3bc570267a49c79a01c6d20b47a41f66d116caa7476f307f747"
+    },
+    {
+      "path": "audio/bagu-natural/gi-39.mp3",
+      "source_sha256": null,
+      "published_sha256": "5b3e92bf921a61d80cb544f5beaf12d245f5c2770ccba114089e76066212f12b"
+    },
+    {
+      "path": "audio/bagu-natural/gi-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "cfd54a282ba44f54f0a941b0da9b7389f71078107a8f648978e4f66770945c82"
+    },
+    {
+      "path": "audio/bagu-natural/gi-40.mp3",
+      "source_sha256": null,
+      "published_sha256": "e2ffe736ad82d55b18feb9edd8c61e905aa327c3ef137f708d2202b3e72ec0c2"
+    },
+    {
+      "path": "audio/bagu-natural/gi-41.mp3",
+      "source_sha256": null,
+      "published_sha256": "4abec3031bd2c2e935eb036f8e00fb0f66e3cf28bc929f8fdfee2655e89ec1b4"
+    },
+    {
+      "path": "audio/bagu-natural/gi-42.mp3",
+      "source_sha256": null,
+      "published_sha256": "145d86a7a2280054e110a648db6ecee140765d2245f8914c0ad8bd48e2f68add"
+    },
+    {
+      "path": "audio/bagu-natural/gi-43.mp3",
+      "source_sha256": null,
+      "published_sha256": "5cf4feecea675f073a0d510378c65a85b609b96569058913fb3970e997ec46e9"
+    },
+    {
+      "path": "audio/bagu-natural/gi-44.mp3",
+      "source_sha256": null,
+      "published_sha256": "53206a77733c036270c56ce80347c5c60f994a1c3d414e1e7d44406240d3f28f"
+    },
+    {
+      "path": "audio/bagu-natural/gi-45.mp3",
+      "source_sha256": null,
+      "published_sha256": "84bf91e7811cc01f8b39788b01839a82e2ea6e1620fc2d98c03db6fcba7048ef"
+    },
+    {
+      "path": "audio/bagu-natural/gi-46.mp3",
+      "source_sha256": null,
+      "published_sha256": "43c8e6daf50b30b47b7c89d289a11bab9389d76af4b1a81ff8d28212f29b07f4"
+    },
+    {
+      "path": "audio/bagu-natural/gi-47.mp3",
+      "source_sha256": null,
+      "published_sha256": "c315ba67ce4875a3b3ef9e8fda22deb729a043e1dec8302fe0f6feebe307dd8d"
+    },
+    {
+      "path": "audio/bagu-natural/gi-48.mp3",
+      "source_sha256": null,
+      "published_sha256": "5730aadb11a8671eaa2d8398965bdb6eb1f6090b23f16f7d86ec60f905ba36e4"
+    },
+    {
+      "path": "audio/bagu-natural/gi-49.mp3",
+      "source_sha256": null,
+      "published_sha256": "1b8afcc81ed90d53a5f927200e605be495afd23679367c4953b4630421f142fe"
+    },
+    {
+      "path": "audio/bagu-natural/gi-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "6e7c9e7dff2c12a708c7df3ae9657a54aa7f0ec30eec246c38260f54b37f17cf"
+    },
+    {
+      "path": "audio/bagu-natural/gi-50.mp3",
+      "source_sha256": null,
+      "published_sha256": "1c36f01d51beba4ef1f09b6f4fde2e66e0732b5be83367ad45eaa7899634773b"
+    },
+    {
+      "path": "audio/bagu-natural/gi-51.mp3",
+      "source_sha256": null,
+      "published_sha256": "efdb923ddcbfec851eb555e2703d86ed1c3beada5dba4caf21d9c2f362b24ca4"
+    },
+    {
+      "path": "audio/bagu-natural/gi-52.mp3",
+      "source_sha256": null,
+      "published_sha256": "a17251e8000debd22980023261ba52cb0493cb2920d62be95d7e7534590cfe1a"
+    },
+    {
+      "path": "audio/bagu-natural/gi-53.mp3",
+      "source_sha256": null,
+      "published_sha256": "8f83ad115de1030d761e2ed9e0718c6453054aae89fba76b0efc5c3a81c543cb"
+    },
+    {
+      "path": "audio/bagu-natural/gi-54.mp3",
+      "source_sha256": null,
+      "published_sha256": "38c9989659a968219952a174cbf22fe3ec80eb9d32b371024f0c07c2da0f648e"
+    },
+    {
+      "path": "audio/bagu-natural/gi-55.mp3",
+      "source_sha256": null,
+      "published_sha256": "6ec9a0e4528164f6bd8c1ed9d528ff2d5de2ef2f59c566f75a4d6ea0a7a087a3"
+    },
+    {
+      "path": "audio/bagu-natural/gi-56.mp3",
+      "source_sha256": null,
+      "published_sha256": "19b082afc6471154a8eb049efd2ed6602b38f94d12606e4df35cb93526308b60"
+    },
+    {
+      "path": "audio/bagu-natural/gi-57.mp3",
+      "source_sha256": null,
+      "published_sha256": "e7a30549ceb0ff526333b1171a90b6b0777caf6051046d5c933ffb7917d75c0e"
+    },
+    {
+      "path": "audio/bagu-natural/gi-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "db9bf5c54f4c520286014ad5a253dd690551aabe0839fba368de0910e590e5b6"
+    },
+    {
+      "path": "audio/bagu-natural/gi-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "ef7f8f8896118f00709ea8bd12cafb58c6853d9549fc1f53ee393dbcf703c44f"
+    },
+    {
+      "path": "audio/bagu-natural/gi-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "a49310dc5dda3305978437b29337a525b5694cbceaf7493a6cce39b23990da3e"
+    },
+    {
+      "path": "audio/bagu-natural/gm-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "a5288237e64b6742f96d0e3d15eb7977f49e8716174ac7fee9bf63ed8a691ed5"
+    },
+    {
+      "path": "audio/bagu-natural/gm-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "35ebf2cd69be4da3d6d3a4ade10ddf492f71b932be319d03ba51986274ec36e2"
+    },
+    {
+      "path": "audio/bagu-natural/gm-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "d296f5e77f9fe19bcc58ca55b4b239fc512076e0828d2317eed5eb58c0411e70"
+    },
+    {
+      "path": "audio/bagu-natural/gm-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "72fba79ee0a5fa773b1de4fd9a97a844e95ba75a805cb663cb2c6e1b33bc0ff5"
+    },
+    {
+      "path": "audio/bagu-natural/gm-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "a4d0babe51980bfca75fae02f094f0eb614ad121fbbe2b8ee0e7ebf6cd607243"
+    },
+    {
+      "path": "audio/bagu-natural/gm-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "8f47d3e5912fcffbf98d360b1fdacfa5245338e6253f43e102fe308dc0cd0425"
+    },
+    {
+      "path": "audio/bagu-natural/gm-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "b9f4df64442e4ce87a7a19f86bdec1e7ffa91f357970d0be403ded67b8a03b66"
+    },
+    {
+      "path": "audio/bagu-natural/gm-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "9223c32e450243414882a2abb276ccf39a45a00beb22aa39bea88d566b24f4d2"
+    },
+    {
+      "path": "audio/bagu-natural/gm-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "6f2e9e568edfc6da0c093f0fcb37922f8afa473fd9e78cf86fe6e426839ebce8"
+    },
+    {
+      "path": "audio/bagu-natural/gm-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "e6115518c41d995c79e46fdb7459567449e5761ae12e5eade6b0d213b801ad8d"
+    },
+    {
+      "path": "audio/bagu-natural/gm-19.mp3",
+      "source_sha256": null,
+      "published_sha256": "9eea8bbe40b7eb22fc7194dd3d66f070518180dd247b2417c7cc1780fa84b1fa"
+    },
+    {
+      "path": "audio/bagu-natural/gm-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "a1dd4c4faf46d4264bdd8e2635efc15a582201464e874592c2b8a598be68d034"
+    },
+    {
+      "path": "audio/bagu-natural/gm-20.mp3",
+      "source_sha256": null,
+      "published_sha256": "c8cd242b5df4a9220f2636f8287a4b5b9e8b2cad40cc24a5a5d2d566462a0009"
+    },
+    {
+      "path": "audio/bagu-natural/gm-21.mp3",
+      "source_sha256": null,
+      "published_sha256": "bad93bdd8ae989f3074033b541b2f5d32b29d2c175abd3099f3df6471e9d9856"
+    },
+    {
+      "path": "audio/bagu-natural/gm-22.mp3",
+      "source_sha256": null,
+      "published_sha256": "e4411caaa1103408d8603ec550b7f2f41cab0a84422deed64e87b04575b2b435"
+    },
+    {
+      "path": "audio/bagu-natural/gm-23.mp3",
+      "source_sha256": null,
+      "published_sha256": "d2131cdcc62018a98b8d222f545b8ce75d72357a615eea98f58a322058a50115"
+    },
+    {
+      "path": "audio/bagu-natural/gm-24.mp3",
+      "source_sha256": null,
+      "published_sha256": "5b23e4ebd2d58e0dfdea0f727a1d07f77a5efb54993c8587c908ace8651805fd"
+    },
+    {
+      "path": "audio/bagu-natural/gm-25.mp3",
+      "source_sha256": null,
+      "published_sha256": "d4a22fedcd671a9eedec30e7fe43a5eaaaf86dc3d3559684cf7dde15707da776"
+    },
+    {
+      "path": "audio/bagu-natural/gm-26.mp3",
+      "source_sha256": null,
+      "published_sha256": "4612e6116cd84e346ac03a499c35303f407c1bce6f923c5cb16f85971cd29f32"
+    },
+    {
+      "path": "audio/bagu-natural/gm-27.mp3",
+      "source_sha256": null,
+      "published_sha256": "3db31bc05c8486ffb3d68861604a1ffe5331ef28d05e714e97f684344e43990c"
+    },
+    {
+      "path": "audio/bagu-natural/gm-28.mp3",
+      "source_sha256": null,
+      "published_sha256": "4c04d5291d04c45c09cbe54fa7ab1dba9a74b13222542a1ba91232845f639c21"
+    },
+    {
+      "path": "audio/bagu-natural/gm-29.mp3",
+      "source_sha256": null,
+      "published_sha256": "aed3c108f22ed9b6989053b8fe49bbdaa5002c92d67c734d245f5ca35e982db8"
+    },
+    {
+      "path": "audio/bagu-natural/gm-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "de2d8d2acc099a54316ee311a4a356988db0523c20897f1f06029cfa17e0c2ad"
+    },
+    {
+      "path": "audio/bagu-natural/gm-30.mp3",
+      "source_sha256": null,
+      "published_sha256": "8bcd67e19cf4258be8bdf7d176a3c9f6c937172427e4b7f3985e6598be2b7e11"
+    },
+    {
+      "path": "audio/bagu-natural/gm-31.mp3",
+      "source_sha256": null,
+      "published_sha256": "3fe44635027ef70b1dbcd9508501d7013d8e1c9e244c247e8046f5f6234e4022"
+    },
+    {
+      "path": "audio/bagu-natural/gm-32.mp3",
+      "source_sha256": null,
+      "published_sha256": "3450e81a354dfa5fc03b339860e9e5c8f510bec184d9134461ed72848add6ee1"
+    },
+    {
+      "path": "audio/bagu-natural/gm-33.mp3",
+      "source_sha256": null,
+      "published_sha256": "86660f059b67804441fad8db1432185cda6fa766b319d9bc709fa09ff30e89c7"
+    },
+    {
+      "path": "audio/bagu-natural/gm-34.mp3",
+      "source_sha256": null,
+      "published_sha256": "5664fa096244498bf289a4a161b826279753ec182d2e20f9f8833e3e2ab2a603"
+    },
+    {
+      "path": "audio/bagu-natural/gm-35.mp3",
+      "source_sha256": null,
+      "published_sha256": "d19d393e083ff7376e18d4e8f5318a061f6291bc2d4fc0036011a7ddc1e72e8a"
+    },
+    {
+      "path": "audio/bagu-natural/gm-36.mp3",
+      "source_sha256": null,
+      "published_sha256": "2d4ddb4451cde94d361ce61eaeaf7d128f92edb99b704b71a9629063f31a4b3f"
+    },
+    {
+      "path": "audio/bagu-natural/gm-37.mp3",
+      "source_sha256": null,
+      "published_sha256": "876ab673f951a50c163e18e5f9d33d336ed64d4e3cafad09de101d87c6fd6986"
+    },
+    {
+      "path": "audio/bagu-natural/gm-38.mp3",
+      "source_sha256": null,
+      "published_sha256": "fe8a86f9f9b0e53b23053e19d07104acd8e2db921238612383b2541e535dea10"
+    },
+    {
+      "path": "audio/bagu-natural/gm-39.mp3",
+      "source_sha256": null,
+      "published_sha256": "4c8633c3ab04dc878e94e23fa712a666ec05efeb7e057a9457c0bd790c0289d3"
+    },
+    {
+      "path": "audio/bagu-natural/gm-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "9e5477a9d5f1d179ac3134e0aa7dc9796665447802bcf0beb678f8a5927df32d"
+    },
+    {
+      "path": "audio/bagu-natural/gm-40.mp3",
+      "source_sha256": null,
+      "published_sha256": "7e0ba2fd6803c8a772e8dca320ddaed1a8d3785ca0bbaa1f5e661315caecdaab"
+    },
+    {
+      "path": "audio/bagu-natural/gm-41.mp3",
+      "source_sha256": null,
+      "published_sha256": "15d993d8e006f86c7f08f57c51325b2642bd1b612ab5c06e696ac6d8f9c1e71e"
+    },
+    {
+      "path": "audio/bagu-natural/gm-42.mp3",
+      "source_sha256": null,
+      "published_sha256": "efb1882650d449b4408895460d7959149a5106687c1738a98a30b6927fc3e0f3"
+    },
+    {
+      "path": "audio/bagu-natural/gm-43.mp3",
+      "source_sha256": null,
+      "published_sha256": "2dbcb6f6e1e027cc48c04abea25be7d85e706a48e3b60ae5cb61c97a0c351237"
+    },
+    {
+      "path": "audio/bagu-natural/gm-44.mp3",
+      "source_sha256": null,
+      "published_sha256": "31c58bddb87ecc6742a26a995534f846603623f352f9f7c29a26fcd7c5db4fe2"
+    },
+    {
+      "path": "audio/bagu-natural/gm-45.mp3",
+      "source_sha256": null,
+      "published_sha256": "3de20dda0a633c11f9c20f828a7a5f2022864757bd345397aace98355ba33955"
+    },
+    {
+      "path": "audio/bagu-natural/gm-46.mp3",
+      "source_sha256": null,
+      "published_sha256": "854489f3bb851514ac6eb1a7b7bcf404d1db9b0fc4bf6d98f7b59e867ea5b126"
+    },
+    {
+      "path": "audio/bagu-natural/gm-47.mp3",
+      "source_sha256": null,
+      "published_sha256": "803eeab6a47fe536f7734a764cdec4af6fc55303cd99d389a1e52d58eadbcce1"
+    },
+    {
+      "path": "audio/bagu-natural/gm-48.mp3",
+      "source_sha256": null,
+      "published_sha256": "539b7338bc0c6029f0d08c4ebf2f7837a54e617735e3e81f91d65f73a3f8dbd0"
+    },
+    {
+      "path": "audio/bagu-natural/gm-49.mp3",
+      "source_sha256": null,
+      "published_sha256": "976552bd300652a0fdd8e341c7c811653b3779a845f9c87487fd05c177df95da"
+    },
+    {
+      "path": "audio/bagu-natural/gm-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "67a30cc8a2af2d74fb263ebdf1fabfdd42d31d163852dc0472f39095b6d74032"
+    },
+    {
+      "path": "audio/bagu-natural/gm-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "bcb0f8d1b9d682e6475d2186e818177cbe68bb96b9a8d0f224b07dabceff60f8"
+    },
+    {
+      "path": "audio/bagu-natural/gm-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "135da5cd969a181385b446e595548fb6a23cacb36876eee403ae35fd41729485"
+    },
+    {
+      "path": "audio/bagu-natural/gm-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "b502d458287359694d14bf896a36cb70eee332d418fd67167b8b48ab8b467696"
+    },
+    {
+      "path": "audio/bagu-natural/gm-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "2d6ff27c92ee253650f36f30d3a2bd31f222c60686a4d099d3e1e8105ae1d5db"
+    },
+    {
+      "path": "audio/bagu-natural/go-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "bb960d0b07a5479dc52884d6760503bc7f6b05161b06a6febb8c932e4ecc3cf9"
+    },
+    {
+      "path": "audio/bagu-natural/go-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "2926a119961764c415c7a7deeedad370aaf5964192ec386cc6fb56d744e936a9"
+    },
+    {
+      "path": "audio/bagu-natural/go-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "6a2249d38020551e2019e13a9085e513824d69c6a56f6e2bcb4dfe10fa199018"
+    },
+    {
+      "path": "audio/bagu-natural/go-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "6475e6d6b74ccead429db5f06830c1b9d46185a83be3b12c4a11f3c26a03e9da"
+    },
+    {
+      "path": "audio/bagu-natural/go-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "28fee60ab4267a04d8df4f5188f063dbbf5a29eb3726f4885a872c2c7881a541"
+    },
+    {
+      "path": "audio/bagu-natural/go-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "ece27fdeff68b4f87fb5b947c95c0a5710ec5b74aee8abeac12da6c9d226a509"
+    },
+    {
+      "path": "audio/bagu-natural/go-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "c6a509054f92a1d5a1d620ddb5e1adbe7daa0e3b7badcdd6aed25c5968c5a92c"
+    },
+    {
+      "path": "audio/bagu-natural/go-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "79f2d886c2a0b771d642de09b6173465c7659071d3fabffdc1e016e8c1d083a2"
+    },
+    {
+      "path": "audio/bagu-natural/go-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "cf1685ec2dd94871e9c5439aee4d444ed68b348bc7420495414593b3b908c23e"
+    },
+    {
+      "path": "audio/bagu-natural/go-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "952dc57fe4bde31f10a16bf64505aa065f10140edea4df78c448fe71c182d024"
+    },
+    {
+      "path": "audio/bagu-natural/go-19.mp3",
+      "source_sha256": null,
+      "published_sha256": "69563047c06c7d18649f0149c2daeaaf333c54ef743c39bbcd62c7332729e886"
+    },
+    {
+      "path": "audio/bagu-natural/go-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "6d4725d1c740ac3565950c7df62f7e8263d31bb55ae393944a4f0a4d036ce308"
+    },
+    {
+      "path": "audio/bagu-natural/go-20.mp3",
+      "source_sha256": null,
+      "published_sha256": "b681f93c0f78022043590d2b9df2beabd446f8e9e2c962cb38a7563c7d129bdf"
+    },
+    {
+      "path": "audio/bagu-natural/go-21.mp3",
+      "source_sha256": null,
+      "published_sha256": "c5e8a4d6f4e5c9f617ce20dbf7e793618955e401643d040b11736188bac96a9e"
+    },
+    {
+      "path": "audio/bagu-natural/go-22.mp3",
+      "source_sha256": null,
+      "published_sha256": "92faa67b74f08c26d795df5138dc63ddd9396d2dc24680d2d90273092391ab1c"
+    },
+    {
+      "path": "audio/bagu-natural/go-23.mp3",
+      "source_sha256": null,
+      "published_sha256": "2fd2e990b06040eaf4b3b0bd7bdb91f42566e18b08dec187b9b988abeec3b08b"
+    },
+    {
+      "path": "audio/bagu-natural/go-24.mp3",
+      "source_sha256": null,
+      "published_sha256": "c08cb3994776dc563ab94eb4e3cfed497f4cfe6c5e0fb6bc8c8d1ba24cafa723"
+    },
+    {
+      "path": "audio/bagu-natural/go-25.mp3",
+      "source_sha256": null,
+      "published_sha256": "7a8bd5fcf97f42e0bf2641fd874a54de99338c9000a82a2a355b327f91191f87"
+    },
+    {
+      "path": "audio/bagu-natural/go-26.mp3",
+      "source_sha256": null,
+      "published_sha256": "15e7ad58a37b29dd1747e2f73d8ca3fde9c7886b43bf30f1e7f0d3806089528c"
+    },
+    {
+      "path": "audio/bagu-natural/go-27.mp3",
+      "source_sha256": null,
+      "published_sha256": "b9841b05989457c6d20bdba9f6ddcc43ffef8cec3e0ceef2f0d9c72aeef4e0db"
+    },
+    {
+      "path": "audio/bagu-natural/go-28.mp3",
+      "source_sha256": null,
+      "published_sha256": "37371ccdff7b0d25f5f5f820d6d4bf1d1dd1bad7c1981e3d35e2c59a6b6b3305"
+    },
+    {
+      "path": "audio/bagu-natural/go-29.mp3",
+      "source_sha256": null,
+      "published_sha256": "c180b4c8eb440ca2d94cdfb9f4f8f68dea7dbd7653fc8bac55403aa4f21749c3"
+    },
+    {
+      "path": "audio/bagu-natural/go-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "c31b8d467dc28655a4cbdec4dadb44df42ea10b96f38feb25f15c60ff7b0b07b"
+    },
+    {
+      "path": "audio/bagu-natural/go-30.mp3",
+      "source_sha256": null,
+      "published_sha256": "13a82ea599d0e1e759a98d6b0769dcedf597580d7fd5b88477b6be5b27b1ba03"
+    },
+    {
+      "path": "audio/bagu-natural/go-31.mp3",
+      "source_sha256": null,
+      "published_sha256": "e05a57ce1293305605bee5200861545f47ab7ae38803e0f2c044e527b579d764"
+    },
+    {
+      "path": "audio/bagu-natural/go-32.mp3",
+      "source_sha256": null,
+      "published_sha256": "d9625e762c08af7d01bcfb27c2c112b83b60076eb47fb6734f3aa469235d75ca"
+    },
+    {
+      "path": "audio/bagu-natural/go-33.mp3",
+      "source_sha256": null,
+      "published_sha256": "8c17eb52fead5ec33ec01b73b7ecc33bf0c8f3511cd5783e743e83fae81ad362"
+    },
+    {
+      "path": "audio/bagu-natural/go-34.mp3",
+      "source_sha256": null,
+      "published_sha256": "2953bcafa13df9bfba013914282332184e65c0daef3d111c2432191708940645"
+    },
+    {
+      "path": "audio/bagu-natural/go-35.mp3",
+      "source_sha256": null,
+      "published_sha256": "9090f92370d2c9146a723b480eae0a2402e7a25c929131dc851b61ebfb7c0832"
+    },
+    {
+      "path": "audio/bagu-natural/go-36.mp3",
+      "source_sha256": null,
+      "published_sha256": "5cbf1e8f0b2ad93006258d37cddbcae298e282aa9ed1009e7b926437814d2b6a"
+    },
+    {
+      "path": "audio/bagu-natural/go-37.mp3",
+      "source_sha256": null,
+      "published_sha256": "a5a93c10541896acce0e5448dab8c39738c538d241916f23fc37e81f7e844788"
+    },
+    {
+      "path": "audio/bagu-natural/go-38.mp3",
+      "source_sha256": null,
+      "published_sha256": "3053dc9edfd186bdede537721da11956b403a33693085da347eb329e88898479"
+    },
+    {
+      "path": "audio/bagu-natural/go-39.mp3",
+      "source_sha256": null,
+      "published_sha256": "446270b4ce0242567b9dc696b64529727dda5ded03c7b35373f7f1d991b0bf3c"
+    },
+    {
+      "path": "audio/bagu-natural/go-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "ca6f49b7bf6d3ae7ace6eb5119958644af28f0249ea80eb9ede5c3ec24c0394c"
+    },
+    {
+      "path": "audio/bagu-natural/go-40.mp3",
+      "source_sha256": null,
+      "published_sha256": "14a697c78a54bc71b330e244d745f63f2c8288d13f3606c16e4cf363535ed972"
+    },
+    {
+      "path": "audio/bagu-natural/go-41.mp3",
+      "source_sha256": null,
+      "published_sha256": "327ace9f7b1b034254a88fce9c153c7ed3b89720db53152a3043c61cb197812b"
+    },
+    {
+      "path": "audio/bagu-natural/go-42.mp3",
+      "source_sha256": null,
+      "published_sha256": "8fc0ec8ac63cc344d55b1a7e0af993712e5100e05f6c0bea3ed0ef42f9cbf489"
+    },
+    {
+      "path": "audio/bagu-natural/go-43.mp3",
+      "source_sha256": null,
+      "published_sha256": "a42faca303d68e34ab198315f2949155cf3358c46b7eae8f20bc434a00c8490f"
+    },
+    {
+      "path": "audio/bagu-natural/go-44.mp3",
+      "source_sha256": null,
+      "published_sha256": "549201e24c50770a98982513e7c18d8d249a4ffda573432e772a055f5980df63"
+    },
+    {
+      "path": "audio/bagu-natural/go-45.mp3",
+      "source_sha256": null,
+      "published_sha256": "2eee1f8c5f4dbace199c211043278591995c4f74b1b0860bbe3028269e6118d0"
+    },
+    {
+      "path": "audio/bagu-natural/go-46.mp3",
+      "source_sha256": null,
+      "published_sha256": "ab284bfe8db6076cf9685b6bd850968587f313d436928aad99289a5676361f15"
+    },
+    {
+      "path": "audio/bagu-natural/go-47.mp3",
+      "source_sha256": null,
+      "published_sha256": "a663dbb860925c1dbef0cc089e5bbc26af327c98287f972b66418222b0e65603"
+    },
+    {
+      "path": "audio/bagu-natural/go-48.mp3",
+      "source_sha256": null,
+      "published_sha256": "9c16f3b525d4622109a5c29f0292b705148167750a36a0a3634c3b627b9401fd"
+    },
+    {
+      "path": "audio/bagu-natural/go-49.mp3",
+      "source_sha256": null,
+      "published_sha256": "43af5db97099ae7d562b0dc44984aab68f49b669af6b569db54d6608ebebb54a"
+    },
+    {
+      "path": "audio/bagu-natural/go-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "5244ef94f1ad91dc5dbd599525ad25afb60340c73c7e87a8ae7ba49688784943"
+    },
+    {
+      "path": "audio/bagu-natural/go-50.mp3",
+      "source_sha256": null,
+      "published_sha256": "9dab7af5816693d0d576093b8aff27335321afde0954bba1eb71f80231e32cd2"
+    },
+    {
+      "path": "audio/bagu-natural/go-51.mp3",
+      "source_sha256": null,
+      "published_sha256": "a3da5c77de8571cee8656f02b938801fab086a316b283b2922683ea9952c6514"
+    },
+    {
+      "path": "audio/bagu-natural/go-52.mp3",
+      "source_sha256": null,
+      "published_sha256": "47e37ff2a45127773ce8f363eedc42ee48a046a351373fdcb44a15c44858d376"
+    },
+    {
+      "path": "audio/bagu-natural/go-53.mp3",
+      "source_sha256": null,
+      "published_sha256": "ae5b007355759a1b89480f178f7da0dae62970845a3ace40a5d39fb481f3a299"
+    },
+    {
+      "path": "audio/bagu-natural/go-54.mp3",
+      "source_sha256": null,
+      "published_sha256": "536ed98c914b97b63e47026119283569ff59226ceb965890f7a7c793fb636f8c"
+    },
+    {
+      "path": "audio/bagu-natural/go-55.mp3",
+      "source_sha256": null,
+      "published_sha256": "c119182458048f9430215df69c4cb0882f5589aff6d22d4c36c493e3e54b105d"
+    },
+    {
+      "path": "audio/bagu-natural/go-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "4527e6ef6ae83b5d25c0381d4f42a9fbaf35e6fe54ec7cdf983c62094e097001"
+    },
+    {
+      "path": "audio/bagu-natural/go-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "ff8ad4d7239ecacb55579c0d2459235e8b206007074fa3f7889f03baecedb3cc"
+    },
+    {
+      "path": "audio/bagu-natural/go-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "faad07336dd308e47bc026ac7ff474790122b4fb72d2c12d5eb7baf5b84c78b9"
+    },
+    {
+      "path": "audio/bagu-natural/go-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "8c330fc60cbdc614a9e279b993a1f2ba80e4f54c0932cbdd8f9adafafac48b06"
+    },
+    {
+      "path": "audio/bagu-natural/gt-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "3123b33e0819aec01bff26a0bfbea97663b15cedf17fffe87c8e3a136b3d40bc"
+    },
+    {
+      "path": "audio/bagu-natural/gt-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "b52fd9c39ba197820435edf0f2b20e9db985cd586fc29c77df1d282abb3384e0"
+    },
+    {
+      "path": "audio/bagu-natural/gt-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "df3f23cb3b8297ad7690f3523c606de64f3c22def454c9f7aa72fb738ff7f17e"
+    },
+    {
+      "path": "audio/bagu-natural/gt-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "dbebc2d9088b5ac8fd953b2580457587ecd0d74795ffeff448fe254f5406214f"
+    },
+    {
+      "path": "audio/bagu-natural/gt-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "804eeb1306ef4dc6d7efb87802169f2bec8738fe8ede4acef5901ccbd30f6486"
+    },
+    {
+      "path": "audio/bagu-natural/gt-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "dae22197670f88ae9f1220b8d4865690bf3c0fe29bb58102e2b3517dc80bf2d3"
+    },
+    {
+      "path": "audio/bagu-natural/gt-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "5cf709dcade60442685d2ad2f3bd77c2a60c2482968276e246992fdeb36ca29d"
+    },
+    {
+      "path": "audio/bagu-natural/gt-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "ed91fc34850993dc51d9a26d456ade1e2fba4e9e10e139ed438bbbdaf462a73a"
+    },
+    {
+      "path": "audio/bagu-natural/gt-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "5df384c977cf1fcddf3ee4b40c054ffd5ad2e2448fc26bb8169984be2523ce27"
+    },
+    {
+      "path": "audio/bagu-natural/gt-19.mp3",
+      "source_sha256": null,
+      "published_sha256": "32e8f35953a8324878252ee8bc456789c7b55bcd642a43f4447b5a0bf01c06af"
+    },
+    {
+      "path": "audio/bagu-natural/gt-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "8a1889051f9dde8892d6d79d9edefb87cb77627525336797c1cfe0e6253e4a06"
+    },
+    {
+      "path": "audio/bagu-natural/gt-20.mp3",
+      "source_sha256": null,
+      "published_sha256": "36258d756c5b370ef5f65850d7e51e51468ad067312728375e47d8c892daf2cb"
+    },
+    {
+      "path": "audio/bagu-natural/gt-21.mp3",
+      "source_sha256": null,
+      "published_sha256": "85f22349cd8184c5a37ba961b1a9c13307d0561b0a97cdc67d21c922db846c82"
+    },
+    {
+      "path": "audio/bagu-natural/gt-22.mp3",
+      "source_sha256": null,
+      "published_sha256": "4e85024e1a9e334ff04c48e4c41e4bdb7a2ceceb207a7de1b5bacd1bc33033ce"
+    },
+    {
+      "path": "audio/bagu-natural/gt-23.mp3",
+      "source_sha256": null,
+      "published_sha256": "15c817c6de85e63e01611f59ec953829de9db3b5593d57a2dc8c7fdeea8db044"
+    },
+    {
+      "path": "audio/bagu-natural/gt-24.mp3",
+      "source_sha256": null,
+      "published_sha256": "b7aca10312d258f5692919fcceae178129598de2090ed2345258374b1b2fc776"
+    },
+    {
+      "path": "audio/bagu-natural/gt-25.mp3",
+      "source_sha256": null,
+      "published_sha256": "8161e8aad537b8eb67ec5076f0dbd3e0512761899f03d34a99826862dbc2fa09"
+    },
+    {
+      "path": "audio/bagu-natural/gt-26.mp3",
+      "source_sha256": null,
+      "published_sha256": "57a0cfa2e20fdb6561e1d86c7eb80f0098717721e587b91e93ba5f95b43afe1b"
+    },
+    {
+      "path": "audio/bagu-natural/gt-27.mp3",
+      "source_sha256": null,
+      "published_sha256": "287ead36eaaf94e3c28e789c92ea78d045f5a6e1dd37d5b66b1732edad3fc90e"
+    },
+    {
+      "path": "audio/bagu-natural/gt-28.mp3",
+      "source_sha256": null,
+      "published_sha256": "03f7beb1c0b0bd5d3f56f8bcb551e8ea57f28c6afbcaca6748780d231f33e467"
+    },
+    {
+      "path": "audio/bagu-natural/gt-29.mp3",
+      "source_sha256": null,
+      "published_sha256": "42fdb3188a8e52db1bede54fb4462cdc4d0f457793bb122e69fdb4c20605168e"
+    },
+    {
+      "path": "audio/bagu-natural/gt-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "00d9d86f47c4c35860ad991037430a93c5260d389881039c6dba3457bcecc196"
+    },
+    {
+      "path": "audio/bagu-natural/gt-30.mp3",
+      "source_sha256": null,
+      "published_sha256": "394a4497a1a6cfc2db9bd112615155f6dfb6fd7f29b1001810a8693e1d843c3d"
+    },
+    {
+      "path": "audio/bagu-natural/gt-31.mp3",
+      "source_sha256": null,
+      "published_sha256": "ec77de359ba7bd1476a95d7b23ed44ccf78fd9b604be98c3dd9af1f841bbd98e"
+    },
+    {
+      "path": "audio/bagu-natural/gt-32.mp3",
+      "source_sha256": null,
+      "published_sha256": "59a4586227e9e6605a04247afd0a887a56c26ecadb9124aa95e9f6462c138aa2"
+    },
+    {
+      "path": "audio/bagu-natural/gt-33.mp3",
+      "source_sha256": null,
+      "published_sha256": "cb51477a4f8863c5fe0d37c20e10a1a46c41bbdb84374d87268cb70320cebca8"
+    },
+    {
+      "path": "audio/bagu-natural/gt-34.mp3",
+      "source_sha256": null,
+      "published_sha256": "e4ffa72887319504c22ba6939f263cabc24502740495c612acd6f6cba25a01d4"
+    },
+    {
+      "path": "audio/bagu-natural/gt-35.mp3",
+      "source_sha256": null,
+      "published_sha256": "f2b22f308a05ec51b4d23fb3acf477043889c80ef41fb203050458ac63b23e29"
+    },
+    {
+      "path": "audio/bagu-natural/gt-36.mp3",
+      "source_sha256": null,
+      "published_sha256": "14702e1f94339a6f33504e0b5f8c223274f9bbc150568323ebd990d8800d0575"
+    },
+    {
+      "path": "audio/bagu-natural/gt-37.mp3",
+      "source_sha256": null,
+      "published_sha256": "56d92def7b4fef3936e7eceab9fb2406fe4c3e568684227986c0becaa69007e0"
+    },
+    {
+      "path": "audio/bagu-natural/gt-38.mp3",
+      "source_sha256": null,
+      "published_sha256": "3e935f1a7273bf499a2c7ce34a0c168b7f35b2e3b09b6f5fa662e60f20d6adb7"
+    },
+    {
+      "path": "audio/bagu-natural/gt-39.mp3",
+      "source_sha256": null,
+      "published_sha256": "1d782239162d23e84aa58f35d4a45bc5a07410436773cc96a256640916fa38c1"
+    },
+    {
+      "path": "audio/bagu-natural/gt-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "5e4e635a31bf76e16f23cd79e374888ed5859297da8f834d9f41390a1b22535e"
+    },
+    {
+      "path": "audio/bagu-natural/gt-40.mp3",
+      "source_sha256": null,
+      "published_sha256": "9de44c7d76ff809bc3a856a01d46a8a59f08029c759c8cb6fcf5b85ae7b85907"
+    },
+    {
+      "path": "audio/bagu-natural/gt-41.mp3",
+      "source_sha256": null,
+      "published_sha256": "ce5859d2c0f628df536b4dd6c4b71fc96f560a2a957c4a0c996ad667260693af"
+    },
+    {
+      "path": "audio/bagu-natural/gt-42.mp3",
+      "source_sha256": null,
+      "published_sha256": "9159b98236eaf0f90b2e6dea93a75eb8b51fe191fb3cb72f2397e249c25473b3"
+    },
+    {
+      "path": "audio/bagu-natural/gt-43.mp3",
+      "source_sha256": null,
+      "published_sha256": "39078809b576f54b3574ba8b2eaa82275becf3cf86e151eac0ce8bfce3f08793"
+    },
+    {
+      "path": "audio/bagu-natural/gt-44.mp3",
+      "source_sha256": null,
+      "published_sha256": "ab9d71620f45b46579daabe207cbc7ace3ccbfd5c0aa70c35456336a36419863"
+    },
+    {
+      "path": "audio/bagu-natural/gt-45.mp3",
+      "source_sha256": null,
+      "published_sha256": "4d64f803f5d1c26002e63f51d70fd740b844818958e05e27351f9fc3a8ff9aa2"
+    },
+    {
+      "path": "audio/bagu-natural/gt-46.mp3",
+      "source_sha256": null,
+      "published_sha256": "9cc46689888081a85acff84b3463aca763dfeb4e557e168c318437425bb84682"
+    },
+    {
+      "path": "audio/bagu-natural/gt-47.mp3",
+      "source_sha256": null,
+      "published_sha256": "969cbc344d02787ec9f48912d9612338f54a02f7412c1232bd538c906a8c1fa1"
+    },
+    {
+      "path": "audio/bagu-natural/gt-48.mp3",
+      "source_sha256": null,
+      "published_sha256": "1d48251379354d0211605dc9953a832d848c3c9f60736099483bfdc74380db18"
+    },
+    {
+      "path": "audio/bagu-natural/gt-49.mp3",
+      "source_sha256": null,
+      "published_sha256": "f744bba6cc510159e0d73afb85cdceb28c6517c6bf2d7067afffa57e9700efed"
+    },
+    {
+      "path": "audio/bagu-natural/gt-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "67cb8e143299c77a8439d283773898f9fcc038b554ccb43bd2aaa1195b75e6ab"
+    },
+    {
+      "path": "audio/bagu-natural/gt-50.mp3",
+      "source_sha256": null,
+      "published_sha256": "de443ef3130294275490e5c099f95f8d18b020c668b51cc1dea7bdbf9625275a"
+    },
+    {
+      "path": "audio/bagu-natural/gt-51.mp3",
+      "source_sha256": null,
+      "published_sha256": "2cc45aecf0c59c2f7c484e6cf1ee7fa0c71cb33fe129896b20ae8baefce94da4"
+    },
+    {
+      "path": "audio/bagu-natural/gt-52.mp3",
+      "source_sha256": null,
+      "published_sha256": "c66999fe25c3961d62fa77252e6802f3e9406acd6236135d4827c83eea5de9f0"
+    },
+    {
+      "path": "audio/bagu-natural/gt-53.mp3",
+      "source_sha256": null,
+      "published_sha256": "c6a880c968810882d47903bac70e549c740db5bc6530989392f63a4c78266530"
+    },
+    {
+      "path": "audio/bagu-natural/gt-54.mp3",
+      "source_sha256": null,
+      "published_sha256": "07f344111e8f3bec30e30c88756e9857e90596e14b15b3566bc1d9295907e642"
+    },
+    {
+      "path": "audio/bagu-natural/gt-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "11534a6d02cd96864280ebcb5eec766fa2aca184cd24ec3490ce37ac94c0e528"
+    },
+    {
+      "path": "audio/bagu-natural/gt-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "654160f3db9411a3f5f3742bfe1e056a0aee85e61e999635f8dd09fe0fcd2e55"
+    },
+    {
+      "path": "audio/bagu-natural/gt-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "75e7c252890bcde576630d4fdc8a96abf9d185739728f22172e1891c23f72c78"
+    },
+    {
+      "path": "audio/bagu-natural/gt-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "25792673bd546e8ed94edcde5cf1bfbdf5e22c6a87967c5b0c5d75e33a69b2df"
+    },
+    {
+      "path": "audio/bagu-natural/i1.mp3",
+      "source_sha256": null,
+      "published_sha256": "2b89ce78bf417f8c353fe1394d2de8dc8fc08dbc8c9ffb11c28937a106402529"
+    },
+    {
+      "path": "audio/bagu-natural/i10.mp3",
+      "source_sha256": null,
+      "published_sha256": "0aad1395e9c9a7b1b7eb74a04c5a5681fb4cc15e428d27843f44d3b1409189db"
+    },
+    {
+      "path": "audio/bagu-natural/i11.mp3",
+      "source_sha256": null,
+      "published_sha256": "9b66a6d728768e24752670dc6d9655b420233b5a4b600a0c844a5018a9ef5776"
+    },
+    {
+      "path": "audio/bagu-natural/i12.mp3",
+      "source_sha256": null,
+      "published_sha256": "a5b1ca6de08d340fc89a6617a18fd9e8ef5bcccf4ce12e27c5ec6450e30497b9"
+    },
+    {
+      "path": "audio/bagu-natural/i13.mp3",
+      "source_sha256": null,
+      "published_sha256": "26aba6765976717f472f62a809f881ff71e49ac7a5c1b461fd6d7dab5ccc4791"
+    },
+    {
+      "path": "audio/bagu-natural/i14.mp3",
+      "source_sha256": null,
+      "published_sha256": "4ae33d0734ca60fca6aed638467554243d968c90e59c8c06e6a9b3abe03a32b4"
+    },
+    {
+      "path": "audio/bagu-natural/i15.mp3",
+      "source_sha256": null,
+      "published_sha256": "933d14ebfc397a83a3c87263cc75ed2f531ad1e7de7357e84ae50f89bf26cf50"
+    },
+    {
+      "path": "audio/bagu-natural/i16.mp3",
+      "source_sha256": null,
+      "published_sha256": "95e98c75ade0bac2bd1203899ae38185e2839bba863eec7e915852aabc892bd2"
+    },
+    {
+      "path": "audio/bagu-natural/i17.mp3",
+      "source_sha256": null,
+      "published_sha256": "a5b2897cb19f07760948eaa55a13e65f70301b06b61a2b68ac41803da5872628"
+    },
+    {
+      "path": "audio/bagu-natural/i18.mp3",
+      "source_sha256": null,
+      "published_sha256": "2aac31c62ab0540c4a690fdee5596dff3a835dcac0d12417d6bdf96c6a02797c"
+    },
+    {
+      "path": "audio/bagu-natural/i2.mp3",
+      "source_sha256": null,
+      "published_sha256": "0064c365bb3e55ec374becce2bef96878c701c151cd3f9071f953e16b5a5a9a8"
+    },
+    {
+      "path": "audio/bagu-natural/i3.mp3",
+      "source_sha256": null,
+      "published_sha256": "a8ed7bb335d8ec35f3adb191170aa2b599c7b6b4797760bb506bd8c8032cb803"
+    },
+    {
+      "path": "audio/bagu-natural/i4.mp3",
+      "source_sha256": null,
+      "published_sha256": "cb58b6f10a5f6ac72e18e54fecc491fa93430d1ea2c45708aaa5327bdc7fa704"
+    },
+    {
+      "path": "audio/bagu-natural/i5.mp3",
+      "source_sha256": null,
+      "published_sha256": "f1acde531308b2178fcc2b2061d69b053ed129975dd7241f667b20814ea1e912"
+    },
+    {
+      "path": "audio/bagu-natural/i6.mp3",
+      "source_sha256": null,
+      "published_sha256": "f251accde5896fce980ec8be54553b99ae528410cf894e5c29988fe9abdb97ca"
+    },
+    {
+      "path": "audio/bagu-natural/i7.mp3",
+      "source_sha256": null,
+      "published_sha256": "d2450a420915cd63e04163c21650e6584a1e2a3b9133c8f99f68a81f80891501"
+    },
+    {
+      "path": "audio/bagu-natural/i8.mp3",
+      "source_sha256": null,
+      "published_sha256": "2f4117fd56eef34fbd4d174db06b82a1ed502e4169430cf42da6f6fceec2a3c9"
+    },
+    {
+      "path": "audio/bagu-natural/i9.mp3",
+      "source_sha256": null,
+      "published_sha256": "7d844854e86a1df43955561bcf25f957b0faed326cbe4e58cd07efde62d8f592"
+    },
+    {
+      "path": "audio/bagu-natural/j1.mp3",
+      "source_sha256": null,
+      "published_sha256": "5b8d48e4967fc4de46dc3993d7e443650561c8b3366a15601b8b24c49d069a1b"
+    },
+    {
+      "path": "audio/bagu-natural/j10.mp3",
+      "source_sha256": null,
+      "published_sha256": "46b86babed9cb834080fec1b0e5c02e298d23edb08c5d9293182fa42d3bbc4de"
+    },
+    {
+      "path": "audio/bagu-natural/j100.mp3",
+      "source_sha256": null,
+      "published_sha256": "28fd3001a5faea53d037df1f591aad2747791c7c4ef09694661a0ef0f5097aa8"
+    },
+    {
+      "path": "audio/bagu-natural/j101.mp3",
+      "source_sha256": null,
+      "published_sha256": "19a5d738db04003adab6d5f52ab24f54e75fd8cd4b5bb9f13fd81fb185b713fd"
+    },
+    {
+      "path": "audio/bagu-natural/j102.mp3",
+      "source_sha256": null,
+      "published_sha256": "84598849b42becbcd8b2644b15d8b1ece5178e783da660660b5f0ca096016eef"
+    },
+    {
+      "path": "audio/bagu-natural/j103.mp3",
+      "source_sha256": null,
+      "published_sha256": "e2576ce17b35aaaf81f5c3f45dcfebd9a5b12254f1a6186636161a563283289b"
+    },
+    {
+      "path": "audio/bagu-natural/j104.mp3",
+      "source_sha256": null,
+      "published_sha256": "ced68525e3f1724a7a9b9b4b5760b3becb58a2b5952d7904c1b59e0c5e015bdc"
+    },
+    {
+      "path": "audio/bagu-natural/j105.mp3",
+      "source_sha256": null,
+      "published_sha256": "8479475f8d642c59ab19258910eac300bbc084777a144b9271df299959175b41"
+    },
+    {
+      "path": "audio/bagu-natural/j106.mp3",
+      "source_sha256": null,
+      "published_sha256": "fb902a93751a6f54989f8aef9310bfa6f5b9d05c4ec2a3815f70afe3a032a237"
+    },
+    {
+      "path": "audio/bagu-natural/j107.mp3",
+      "source_sha256": null,
+      "published_sha256": "b59b8db4d37794d07fb06acbc0cf78469ed0aefe6b4a717b06320e2ad6ac831f"
+    },
+    {
+      "path": "audio/bagu-natural/j108.mp3",
+      "source_sha256": null,
+      "published_sha256": "562ff7a2dc5e062f799cde3976df8593c22b2f58f18ea185a3db7bf824ea160b"
+    },
+    {
+      "path": "audio/bagu-natural/j109.mp3",
+      "source_sha256": null,
+      "published_sha256": "33ece4a2d9b638d35f677295e65653985e2ba345053b2c5cb0844ed5f4e5e5df"
+    },
+    {
+      "path": "audio/bagu-natural/j11.mp3",
+      "source_sha256": null,
+      "published_sha256": "69096285c4805a13d429647ec464cd871457e45b58e46d34b174c5fd9356a0e9"
+    },
+    {
+      "path": "audio/bagu-natural/j110.mp3",
+      "source_sha256": null,
+      "published_sha256": "2beb8d8dbd55fb32c2eb4f927fc1f846d449cb7d46a66fbf21ad030308a29c53"
+    },
+    {
+      "path": "audio/bagu-natural/j111.mp3",
+      "source_sha256": null,
+      "published_sha256": "2c62bbe714ce9ac29c9e29cd6eaed985ba139f169f2a14378a92dc5dad25928a"
+    },
+    {
+      "path": "audio/bagu-natural/j112.mp3",
+      "source_sha256": null,
+      "published_sha256": "0293f159c2d58ca84eda861097a607d1c9827c329f55544104440aa06b398d81"
+    },
+    {
+      "path": "audio/bagu-natural/j113.mp3",
+      "source_sha256": null,
+      "published_sha256": "4371b0e7d3f362da7c77c720f1c15e956c7b6ec31b9702b3edc4b687c3497106"
+    },
+    {
+      "path": "audio/bagu-natural/j114.mp3",
+      "source_sha256": null,
+      "published_sha256": "179c31a235059bc57bdf6dbd60951dfddb5b29c1e9bb05392aed14f43c6f9be1"
+    },
+    {
+      "path": "audio/bagu-natural/j115.mp3",
+      "source_sha256": null,
+      "published_sha256": "27d4e71ded03a1ac4aaa365e09569e0fee0d482f9744ab8c75a489b3b3eed61c"
+    },
+    {
+      "path": "audio/bagu-natural/j116.mp3",
+      "source_sha256": null,
+      "published_sha256": "4e744f70a22f5c2bce99af0d0f4c18fd62adf3d729705a435cd1b4d2ef2c090b"
+    },
+    {
+      "path": "audio/bagu-natural/j117.mp3",
+      "source_sha256": null,
+      "published_sha256": "17125dbaa1d5645f79cada139e7301a5e10f8f88ecd12be979b936e75fe63126"
+    },
+    {
+      "path": "audio/bagu-natural/j118.mp3",
+      "source_sha256": null,
+      "published_sha256": "36bdc7c1a066f6dd7ed75734b95a2a7097e10b36d40882da8d9ee30819d8db36"
+    },
+    {
+      "path": "audio/bagu-natural/j119.mp3",
+      "source_sha256": null,
+      "published_sha256": "4b8b82292c3d6efda6ce66484017d728aadd5fa450f844cff5e2d81c497e31b7"
+    },
+    {
+      "path": "audio/bagu-natural/j12.mp3",
+      "source_sha256": null,
+      "published_sha256": "160cf640b08a7305421884c089c7b2e2f996fc4dbb05fa7813f9c931d947d7d3"
+    },
+    {
+      "path": "audio/bagu-natural/j120.mp3",
+      "source_sha256": null,
+      "published_sha256": "01a04d708c1228e0b1888e540bb763dd38e49b13908b37bbeebbfdb631cef2cf"
+    },
+    {
+      "path": "audio/bagu-natural/j121.mp3",
+      "source_sha256": null,
+      "published_sha256": "1d464e59fea7c95689b5c7d2b11664aba69b4e92b240a260fa5a460c312618f4"
+    },
+    {
+      "path": "audio/bagu-natural/j122.mp3",
+      "source_sha256": null,
+      "published_sha256": "a89da1624191d28b8afef43846cb9dfeff7cdb4c67b8685e9cb12fb88a9c6d48"
+    },
+    {
+      "path": "audio/bagu-natural/j123.mp3",
+      "source_sha256": null,
+      "published_sha256": "b1181a777a82eacdf6665aa53ff486c40b926f6615ad31da2aa67aa10d394791"
+    },
+    {
+      "path": "audio/bagu-natural/j124.mp3",
+      "source_sha256": null,
+      "published_sha256": "806ecdddfc9a49b038d9b65befe033ea2fff73f5bbc81a8315930b36711bd4b5"
+    },
+    {
+      "path": "audio/bagu-natural/j125.mp3",
+      "source_sha256": null,
+      "published_sha256": "3ff9cd342ba3b8a2a567a3d0d46ff7124adc7c4d3ebce1cb4d5faa7435972e4f"
+    },
+    {
+      "path": "audio/bagu-natural/j126.mp3",
+      "source_sha256": null,
+      "published_sha256": "e0f845a7854fc887b94235a79390f2f399057a54c44a2cf966c81a9bee0b434e"
+    },
+    {
+      "path": "audio/bagu-natural/j127.mp3",
+      "source_sha256": null,
+      "published_sha256": "1b8bbf19dfd7fb93ed58520c2bfe3167bc7a82bfaf2b73754043f3e92c7d21e8"
+    },
+    {
+      "path": "audio/bagu-natural/j128.mp3",
+      "source_sha256": null,
+      "published_sha256": "48403bd815d3ec103a4b97b11b72cd9e7dc99dbec2716ca6120f764d4ca0e659"
+    },
+    {
+      "path": "audio/bagu-natural/j129.mp3",
+      "source_sha256": null,
+      "published_sha256": "e19ac7d179a16e2817fe5d2cf9bfe5e7519fac412ada2e88d22748c7f105869b"
+    },
+    {
+      "path": "audio/bagu-natural/j13.mp3",
+      "source_sha256": null,
+      "published_sha256": "6e65fc5963cb19bcd73d32455df3b7d900a371086f0b53051a2c11a59bca042e"
+    },
+    {
+      "path": "audio/bagu-natural/j130.mp3",
+      "source_sha256": null,
+      "published_sha256": "56fe08ca5f47e5f3e4b70c586c818bb0664f7f5be8bdd4b46cdf17e69438ef12"
+    },
+    {
+      "path": "audio/bagu-natural/j131.mp3",
+      "source_sha256": null,
+      "published_sha256": "3a85c3ef54776f5603a06848c32a33d0948b17e1839763dbaa98c90c710a5f7e"
+    },
+    {
+      "path": "audio/bagu-natural/j132.mp3",
+      "source_sha256": null,
+      "published_sha256": "e7d76d3f1fe25a10f4ff0899a956d3922c3d843b4214f78e1b24a124b994ad84"
+    },
+    {
+      "path": "audio/bagu-natural/j133.mp3",
+      "source_sha256": null,
+      "published_sha256": "d27e7d5d84129ef131272091ddf818c14768509555688f51be5b7439398c2e5f"
+    },
+    {
+      "path": "audio/bagu-natural/j134.mp3",
+      "source_sha256": null,
+      "published_sha256": "5ffb42f03503cca54be7bb16855830de4fd9549caeecd28f3060ab2b2c5d8f8b"
+    },
+    {
+      "path": "audio/bagu-natural/j135.mp3",
+      "source_sha256": null,
+      "published_sha256": "a77cf61dd910aa1bc24b61ba9d371e97fba3db7f8ff1f452836307b670aa56da"
+    },
+    {
+      "path": "audio/bagu-natural/j136.mp3",
+      "source_sha256": null,
+      "published_sha256": "d9b74c292ae81b1b970e972fc7207cfe6b1ef826aafa9caba93cdfb5b25fa803"
+    },
+    {
+      "path": "audio/bagu-natural/j137.mp3",
+      "source_sha256": null,
+      "published_sha256": "0273993b13c45219f9abf1668587e1dbe0bb4d18370ab2153cec75d84861271d"
+    },
+    {
+      "path": "audio/bagu-natural/j138.mp3",
+      "source_sha256": null,
+      "published_sha256": "5da7cf685632c810b37dfe240a9dc85697a8b4c1dbfe86804804e3023f601bc7"
+    },
+    {
+      "path": "audio/bagu-natural/j139.mp3",
+      "source_sha256": null,
+      "published_sha256": "a89b231aec3065f2624414db535102a2f41f8c3c961f925f5cd05b238d478a24"
+    },
+    {
+      "path": "audio/bagu-natural/j14.mp3",
+      "source_sha256": null,
+      "published_sha256": "ab225d8d6c0469a8fb1d70c5c8cd2f80aafcc6a360542ca488cbf08b1ead6717"
+    },
+    {
+      "path": "audio/bagu-natural/j140.mp3",
+      "source_sha256": null,
+      "published_sha256": "074455f65e6372f7faaac377d76152e72e46437bca3e26b73637effaa2e01ff5"
+    },
+    {
+      "path": "audio/bagu-natural/j141.mp3",
+      "source_sha256": null,
+      "published_sha256": "d536396b9a05a5a5a0f32947da009f11897c0b39ad11286775354e0858befe3c"
+    },
+    {
+      "path": "audio/bagu-natural/j142.mp3",
+      "source_sha256": null,
+      "published_sha256": "c58213226b10d5a4e6f8bea2510e36e16e50a076047b88f5d4e4d38d57ce4c6a"
+    },
+    {
+      "path": "audio/bagu-natural/j143.mp3",
+      "source_sha256": null,
+      "published_sha256": "ff9435fd9d08865e259350ec6f5d81b9a9c7dca9f8a0db2da26b35fdb3cddaaa"
+    },
+    {
+      "path": "audio/bagu-natural/j144.mp3",
+      "source_sha256": null,
+      "published_sha256": "37ce0e4a91ea5c2e3c1ea183d617ed73f83df5a71005eb463e07842e3317202a"
+    },
+    {
+      "path": "audio/bagu-natural/j145.mp3",
+      "source_sha256": null,
+      "published_sha256": "905f8ff6ff5ac77bdc2b338687395f2d4fa44c0b9f080a8609ce690c66b25e23"
+    },
+    {
+      "path": "audio/bagu-natural/j146.mp3",
+      "source_sha256": null,
+      "published_sha256": "ed9fe661a25f3492d684e5781a0b81d61da26544777f2241bb7feae7c9631c1b"
+    },
+    {
+      "path": "audio/bagu-natural/j147.mp3",
+      "source_sha256": null,
+      "published_sha256": "0ef35f5d274fb51d15ed3bc536236f80ba54978d7ecd1d573bc74c1d7dc89c1f"
+    },
+    {
+      "path": "audio/bagu-natural/j148.mp3",
+      "source_sha256": null,
+      "published_sha256": "de7c6b24b21cb559462dcbf3084fc20233fe500015730ed7101367502b5e830b"
+    },
+    {
+      "path": "audio/bagu-natural/j149.mp3",
+      "source_sha256": null,
+      "published_sha256": "a4bdfa2014ab5c107789453739c03574b415f05175ba1853d4187a4ccd7f8b15"
+    },
+    {
+      "path": "audio/bagu-natural/j15.mp3",
+      "source_sha256": null,
+      "published_sha256": "011eadabad65e9ab24e5da055419f71862fc80601d26bb7a27a7ccd1bc641de0"
+    },
+    {
+      "path": "audio/bagu-natural/j150.mp3",
+      "source_sha256": null,
+      "published_sha256": "a0be7a2165b92ea493c77a42d6dd2c06409d52fdb0d16b318109955e5a44ca7c"
+    },
+    {
+      "path": "audio/bagu-natural/j151.mp3",
+      "source_sha256": null,
+      "published_sha256": "b5ba034ba235fb9552f4ac9345419a2951e986330ed0e023ef812db2d50e3a08"
+    },
+    {
+      "path": "audio/bagu-natural/j152.mp3",
+      "source_sha256": null,
+      "published_sha256": "533532365845de780b80f035fbf3fedf06076a325d1d587f9e1330f41b3f4368"
+    },
+    {
+      "path": "audio/bagu-natural/j153.mp3",
+      "source_sha256": null,
+      "published_sha256": "cae76bfda093f207e566b9df653bcc19ed836aad73ddebda6fcafe175327fccc"
+    },
+    {
+      "path": "audio/bagu-natural/j154.mp3",
+      "source_sha256": null,
+      "published_sha256": "7eb2ac9501567873fe18b821bd2c49a9976b00d0613ca538188a751825748174"
+    },
+    {
+      "path": "audio/bagu-natural/j155.mp3",
+      "source_sha256": null,
+      "published_sha256": "c237d69957051bcc8e6f5d10cd568e05e51600e6e86ffd73f447a6dfcd693ec4"
+    },
+    {
+      "path": "audio/bagu-natural/j156.mp3",
+      "source_sha256": null,
+      "published_sha256": "f4b5fdf6059563341688d3917f4fa7b9d0b2b890712ba26dababffd175be9f4e"
+    },
+    {
+      "path": "audio/bagu-natural/j157.mp3",
+      "source_sha256": null,
+      "published_sha256": "69cf0ee339f0c0f0c7d38aabac0d794123ccb6b2a90f85d2df2c473d4b6f0999"
+    },
+    {
+      "path": "audio/bagu-natural/j16.mp3",
+      "source_sha256": null,
+      "published_sha256": "ef861e215ff70072b6d3ff5caa0117c3f386d2105d754e31ae1de4ff1595eada"
+    },
+    {
+      "path": "audio/bagu-natural/j17.mp3",
+      "source_sha256": null,
+      "published_sha256": "96a7672cb6280acd36fc072c2a1806b46193a7b20b076716a875574fc07e2b56"
+    },
+    {
+      "path": "audio/bagu-natural/j18.mp3",
+      "source_sha256": null,
+      "published_sha256": "850d6f7e45eeea79e62f1d9f63a12505c8f84fcd87afa787d5734cb8e02d28c4"
+    },
+    {
+      "path": "audio/bagu-natural/j19.mp3",
+      "source_sha256": null,
+      "published_sha256": "29d99488d2efec6e1c65d1cfcf5bf19e563c0fa3d03f3b572eb9ca628d571243"
+    },
+    {
+      "path": "audio/bagu-natural/j2.mp3",
+      "source_sha256": null,
+      "published_sha256": "5b15dfdd200c902c8cc4f866688d02b55bbe1b7ff04a34076d3c07f4b09b3648"
+    },
+    {
+      "path": "audio/bagu-natural/j20.mp3",
+      "source_sha256": null,
+      "published_sha256": "628d8de96febb9e5b1d865c62764673af81c49427a176b0d1e41b63d4891fc42"
+    },
+    {
+      "path": "audio/bagu-natural/j21.mp3",
+      "source_sha256": null,
+      "published_sha256": "12715a89293be08ede76c63f8b16f1372055771151c780c1834e3139b5e1beac"
+    },
+    {
+      "path": "audio/bagu-natural/j22.mp3",
+      "source_sha256": null,
+      "published_sha256": "e56dcdaa21fd7b84d17294f0ba10520192d9ad14293b254f3565aa16771c4f95"
+    },
+    {
+      "path": "audio/bagu-natural/j23.mp3",
+      "source_sha256": null,
+      "published_sha256": "0c563d1ece60bff40d6a9f86b92060bc97e21d0ea438a0be2486193752857edd"
+    },
+    {
+      "path": "audio/bagu-natural/j24.mp3",
+      "source_sha256": null,
+      "published_sha256": "f515cf1c512c1a43349ec7ce263cf88f0616fa919d873079e9a378f96ff82eee"
+    },
+    {
+      "path": "audio/bagu-natural/j25.mp3",
+      "source_sha256": null,
+      "published_sha256": "ba37126d01a79a749e21fc616cf82b4fd160d48cd94555239e7e5c0c6502273e"
+    },
+    {
+      "path": "audio/bagu-natural/j26.mp3",
+      "source_sha256": null,
+      "published_sha256": "1fde9445026f8ba17079ab18657a2a9efa1055339896b6fe8ae8e4ddd902ea11"
+    },
+    {
+      "path": "audio/bagu-natural/j27.mp3",
+      "source_sha256": null,
+      "published_sha256": "b0021204eb72d707697e1b3f3babbf50b87245ad7f9b8a86038195d7bfc6239b"
+    },
+    {
+      "path": "audio/bagu-natural/j28.mp3",
+      "source_sha256": null,
+      "published_sha256": "8a9f0a3ff8d14d5469c94b2185e5a18053d8aa73648be76a68a65f5f8659a857"
+    },
+    {
+      "path": "audio/bagu-natural/j29.mp3",
+      "source_sha256": null,
+      "published_sha256": "3d9349171243431b87356540d5625816cc232922dfa832f01c28573bbb021a4a"
+    },
+    {
+      "path": "audio/bagu-natural/j3.mp3",
+      "source_sha256": null,
+      "published_sha256": "b1578936ea37644573087100e94b8fc2d2789b7fbf621a1fc5a8db781273f044"
+    },
+    {
+      "path": "audio/bagu-natural/j30.mp3",
+      "source_sha256": null,
+      "published_sha256": "2d93fe9f48ce2d64d0e2f676867e2ce83b7ea9f813a6e1c7b4d0d85d9c5bc016"
+    },
+    {
+      "path": "audio/bagu-natural/j31.mp3",
+      "source_sha256": null,
+      "published_sha256": "5d3da40829112576a30f1772cd3ab15539b971bf80db793f98e9a3832b2377c9"
+    },
+    {
+      "path": "audio/bagu-natural/j32.mp3",
+      "source_sha256": null,
+      "published_sha256": "6689844465e368cde689bd0496aa4aeff23b1a3d885cbe02c951f9de46a33485"
+    },
+    {
+      "path": "audio/bagu-natural/j33.mp3",
+      "source_sha256": null,
+      "published_sha256": "6cb8b5436c48f0355b2eb493af9a74bdbf1638c57ee0064c22e4a5724a48800c"
+    },
+    {
+      "path": "audio/bagu-natural/j34.mp3",
+      "source_sha256": null,
+      "published_sha256": "0f5d93f438760e7e50213ee0cba40292ac4b2b6620820850762078f6b0b5b89c"
+    },
+    {
+      "path": "audio/bagu-natural/j35.mp3",
+      "source_sha256": null,
+      "published_sha256": "662c00942288ec3fac25cf850e0e13e7852dd682aa46b34ffa822810015b7697"
+    },
+    {
+      "path": "audio/bagu-natural/j36.mp3",
+      "source_sha256": null,
+      "published_sha256": "a4724d28a37533849e05259813212d468c7658ccbdfc3247b77d07cf64e5db53"
+    },
+    {
+      "path": "audio/bagu-natural/j37.mp3",
+      "source_sha256": null,
+      "published_sha256": "32f7bdbce94d240171346b009731dbc51a4144ebacc5dfaefbd8d63eb52477d6"
+    },
+    {
+      "path": "audio/bagu-natural/j38.mp3",
+      "source_sha256": null,
+      "published_sha256": "16ed8fbfadedd250f7d9d200fc8f5274acadf33235f9d68aff3d8bb511ccf64e"
+    },
+    {
+      "path": "audio/bagu-natural/j39.mp3",
+      "source_sha256": null,
+      "published_sha256": "338fa6f336b06986fbd689830e6a815eeea8606e27010442519f6c0b6af1c9e6"
+    },
+    {
+      "path": "audio/bagu-natural/j4.mp3",
+      "source_sha256": null,
+      "published_sha256": "05b386d4a94510ac2c70f6524b9bcafc42791d3e6b03df9a36c81b1e976b2114"
+    },
+    {
+      "path": "audio/bagu-natural/j40.mp3",
+      "source_sha256": null,
+      "published_sha256": "7757349c589644379cc65b3ce7acd6b8c87f170dc474457af5513ba9057ceb78"
+    },
+    {
+      "path": "audio/bagu-natural/j41.mp3",
+      "source_sha256": null,
+      "published_sha256": "79ec6ff0af2b47b503191adcbc6e93aac03378aa0c1665494b48904182ead825"
+    },
+    {
+      "path": "audio/bagu-natural/j42.mp3",
+      "source_sha256": null,
+      "published_sha256": "a45265e2d98d4cc6c30f85e773a58f4a6496ee907ea725a098dcae46aa41b9be"
+    },
+    {
+      "path": "audio/bagu-natural/j43.mp3",
+      "source_sha256": null,
+      "published_sha256": "9455c8bdd020d2cceecfa0a27cc8f8aa7caec7495192cd1a4d8c3d62138f4894"
+    },
+    {
+      "path": "audio/bagu-natural/j44.mp3",
+      "source_sha256": null,
+      "published_sha256": "61ad1d18b53a4a4f62f577c5dab6ec262b1077007eb313394780962325d9f6b0"
+    },
+    {
+      "path": "audio/bagu-natural/j45.mp3",
+      "source_sha256": null,
+      "published_sha256": "3b84465611f2a5b58cf928f1f50a09b53a436ca040fea56d5bc4ef5d00b9139a"
+    },
+    {
+      "path": "audio/bagu-natural/j46.mp3",
+      "source_sha256": null,
+      "published_sha256": "77663f686a11e9104288e43fa623f1e34a42b821e1b355f0e8ce051d8cfc372b"
+    },
+    {
+      "path": "audio/bagu-natural/j47.mp3",
+      "source_sha256": null,
+      "published_sha256": "fc054552db56294b5843dad7e9ac03c2b6e00c6d47c241199538af52a7390e03"
+    },
+    {
+      "path": "audio/bagu-natural/j48.mp3",
+      "source_sha256": null,
+      "published_sha256": "f4ed22cc85e54388910239265013cf48520fa45e7b86ff5860d091b22e86f9af"
+    },
+    {
+      "path": "audio/bagu-natural/j49.mp3",
+      "source_sha256": null,
+      "published_sha256": "345e875a745736a27b99ab74f2f7ef99f8cad01fd96396838dffd608aa5e766d"
+    },
+    {
+      "path": "audio/bagu-natural/j5.mp3",
+      "source_sha256": null,
+      "published_sha256": "f937383a1594d782a2a4823226a6e769855de096b797cf32c0d20ce60d44a125"
+    },
+    {
+      "path": "audio/bagu-natural/j50.mp3",
+      "source_sha256": null,
+      "published_sha256": "226df27be5c9f9f6bdc79769f5dacf210cea134c56295dc4b88cf6b4633eaedc"
+    },
+    {
+      "path": "audio/bagu-natural/j51.mp3",
+      "source_sha256": null,
+      "published_sha256": "e23fd1f95b37f722bc5da75ca251ce46bf2bf84bbf51eb4ef674e83985b99f56"
+    },
+    {
+      "path": "audio/bagu-natural/j52.mp3",
+      "source_sha256": null,
+      "published_sha256": "5bcff27e2b632824619f37f44fbcc1481f68afea58853d5fc9aeea7360f131bb"
+    },
+    {
+      "path": "audio/bagu-natural/j53.mp3",
+      "source_sha256": null,
+      "published_sha256": "986223e1659b2bd5b3c21f08a829e9fb08483d186797d8937ebbff1b422e6c44"
+    },
+    {
+      "path": "audio/bagu-natural/j54.mp3",
+      "source_sha256": null,
+      "published_sha256": "9f2981a89397046a6faaa655b76756b743b01476ec71c4a99ccc69e4cb15c5f3"
+    },
+    {
+      "path": "audio/bagu-natural/j55.mp3",
+      "source_sha256": null,
+      "published_sha256": "8b72cf54d878518d27f18440688c15f5175d67d823bdb6d6ca7d46754481f6bf"
+    },
+    {
+      "path": "audio/bagu-natural/j56.mp3",
+      "source_sha256": null,
+      "published_sha256": "deedf6aff7c808520ff7d4f226886245e5b4c5d32f435f6bf6805a5c2ab9ef76"
+    },
+    {
+      "path": "audio/bagu-natural/j57.mp3",
+      "source_sha256": null,
+      "published_sha256": "fa94b5580b27412f9c88466bab68c0a6ef938a930d6db4d9735c9ce1abd264f7"
+    },
+    {
+      "path": "audio/bagu-natural/j58.mp3",
+      "source_sha256": null,
+      "published_sha256": "cc9824e9514b57257de86b21e924097def3510a9914f5e9b4d274652b5b67b6b"
+    },
+    {
+      "path": "audio/bagu-natural/j59.mp3",
+      "source_sha256": null,
+      "published_sha256": "5a0e3fb5d18619e4c2efc5570b90ad10e0dac6ab09ce5677c468231012763004"
+    },
+    {
+      "path": "audio/bagu-natural/j6.mp3",
+      "source_sha256": null,
+      "published_sha256": "ca337dcbe4785f13daab0678a54973e03cbc62e8d8f8e21b5b7f962ca0133a7c"
+    },
+    {
+      "path": "audio/bagu-natural/j60.mp3",
+      "source_sha256": null,
+      "published_sha256": "4623b497a7971cf42c4e24a5c72576d0cd3b6c75bd4f5b98238397938dec5327"
+    },
+    {
+      "path": "audio/bagu-natural/j61.mp3",
+      "source_sha256": null,
+      "published_sha256": "3764effc56381f57561cb21bc1cf2fa6739e9b16a79efafe7994041befbc4783"
+    },
+    {
+      "path": "audio/bagu-natural/j62.mp3",
+      "source_sha256": null,
+      "published_sha256": "e49037b45a61aff1638cf1d0d1ab3f6aa212d50882e829968760b21bbe5ce87f"
+    },
+    {
+      "path": "audio/bagu-natural/j63.mp3",
+      "source_sha256": null,
+      "published_sha256": "bf41efdaa276e8862d0e01c7eda6df215cea6f402042f1b7d6cf3e5b75deb022"
+    },
+    {
+      "path": "audio/bagu-natural/j64.mp3",
+      "source_sha256": null,
+      "published_sha256": "5de4d68126c66559c244cb7c17997da5a65a89e79500b397996065fcece622cd"
+    },
+    {
+      "path": "audio/bagu-natural/j65.mp3",
+      "source_sha256": null,
+      "published_sha256": "2b329eec3b712effd6e5398ca05734e312727dac913ca25ed0093ac45d381684"
+    },
+    {
+      "path": "audio/bagu-natural/j66.mp3",
+      "source_sha256": null,
+      "published_sha256": "93a04b8eaa8638780161f30d910a69a7a102c22491575d16aa538c4fc3bb6997"
+    },
+    {
+      "path": "audio/bagu-natural/j67.mp3",
+      "source_sha256": null,
+      "published_sha256": "1acb0071c7e4ebcd7e5077b8ac4f03ea9ec902be0b47b95bb8af6e09607be672"
+    },
+    {
+      "path": "audio/bagu-natural/j68.mp3",
+      "source_sha256": null,
+      "published_sha256": "e9678d13f84c4f738598d1105fdd826dd8f191e830df8c6d220da8356a50204c"
+    },
+    {
+      "path": "audio/bagu-natural/j69.mp3",
+      "source_sha256": null,
+      "published_sha256": "63829ef2e3c76533e9dfdb2c055c4d286bf01a9231847fd2d6360d7d0729a8df"
+    },
+    {
+      "path": "audio/bagu-natural/j7.mp3",
+      "source_sha256": null,
+      "published_sha256": "ea0636ff88d9c2c41403dfcd8f59c5f7624b8df3059ded9902fe4a222149cfc8"
+    },
+    {
+      "path": "audio/bagu-natural/j70.mp3",
+      "source_sha256": null,
+      "published_sha256": "fe15e098b6eecc74f6da704b0197c870b15f5cf8857dff2fcada6f3f598a9b99"
+    },
+    {
+      "path": "audio/bagu-natural/j71.mp3",
+      "source_sha256": null,
+      "published_sha256": "afb8c2537bd0e3e4aeaec4cafc07b58fb9c281a64a915be7ed5160791d449aaa"
+    },
+    {
+      "path": "audio/bagu-natural/j72.mp3",
+      "source_sha256": null,
+      "published_sha256": "752fe1dbeea9d9d9dc2f3ebecf7bb9b547d301fea3f0340cf30abb22e63c71f2"
+    },
+    {
+      "path": "audio/bagu-natural/j73.mp3",
+      "source_sha256": null,
+      "published_sha256": "75155a14fc864a0478031a6c40ed5947405c8701fe64f479dea5e7427e0804be"
+    },
+    {
+      "path": "audio/bagu-natural/j74.mp3",
+      "source_sha256": null,
+      "published_sha256": "a1b8ab29aa4cc3363f73ee46fc3109bf0a41f84d53647275619abd70db4c8a28"
+    },
+    {
+      "path": "audio/bagu-natural/j75.mp3",
+      "source_sha256": null,
+      "published_sha256": "5b87636574838aad878573837a7be1305a78a53d9959e0e669b3b5d800e1b719"
+    },
+    {
+      "path": "audio/bagu-natural/j76.mp3",
+      "source_sha256": null,
+      "published_sha256": "0dd8e2bd5c64f99fdb440974b0fdcd69050f2632de0471074dc7bb1b1fe1c974"
+    },
+    {
+      "path": "audio/bagu-natural/j77.mp3",
+      "source_sha256": null,
+      "published_sha256": "8ea666f636880ecf283cd6c1b9b8c4d9fe8dbfa60b1880fa55200eaad1b0f1fc"
+    },
+    {
+      "path": "audio/bagu-natural/j78.mp3",
+      "source_sha256": null,
+      "published_sha256": "e6ff408a98a572d8c585cc5fa31d31b7d9d38893626fbaacaa041df3f7562757"
+    },
+    {
+      "path": "audio/bagu-natural/j79.mp3",
+      "source_sha256": null,
+      "published_sha256": "000bc908a1e81bc79e1c62d74fdecadf425c6ce803f84bb31a9cb3dc2ea5017e"
+    },
+    {
+      "path": "audio/bagu-natural/j8.mp3",
+      "source_sha256": null,
+      "published_sha256": "53984ae26e3025127c4db8b374488122ceb7bc9b557c30ba214a5533014df246"
+    },
+    {
+      "path": "audio/bagu-natural/j80.mp3",
+      "source_sha256": null,
+      "published_sha256": "dcc7ae0a931688f887a57bc03ec8a7339357c83541d2e64bdf30e386cf24ea36"
+    },
+    {
+      "path": "audio/bagu-natural/j81.mp3",
+      "source_sha256": null,
+      "published_sha256": "afded3d912801c1d5bf7435c7424e21516ad8396d19f2db986c096adc9461298"
+    },
+    {
+      "path": "audio/bagu-natural/j82.mp3",
+      "source_sha256": null,
+      "published_sha256": "eafe4d40cb7d8be9ae2b20cef3b6229e3379e1edcec59c5f180c389d1bd63c49"
+    },
+    {
+      "path": "audio/bagu-natural/j83.mp3",
+      "source_sha256": null,
+      "published_sha256": "c1a9d33d64b2aeb23a3a058fde39b89bc0ee7ce0848bf3eabd4738b8806e2df5"
+    },
+    {
+      "path": "audio/bagu-natural/j84.mp3",
+      "source_sha256": null,
+      "published_sha256": "6c0c3d0b0658478ffcd2c016cfb98b289f90bfe2e146c9ab19bb08df29b4b407"
+    },
+    {
+      "path": "audio/bagu-natural/j85.mp3",
+      "source_sha256": null,
+      "published_sha256": "84f60cdb6f5459877d8c00a073db76f77eeddae1b6d14f600a0b910d3f81c6c7"
+    },
+    {
+      "path": "audio/bagu-natural/j86.mp3",
+      "source_sha256": null,
+      "published_sha256": "988ab7341ec6242ebaeaff89e650d0acc509892f93c80c287c2b3aa6616ce6df"
+    },
+    {
+      "path": "audio/bagu-natural/j87.mp3",
+      "source_sha256": null,
+      "published_sha256": "26383a1cb10df09ba58254f63fef929d1073056fbffe537f14b017320b12885c"
+    },
+    {
+      "path": "audio/bagu-natural/j88.mp3",
+      "source_sha256": null,
+      "published_sha256": "3d62cb59c70c03a222bf93ea342ba0bd823895a41894a702602dd3e7a505468a"
+    },
+    {
+      "path": "audio/bagu-natural/j89.mp3",
+      "source_sha256": null,
+      "published_sha256": "8791fba3e79262607d30919778c02d546d98c847eb938979ab04540c1f0e58a2"
+    },
+    {
+      "path": "audio/bagu-natural/j9.mp3",
+      "source_sha256": null,
+      "published_sha256": "cfa8fdcbeedb795440d8b92e4c4947b0b9a9e91a477ea36f46fb91714e27aca3"
+    },
+    {
+      "path": "audio/bagu-natural/j90.mp3",
+      "source_sha256": null,
+      "published_sha256": "520e4ffe0eced509dff084696957c9528e815e7ab0157a970ee22114181ec06f"
+    },
+    {
+      "path": "audio/bagu-natural/j91.mp3",
+      "source_sha256": null,
+      "published_sha256": "3d30ed5c0466b4764b60a1eb3f478b01aced831639ee4a07d21da14630785476"
+    },
+    {
+      "path": "audio/bagu-natural/j92.mp3",
+      "source_sha256": null,
+      "published_sha256": "1fff9a6473972b615002c0f2bba93693f812bb6431cc3aabe16596dcfb819807"
+    },
+    {
+      "path": "audio/bagu-natural/j93.mp3",
+      "source_sha256": null,
+      "published_sha256": "e77fa03670666721f8f00f5cb68347860190002097c5033b595b30cff67de554"
+    },
+    {
+      "path": "audio/bagu-natural/j94.mp3",
+      "source_sha256": null,
+      "published_sha256": "84262ed05e2cc27106e952f0370379961478e6db8157f5700c687ed35dcb3125"
+    },
+    {
+      "path": "audio/bagu-natural/j95.mp3",
+      "source_sha256": null,
+      "published_sha256": "37de97ad25d7ec623c6fed337770c78eae0346531de19ef650faf50facfc6f90"
+    },
+    {
+      "path": "audio/bagu-natural/j96.mp3",
+      "source_sha256": null,
+      "published_sha256": "b8bf5ebcd6810d8a60911c815cbf6269b64b5d3244782ed5583901860926751c"
+    },
+    {
+      "path": "audio/bagu-natural/j97.mp3",
+      "source_sha256": null,
+      "published_sha256": "2d578405249ea5593e275ec7c18625fd7607a2a39febd94d1b1dab08a3c450e1"
+    },
+    {
+      "path": "audio/bagu-natural/j98.mp3",
+      "source_sha256": null,
+      "published_sha256": "968a2dfa2f8bce1e2029d13ed20b7af554bdcab50100aec57569a6318f4fb2d0"
+    },
+    {
+      "path": "audio/bagu-natural/j99.mp3",
+      "source_sha256": null,
+      "published_sha256": "a1c865fd49ba687cd526b4e0006600cc65707bf00b30dfaa90390f9704228191"
+    },
+    {
+      "path": "audio/bagu-natural/manifest.json",
+      "source_sha256": null,
+      "published_sha256": "28e102e7c0fb452830f44180dd57ee00cbb48a360ab874b22f7f69571bc27b0b"
+    },
+    {
+      "path": "audio/bagu-natural/validation-added-155.json",
+      "source_sha256": null,
+      "published_sha256": "13eeee8e5fe452c7c7c7e388b7e4dc8192f7db75cdd28ef9c1f188b5dd6e98e7"
+    },
+    {
+      "path": "audio/bagu-natural/validation.json",
+      "source_sha256": null,
+      "published_sha256": "adaefded4c7fc959cab8792a9302e60872616f90711e85b7db70bb54eedcb8b5"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "9d8e2b031bd45f33dc66e5c51f45616fd8dc5351ce15e0de8edafddf171de7b4"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "6b5419c12fa7677c14b0539a0de02993123e8535a3442917299e91961e45e501"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "0828fafe35afa66e7ac876bc420366c794f4a6a58b3c492f5cb8335d6c5066e1"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "aae331d14456da74e19f2af18d512e6f246fb011ca210de3bb43243f97b0d5a9"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "43a89790c8ead8293faf420240982fb1b1077fcc2e855846f54c40e2c1fdb552"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "376f997c0cc298d0f96077810e7f920bec6dc2d5f74d0c8e2efe3514ab094157"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "76457f0b2bb0df9d33665e768a7b8b6999fb1b91f90a8f00068f09f5593b6ebc"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "037f16efae2f7eca54b9e4fc1aacf52207afcb153c6067566724b236c08c8284"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "e5637d5423a7a52d91190ea3c82d2fc0748eea88258645ff7fad592ac294a380"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "ecb130d8720c0775bdcef6f807c8b024d6e273df96e17768956e6900fdf07e9c"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "05186772e6446cd5540dd7198dfde2d1c08a3b6cc6331e8b5606c6758bbf143c"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "0c0fa0280b445ccbb627460b562c92f0b47315b32ab10496f26ef680fe720c85"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "ec6ac02ba2cc29605e076baff612fb8956068fe51e636f847489c61146c41156"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "d528430c6759e39b5a9afa333ee58a72328a896e3d05b09b93c5432f2034f590"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "547da18439c83d59efa365f6d54076498528eb37dbdea636e2377f35c08526f3"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "ebfa104d1de6f22c57a74bdd14a5b61253d76f7340e6832e1b33161fa78748f3"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "060db11b4fb644b0e6ea60ff6a50e0de63b07167aa36bb942d2d9b0a24abb9cb"
+    },
+    {
+      "path": "audio/papers-natural/carveprep-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "8d1ae316cd16295c6dd74bce94deab694750899f9630292a73db10c1be7e601d"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "90a91151ad0d8e1024c0fdb78881c824ec63723f53bdb024f6aaa933985a49b8"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "279cb39c1fdac175311bcf0b3b06be7ca690535c432a5fd429d20c1aefea745c"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "95409d7274f8cbd4f4a9c62f747752e9f7c2ea345fa8e45d2fb66c957c463c51"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "7170b5a4ceb7b7b6950b98c934ba501805900326fde8a8766005eed8caf67087"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "00e819954eda156a73ca0a305f0f3563c549e92a021ce1a3df1ba225ebd3ec4c"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "72a61958467897cbf7ac717780b5594525265166212b5ab23be2886683c362cd"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "425d31b7cc1f76c4934225712f1c9c93fb3d80715f0d332e5b18c42293c3bc49"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "caec539895a8c735c053e8d8cd64622443c9e8bbec8f988a184e737d00bd7117"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "ab6b89547e4ddbc959d81fdd3e826041de7f482554374f494666883daa78001c"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "4bf8529c923b929e208c96ead7a4f312741d4dd36319a42a99f05d6c6d70f8af"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "a32cf87f35bc2a4368ec7bfa7cee1efa8ca34033a4f1aca83cccec66941d955f"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "f1671c10617f1fc871d06ac796a01e36e83a0e954047d3c774363c55dafe3df9"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "9acc47d888c8a076bd88876e18297660e568fcf96e3c16edaa06eb47153d000e"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "ff0aed88d0d5d277cc119e68f79aa4ea648832372c5b232ed8b0089e6228b62d"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "ec4e262b6f057020ed2f8948c7cd9315189ab5f52457fa884a8d1a86f8007ec4"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "6613287018215c339770182009b1fc18a99874b2f49776796a1b17e0dbb43cf9"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "6b64daa9b5cf6b2650c42aeb55e5fa4af25cb770e1a747d2d7c359922ea66c2e"
+    },
+    {
+      "path": "audio/papers-natural/demandclean-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "25be2c219cda0511450a9c6b75b02bb782d4a536842dc9e28b5368dcdf07b36a"
+    },
+    {
+      "path": "audio/papers-natural/manifest.json",
+      "source_sha256": null,
+      "published_sha256": "1e73c6c3cc2ff1b0fa4bc9aea0978fb64629a542ba25c5ef000c0171e3ecc288"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "3b4f79817177c30b624f92f347e179724a7f03b7950a2e2f7dbce1536080daf0"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "23c3676b1af749034ef6dd37085c590d5c84b16f638ff8e12786b2b3d4decaab"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "2ec2d5d87c67386af2e3f323c49c0e314b4bf2cdd9182dbdb5d400d5e71c5a79"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "80877dd853fb6ef12be96fdba4a87437a23f2387a0dd57d6401474807f50263e"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "7249d53a076cf1e76a9046a0d16bfd969c28603989d051eec6829d06fff3f064"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "3507ba1f6c4cd2e9f6e1645a07295adaac07ddeb09573179c7c9319c66d01afe"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "d9c243fa88cc1901fcf50ef62f8725eae11f611dd12a59a55866d0b3692c3aff"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "b7f4f436e06279a275563b2af03b06a061599542bdcebdd2bcb57c9b69be39a5"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "85c28231288d5b1587837daaab5a623df216acc09e5e3d12bd07be6b70d55e1a"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "821d267fd916b30094012fbb6d045a3111c6a7af7f1847d659f3705adf1c58a9"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "48c575a7670456303756fe89b02aa79114f43fc130ef860dc73fcde471c9387f"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "806a907009efb46ddb1f1d8d06636f24dd1430bef9cb1b70b4e797508f5753c9"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "9bb86e821ee90807a89b60544986a569a6a8d2f315aad111e1f4e106f52965a3"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "ea5232a630a7a9b4d5f8a80274df66068a9f563f1966cdc5541db1c83b0c48ef"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "a26965a2020bf845e2523f4f22f33ca6b946adee694ef218e3ad3d4a36e8ec83"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "434ca9ebcad27767e4057573fd719008932ef3bc2d4d8b39af67e60e13ee47dc"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "11d7f789960cb7a3d5f456d672e677e955abecf7b68ceebd7d8387a82ea10f89"
+    },
+    {
+      "path": "audio/papers-natural/omniselect-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "c639f106c4416bd5ebfec9a3f05635833cb8f43d291ae15b7e4279dad25c7c44"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "7b6e73a2f7f58624fa16c3748cf45a48e90e72dce89d60fe6061b608d53972ce"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "9011c422030e25dba1d118575f115f8cd4f5b6aab721b6b7ccc30711846db310"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "623a5c19e67ccd584b3a1909604cc42b4feb8ec499a7892d945ec3b941a51748"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "c25dd4b71a0b2ab180412f1ccaedec47073fed39affabee0c8d6b4e79b120163"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "23b2f4bdd3206088397149cf1f905f17424b691bb1c2e99d9e2805cdba006296"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "4ebb8d6d53f970a81f3d620ea624ec0eeabc1edd41a0f0dc0e372ccde53d6c4a"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "9ec594d90a033a85f6158ee0dad3992339ec8844f8610590c02780b6481161da"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "181bb760d0cc0eb9862aa7a545e2b91ba30ad156764613bf05c260b40b03309e"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "79ce4bfea6e5cb337e9ccbf1ab47571e9e29485aecc371724a2d1b3d98b80dd6"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "c0dd72f2e0d3be7debc68fe0069c6cd2cb3335b0ce18dbef65a774b87cdb200d"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "ea6066d827de4ef29c06fb0c615af7546fa68fd59e132b67e60f52627eb7efab"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "6bd996deb99efaeb6134ab8bcea5404be77f4106eb1dee6efa93d7c9b8895349"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "872d0d42ceec69345023aba2d0a7e0b325637fe68f4e1dcc8d92259d475ddb1b"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "ba5df36282ff0e321632618e99a32860c8d4b93b69ec0bebe7cfd7445461f344"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "8f5f505c62365bdcc0e6c1a408aac1059bcd5951bad36b7848d5354cd80ca61d"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "89b587aad934fcb97b5ab1cb46e2e696114361786dedad55fa6e744cee2b6f1e"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "ccbbc2b76b46d1126dd2d0e617e1fd345ca5d569203e058a658b4d17d8062884"
+    },
+    {
+      "path": "audio/papers-natural/uniclean-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "210f5b43b6088e459f984d63d476170353a3601d945b98e9f2d8629893b95687"
+    },
+    {
+      "path": "audio/papers-natural/validation.json",
+      "source_sha256": null,
+      "published_sha256": "ca31f7c2095b4b827a32d89e36aa63973986e7a569f6645d7ac084f2d3ea0a6e"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-1.mp3",
+      "source_sha256": null,
+      "published_sha256": "11d577525b03ce306b12ee53ad37a6ace058745bc4a0595fa9ea1fe63dfd5394"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-10.mp3",
+      "source_sha256": null,
+      "published_sha256": "039c130847be1f7d84c7d010b6e2105d7735d03a7a594f1c179b177e021d7640"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-11.mp3",
+      "source_sha256": null,
+      "published_sha256": "ab225ecc89fb31e1084f3e2def6bdce95456283f01d41f17e25593b7b743647d"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-12.mp3",
+      "source_sha256": null,
+      "published_sha256": "406c3b8724c1f15817a42767b471cdc57d4f8c547bc64a602da39150dd05b7e9"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-13.mp3",
+      "source_sha256": null,
+      "published_sha256": "9bac5bc2c0f54805d222b0c8b69d91d67e75ff0bbbf701835df2dd1278318ab6"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-14.mp3",
+      "source_sha256": null,
+      "published_sha256": "eb45f94be67423e441f9aacce29d56139e8bcc1ed11f4b0de6287cbc1a4601aa"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-15.mp3",
+      "source_sha256": null,
+      "published_sha256": "2c9440481d56eab986b240ababcd66a9fdf35302b569b71b6590d50817f384ec"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-16.mp3",
+      "source_sha256": null,
+      "published_sha256": "7625e9bc245d841984450f9a65e33f12f8b8b1c7f6bbc8424a844f4c2a5a6d4c"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-17.mp3",
+      "source_sha256": null,
+      "published_sha256": "c5be966382d7e534379a3c22efd4ad3d116f4291423407512f9b71cd0e47e13c"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-18.mp3",
+      "source_sha256": null,
+      "published_sha256": "465d33a73a4a1c6d39557208916d05535cbcb189931aa38a782e263df06bdf8c"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-2.mp3",
+      "source_sha256": null,
+      "published_sha256": "871fb32cd4c14b3dcbde2683dfc9641ec52812d6071d722c7a1f73329d006594"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-3.mp3",
+      "source_sha256": null,
+      "published_sha256": "a3547321611938bb74941c78107b1017cced49b6bd9aab9e10ebec3023272cc0"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-4.mp3",
+      "source_sha256": null,
+      "published_sha256": "025962e69639f7bd33f8419dd9debb1e2d839a62b34433fc58ce0b2c6c5d3a05"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-5.mp3",
+      "source_sha256": null,
+      "published_sha256": "92b03f25b51ea71150acc0487e5d3ee2e95b7838ddd2c330db4b723a73ab7c4d"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-6.mp3",
+      "source_sha256": null,
+      "published_sha256": "a5968f40574d8ecb3c1828dc10d03e7f506f740e9cd61d7f99d91e074f58c9c1"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-7.mp3",
+      "source_sha256": null,
+      "published_sha256": "51ad797d8b4e516231ab5c8b00c026be9e6f4212ba1ff18a0fa8e76b5fff4d2b"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-8.mp3",
+      "source_sha256": null,
+      "published_sha256": "60b2dd3b7cd9cdd16c9248fb40d92e912dcccbd1e927bbed86cbf080fe10bf97"
+    },
+    {
+      "path": "audio/papers-natural/vioexplain-9.mp3",
+      "source_sha256": null,
+      "published_sha256": "7774c96f99600cf345bef3dcd7e20a0db6c3a3342b04b9fb23d2d7ccf326a2b4"
+    },
+    {
+      "path": "listening-player.css",
+      "source_sha256": null,
+      "published_sha256": "0e06e3fafeb02e9757ee64dc89ca4f11b2205e098b4e2161d4149f3d840f2c95"
+    },
+    {
+      "path": "listening-player.html",
+      "source_sha256": null,
+      "published_sha256": "989f4472b18f89fa7a5f8c5b3161251e85ea4eae21131a0b1a5fa5e7500974dc"
+    },
+    {
+      "path": "listening-player.js",
+      "source_sha256": null,
+      "published_sha256": "6bef5c5ad2b5cf84e0ac14b72a0f7ac87676fdb802808a7ac396da99a321055e"
     }
   ],
   "source_excerpts": 123
