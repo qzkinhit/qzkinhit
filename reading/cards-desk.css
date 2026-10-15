@@ -1,6 +1,7 @@
 /* 09、10、11 三套卡在电脑宽屏上的布局。默认三栏并排（默写、问题、解析），两侧先模糊，点开才显示；顶栏按钮可切换成和手机一样的单栏左右滑 */
 .deskmode{display:none}
 .deskhide{display:none}
+.desknote{display:none}
 @media (min-width:1100px){
   #top .deskmode{display:inline-flex;font-size:13px;white-space:nowrap}
   #side{display:none!important}
@@ -20,6 +21,13 @@
   body:not(.deskone) .slide:not(.rev) .pane.pexp>*:not(.deskrev):not(.deskhide),body:not(.deskone) .slide:not(.recl) .pane.prec>*:not(.deskrec):not(.deskhide){filter:blur(10px);opacity:.5;pointer-events:none;user-select:none}
   body:not(.deskone) .deskrev,body:not(.deskone) .deskrec{position:sticky;top:42%;z-index:6;display:block;margin:0 auto -54px;width:min(320px,86%);padding:14px 16px;border:0;border-radius:14px;background:rgba(255,255,255,.95);color:#20332f;font:600 15px/1.5 inherit;box-shadow:0 8px 28px rgba(0,0,0,.28);cursor:pointer}
   body:not(.deskone) .slide.recl .pane.prec>.deskhide,body:not(.deskone) .slide.rev .pane.pexp>.deskhide{display:block;position:absolute;top:calc(97px + env(safe-area-inset-top));right:28px;z-index:7;width:max-content;border:0;border-radius:999px;padding:4px 12px;background:rgba(32,51,47,.82);color:#fff;font:600 12.5px/1.6 inherit;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.2)}
+  body:not(.deskone) .desknote{display:block;margin-top:12px}
+  .desknote .dnh{display:flex;align-items:baseline;gap:8px;flex-wrap:wrap;margin-bottom:6px}.desknote .dnh b{font-size:15px}.desknote .dnh span{font-size:12px;color:var(--muted,#6b7a75)}
+  .desknote .dnta{display:block;margin-top:8px;width:100%;box-sizing:border-box;min-height:max(220px,calc(100vh - 640px));resize:vertical;border:1px solid #dfe5e1;border-radius:10px;padding:10px 12px;font:14px/1.65 system-ui,-apple-system,'PingFang SC',sans-serif;background:#fbfcfb;color:#20332f;outline:none}
+  .desknote .dnta.code{font:13px/1.6 ui-monospace,Menlo,Consolas,monospace;tab-size:4}
+  .desknote .dnbtns{display:flex;gap:8px;margin-top:8px}.desknote .dnbtns .big{flex:1;text-align:center;text-decoration:none;box-sizing:border-box}
+  .desknote .dnscore:not(:empty){margin-top:8px;font-size:13.5px}
+  .desknote .dnta:focus{border-color:hsl(var(--h,160) 50% 45%);background:#fff}
   .slide.rev .deskrev,.slide.recl .deskrec,body.deskone .deskrev,body.deskone .deskrec{display:none!important}
 }
 @media (max-width:1099px){.deskrev,.deskrec{display:none!important}}
