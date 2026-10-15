@@ -28,6 +28,11 @@
   .desknote .dnbtns{display:flex;gap:8px;margin-top:8px}.desknote .dnbtns .big{flex:1;text-align:center;text-decoration:none;box-sizing:border-box}
   .desknote .dnscore:not(:empty){margin-top:8px;font-size:13.5px}
   .desknote .dnta:focus{border-color:hsl(var(--h,160) 50% 45%);background:#fff}
+  body:not(.deskone) .prec [data-rm="full"],body:not(.deskone) .prec [data-rm="say"]{display:none}
+  body:not(.deskone) .prec .rm-cloze:not(.rm).hidden{display:block!important}
+  body:not(.deskone) .desknote .rm-full.hidden,body:not(.deskone) .desknote .rm-say.hidden{display:block!important}
+  .desknote .dnslot textarea.draft{min-height:max(200px,calc(100vh - 700px))}
+  .desknote .dnlc{display:block;width:100%;box-sizing:border-box;margin-top:10px;text-align:center;text-decoration:none}
   .slide.rev .deskrev,.slide.recl .deskrec,body.deskone .deskrev,body.deskone .deskrec{display:none!important}
 }
 @media (max-width:1099px){.deskrev,.deskrec{display:none!important}}
