@@ -303,6 +303,9 @@ body.listening .edge{bottom:calc(112px + env(safe-area-inset-bottom))}
 body.listening .rail{bottom:170px}
 body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom:130px}
 .rb.lis.on span{background:#2bb58f;box-shadow:0 0 0 3px rgba(43,181,143,.45)}
+.xq.tech{background:#eaf6f1}
+.xq.tech p{font-weight:600;font-size:15.5px}
+.xq.tech .fam{font-weight:400;font-size:12px;color:var(--muted);background:#fff;border-radius:999px;padding:0 8px;margin-left:8px}
 
 .qlabel{font-size:12.5px;color:var(--muted);margin:6px 0 2px;letter-spacing:.08em}
 .pq{font-size:22px;line-height:1.45;margin:2px 0 10px}
@@ -571,7 +574,7 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
   function playAt(k, scroll) {
     if (k >= order.length) { stopListen(); toast('本轮都听完了'); return; }
     playIdx = k; const c = BY[order[k]];
-    audio.src = 'audio/papers/' + c.id + '.m4a'; audio.playbackRate = rate;
+    audio.dataset.fb = 'audio/papers/' + c.id + '.m4a'; audio.src = 'audio/papers-natural/' + c.id + '.mp3'; audio.playbackRate = rate;
     audio.play().catch(() => {});
     pl.querySelector('.ptitle').textContent = `${c.name} · ${c.q}`;
     if ('mediaSession' in navigator) { try { navigator.mediaSession.metadata = new MediaMetadata({ title: c.q, artist: c.name, album: `论文面试卡 · 第 ${k + 1} / ${order.length} 张` }); } catch (e) {} }
@@ -585,7 +588,7 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
   audio.addEventListener('play', () => { pl.querySelector('[data-p=toggle]').textContent = '⏸'; });
   audio.addEventListener('pause', () => { pl.querySelector('[data-p=toggle]').textContent = '▶'; });
   audio.addEventListener('timeupdate', () => { const d = audio.duration || 0; pl.querySelector('.pbar i').style.width = d ? (100 * audio.currentTime / d) + '%' : '0'; pl.querySelector('.ptime').textContent = `${fmt(audio.currentTime)} / ${fmt(d)}`; if (sleepT) paintSleep(); });
-  audio.addEventListener('error', () => { if (listening) { toast('这张卡的音频还没准备好，跳到下一张'); setTimeout(() => playAt(playIdx + 1, true), 800); } });
+  audio.addEventListener('error', () => { if (!listening) return; if (audio.dataset.fb && !audio.src.endsWith('.m4a')) { audio.src = audio.dataset.fb; audio.playbackRate = rate; audio.play().catch(() => {}); return; } toast('这张卡的音频还没准备好，跳到下一张'); setTimeout(() => playAt(playIdx + 1, true), 800); });
   pl.addEventListener('click', e => {
     const b = e.target.closest('[data-p]');
     if (!b) { const bar = e.target.closest('.pbar'); if (bar && audio.duration) { const r = bar.getBoundingClientRect(); audio.currentTime = audio.duration * (e.clientX - r.left) / r.width; } return; }
