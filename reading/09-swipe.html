@@ -964,7 +964,7 @@ const RUN = (() => {
     const p = D.probs[order[+sl.dataset.k]];
     sl.innerHTML = `<div class="hx">${paneRecall(p)}${paneMain(p, !!sl.dataset.again)}${paneExplain(p)}</div>`;
     const hx = sl.querySelector('.hx');
-    hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl);
+    hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl);
     // 完整默写
     const ta = sl.querySelector('.draft');
     ta.value = drafts[p.id] || '';
@@ -1291,4 +1291,4 @@ const RUN = (() => {
   start(true, qid);
 })();
 </script>
-<script src="progress-sync.js?v=f72896d04546"></script></body></html>
+<script src="progress-sync.js?v=1423483de872"></script></body></html>
