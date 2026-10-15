@@ -382,7 +382,7 @@ body.listening .mscroll,body.listening .prec,body.listening .pexp{padding-bottom
 .bvpre{background:#f3f6f3;border-radius:8px;padding:8px 10px;font:12px/1.6 ui-monospace,Menlo,monospace;white-space:pre-wrap;overflow-wrap:anywhere;margin:4px 0}
 .bvtab td.dupe{background:#fdf1cc}.bvtab tr.on td{background:#e3f3ec;font-weight:600}
 .bvseg.s2,.bvseg.s3{margin-top:-2px}
-</style><link rel="stylesheet" href="cards-desk.css"><link data-study-audio-asset="css" rel="stylesheet" href="listening-player.css?v=17c7192ae057"></head><body>
+</style><link rel="stylesheet" href="cards-desk.css?v=06a5d1e1caf4"><link data-study-audio-asset="css" rel="stylesheet" href="listening-player.css?v=17c7192ae057"></head><body>
 <div id="app">
 <div id="top"><div class="r1"><a class="back" href="12-cards.html" title="回到刷卡总览">‹</a><button class="ib" id="deckbtn" title="切换卡组">🎯</button><div id="tabs"><button data-p="0">默写</button><button data-p="1" class="on">问题</button><button data-p="2">解析</button></div><button class="ib" id="listen" title="连播听题">🎧</button><button class="ib" id="help" title="玩法">?</button><button class="ib" id="gear" title="设置">⚙</button></div>
 <div class="bar"><i></i></div><div class="r2"><span id="pos"></span><span><button id="due" class="hidden"></button> <span id="today"></span></span></div></div>
@@ -3078,7 +3078,7 @@ W.kkt = el => {
     sl.dataset.f = 1;
     const c = BY[order[+sl.dataset.k]], kws = keywords(c);
     sl.innerHTML = `<div class="hx">${paneRecall(c)}${paneMain(c)}${paneAnswer(c)}</div>`;
-    const hx = sl.querySelector('.hx'); hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl);
+    const hx = sl.querySelector('.hx'); hx.scrollLeft = hx.clientWidth; sl.dataset.pane = 1; if (DESK()) deskPrep(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl); else if (typeof deskPlace === 'function') deskNote(sl);
     // 挖关键词
     const czp = sl.querySelector('.czp'), ccnt = sl.querySelector('.ccnt'), html0 = czp.innerHTML;
     let opened = 0;
