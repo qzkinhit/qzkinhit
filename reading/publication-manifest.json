@@ -5,27 +5,27 @@
     {
       "path": "01-uniclean.html",
       "source_sha256": "9b90ecbfa3cdcd3b844ae9434bab219cf7c1546ecf09b4a6df452cce21e240be",
-      "published_sha256": "dbd80ae6d021b08cdc0c935ce33165803537c5296a1de69f4f7d728a39a5759c"
+      "published_sha256": "ece8a68d68684732d42db73c8c5c079b05ee6fc09ac13335c813b16f91a1198c"
     },
     {
       "path": "02-demandclean.html",
       "source_sha256": "a6319b74a31e231d0c62568ce82bcdd2c1c7d526397f12973fa2be6f0db3361a",
-      "published_sha256": "fa1bbfa79fafc3177829c9a5df6272630108fb62dfaa16d8cad43d2d76984993"
+      "published_sha256": "a3213a377b79d1c2495e63895d8511ef04986dfdd6567b2e16c7cf5f2093bf81"
     },
     {
       "path": "03-carveprep.html",
       "source_sha256": "130932efd3fa43a8c5675a83cafa50fb79b1a16d335693c7a4ffa132194f5fe3",
-      "published_sha256": "3e8dfe0ab5f713e39f940a3f8b49ab6a3d79799b24b4695327f393d3923a66b6"
+      "published_sha256": "cabd9d7853ff41cc7941fa24883af5f71a0d6829604c2b82cffcc92e15a22b45"
     },
     {
       "path": "04-omniselect.html",
       "source_sha256": "75966e3b5cc498f9f908de6d003ec88235dfbfbc93447df978aee59de21d0d75",
-      "published_sha256": "b93395d70b42ffef5ec0f23f7aab9047a8e5b7153a42a88fdc1a85b03e26da8c"
+      "published_sha256": "43e9d988eea9c9ecd7bd55544f9ba6dfd2a1843598936253c89a02650c21951f"
     },
     {
       "path": "05-vioexplain.html",
       "source_sha256": "5ba95333de26c2d15304e7e404d45d98b908573275949dcb7a0f76a276f3681b",
-      "published_sha256": "be7c1bd7823e3bb835d98c1721c30ff6b4027326c169659f6bdefb1623391655"
+      "published_sha256": "3a7b78a2fa3003c50832e78849d8d7465d5681284aa46f97570dff7eb97e0ce4"
     },
     {
       "path": "06-hot100.html",
@@ -45,7 +45,7 @@
     {
       "path": "09-swipe.html",
       "source_sha256": null,
-      "published_sha256": "d41e83d76c0d4aa9209aa4cca9edab2017e8fa2be9b73c52d1373d4bf4f467de"
+      "published_sha256": "74445263556405fab76e5c8c243f635807c1145db27f20876ea82c26f9659a50"
     },
     {
       "path": "hot100-trace.json",
@@ -570,7 +570,7 @@
     {
       "path": "10-papers.html",
       "source_sha256": null,
-      "published_sha256": "12e7ccff4d0dbe9aac30fab34d77d28d1cbbf92c3187fecebe80417f125154f3"
+      "published_sha256": "bd8e8826fe088e32753dec50bbbc17a4387fce4c68427d0c1856658870eac866"
     },
     {
       "path": "audio/papers/carveprep-1.m4a",
@@ -1030,7 +1030,7 @@
     {
       "path": "11-bagu.html",
       "source_sha256": null,
-      "published_sha256": "80dd704c8dce9e80e31c8a3cd917c63b96968180bab5860b5524284e0fafa2cc"
+      "published_sha256": "6039e14ca07c0beb7cccef4fda1c4d2292f37734a5ca3c568c1ccf0873d2aa21"
     },
     {
       "path": "index.html",
