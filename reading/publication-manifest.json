@@ -1,31 +1,31 @@
 {
-  "generated_on": "2026-10-15 Asia/Singapore",
+  "generated_on": "2026-10-30 Asia/Singapore",
   "scope": "五篇静态阅读页、四页手撕代码笔记、论文面试卡、八股速记与听题音频、直接链接的证据与有限源码摘录；不含原始数据集、模型或完整论文PDF",
   "files": [
     {
       "path": "01-uniclean.html",
-      "source_sha256": "9b90ecbfa3cdcd3b844ae9434bab219cf7c1546ecf09b4a6df452cce21e240be",
-      "published_sha256": "ece8a68d68684732d42db73c8c5c079b05ee6fc09ac13335c813b16f91a1198c"
+      "source_sha256": "772d2fb64b4c8f1ecd66e8017cacc5e38685f38620309a768bf27836c1758620",
+      "published_sha256": "afc6f75733f7fd0e7fe4ac2bd978ab1a468705409df257fffef95135b7d986cb"
     },
     {
       "path": "02-demandclean.html",
-      "source_sha256": "a6319b74a31e231d0c62568ce82bcdd2c1c7d526397f12973fa2be6f0db3361a",
-      "published_sha256": "a3213a377b79d1c2495e63895d8511ef04986dfdd6567b2e16c7cf5f2093bf81"
+      "source_sha256": "0b80c99d467af441e12ed870961858a51b1d4789c98ffc1c92ab99def5f413c5",
+      "published_sha256": "18056ff182239def69a8f8799cf15ede4bb7daacc151075b9bac4da3da9648f0"
     },
     {
       "path": "03-carveprep.html",
-      "source_sha256": "130932efd3fa43a8c5675a83cafa50fb79b1a16d335693c7a4ffa132194f5fe3",
-      "published_sha256": "cabd9d7853ff41cc7941fa24883af5f71a0d6829604c2b82cffcc92e15a22b45"
+      "source_sha256": "21c60bc58233d79f372b23e9726fb27c95d826e25b8c8af5a8c49b1f0c8d68d3",
+      "published_sha256": "f5aa4762c6d39514f8539a00429e76033443f5c3262f1183431d515af7d3d581"
     },
     {
       "path": "04-omniselect.html",
-      "source_sha256": "75966e3b5cc498f9f908de6d003ec88235dfbfbc93447df978aee59de21d0d75",
-      "published_sha256": "43e9d988eea9c9ecd7bd55544f9ba6dfd2a1843598936253c89a02650c21951f"
+      "source_sha256": "2a2b8dc8158cfebbe6527efd919f3e1810d30ce574dc3c3b0d003534fd17857e",
+      "published_sha256": "c9672c261a45e5d5b387d97449d5f08a0304ee9aaab21e937f7c46f37fba883c"
     },
     {
       "path": "05-vioexplain.html",
-      "source_sha256": "5ba95333de26c2d15304e7e404d45d98b908573275949dcb7a0f76a276f3681b",
-      "published_sha256": "3a7b78a2fa3003c50832e78849d8d7465d5681284aa46f97570dff7eb97e0ce4"
+      "source_sha256": "82ff294d5707b6added147f9517235069967bf64220e050df932a2bd77add83d",
+      "published_sha256": "418ea5e381906304e9343e44d243c87359ef59b985cf26f74773b7bc2bba4b9b"
     },
     {
       "path": "06-hot100.html",
