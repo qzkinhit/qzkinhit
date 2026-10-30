@@ -4,28 +4,28 @@
   "files": [
     {
       "path": "01-uniclean.html",
-      "source_sha256": "772d2fb64b4c8f1ecd66e8017cacc5e38685f38620309a768bf27836c1758620",
-      "published_sha256": "afc6f75733f7fd0e7fe4ac2bd978ab1a468705409df257fffef95135b7d986cb"
+      "source_sha256": "e4f50a2e8ea0b074fe64ba7c053c91894109019a8b51a24bf54d17ecf074d261",
+      "published_sha256": "d902e1bc6fbb56e3b3fab65b5ddd172d4693f7864d0c7c54792fed31a3921e05"
     },
     {
       "path": "02-demandclean.html",
-      "source_sha256": "0b80c99d467af441e12ed870961858a51b1d4789c98ffc1c92ab99def5f413c5",
-      "published_sha256": "18056ff182239def69a8f8799cf15ede4bb7daacc151075b9bac4da3da9648f0"
+      "source_sha256": "d0936273fcc013a6d34fc5e38f6bb7364fedf16281693c2c91880831e9c2c2f5",
+      "published_sha256": "7c5c77fcb279a75c349cf40dd7ffc3dc0a0a07065be2e1351c9dd0fa3c713fb5"
     },
     {
       "path": "03-carveprep.html",
-      "source_sha256": "21c60bc58233d79f372b23e9726fb27c95d826e25b8c8af5a8c49b1f0c8d68d3",
-      "published_sha256": "f5aa4762c6d39514f8539a00429e76033443f5c3262f1183431d515af7d3d581"
+      "source_sha256": "bfa5d9f1c5c4d98a4270b20d35a2f5cd539fe4e9fb265360de1c6b95350fa8a3",
+      "published_sha256": "935bc780ac92250f3ae76e69ce5747f0edffa1ded9a2bcf3eef937eaea50da32"
     },
     {
       "path": "04-omniselect.html",
-      "source_sha256": "2a2b8dc8158cfebbe6527efd919f3e1810d30ce574dc3c3b0d003534fd17857e",
-      "published_sha256": "c9672c261a45e5d5b387d97449d5f08a0304ee9aaab21e937f7c46f37fba883c"
+      "source_sha256": "ecdd555ba3e042f138a7fce205bebfb44ad8f6bc66e15b761c59fb47e837c010",
+      "published_sha256": "cc1f6fcd0953363fb334357e20f52bcb6fe04c4e2ffbe54b7cd8f65fc23a31f4"
     },
     {
       "path": "05-vioexplain.html",
-      "source_sha256": "82ff294d5707b6added147f9517235069967bf64220e050df932a2bd77add83d",
-      "published_sha256": "418ea5e381906304e9343e44d243c87359ef59b985cf26f74773b7bc2bba4b9b"
+      "source_sha256": "1e0ed1f3363c10caa92ed1c9553d36c2ec578a78022a17db41dfecaf8ced9253",
+      "published_sha256": "1a84a9f40d309c6fb562dbf3cfc3a4087dc9d7739365e3ee716a48e318608548"
     },
     {
       "path": "06-hot100.html",
