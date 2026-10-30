@@ -30,7 +30,7 @@
     {
       "path": "06-hot100.html",
       "source_sha256": null,
-      "published_sha256": "30e86af6895a896db33e29d70e890369dd80e14cd72c6ae6cb34d1c6b8381a83"
+      "published_sha256": "3e7f624d3964a2c6c2e4027f519100acd8a60ae254f903e136a98da8c355b1e8"
     },
     {
       "path": "07-ml-handcode.html",
@@ -45,12 +45,12 @@
     {
       "path": "09-swipe.html",
       "source_sha256": null,
-      "published_sha256": "74445263556405fab76e5c8c243f635807c1145db27f20876ea82c26f9659a50"
+      "published_sha256": "1d2783f491746a10566e305f02b55549cd604068e423e5d22420bae02da32fa5"
     },
     {
       "path": "hot100-trace.json",
       "source_sha256": null,
-      "published_sha256": "da2469e40321618543061a98483efe0b38dcc3586ad99d21e915bcc6763d5b14"
+      "published_sha256": "f9c53918d98887cd6ca0a7af17369925ae18de2a2c1460e0cd001e6a992d4941"
     },
     {
       "path": "audio/hot100/1.m4a",
@@ -1035,7 +1035,7 @@
     {
       "path": "index.html",
       "source_sha256": null,
-      "published_sha256": "c06b7ccd5a1b83119aa8a3501b46ed098927fa7d909041e2e3d7e1923154642a"
+      "published_sha256": "bba60e7b1bf77523698ccbefc009dc8f43b3dc1dc44df67fbaa07cee4e440e93"
     },
     {
       "path": "12-cards.html",
