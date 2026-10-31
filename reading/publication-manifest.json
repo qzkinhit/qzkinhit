@@ -9,13 +9,13 @@
     },
     {
       "path": "02-demandclean.html",
-      "source_sha256": "d0936273fcc013a6d34fc5e38f6bb7364fedf16281693c2c91880831e9c2c2f5",
-      "published_sha256": "7c5c77fcb279a75c349cf40dd7ffc3dc0a0a07065be2e1351c9dd0fa3c713fb5"
+      "source_sha256": "babfabd3b8a5bf729d27d361bf0e141e4c78fa08880f2833f3cad4e9129bff77",
+      "published_sha256": "2a8778f4e94c572c69d03232159ac8c0dd55154359bdba7ca7b08aaa2d3799ea"
     },
     {
       "path": "03-carveprep.html",
-      "source_sha256": "bfa5d9f1c5c4d98a4270b20d35a2f5cd539fe4e9fb265360de1c6b95350fa8a3",
-      "published_sha256": "935bc780ac92250f3ae76e69ce5747f0edffa1ded9a2bcf3eef937eaea50da32"
+      "source_sha256": "577bffc258d62083d10df03466a3b11f8ca04e627d37823764ccf28f0b30fda7",
+      "published_sha256": "dd28eb3a3865cce93d138054a768976b5002ad9c03ddab26c49e8f51840c4b72"
     },
     {
       "path": "04-omniselect.html",
@@ -24,8 +24,8 @@
     },
     {
       "path": "05-vioexplain.html",
-      "source_sha256": "1e0ed1f3363c10caa92ed1c9553d36c2ec578a78022a17db41dfecaf8ced9253",
-      "published_sha256": "1a84a9f40d309c6fb562dbf3cfc3a4087dc9d7739365e3ee716a48e318608548"
+      "source_sha256": "f4065a886792374fe15cf0710ac324fd70307237989c49ff76653a388c0df40d",
+      "published_sha256": "96a0d5fcf6bfc8f1f9998e14f256caad5ee753d910944833b1b77b4c0be1634f"
     },
     {
       "path": "06-hot100.html",
