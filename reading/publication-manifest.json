@@ -1,5 +1,5 @@
 {
-  "generated_on": "2026-10-30 Asia/Singapore",
+  "generated_on": "2026-10-31 Asia/Singapore",
   "scope": "五篇静态阅读页、四页手撕代码笔记、论文面试卡、八股速记与听题音频、直接链接的证据与有限源码摘录；不含原始数据集、模型或完整论文PDF",
   "files": [
     {
@@ -570,7 +570,7 @@
     {
       "path": "10-papers.html",
       "source_sha256": null,
-      "published_sha256": "bd8e8826fe088e32753dec50bbbc17a4387fce4c68427d0c1856658870eac866"
+      "published_sha256": "aa9671b1407e88eb872c3998ea34f8579569c2fd58e38d02b8494858c806b485"
     },
     {
       "path": "audio/papers/carveprep-1.m4a",
@@ -1040,7 +1040,7 @@
     {
       "path": "12-cards.html",
       "source_sha256": null,
-      "published_sha256": "883b1588fbfd03a7cf13693db42bca653e27ef4dda9fa3a3294a4323aa1f4782"
+      "published_sha256": "437b7eacd3c36b556a2258daf3ce4d2ebed37a85c378ac9c6c99748186af02ca"
     },
     {
       "path": "cards-desk.css",
