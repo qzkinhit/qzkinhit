@@ -32,8 +32,6 @@ Ph.D. student at the Massive Data Computing Research Center, Harbin Institute of
 | Name | What it is |
 | --- | --- |
 | [DMCO](https://github.com/qzkinhit/DMCO) | ICML 2026 artifact for budget-aware co-optimization of data cleaning and AutoML, with aligned datasets, baseline runners, and reproducibility scripts. |
-//| [DemandPrep](https://github.com/qzkinhit/DemandPrep-artifact) | VLDB 2026 Workshop artifact of a demand-driven data preparation agent: action allocation, operator-grounded execution, run traces, and an interactive demo. |
-//| [DemandClean](https://github.com/qzkinhit/DemandClean) | Code for the VLDB 2025 paper: a DQN agent decides no-op, repair, or delete per cell, trading off model utility against data authenticity. |
 | [UniClean](https://github.com/qzkinhit/UniClean-bench-Result) | Experiment results for UniClean: real-world dirty data, cleaned outputs, run logs, and baseline comparisons. |
 | [MADClean](https://github.com/qzkinhit/MADClean) | Model-aware cleaning framework that optimizes for SVM utility, with DP, greedy, and RL implementations. |
 | [MDCBaseline](https://github.com/qzkinhit/MDCBaseline) | Unified runner for classic cleaning baselines: Baran, BigDansing, Holistic, HoloClean, and Horizon. |
